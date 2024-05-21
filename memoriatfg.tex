@@ -22,6 +22,8 @@
 
 % Setup
 \setcounter{section}{0}
+\providecommand{\keywords}[1]{\textbf{\textit{Palabras clave:}} #1}
+\renewcommand{\baselinestretch}{1}
 
 % Empieza el documento
 \begin{document}
@@ -31,18 +33,15 @@
 	\pagestyle{plain}
 	\centering
 	{\includegraphics[width=1\textwidth]{logoUGR.png}\par}
-	\vspace{1cm}
 	{\bfseries\LARGE Universidad de Granada \par}
-	\vspace{1cm}
 	{\scshape\Large Ingeniería Informática \par}
-	\vspace{2cm}
+	\vspace{0.5cm}
 	{\itshape\Large Trabajo fin de grado \par}
-	\vspace{1cm}
 	{\scshape\Huge Planificación y desarrollo de una app para adopción canina \par}
 	\vfill
 	{\Large Autora \par}
 	{\Large Laura Vega Palacios\par}
-	\vspace{1cm}
+
 	{\Large Tutor \par}
 	{\Large Juan José Escobar Pérez\par}
 	\vfill
@@ -57,8 +56,23 @@
 % Resumen
 \newpage
 \pagestyle{plain}
+
+\begin{center} 
+{\LARGE Planificación y desarrollo de una app para adopción canina \par}
+\end{center} 
+
+\keywords{}
 \section*{Resumen}
-El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones caninas.
+El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones caninas. 
+
+En dicha aplicación se podrán dar de alta protectoras o refugios para publicar los perros de los que disponen. Las protecotras o refugios que estén verificadas por los administradores, tendrán la capacidad de subir a la plataforma todos los caninos que requieran para que aparezcan en las listas de adopción u acogida. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro.  
+
+Existen los formularios correspondientes para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como puede ser la descripción, la raza, edad etc. 
+
+La aplicación utiliza un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación según distancia. También se incluyen barras de búsqueda y filtros rápidos para facilitar al usuario encontrar lo que busca.
+
+Se incluye dentro de la aplicación un sistema de mensajería para facilitar la comunicación dentro de la misma, el chat permitirá mensajes de texto e imágenes. 
+
 
 % Pagina en blanco
 \newpage
@@ -69,6 +83,7 @@ El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la p
 % Abstract
 \newpage
 \section*{Abstract}
+** Translate the text in 'Resumen' section
 
 % Pagina en blanco
 \newpage
@@ -78,6 +93,11 @@ El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la p
 % Agradecimientos
 \newpage
 \section*{Agradecimientos}
+\begin{center} 
+\vspace*{\fill}
+Agradecimientos aqui
+\vspace*{\fill}
+\end{center} 
 
 % Pagina en blanco
 \newpage
@@ -95,20 +115,19 @@ El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la p
 \newpage
 \thispagestyle{empty}
 \mbox{}
-% Pagina en blanco
-\newpage
-\thispagestyle{empty}
-\mbox{}
-% Pagina en blanco
-\newpage
-\thispagestyle{empty}
-\mbox{}
 
 % Introduccion
 \newpage
 \section{Introducción}
 \subsection{Motivación}
+Todos los años miles de perros son abandonados por sus familias en todo el mundo, podemos ver \href{https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun}{estudios} que recogen cifras que indican que casi 300.000 perros y gatos fueron recogidos durante el 2022. Algunos de estos animales se encuentran en la calle, otros tienen la suerte de encontrar un refugio o protectora que los ayude a encontrar una nueva familia. 
 
+Para garantizar el bienestar de los animales, en España, existen \href{https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936}{leyes} que se encargan de regular, entre otras cosas, la crianza, la tenencia responsable, la compra-venta de animales y las adopciones. Con toda esta normativa detrás, es importante que se siga y se respete todo el proceso burocrático que implica tener un animal en la familia. Este proceso puede llegar a ser complejo o abrumador para una persona que no tenga experiencia en el ámbito, lo que puede llevar a una persona a preferir comprar animales ya que el proceso puede hacerse más simple. 
 
+A pesar de que la compra de animales en España es lega,l muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que  en internet podemos encontrar información acerca de las condiciones en las que se encuentran muchos de los animales que se usan para criar y posteriormente vender. Suelen estar en jaulas, entre sus propias heces y algunas de las hembras se pasan criando toda su vida, hasta que mueren. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos} podemos ver más información sobre esta problemática. Si se opta finalmente por la comrpa, se recomienda visitar los criaderos a los que se va a comprar el animal. 
+
+Cuando se opta por la adopción el proceso a veces puede ser más complejo. Normalmente en las diferentes ciudades de España, la información relacionada con las protectoras está dispersa en páginas web propias o muchas veces redes sociales. Esto implica que una persona puede necesitar navegar por varias plataformas a la vez para ver que mascotas tiene disponibles en su ciudad. 
+
+--- Lista de cosas
 \printindex
 \end{document}

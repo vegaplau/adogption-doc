@@ -5,6 +5,8 @@
 \renewcommand{\contentsname}{Tabla de contenidos}
 
 % Paquetes
+\usepackage[parfill]{parskip}
+\setlength{\parindent}{30pt}
 \usepackage{graphicx}
 \usepackage{imakeidx}
 \usepackage[spanish]{babel}
@@ -119,15 +121,77 @@ Agradecimientos aqui
 % Introduccion
 \newpage
 \section{Introducción}
+
+% Motivación
 \subsection{Motivación}
-Todos los años miles de perros son abandonados por sus familias en todo el mundo, podemos ver \href{https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun}{estudios} que recogen cifras que indican que casi 300.000 perros y gatos fueron recogidos durante el 2022. Algunos de estos animales se encuentran en la calle, otros tienen la suerte de encontrar un refugio o protectora que los ayude a encontrar una nueva familia. 
+Numerosas familias, todos los años, se animan a incluir a una mascota en su círculo, sin embargo, miles de mascotas son a su vez abandonadas por muchas estas en todo el mundo. Existen \href{https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun}{estudios} que indican que casi 300.000 perros y gatos fueron recogidos durante el 2022. Estos datos hacen saltar las alarmas de muchas de las asociaciones que luchan por el bienestar y los derechos de los animales. De todos los animales que son abandonados, muchos permanecen en las calles durante el resto de su vida. Otros, son recogidos por las autoridades pertinentes y terminan en protectoras o refugios, a la espera de encontrar otra familia. 
 
-Para garantizar el bienestar de los animales, en España, existen \href{https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936}{leyes} que se encargan de regular, entre otras cosas, la crianza, la tenencia responsable, la compra-venta de animales y las adopciones. Con toda esta normativa detrás, es importante que se siga y se respete todo el proceso burocrático que implica tener un animal en la familia. Este proceso puede llegar a ser complejo o abrumador para una persona que no tenga experiencia en el ámbito, lo que puede llevar a una persona a preferir comprar animales ya que el proceso puede hacerse más simple. 
+Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de las mascotas que están en las calles. Algunas de estas organizaciones, son públicas y subvencionadas por el estado. Para garantizar el bienestar y la protección de los animales, en España, se publicó una \href{https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936}{ley} en la que se trata principalmente los siguientes puntos:
+\begin{itemize}
+\item Principios generales
+	\begin{itemize}
+	\item Reconocimiento de los animales como seres dotados de sensibilidad.
+	\item Fomento de la adopción en lugar de la compra de animales.
+	\item Prohibición de prácticas que causen sufrimiento o estrés innecesario a los animales.
+	\item Concienciar acerca del bienestar y respeto animal.
+	\end{itemize}
+\item Responsabilidad y tenencia responsable de animales de compañía
+	\begin{itemize}
+	\item Establecimiento de requisitos mínimos de bienestar, cuidado y alojamiento.
+	\item Obligación de identificación y registro de los animales de compañía.
+	\item Establecimiento de las obligaciones de los propietarios en cuanto a la tenencia responsable, incluyendo la alimentación, hogar y atención veterinaria.
+	\item Prohibición de mantener animales en condiciones inadecuadas o de privarles de cuidados esenciales.
+	\end{itemize}
+\item Cria y comercio de animales
+	\begin{itemize}
+	\item Regulación estricta de la cría y comercio de animales de compañía para evitar la explotación y el maltrato.
+	\item Obligación de los criadores y comerciantes de cumplir con requisitos específicos de bienestar animal.
+	\item Prohibición de la cría indiscriminada y la venta de animales en tiendas físicas, salvo excepciones debidamente justificadas.
+	\end{itemize}
+\item Concienciación y medidas del estado contra abandonos y abusos
+	\begin{itemize}
+	\item Promoción de la educación y el respeto y protección de los animales.
+	\item Campañas de conciencación pública sobre el bienestar animal y la tenencia responsable.
+	\item Tipificación de conductas de maltrato y abandono como infracciones administrativas o penales, además del establecimiento de sanciones proporcionales a la gravedad de las infracciones.
+	\item Obligación de las administraciones públicas de establecer y mantener refugios y centros de acogida para animales abandonados.
+	\item Creación de un registro nacional de animales de compañía y establecimientos relacionados con ellos.
+	\end{itemize}
+\end{itemize}
 
-A pesar de que la compra de animales en España es lega,l muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que  en internet podemos encontrar información acerca de las condiciones en las que se encuentran muchos de los animales que se usan para criar y posteriormente vender. Suelen estar en jaulas, entre sus propias heces y algunas de las hembras se pasan criando toda su vida, hasta que mueren. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos} podemos ver más información sobre esta problemática. Si se opta finalmente por la comrpa, se recomienda visitar los criaderos a los que se va a comprar el animal. 
+Esta ley fue un avance muy significativo en la legislación española en materia de protección animal, ayudando a crear un entorno más respetuoso y justo para los animales. 
 
-Cuando se opta por la adopción el proceso a veces puede ser más complejo. Normalmente en las diferentes ciudades de España, la información relacionada con las protectoras está dispersa en páginas web propias o muchas veces redes sociales. Esto implica que una persona puede necesitar navegar por varias plataformas a la vez para ver que mascotas tiene disponibles en su ciudad. 
+A pesar de que la compra de animales en España es legal, muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que  es habitual encontrar criaderos donde los animales no constan de las condiciones necesarias para vivir adecuadamente. Algunos carecen de cuidados veterinarios, de correcta alimentación y de higiene. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos} podemos ver más información sobre esta problemática. Si se opta finalmente por la compra, se recomienda visitar los criaderos a los que se va a comprar el animal, para poder garantizar que no se están fomentando criaderos ilegales. 
 
---- Lista de cosas
+Cuando se opta por la adopción, es necesario cumplir un proceso que puede variar según la organización a la que se acuda. Hay ciertos pasos que son comunes después de escoger organización:
+\begin{itemize}
+\item \textbf{Elección del perro:} en el que se deberá tener en cuenta las necesidades de la mascota para ver cual se adapta mejor al estilo de vida del hogar donde va a ir. Lo normal en este paso es interactuar con diferentes mascotas candidatas a ser adoptadas.
+\item\textbf{Solicitud de adopción:} es común que se tenga que cumplimentar un formulario y una posterior entrevista para asegurar que el animal va a ir a un hogar adecuado.
+\item \textbf{Evaluación del hogar:} lo normal es organizar una visita al hogar donde va a ir para asegurarse de que el entorno es seguro y adecuado, también verificar que se tienen ya todo lo necesario para recibir una mascota como comederos, juguetes, cama etc.
+\item \textbf{Contrato de adopción:} es indispensable para garantizar protección legal a las mascotas adoptadas. El nuevo dueño tiene que comprometerse legalmente a garantizar que el animal va a tener atención veterinaria y que no va a ser abandonado entre otros puntos. En la mayor parte de organizaciones es común llevar a vacunar y a poner el chip al animal antes de que vaya a casa del nuevo dueño.
+\item \textbf{Recogida del animal:} el día en el que se recoge la mascota, se recibe todo su hisotrial médico (si se tiene) y la organización suele dar consejos para los nuevos dueños.
+\item \textbf{Seguimiento:} posterior a la adopción es requerido un seguimiento tanto para garantizar el bienestar del animal como para dar apoyo o asesoramiento al dueño de este.
+\end{itemize}
+
+Todo este proceso es guiado por la correspondiente organización y es importante que se cumplimente, aunque pueda hacerse algo pesado de seguir. Para realizar este proceso de adopción, previamente la persona deberá ponerse en contacto con las distintas protectoras o refugios en su zona. Esta fase puede generar diferentes problemas a los adoptantes. En la mayoría de protectoras, trabajan voluntarios y se sostienen de donaciones, es por ello que es común que no consten de fondos para poder generar visibilidad de la organización. Muchas de las protectoras utilizan diferentes redes sociales o webs propias para promocionarse, lo que implica que una persona que quiere adoptar podría que tener utilizar diferentes plataformas para poder contactar con alguna. Debido a que muchas veces se utilizan redes sociales para contactar, a veces es difícil mantener una comunicación adecuada con diferentes protectoras, o incluso post adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades escogiendo mascota, y es que normalmente la información de las diferentes mascotas está dispersa y puede hacerse pesado buscar una. 
+
+Después de ver cuales son los pasos y posibles inconvenientes para aplicar a un proceso de adopción, se propone un nuevo proyecto a modo de aplicación móvil. Esta aplicación se propone como una solución a la fase inicial de buscar protectoras por la zona, facilitando a los usuarios listas de protectoras cercanas y de los perros de los que consta, incluyendo filtros para acotar la búsqueda. Se propone también como una manera de facilitar a las protectoras gestionar a sus perros e interesados. Se añade a la solución un chat para establecer la comunicación entre usuarios. La idea principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
+
+% Estructura del documento
+\newpage
+\subsection{Estructura del documento}
+La estructura del documento es la siguiente
+
+\begin{itemize}
+\item \textbf{Resumen}
+\item \textbf{Introducción}
+\item \textbf{Planificación}
+\item \textbf{Análisis}
+\item \textbf{Diseño}
+\item \textbf{Implementación}
+\item \textbf{Conclusiones}
+\item \textbf{Bibliografía}
+\item \textbf{Anexos}
+\end{itemize}
+
 \printindex
 \end{document}

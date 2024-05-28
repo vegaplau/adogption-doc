@@ -3,8 +3,20 @@
 \date{2024-05-10}
 \author{Laura Vega Palacios}
 \renewcommand{\contentsname}{Tabla de contenidos}
+\renewcommand{\listtablename}{Tabla de contenidos}
+\renewcommand{\listfigurename}{Abbildungsverzeichnis}
 
 % Paquetes
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{caption}
+\usepackage{float}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{array} 
 \usepackage[parfill]{parskip}
 \setlength{\parindent}{30pt}
 \usepackage{graphicx}
@@ -26,6 +38,8 @@
 \setcounter{section}{0}
 \providecommand{\keywords}[1]{\textbf{\textit{Palabras clave:}} #1}
 \renewcommand{\baselinestretch}{1}
+\captionsetup[figure]{}
+\captionsetup[table]{labelformat=empty}
 
 % Empieza el documento
 \begin{document}
@@ -69,11 +83,15 @@ El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la p
 
 En dicha aplicación se podrán dar de alta protectoras o refugios para publicar los perros de los que disponen. Las protecotras o refugios que estén verificadas por los administradores, tendrán la capacidad de subir a la plataforma todos los caninos que requieran para que aparezcan en las listas de adopción u acogida. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro.  
 
-Existen los formularios correspondientes para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como puede ser la descripción, la raza, edad etc. 
+Existen los formularios correspondientes para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como puede ser la descripción, la raza, edad etc. Los usuarios también disponen de formularios para darse de alta y editar su información.
 
-La aplicación utiliza un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación según distancia. También se incluyen barras de búsqueda y filtros rápidos para facilitar al usuario encontrar lo que busca.
+La aplicación utiliza un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación según distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la aplicación. También se incluyen barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario.
 
-Se incluye dentro de la aplicación un sistema de mensajería para facilitar la comunicación dentro de la misma, el chat permitirá mensajes de texto e imágenes. 
+Se incluye dentro de la aplicación un sistema de mensajería para facilitar la comunicación dentro de la misma, tanto entre usuarios y protectoras como con los administradores. El chat permitirá mensajes de texto e imágenes.
+
+Se añade, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de enlace. 
+
+La aplicación incluirá una página de información legal y de contacto a disposición del usuario.
 
 
 % Pagina en blanco
@@ -112,6 +130,8 @@ Agradecimientos aqui
 
 % Indice
 \tableofcontents
+\listoftables
+\listoffigures
 
 % Pagina en blanco
 \newpage
@@ -158,7 +178,7 @@ Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de
 	\end{itemize}
 \end{itemize}
 
-Esta ley fue un avance muy significativo en la legislación española en materia de protección animal, ayudando a crear un entorno más respetuoso y justo para los animales. 
+Esta ley ha sido un avance muy significativo en la legislación española en materia de protección animal, ayudando a crear un entorno más respetuoso y justo para los animales. 
 
 A pesar de que la compra de animales en España es legal, muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que  es habitual encontrar criaderos donde los animales no constan de las condiciones necesarias para vivir adecuadamente. Algunos carecen de cuidados veterinarios, de correcta alimentación y de higiene. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos} podemos ver más información sobre esta problemática. Si se opta finalmente por la compra, se recomienda visitar los criaderos a los que se va a comprar el animal, para poder garantizar que no se están fomentando criaderos ilegales. 
 
@@ -172,9 +192,9 @@ Cuando se opta por la adopción, es necesario cumplir un proceso que puede varia
 \item \textbf{Seguimiento:} posterior a la adopción es requerido un seguimiento tanto para garantizar el bienestar del animal como para dar apoyo o asesoramiento al dueño de este.
 \end{itemize}
 
-Todo este proceso es guiado por la correspondiente organización y es importante que se cumplimente, aunque pueda hacerse algo pesado de seguir. Para realizar este proceso de adopción, previamente la persona deberá ponerse en contacto con las distintas protectoras o refugios en su zona. Esta fase puede generar diferentes problemas a los adoptantes. En la mayoría de protectoras, trabajan voluntarios y se sostienen de donaciones, es por ello que es común que no consten de fondos para poder generar visibilidad de la organización. Muchas de las protectoras utilizan diferentes redes sociales o webs propias para promocionarse, lo que implica que una persona que quiere adoptar podría que tener utilizar diferentes plataformas para poder contactar con alguna. Debido a que muchas veces se utilizan redes sociales para contactar, a veces es difícil mantener una comunicación adecuada con diferentes protectoras, o incluso post adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades escogiendo mascota, y es que normalmente la información de las diferentes mascotas está dispersa y puede hacerse pesado buscar una. 
+Todo este proceso es guiado por la correspondiente organización y es importante que se cumplimente, aunque pueda hacerse algo pesado de seguir. Para realizar este proceso de adopción, previamente la persona deberá ponerse en contacto con las distintas protectoras o refugios en su zona. Esta fase puede generar diferentes problemas a los adoptantes. En la mayoría de protectoras, trabajan voluntarios y se sostienen de donaciones, es por ello que es común que no consten de fondos para poder generar visibilidad de la organización. Muchas de las protectoras utilizan diferentes redes sociales o webs propias para promocionarse, lo que implica que una persona que quiere adoptar podría que tener utilizar diferentes plataformas para poder contactar con alguna. Debido a que muchas veces se utilizan redes sociales para contactar, a veces es difícil mantener una comunicación adecuada con diferentes protectoras, o incluso post adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades escogiendo mascota, y es que normalmente la información de las diferentes mascotas está dispersa y puede convertirse en una tarea tediosa buscar una que cumpla todos los requerimientos. 
 
-Después de ver cuales son los pasos y posibles inconvenientes para aplicar a un proceso de adopción, se propone un nuevo proyecto a modo de aplicación móvil. Esta aplicación se propone como una solución a la fase inicial de buscar protectoras por la zona, facilitando a los usuarios listas de protectoras cercanas y de los perros de los que consta, incluyendo filtros para acotar la búsqueda. Se propone también como una manera de facilitar a las protectoras gestionar a sus perros e interesados. Se añade a la solución un chat para establecer la comunicación entre usuarios. La idea principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
+Después de ver cuales son los pasos y posibles inconvenientes para aplicar a un proceso de adopción, se propone un nuevo proyecto a modo de aplicación móvil. Esta aplicación se propone como una solución a la fase inicial de buscar protectoras por la zona, facilitando a los usuarios listas de protectoras cercanas y de los perros de los que consta, incluyendo filtros para acotar la búsqueda. Se propone también como una manera de facilitar a las protectoras gestionar a sus perros e interesados. Se añade a la solución un chat para establecer comunicación directa entre usuarios y facilitar la misma. La idea principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
 
 % Estructura del documento
 \newpage
@@ -182,16 +202,45 @@ Después de ver cuales son los pasos y posibles inconvenientes para aplicar a un
 La estructura del documento es la siguiente
 
 \begin{itemize}
-\item \textbf{Resumen}
-\item \textbf{Introducción}
-\item \textbf{Planificación}
-\item \textbf{Análisis}
-\item \textbf{Diseño}
-\item \textbf{Implementación}
-\item \textbf{Conclusiones}
-\item \textbf{Bibliografía}
-\item \textbf{Anexos}
+\item \textbf{Resumen:} Se incluye un breve resuemn de la funcionalidad del proyecto, tanto en español como en inglés.
+\item \textbf{Introducción:} Breve introducción al proyecto, donde se incluyen varios puntos
+	\begin{itemize}
+		\item Motivación del proyecto
+		\item Estructura del documento
+		\item Objetivos propuestos para la realización del proyecto
+	\end {itemize}
+\item \textbf{Planificación:} Incluye la planificación del proyecto, teniendo en cuenta las diferentes etapas del mismo y también los presupuestos.
+\item \textbf{Análisis:} Aspectos más relevantes relacionados con los requisitos del sistema, además de los casos de uso y flujos de sistema. 
+\item \textbf{Diseño:} Estructura y diseño inicial donde se proponen las clases e interfaz de usuario que posteriormente serán implementadas.
+\item \textbf{Implementación:} Se trata con profundidad todos los aspectos relacionados con el desarrollo del proyecto. Se habla de los problemas que hayan podido aparecer además de las soluciones finales, que pueden diferir de las propuestas en el diseño. 
+	\begin{itemize}
+		\item Herramientas y tecnologías utilizadas. Un breve resumen en el que se habla de la tecnología que se ha escogido para implementar el proyecto.
+		\item Desarrollo y sus fases. Se exponen todos los pasos seguidos durante el desarrollo de la aplicación.
+		\item Diseño final y funcionalidad. Incluye imágenes del resultado final de la aplicación además de su funcionalidad.
+	\end {itemize}
+\item \textbf{Conclusiones:} Se incluye una conclusión acerca de la viabilidad del proyecto y futuro del mismo. Además tambien se añade un resumen y valoración personal del proyecto y de todas las fases que ha tenido.
+\item \textbf{Bibliografía:} Fuentes de información utilizadas durante cualquier fase del proyecto, tales como vídeos, wikis, artículos, etc.
+\item \textbf{Anexos:} Cualquier otro documento relevante en el desarrollo del proyecto.
 \end{itemize}
+
+
+% Objetivos
+\newpage
+\subsection{Objetivos del proyecto}
+
+Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a la propuesta de este proyecto. Para poder cubrirlas, se han de definir unos objetivos. Estos objetivos podrán ser obligatorios, que serán los requeridos para que la aplicación funcione como se espera u opcionales, para añadir funcionalidades extra o facilitar el uso de la aplicación. Una vez realizado el proyecto, se volverá a hacer una lista similar, para comprobar si se han cumplido o no los objetivos, y en caso de que no, el porqué.
+
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 1}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación deberá proporcionar la posibilidad de darse de alta como usuario o como protectora. Deberá propocionar los formularios correspondientes además de almacenar los datos en la base de datos.  \\ \hline
+	\end{tabular}
+\end{table} 
 
 \printindex
 \end{document}

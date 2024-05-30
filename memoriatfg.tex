@@ -74,12 +74,6 @@
 % Resumen
 \newpage
 \pagestyle{plain}
-
-\begin{center} 
-{\LARGE Planificación y desarrollo de una app para adopción canina \par}
-\end{center} 
-
-\keywords{}
 \section*{Resumen}
 El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones caninas. Centralizando la información de las protectoras y facilitando la comunicación entre los adoptantes y las protectoras.
 
@@ -104,8 +98,21 @@ La aplicación incluirá una página de información legal y de contacto a dispo
 
 % Abstract
 \newpage
+\pagestyle{plain}
 \section*{Abstract}
-** Translate the text in 'Resumen' section
+The development of this \textit{Final Degree Project} aims at planning and developing a mobile application for managing dog adoptions. Centralizing information from shelters and facilitating communication between adopters and shelters.
+
+In this application, shelters or rescues can be registered, along with their corresponding data and location. Shelters or rescues that are verified by administrators will have the ability to upload all the dogs they want to the platform, which will appear in adoption or fostering lists depending on what is marked for each dog. Users who are looking to adopt or foster a dog can also register.
+
+There are corresponding forms for registering or editing dog information, with different sections to fill in all the required data such as description, breed, age, etc. Users also have forms to register and edit their information.
+
+The application uses a geolocation system to show users results within the application based on distance. Results can be viewed on a map embedded in the application. Quick search bars and filters are also included to narrow down results according to user requirements.
+
+A messaging system is included within the application to facilitate communication, both between users and shelters and with administrators. The chat allows text messages and images.
+
+Additionally, a favorites system is added, along with the ability to share dogs from the application externally through a link.
+
+The application will include a legal information and contact page available to the user.
 
 % Pagina en blanco
 \newpage
@@ -114,7 +121,7 @@ La aplicación incluirá una página de información legal y de contacto a dispo
 
 % Agradecimientos
 \newpage
-\section*{Agradecimientos}
+\section*{A mis tíos, que me dieron la oportunidad y confiaron siempre}
 \begin{center} 
 \vspace*{\fill}
 Agradecimientos aqui
@@ -1034,8 +1041,24 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 % RF34
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF34:} Marcar/desmarcar perro como adoptado.}
+\caption{\textbf{RF34:} Borrar un chat.}
 \label{tab:RF34}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Deslizar un chat para eliminarlo de la lista de chats disponibles \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Lista actualizada sin el chat que se acaba de eliminar \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF35
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF35:} Marcar/desmarcar perro como adoptado.}
+\label{tab:RF35}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
 	\textbf{Explicación} & Proporcionar un botón dentro del perfil del perro que permite a una protectora marcar/desmarcar a un perro de la aplicación como adoptado. \\ 
@@ -1048,11 +1071,11 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \end{table}
 
 
-% RF35
+% RF36
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF35:} Página de contacto.}
-\label{tab:RF35}
+\caption{\textbf{RF36:} Página de contacto.}
+\label{tab:RF36}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
 	\textbf{Explicación} & Proporcionar una interfaz que rehúna datos de contacto de administradores. \\ 
@@ -1064,11 +1087,11 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \end{tabular}
 \end{table}
 
-% RF36
+% RF37
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF36:} Página de información legal.}
-\label{tab:RF36}
+\caption{\textbf{RF37:} Página de información legal.}
+\label{tab:RF37}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
 	\textbf{Explicación} & Proporcionar una interfaz que rehúna toda la información legal y advertencias. \\ 
@@ -1076,6 +1099,54 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
 	\textbf{Datos de Salida} & Interfaz que incluye toda la información legal de la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF38
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF38:} Proporcionar página de inició según rol.}
+\label{tab:RF38}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz única según el rol después de iniciar sesión. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Correo electrónico y contraseña para iniciar sesión. \\ 
+	\hline
+	\textbf{Datos de Salida} & Página de inicio que varía según el rol. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF39
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF39:} Página de administrador.}
+\label{tab:RF39}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una página para los administradores. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Correo electrónico y contraseña de administrador para iniciar sesión. \\ 
+	\hline
+	\textbf{Datos de Salida} & Interfaz para los administradores, que incluye listas con diferentes filtros de usuarios y caninos para manejar usuarios y caninos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF40
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF40:} Búsqueda de direcciones.}
+\label{tab:RF40}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una barra de búsqueda de direcciones para facilitar la introducción de datos. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Una cadena de caracteres que puede contener el nombre de la calle, la ciudad, el código postal... \\ 
+	\hline
+	\textbf{Datos de Salida} & Un listado de direcciones que coinciden con la búsqueda, al seleccionar una, se autocompletan los datos del formulario. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -1129,10 +1200,396 @@ Los requisitos no funcionales son los encargados de ofrecer al usuario una exper
 	\item \textbf{Documentación:} A lo largo de todas las etapas, se almacenará toda la información relevante, ya sea en el código, en documentos aparte o en la propia memoria.
 \end{itemize}
 
+% Recursos
+\subsection{Recursos}
+Posterior a definir todos los requisitos de la aplicación, se pude concretar que va a ser necesario utilizar durante el desarrollo del proyecto, tanto mano de obra, como hardware y software.
+
+\subsubsection{Recursos humanos}
+
+En este proyecto, solo va a intervenir una persona, la autora de la memoria. Se trata de una Ingeniera de Software (semi-senior). Es encargada de cumplimentar todos los puntos del desarrollo. El horario laboral sería de Lunes a Viernes de media jornada.
+
+
+\subsubsection{Hardware}
+
+Para este proyecto el hardware es un ordenador de sobremesa personal
+
+\begin{itemize}
+	\item Ordenador de sobremesa, para el desarrollo y las pruebas, con los siguientes componentes:
+		\begin{itemize}
+			\item \textbf{Procesador:} AMD Ryzen 7 3700X 8-Core Processor - 3.60 GHz
+			\item \textbf{Memoria RAM:} DDR4 3000 2x16GB
+			\item \textbf{Tarjeta gráfica:} NVIDIA GeForce GTX 1660 SUPER
+			\item \textbf{Placa base:} ASUS TUF GAMING B550-PLUS WIFI II
+			\item \textbf{Disipador:} Noctua NH-D15
+		\end{itemize}
+	\item Tablet android Hi9plus, para realizar pruebas en un dispositivo android físico.
+\end{itemize}
+
+\subsubsection{Software}
+
+El sistema operativo utilizado es el que estaba instalado previamente en el ordenador personal.
+
+Para escoger el framework que se va a utilizar en el proyecto partimos de la base de que vamos a realizar una aplicación android. Existen diferentes frameworks como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform} etc. que ofrecen integración con android para facilitar el desarrollo. En este proyecto, se ha optado por desarrollar con Flutter, debido a que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento. 
+
+El lenguaje utilizado es \textit{Dart}, este lenguaje es muy similar a Java, se trata de un lenguaje orientado a objetos y se utiliza prinicpalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado, uno de los motivos de optar por este lenguaje, es el manenimiento que recibe a día de hoy y por la simple que resulta para programar. Para añadir funcionalidades extra, se han escogido varias bibiliotecas que ofrecen algunos microservicios o widgets.
+
+Por último, para manejar la base de datos, entre otros, se ha optado por usar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diferentes servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real, eso lo convertia en el candidato adecuado para manejar el chat, la funcionalidad de compartir entre otras cosas que nuestra aplicación requiere.
+
+\begin{itemize}
+	\item \textbf{Sistema Operativo:} Windows 11 x64
+	\item \textbf{IDE:} Android Studio Hedgehog | 2023.1.1 Patch 2
+	\item \textbf{Framework:} Flutter 3.19.0 -  \href{https://flutter.dev/6}{Flutter DEV}
+	\item \textbf{Lenguaje:} Dart 3.3.0 - \href{https://dart.dev/}{Dart DEV}
+	\item \textbf{Paquetes:}
+		\begin{itemize}
+		  \item \texttt{cupertino\_icons: \^{}1.0.2}
+		  \item \texttt{firebase\_core: \^{}2.24.2}
+		  \item \texttt{firebase\_database: \^{}10.3.8}
+		  \item \texttt{firebase\_storage:}
+		  \item \texttt{cloud\_firestore: \^{}4.13.6}
+		  \item \texttt{firebase\_auth: \^{}4.15.3}
+		  \item \texttt{responsive\_sizer: \^{}3.3.0+1}
+		  \item \texttt{flutter\_login: \^{}5.0.0}
+		  \item \texttt{google\_fonts: \^{}4.0.4}
+		  \item \texttt{resize: \^{}1.0.0}
+		  \item \texttt{awesome\_notifications: \^{}0.9.2}
+		  \item \texttt{csc\_picker: \^{}0.2.7}
+		  \item \texttt{map\_address\_picker: \^{}0.3.5}
+		  \item \texttt{geocoding: \^{}3.0.0}
+		  \item \texttt{search\_map\_location: 0.0.6}
+		  \item \texttt{image\_picker: \^{}1.0.7}
+		  \item \texttt{image\_cropper: \^{}4.0.1}
+		  \item \texttt{path\_provider: \^{}2.1.2}
+		  \item \texttt{flutter\_image\_compress: \^{}2.1.0}
+		  \item \texttt{address\_form: \^{}0.0.2}
+		  \item \texttt{address: \^{}0.1.0+2}
+		  \item \texttt{google\_maps\_webservice: \^{}0.0.20-nullsafety.5}
+		  \item \texttt{meta\_validator: \^{}0.0.2}
+		  \item \texttt{geolocator: \^{}9.0.2}
+		  \item \texttt{dropdown\_search: \^{}5.0.6}
+		  \item \texttt{card\_swiper: \^{}3.0.1}
+		  \item \texttt{filter\_list: \^{}1.0.2}
+		  \item \texttt{flutter\_filter\_dialog: \^{}1.2.0}
+		  \item \texttt{choice: \^{}2.3.2}
+		  \item \texttt{animate\_gradient: \^{}0.0.2+1}
+		  \item \texttt{firebase\_messaging: \^{}14.9.1}
+		  \item \texttt{flutter\_chat\_bubble: \^{}2.0.2}
+		  \item \texttt{chat\_bubbles: \^{}1.6.0}
+		  \item \texttt{share\_plus: \^{}9.0.0}
+		  \item \texttt{app\_links: \^{}6.0.1}
+		  \item \texttt{url\_launcher: \^{}6.2.6}
+		  \item \texttt{firebase\_dynamic\_links: \^{}5.5.4}
+		  \item \texttt{go\_router: \^{}14.0.2}
+		  \item \texttt{get: \^{}4.6.6}
+		  \item \texttt{linkwell: \^{}2.0.6}
+		  \item \texttt{toastification: \^{}1.0.0}
+		\end{itemize}
+	\item \textbf{Base de datos:} Firebase database - \href{https://console.firebase.google.com}{Firebase console}
+\end{itemize}
+
+
+\subsection{Costes}
+
+Con la lista de recursos necesarios, ya se puede hacer un presupuesto de la aplicación adecuado según los diferentes apartados.
+
+\subsubsection{Recursos humanos}
+
+Para calcular el coste relacionado con el personal, se toma como referencia el sueldo medio de la persona involcurada en su trabajo actual, teniendo en cuenta que cobra entre los \textit{38.000€ } - \textit{43.000€ } anuales.
+
+Tomando como media los \textit{40.000€ } anuales, al mes corresponden unos \textit{3.330€}. Como la duración del proyecto es de 5 meses y medio, el coste total en salarios para la empleada sería de \textit{18.315€}.
+
+\subsubsection{Hardware}
+
+Debido a que el equipo utilizado no es nuevo, consideraremos los gastos de estos teniendo en cuenta que un equipo informático se puede amortizar hasta 8 años. El precio aproximado del orenador es de unos \textit{1000€}.
+Un año tiene 12 meses, así que tenemos 96 meses en total de amortización, lo que resulta a unos \textit{11€} al mes. Como la duración del proyecto es de 5 meses y medio, el coste del ordenador sería de \textit{60,50€}.
+
+El precio de la tablet es de unos \textit{100€} así que con los mismos cálculos, el gasto de la tablet es de \textit{5,72€} en total.
+
+\subsubsection{Software}
+
+Para el alcance de este proyecto y los número a los que se aspira, al menos durante la primera fase, hemos optado por utilizar las versiones gratuitas del software implicado, lo que resulta en un coste total de 0€ en software.
+\begin{itemize}
+	\item Firebase - Plan Spark - \href{https://firebase.google.com/pricing?hl=es-419}{Guía de planes}
+	\item Google APIs - Ofrecen créditos gratuitos de hasta \textit{200€} para cubir los gastos que se generen por el uso de la API. - \href{https://mapsplatform.google.com/intl/es/pricing/}{Precios}
+	\item IDE + Framework - Gratuitos
+\end{itemize}
+
+
+\subsubsection{Otros}
+
+Debido a que el desarrollo del proyecto se realiza en la casa de la persona empleada, se añaden a los costes la electricidad usada. Usando como referencia el gasto mensual de electricidad, que ronda los \textit{30€}, calculamos que van dirigidos a esta parte unos \textit{165€} extra.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ | m{5cm} | m{5cm} | }
+	    \hline \textbf{Recurso} & \textbf{Coste (€)} \\ \hline
+	    	Personal & 18.315 \\ \hline
+	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet 5,72 \\ \hline
+	    	Software & 0 \\ \hline
+	    \textbf{Total} & \textbf{18.381,22€} \\ \hline
+    \end{tabular}
+    \caption{Costes del proyecto}
+    \label{tab:costes}
+\end{table}
 
 % Diseño
 \newpage
 \section{Diseño}
+
+En esta parte tenemos que definir toda la estructura de la aplicación, tanto como la interfaz de usuario, el backend y la base de datos.
+
+\subsection{Diseño de base de datos}
+
+Esta sección es primordial para generar unas bases sólidas para la aplicación. Debemos almacenar distintas entidades y propiedades, consideramos las siguientes entidades y sus correspondientes tablas.
+
+\subsubsection{Direcciones}
+
+Para las protectoras almacenamos la dirección en la que están ubicadas. Esta dirección es necesaria para mostrar al usuario el texto de donde está y también para ubicarla en los mapas que se proporcionan en la app. Por una parte almacenamos la dirección por partes, incluyendo la ciudad, la calle, el código postal etc. Por otra parte, cuando generemos una dirección, a su vez guardaremos las coordenadas. Esta decisión se toma para evitar hacer cálculos repetidos cada vez que tengamos que cargar un mapa con marcadores, ya que estos requieren de las coordenadas geográficas directamente. Cuando se actualice una dirección, se actualizaran sus coordenadas.
+
+Para todas las direcciónes se genera un ID automático, al que se hace referencia desde la tabla de usuarios.
+
+% Addresses
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{addresses}}
+\label{tab:Addresses}
+	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{city} & cadena & Ciudad de la dirección & Si \\ 
+	\hline
+	\textbf{country} & cadena & País de la dirección (España siempre) & Si\\ 
+	\hline
+	\textbf{province} &  cadena & Provincia de la dirección & Si \\ 
+	\hline
+	\textbf{street} &  cadena & Calle de la dirección & Si \\ 
+	\hline
+	\textbf{street\_number} &  cadena & Número de la calle & No\\ 
+	\hline
+	\textbf{zipcode} & cadena & Código postal & Si \\ 
+	\hline
+	\textbf{lat} & número & Latitud & Si \\ 
+	\hline
+	\textbf{lng} & número & Longitud & Si \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos.
+
+\begin{verbatim}
+{
+  "city": "Murcia",
+  "country": "España",
+  "lat": 37.9879153,
+  "lng": -1.1315578,
+  "province": "Murcia",
+  "street": "Calle Maestro Alonso",
+  "street_number": "4",
+  "zipcode": "30005"
+}
+\end{verbatim}
+
+\subsubsection{Chats}
+
+Para generar la tabla de chats, se decidió almacenar los ids de los usuarios implicados, aparte de para quién esta disponible el chat en ese momento. Esto es debido al requisito definido previamente en el que se define la posibilidad de eliminar un chat. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, el chat simplemente desaparece para el usuario que lo borra, así que podemos actualizar la propiedad de para quien está visible el chat en ese momento. Para esta primera iteración del proyecto, los mensajes no se borran, así que si por ejemplo una persona A, borra su chat con la persona B, si vuelve a abrir un chat con esa persona, los mensajes anteriores aparecerán, en la parte de implementación de la memoria indagaremos más en profundidad acerca del comportamiento definido. 
+
+Almacenar aqui los IDs de los usuarios implicados, permite que si se proponen chats de grupo, sea más sencillo escalarlo, ya que en esta forma la base de datos ya lo está soportando. Lo mismo ocurre con la propiedad que hace referencia a que usuarios pueden ver el chat. 
+
+Para todos los chats se genera un ID automático, al que se hace referencia desde la tabla de usuarios.
+
+% Chats
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{chats}}
+\label{tab:chats}
+	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{availableTo} & array & IDs de Usuarios que tienen el chat visible en su página & Si \\ 
+	\hline
+	\textbf{lastMessage} & cadena & ID del último mensaje mandado en el chat & Si\\ 
+	\hline
+	\textbf{users} &  array & IDs de Usuarios que intervienen en el chat & Si \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+Aqui se muestra un ejemplo real de un chat almacenado en la base de datos. 
+
+\begin{verbatim}
+{
+  "availableTo": [
+    "kuaKjc6XoiVot1rMeGqBySA5pE13",
+    "buO4Vkazs3O2oVKetugxrvTfRw12"
+  ],
+  "lastMessage": "BaKmuuo8debUTdSNsvw0",
+  "users": [
+    "kuaKjc6XoiVot1rMeGqBySA5pE13",
+    "buO4Vkazs3O2oVKetugxrvTfRw12"
+  ]
+}
+\end{verbatim}
+
+\subsubsection{Perros}
+
+Esta entidad es una de las más importantes de la aplicación, ya que es la que se principal afectada por la mayoría de funcionalidades que se proponen. Principalmente esta tabla contendrá todas las propiedades de los perros que se van a manejar dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas. 
+
+Para el género se han propuesto dos valores fijos que luego se transformaran en la cadena correspondiente cuando se carguen en la UI. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida añadir traducciones en la aplicación y no trabajar con palabras en Español en la base de datos.
+
+Para almacenar la edad, se ha optado por almacenarla junto a las unidades, ya que así se le da la posibilidad al usuario a especificar mejor la edad del perro (el caso de uso es muy concreto, pero añade valor). Los valores de las unidades serán fijos, pudiendo ser:
+	\begin{itemize}
+		\item \textbf{Meses}
+		\item \textbf{Años}
+	\end{itemize}
+
+Lo mismo ocurre con el peso, se opta por almacenar el peso junto con las unidades para facilitar al usuario especificar el peso. A pesar de que se pueda especificar las unidades del peso, el peso en la base de datos siempre será tratado como KG, para facilitar el uso de los filtros, cuando se traiga a la UI, se actualizará al valor real que corresponda. Las unidades disponibles serán
+	\begin{itemize}
+		\item \textbf{Gramos}
+		\item \textbf{KG}
+	\end{itemize}
+
+En una primera instancia se propuso almacenar los perros favoritos en la tabla de usuarios, pero tras hacer algunas pruebas se optó por este modelo finalmente. Almacenar los usuarios que han marcado al perro como favorito, facilita las actualizaciones en tiempo real de los resultados de perros.
+
+Para todos los perros se genera un ID automático.
+
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{dogs}}
+\label{tab:dogs}
+	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{adopted} & booleano & Indica si el perro ha sido adoptado. & Si \\ 
+	\hline
+	\textbf{age} & número & Edad & Si \\ 
+	\hline
+	\textbf{ageUds} & cadena & Unidades de la edad & Si \\ 
+	\hline
+	\textbf{breed} & cadena & Raza & Si \\ 
+	\hline
+	\textbf{castrated} & booleano & Indica si está castrado & Si \\ 
+	\hline
+	\textbf{color} & cadena & Color & Si \\ 
+	\hline
+	\textbf{created} & marca de tiempo & Fecha y hora de cuando se ha dado de alta & Si \\ 
+	\hline
+	\textbf{description} & cadena & Descripción & No \\ 
+	\hline
+	\textbf{favoriteBy} & array & IDs de usuarios que lo han marcado como favorito & No \\ 
+	\hline
+	\textbf{forAdoption} & booleano & Indica si está disponible para adopción & No \\ 
+	\hline
+	\textbf{forFoster} & booleano & Indica si está disponible para acogida & No \\ 
+	\hline
+	\textbf{gender} & cadena & Género & Si \\ 
+	\hline
+	\textbf{name} & cadena & Nombre & Si \\ 
+	\hline
+	\textbf{ownerId} & cadena & ID del propietario & Si \\ 
+	\hline
+	\textbf{profilePic} & cadena & URL de la imagen de perfil de la mascota & No \\ 
+	\hline
+	\textbf{weight} & número & Peso & Si \\ 
+	\hline
+	\textbf{weightUds} & cadena & Unidades de peso & Si \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+Aquí se muestra un ejemplo real de un perro almacenado en la base de datos.
+
+\begin{verbatim}
+{
+  "adopted": false,
+  "age": 1,
+  "ageUds": "Años",
+  "breed": "Breed 2",
+  "castrated": true,
+  "color": "Color 1",
+  "created": "23 de abril de 2024, 10:56:48 a.m. UTC+2",
+  "description": "",
+  "favoriteBy": [],
+  "forAdoption": true,
+  "forFoster": true,
+  "gender": "female",
+  "name": "Katrina",
+  "ownerId": "S4wXwckahiSOLI0Q3exXDVRh2yl2",
+  "profilePic": "",
+  "weight": 1,
+  "weightUds": "KG"
+}
+\end{verbatim}
+
+\subsubsection{Mensajes}
+
+Aparte de almacenar toda la información de los chats, hay que almacenar los mensajes involucrados en los chats. Se propone guardar el tipo de mensaje, habiendo en esta primera iteración solo dos tipos, que serían \textbf{default} e \textbf{image}. Esta distinción es necesaria para cuando se cargue la preview del mensaje en la UI. Aparte, si el mensaje que se envía es una imagen, se generara una entrada para esa imagen.
+
+Para todos los mensajes se genera un ID automático que se puede referenciar desde la tabla de chats.
+
+% Mensajes
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{messages}}
+\label{tab:messages}
+	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{chatId} & cadena & ID del chat & Si \\ 
+	\hline
+	\textbf{from} & cadena & ID del emisor del mensaje & Si \\ 
+	\hline
+	\textbf{messageContent} & cadena & Contenido del mensaje & Si \\ 
+	\hline
+	\textbf{read} & booleano & Indica si el recpetor a leído el mensaje & Si \\ 
+	\hline
+	\textbf{sent} & marca de tiempo & Fecha y hora en la que se mandó el mensaje & Si \\ 
+	\hline
+	\textbf{to} & cadena & ID del receptor del mensaje & Si \\ 
+	\hline
+	\textbf{type} & cadena & Tipo del mensaje & Si \\ 
+	\hline
+	\end{tabular}
+\end{table}
+
+Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos.
+
+\begin{verbatim}
+{
+  "chatId": "Sm1Ji0chb9uhofa20VW5",
+  "from": "kuaKjc6XoiVot1rMeGqBySA5pE13",
+  "messageContent": "Hola, ¿estás?",
+  "read": true,
+  "sent": "6 de mayo de 2024, 1:57:30 a.m. UTC+2",
+  "to": "buO4Vkazs3O2oVKetugxrvTfRw12",
+  "type": "default"
+}
+\end{verbatim}
+
+
+\subsubsection{Notificaciones}
+
+Cuando un usuario manda un mensaje, al usuario receptor le tiene que llegar una notificación. Lo cierto es que para generar esa notificación se pueden seguir varios caminos. Para las notificaciones de los mensajes, se decidió crear una table que contenga las requests de notificaciones para un usuario en concreto. Cuando se inicia sesión, se añade un listener que escucha todos los cambios que se produzcan en esta tabla, cuando llega una request nueva, se lanza una notificación a través del canal correspondiente, posteriormente esta request se marca como vista. 
+
+...
+
+
+\subsubsection{Usuarios}
+
+Los usuarios son la otra entidad con gran relevancia dentro de la aplicación. Sin embargo, la información que se almacena de estos es escueta. También se tiene en cuenta que el servicio de \textit{Autenticación} de Firebase se encarga de proporcionar el almacenamiento de muchos de los datos del usuario como pueden ser el correo y la contraseña.  
+
+...
+
+
+
+
+\subsection{Diseño de interfaz de usuario}
+\subsection{Arquitectura de sistema}
+\subsubsection{Diagrama de clases}
 
 % Implementación
 \newpage

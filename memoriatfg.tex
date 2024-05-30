@@ -81,15 +81,15 @@
 
 \keywords{}
 \section*{Resumen}
-El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones caninas. 
+El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones caninas. Centralizando la información de las protectoras y facilitando la comunicación entre los adoptantes y las protectoras.
 
-En dicha aplicación se podrán dar de alta protectoras o refugios para publicar los perros de los que disponen. Las protecotras o refugios que estén verificadas por los administradores, tendrán la capacidad de subir a la plataforma todos los caninos que requieran para que aparezcan en las listas de adopción u acogida. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro.  
+En esta aplicación se pueden dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protecotras o refugios que estén verificadas por los administradores, tendrán la capacidad de subir a la plataforma todos los caninos que quieran, estos aparecerán en las listas de adopción u acogida dependiendo de lo que se haya marcado para cada canino. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro.  
 
 Existen los formularios correspondientes para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como puede ser la descripción, la raza, edad etc. Los usuarios también disponen de formularios para darse de alta y editar su información.
 
 La aplicación utiliza un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación según distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la aplicación. También se incluyen barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario.
 
-Se incluye dentro de la aplicación un sistema de mensajería para facilitar la comunicación dentro de la misma, tanto entre usuarios y protectoras como con los administradores. El chat permitirá mensajes de texto e imágenes.
+Se incluye dentro de la aplicación un sistema de mensajería para facilitar la comunicación dentro de la misma, tanto entre usuarios y protectoras como con los administradores. El chat permite mensajes de texto e imágenes.
 
 Se añade, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de enlace. 
 
@@ -482,9 +482,580 @@ Para condensar toda esta información se ha generado un Diagrama de Gannt, con c
 	\caption{Diagrama de Gannt}
 \end{figure}
 
+\newpage
+\subsection{Presupuestos}
+
 % Análisis
 \newpage
 \section{Análisis}
+
+% Definición y Especificación de Requisitos
+\subsection{Definición y especificación de Requisitos}
+
+En el proceso de desarrollo de software, es esencial definir y comprender los requisitos que guiarán la creación y el diseño del sistema. Estos requisitos se dividen en dos categorías principales: requisitos funcionales y requisitos no funcionales.
+
+Los requisitos funcionales describen las acciones específicas que el sistema debe realizar, los servicios que debe proporcionar y cómo debe responder a diversas entradas. Estos requisitos se centran en el "qué" del sistema, delineando las funcionalidades clave que los usuarios esperan encontrar en la aplicación.
+
+Por otro lado, los requisitos no funcionales abordan aspectos más amplios del sistema, como su rendimiento, seguridad, usabilidad y fiabilidad. Estos requisitos se centran en el "cómo" del sistema, definiendo las características que afectan a su calidad global y experiencia de usuario.
+
+En esta sección, se detallan tanto los requisitos funcionales como los no funcionales identificados para la aplicación en desarrollo. Cada requisito se describe con precisión, especificando su propósito, los criterios de entrada y los resultados esperados. Esta comprensión clara y exhaustiva de los requisitos funcionales y no funcionales es fundamental para garantizar que el sistema satisfaga las necesidades y expectativas de los usuarios, así como para asegurar su calidad y rendimiento general.
+
+\subsubsection{Requisitos funcionales}
+
+% RF1
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF1:} Registro de usuarios y protectoras.}
+\label{tab:RF1}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar formularios de registro para usuarios y protectoras. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario de registro. Incluyendo datos de contacto, correo electrónico y dirección \\ 
+	\hline
+	\textbf{Datos de Salida} & Datos del usuario almacenados en la base de datos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF2
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF2:} Registro de caninos.}
+\label{tab:RF2}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Ofrecer un formulario de registro para añadir perros con características específicas. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Datos ingresados por la protectora, tales como raza, peso, edad, color y descripción. \\ 
+	\hline
+	\textbf{Datos de Salida} & Datos del perro almacenados en la base de datos, junto al id de su protectora. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF3
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF3:} Mostrar listas de usuarios.}
+\label{tab:RF23}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Mostrar diferentes listas de usuarios en la aplicación, con filtros predeterminados. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Listas de usuarios de la aplicación que cumplen con los filtros.  \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF4
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF4:} Mostrar listas de perros.}
+\label{tab:RF4}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Mostrar diferentes listas de perros en la aplicación, con filtros predeterminados \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Listas de perros de la aplicación que cumplen con los filtros. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF5
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF5:} Capacidad de filtrado por propiedades en listas de perros.}
+\label{tab:RF5}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar diferentes filtros para las listas de perros, que corresponden con las diferentes propiedades que puede tener un perro en la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Valores de los filtros proporcionados por el usuario. \\ 
+	\hline
+	\textbf{Datos de Salida} & Lista de perros de la aplicación que cumplen con los filtros. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF6
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF6:} Capacidad de filtrado por búsqueda en listas de perros.}
+\label{tab:RF6}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los perros. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Texto de búsqueda ingresado por el usuario. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Lista de perros de la aplicación que cumplen con el criterio de búsqueda en alguno de los campos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF7
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF7:} Capacidad de filtrado por búsqueda en listas de usuarios..}
+\label{tab:RF7}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+\hline
+	\textbf{Explicación} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los usuarios. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Texto de búsqueda ingresado por el usuario. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Lista de usuarios de la aplicación que cumplen con el criterio de búsqueda en alguno de los campos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF8
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF8:}  Proporcionar botón de mapa de resultados en listas de usuarios.}
+\label{tab:RF8}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Botón en listas de usuarios que redirige a una página con mapa con todos los resultados con ubicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno \\ 
+	\hline
+	\textbf{Datos de Salida} & Botón con capacidad de redirección a la página del mapa. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF9
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF9:} Proporcionar botón de favoritos en perfiles de perros.}
+\label{tab:RF9}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Permitir a un usuario o protectora marcar como favorito a un perro. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Click del usuario sobre el botón. \\ 
+	\hline
+	\textbf{Datos de Salida} & Datos del perro con la actualización de ids de usuarios que lo han marcado/desmarcado como favorito.\\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF10
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF10:} Mostrar sección de perros favoritos. }
+\label{tab:RF10}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Muestra una sección de perros marcados como favoritos en ese momento por el usuario en su página de inicio. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Lista horizontal de perros favoritos en la parte inferiro de la página de inicio de los usuarios. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF11
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF11:} Mostrar adopciones recientes.}
+\label{tab:RF11}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Muestra un swiper con imágenes de perros marcados como adoptados recientemente. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Swiper con imágenes y nombres de perros adoptados en la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF12
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF12:} Proporcionar botón de cerrar sesión.}
+\label{tab:RF12}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Mostrar botón de cerrar sesión en el menú de acciones en la app bar de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Mostrar página de inicio de sesión, después de haber eliminado todos los datos relacionados con el usuario iniciado. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF13
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF13:} Proporcionar botón de contacto.}
+\label{tab:RF13}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Mostrar botón de contacto en el menú de acciones en la app bar de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Mostrar página de contacto. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF14
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF14:} Botón de menu lateral en la app bar.}
+\label{tab:RF14}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Mostrar botón que abre menú lateral. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Menu lateral con las páginas disponibles para ese usuario. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF15
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF15:} Mostrar datos personales en el menú lateral.}
+\label{tab:RF15}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Muestra los datos del usuario iniciado en el menú lateral. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Datos del usuario almacenados en la base de datos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF16
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF16:} Botón de 'Inicio' en el menú lateral.}
+\label{tab:RF16}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Página de inicio de la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF17
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF17:} Botón de 'Perfil personal' en el menú lateral.}
+\label{tab:RF17}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Página de perfil personal. \\ 
+	\hline
+	\hline
+\end{tabular}
+\end{table}
+
+% RF18
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF18:} Botón de 'Mensajes' en el menú lateral.}
+\label{tab:RF18}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de chats de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Página de chats. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF19
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF19:} Botón de 'Protectoras' en el menú lateral.}
+\label{tab:RF19}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la lista de protectoras de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Lista de protectoras ya verificadas en la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF20
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF20:} Botón de 'Mis perros' en el menú lateral.}
+\label{tab:RF20}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la lista de sus perros de la aplicación \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Lista de perros que ha dado de alta el usuario en la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF21
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF21:} Botón de 'Usuarios' en el menú lateral.}
+\label{tab:RF21}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la lista de usuarios de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Lista de usuarios que no son protectoras en la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF22
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF22:} Botón de 'Información legal' en el menú lateral.}
+\label{tab:RF22}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de información legal de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Página de información legal de la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF23
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF23:} Edición de datos personales y de contacto.}
+\label{tab:RF23}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar formularios de edición para los datos del usuario. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario. Puede haber datos sin actualizar. \\ 
+	\hline
+	\textbf{Datos de Salida} &  Datos del usuario actualizados en la base de datos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF24
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF24:} Edición de datos de perros.}
+\label{tab:RF24}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Propocionar formularios de edición para los datos de los caninos. \\ 
+	\hline
+	\textbf{Datos de Entrada} &  Datos ingresados por el usuario en el formulario. Puede haber datos sin actualizar.  \\ 
+	\hline
+	\textbf{Datos de Salida} &   Datos del canino actualizados en la base de datos. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF25
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF25:} Recuperación de contraseña.}
+\label{tab:RF25}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar formularios de recuperación de contraseña para los usuarios y protectoras. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Correo electrónico ingresado por el usuario. \\ 
+	\hline
+	\textbf{Datos de Salida} & Correo electrónico con las instrucciones de recuperación de contraseña. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF26
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF26:} Mostrar página de perfil de usuario/protectora.}
+\label{tab:RF26}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz que condense toda la información de un usuario en una sola página. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Datos del usuario correspondinte, incluyendo foto de perfil, correo y los perros (si los tiene). Además incluirá el botón de contacto para abir chat. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF27
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF27:} Mostrar página de perfil de canino.}
+\label{tab:RF27}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz que condense toda la información relacionada con un perro en una sola página. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Datos del perro correspondiente, incluyendo foto de perfil, características del canino (edad, raza, peso, descripción...). Además de un mapa indicando su ubicación, el bóton de favoritos y de compartir. También incluye el botón de abrir chat. Contendrá los botones de edición si el perro es del usuario que visita el perfil. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF28
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF28:} Compartir perros a través de enlace.}
+\label{tab:RF28}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar un botón que genere un enlace para redirigir a un usuario al perfil de ese perro en concreto. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Url a la aplicación con los parámetros correspondientes para redirigir al perfil de perro. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF29
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF29:} Página del mapa.}
+\label{tab:RF29}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz que contenga un mapa con diferentes marcadores para cada una de las protectoras y un listado de las mismas debajo del mapa. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Mapa con marcadores y listado de protectoras, con elementos que pueden mover la cámara a los diferentes marcadores del mapa. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+
+% RF30
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF30:} Página de chats.}
+\label{tab:RF30}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz que contenga un listado de chats abiertos dentro de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Listado de chats disponibles en la aplicación, incluyen una preview del último mensaje y datos del usuario correspondiente. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+
+% RF31
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF31:} Enviar mensajes al chat.}
+\label{tab:RF31}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Permitir mandar mensajes a otro usuario dentro de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Texto ingresado por el usuario. \\ 
+	\hline
+	\textbf{Datos de Salida} & Mensaje guardado en la base de datos Se ctualizar la tabla de chats de la base de datos con el último mensaje enviado y generar el id del chat si es el primer mensaje. Notificación al usuario receptor. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+
+% RF32
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF32:} Enviar imágenes al chat.}
+\label{tab:RF32}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+\hline
+	\textbf{Explicación} & Permitir mandar mensajes a otro usuario dentro de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Imagen adjuntada por el usuario. \\ 
+	\hline
+	\textbf{Datos de Salida} & Imagen guardada además de su referencia en la tabla de mensaje. Se la tabla de chats de la base de datos con el último mensaje enviado y generar el id del chat si es el primer mensaje. Notificación al usuario receptor. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+
+% RF33
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF33:} Abrir un chat nuevo.}
+\label{tab:RF33}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar un botón de contacto para abrir un chat con algún usuario dentro de la aplicación. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Interfaz del chat, con la cabecera que incluye los datos del usuario receptor. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF34
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF34:} Marcar/desmarcar perro como adoptado.}
+\label{tab:RF34}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar un botón dentro del perfil del perro que permite a una protectora marcar/desmarcar a un perro de la aplicación como adoptado. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Estado nuevo según si se quiere marcar o desmarcar. \\ 
+	\hline
+	\textbf{Datos de Salida} & Perfil del canino actualizado y una etiqueta que indica si está adoptado. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+
+
+
+\subsubsection{Requisitos no funcionales}
+
 
 % Diseño
 \newpage

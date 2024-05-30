@@ -482,8 +482,6 @@ Para condensar toda esta información se ha generado un Diagrama de Gannt, con c
 	\caption{Diagrama de Gannt}
 \end{figure}
 
-\newpage
-\subsection{Presupuestos}
 
 % Análisis
 \newpage
@@ -492,15 +490,13 @@ Para condensar toda esta información se ha generado un Diagrama de Gannt, con c
 % Definición y Especificación de Requisitos
 \subsection{Definición y especificación de Requisitos}
 
-En el proceso de desarrollo de software, es esencial definir y comprender los requisitos que guiarán la creación y el diseño del sistema. Estos requisitos se dividen en dos categorías principales: requisitos funcionales y requisitos no funcionales.
+Para garantizar buenos resultados a la hora de desarrollar la aplicación, es esencial definir y comprender los requisitos que guiarán la creación y el diseño del sistema. Estos requisitos se dividen en dos categorías principales: requisitos funcionales y requisitos no funcionales.
 
-Los requisitos funcionales describen las acciones específicas que el sistema debe realizar, los servicios que debe proporcionar y cómo debe responder a diversas entradas. Estos requisitos se centran en el "qué" del sistema, delineando las funcionalidades clave que los usuarios esperan encontrar en la aplicación.
-
-Por otro lado, los requisitos no funcionales abordan aspectos más amplios del sistema, como su rendimiento, seguridad, usabilidad y fiabilidad. Estos requisitos se centran en el "cómo" del sistema, definiendo las características que afectan a su calidad global y experiencia de usuario.
-
-En esta sección, se detallan tanto los requisitos funcionales como los no funcionales identificados para la aplicación en desarrollo. Cada requisito se describe con precisión, especificando su propósito, los criterios de entrada y los resultados esperados. Esta comprensión clara y exhaustiva de los requisitos funcionales y no funcionales es fundamental para garantizar que el sistema satisfaga las necesidades y expectativas de los usuarios, así como para asegurar su calidad y rendimiento general.
+En esta sección, se detallan tanto los requisitos funcionales como los no funcionales identificados para la aplicación en desarrollo. 
 
 \subsubsection{Requisitos funcionales}
+
+Los requisitos funcionales describen las acciones específicas que el sistema debe realizar, los servicios que debe proporcionar y cómo debe responder a diversas entradas. Estos requisitos se centran en el "qué" del sistema, delineando las funcionalidades clave que los usuarios esperan encontrar en la aplicación.
 
 % RF1
 \begin{table}[H]
@@ -1052,9 +1048,86 @@ En esta sección, se detallan tanto los requisitos funcionales como los no funci
 \end{table}
 
 
+% RF35
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF35:} Página de contacto.}
+\label{tab:RF35}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz que rehúna datos de contacto de administradores. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Interfaz que incluye correo electrónico y un botón de contacto para abrir un chat con un administrador. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF36
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF36:} Página de información legal.}
+\label{tab:RF36}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una interfaz que rehúna toda la información legal y advertencias. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\hline
+	\textbf{Datos de Salida} & Interfaz que incluye toda la información legal de la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
 
 
 \subsubsection{Requisitos no funcionales}
+
+Los requisitos no funcionales son los encargados de ofrecer al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han tenido en cuenta los siguientes puntos:
+
+\begin{itemize}
+	\item \textbf{Rendimiento:} La aplicación debe ser capaz de responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo. Aquí se listan las propuestas a tener en cuenta a la hora de desarrollar.
+		\begin{itemize}
+			\item Se propone una deadline de 3 segundos como tiempo óptimo para cargar una página completa.
+			\item El tiempo de respuesta del servidor se espera que sea menor de 2 segundos.
+			\item Se espera que la aplicación sea capaz de manejar múltiples peticiones sin que se produzca una degradación perceptible del rendimiento. Se propone como deadline 10000 de solicitudes.
+			\item Se espera que la base de datos realice consultas simples y complejas en menos de un segundo.
+			\item Se propone que en el caso de búsquedas y filtrados el tiempo de procesamiento puede ser mayor de 3 segundos, pero menor de 6.
+			\item La aplicación denbe poder manejar alrededor de 10000 usuarios de forma concurrente sin sufrir degradación de rendimiento.
+		\end{itemize}
+	\item \textbf{Escalabilidad:} Es necesario que a la hora de implementar código, se mantenga un código en el que sea sencillo añadir o quitar funcionalidades sin comprometer el comportamiento de la aplicación.
+		\begin{itemize}
+			\item Los componentes de la aplicación deben estar claramente definidos y documentados.
+			\item Un componente base debe recoger todas las propiedades comunes que pueden tener ese tipo de componentes. Por ejemplo, un componente base para los botones, deberá recoger el tamaño de la fuente, la forma del botón, colores etc.
+			\item Las funcionalidades desarrolladas deben ser fácilmente deprecadas si es necesario, es decir, no deben depender unas de otras si no es estrictamente necesario.
+			\item Los nuevos componentes que se desarrollen no deben afectar el funcionamiento de la aplicación.
+			\item Se espera que si fuera necesario actualizar algún componente en la UI, actualizando el componente base se actualicen todos los componentes de ese tipo.
+		\end{itemize}
+	\item \textbf{Usabilidad:} Para esta aplicación, como tiene un rango de usuarios muy amplio, se espera que un usuario poco experimentado sea capaz de usar la aplicación de form sencilla. La aplicación debe proporcionar una interfaz intuitiva y atractiva. 
+		\begin{itemize}
+			\item La interfaz debe ser limpia y organizada.
+			\item Los colores de la aplicación deben ser coherentes.
+			\item La navegación de la aplicación debe cumplir la norma de los tres clicks, "\textit{cualquier persona que visite nuestro sitio debería alcanzar la información más crítica como máximo en tres clics}".
+			\item La aplicación deberá ser lo suficientemente intuitiva o proporcionar guía de uso si es necesario.
+			\item Se espera que la aplicación sea testeada por usuarios reales antes del primer despliegue para posibles correciones.
+		\end{itemize}
+	\item \textbf{Confiabilidad:} Para la aplicación, se espera que haya un correcto manejo de errores.
+		\begin{itemize}
+			\item Se espera que un usuario sea informado con un mensaje adecuado si ocurre un error crítico.
+			\item Durante el desarrollo es necesario testear para poder añadir mecanismos que minimicen los errores conocidos en la aplicación.
+			\item Las copias de seguridad son indispensables para garantizar que no se pierden los datos ante un error crítico.
+			\item Se propone añadir mecanismos de manejo de errores en todas las operaciones críticas (lectura y escritura)  para evitar errores críticos.
+		\end{itemize}
+	\item \textbf{Seguridad:} Para garantizar este requisito, la aplicación debe proteger los datos de los usuarios y prevenir accesos no autorizados. También, en este caso en concreto, es necesario garantizar en medida de los posible, que toda la información que se dé de alta, sea real y fehaciente.
+		\begin{itemize}
+			\item Las contraseñas o datos sensibles no pueden estar expuestos, se deben almacenar con cifrados.
+			\item La aplicación no va a permitir el acceso a usuarios que no tengan una cuenta.
+			\item La aplicación no va a permitir dar de alta a perros a las protectoras que no estén verificadas por administradores, para evitar casos fraudulentos.
+			\item Un administrador tiene acceso a diferentes listas en las que puede verificar información y tiene la libertad de eliminar lo que crea correspondiente.
+			\item Debe prevenirse con mecanismos para ataques comunes como pueden ser las inyecciones SQL, CSS, Y CSRF. 
+		\end{itemize}
+	\item \textbf{Documentación:} A lo largo de todas las etapas, se almacenará toda la información relevante, ya sea en el código, en documentos aparte o en la propia memoria.
+\end{itemize}
 
 
 % Diseño

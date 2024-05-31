@@ -121,10 +121,10 @@ The application will include a legal information and contact page available to t
 
 % Agradecimientos
 \newpage
-\section*{A mis tíos, que me dieron la oportunidad y confiaron siempre}
+\section*{Agradecimientos}
 \begin{center} 
 \vspace*{\fill}
-Agradecimientos aqui
+A mis tíos, que me dieron la oportunidad de estudiar y seguir adelante.
 \vspace*{\fill}
 \end{center} 
 
@@ -465,7 +465,7 @@ El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de 
 
 \subsubsection{Arquitectura de sistema}
 
-Se define la estructura y la organización de la aplicación, así como las tecnologías que finalmente se van a utilizar. A la hora de definir esta arquitectura, se tienen en cuenta el backend, el frontend, los microservicios y el despliegue de la aplicación.
+Se define la estructura y la organización de la aplicación, a partir de las tecnologías que se han definido anteriormente. Se tiene en cuenta también la estructura de la base de datos y la interfaz de usuario para definir los diferentes módulos que va a tener la aplicación.
 
 \subsection{Implementación}
 
@@ -1324,7 +1324,7 @@ Debido a que el desarrollo del proyecto se realiza en la casa de la persona empl
     \begin{tabular}{ | m{5cm} | m{5cm} | }
 	    \hline \textbf{Recurso} & \textbf{Coste (€)} \\ \hline
 	    	Personal & 18.315 \\ \hline
-	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet 5,72 \\ \hline
+	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet - 5,72 \\ \hline
 	    	Software & 0 \\ \hline
 	    \textbf{Total} & \textbf{18.381,22€} \\ \hline
     \end{tabular}
@@ -1346,12 +1346,12 @@ Esta sección es primordial para generar unas bases sólidas para la aplicación
 
 Para las protectoras almacenamos la dirección en la que están ubicadas. Esta dirección es necesaria para mostrar al usuario el texto de donde está y también para ubicarla en los mapas que se proporcionan en la app. Por una parte almacenamos la dirección por partes, incluyendo la ciudad, la calle, el código postal etc. Por otra parte, cuando generemos una dirección, a su vez guardaremos las coordenadas. Esta decisión se toma para evitar hacer cálculos repetidos cada vez que tengamos que cargar un mapa con marcadores, ya que estos requieren de las coordenadas geográficas directamente. Cuando se actualice una dirección, se actualizaran sus coordenadas.
 
-Para todas las direcciónes se genera un ID automático, al que se hace referencia desde la tabla de usuarios.
+Para todas las direcciónes se genera una entrada en el que su ID corresponde con el del usuario al que pertenece.
 
 % Addresses
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{addresses}}
+\caption{\textbf{Tabla: addresses}}
 \label{tab:Addresses}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
@@ -1402,7 +1402,7 @@ Para todos los chats se genera un ID automático, al que se hace referencia desd
 % Chats
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{chats}}
+\caption{\textbf{Tabla: chats}}
 \label{tab:chats}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
@@ -1457,7 +1457,7 @@ Para todos los perros se genera un ID automático.
 
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{dogs}}
+\caption{\textbf{Tabla: dogs}}
 \label{tab:dogs}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
@@ -1533,7 +1533,7 @@ Para todos los mensajes se genera un ID automático que se puede referenciar des
 % Mensajes
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{messages}}
+\caption{\textbf{Tabla: messages}}
 \label{tab:messages}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
@@ -1573,27 +1573,643 @@ Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos
 
 \subsubsection{Notificaciones}
 
-Cuando un usuario manda un mensaje, al usuario receptor le tiene que llegar una notificación. Lo cierto es que para generar esa notificación se pueden seguir varios caminos. Para las notificaciones de los mensajes, se decidió crear una table que contenga las requests de notificaciones para un usuario en concreto. Cuando se inicia sesión, se añade un listener que escucha todos los cambios que se produzcan en esta tabla, cuando llega una request nueva, se lanza una notificación a través del canal correspondiente, posteriormente esta request se marca como vista. 
+Cuando un usuario manda un mensaje, al usuario receptor le tiene que llegar una notificación. Lo cierto es que para generar esa notificación se pueden seguir varios caminos. Para las notificaciones de los mensajes, se decidió crear una tabla que contenga las peticiones de notificaciones para un usuario en concreto. Cuando se inicia sesión, se añade un listener que escucha todos los cambios que se produzcan en esta tabla, cuando llega una petición nueva, se lanza una notificación a través del canal correspondiente, posteriormente esta petición se marca como vista, de este modo se pueden almacenar todas las notificaciones que se lancen.
 
-...
+Para cada una de las entradas su ID corresponde con el del usuario al que pertenece.
 
+% notifications
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{Tabla: notifications}}
+\label{tab:notifications}
+	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{requests} & collection & Colección de peticiones & Si \\ 
+	\hline
+	\end{tabular}
+\end{table}
+
+Para cada petición se genera un ID y se genera en un formato en concreto.
+
+% requests
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{Tabla: requests}}
+\label{tab:requests}
+	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{chats} & array & IDs de los chats que pertenecen al usuario & Si \\ 
+	\hline
+	\textbf{email} & cadena &  ID del chat desde el que se manda la notificación & Si \\ 
+	\hline
+	\textbf{profilePic} & cadena & URL de la imagen de foto de perfil & Si \\ 
+	\hline
+	\textbf{rol} & cadena & Rol del usuario & Si \\ 
+	\hline
+	\textbf{username} & cadena & Nombre de usuario & Si \\ 
+	\hline
+	\textbf{verified} & cadena & Indica si ha sido verificado por un administrador & Si, solo si el rol es company \\ 
+	\hline
+	\end{tabular}
+\end{table}
+
+
+Aqui se muestra una petición real almacenada en la base de datos.
+
+\begin{verbatim}
+{
+  "body": "Hola, ¿cómo estás?",
+  "chatId": "Sm1Ji0chb9uhofa20VW5",
+  "new": false,
+  "summary": "Hola, ¿cómo estás?",
+  "title": "Laura Vega Palacios",
+  "userId": "kuaKjc6XoiVot1rMeGqBySA5pE13"
+}
+\end{verbatim}
 
 \subsubsection{Usuarios}
 
-Los usuarios son la otra entidad con gran relevancia dentro de la aplicación. Sin embargo, la información que se almacena de estos es escueta. También se tiene en cuenta que el servicio de \textit{Autenticación} de Firebase se encarga de proporcionar el almacenamiento de muchos de los datos del usuario como pueden ser el correo y la contraseña.  
+Los usuarios son la otra entidad con gran relevancia dentro de la aplicación. A pesar de que almacenamos bastantes cosas en relación a los usuarios, como para las distintas tablas ya estamos referenciando los IDs o generando entradas según los usuarios registrados, en esta tabla no es necesario añadir demasiados campos. Además, para manejar los registros de usuarios se va a usar el servicio de \textit{Authentication} que proporciona Firebase. Este servicio se encarga de proporcionar las herramientas para registrar usuarios y permite almacenar tanto correo electrónico como contraseña, entre otras cosas.
 
-...
+% requests
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{Tabla: users}}
+\label{tab:users}
+	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{body} & cadena & Contenido de la notificación & Si \\ 
+	\hline
+	\textbf{chatId} & cadena &  ID del chat desde el que se manda la notificación & Si \\ 
+	\hline
+	\textbf{new} & booleano & Indica si la notificación se ha lanzado o no & Si \\ 
+	\hline
+	\textbf{summary} & cadena & Preview de la notificación & Si \\ 
+	\hline
+	\textbf{title} & cadena & Titulo de la notificacion & Si \\ 
+	\hline
+	\textbf{userId} & cadena & Usuario que manda la notifiación & Si \\ 
+	\hline
+	\end{tabular}
+\end{table}
 
+Aqui se muestra un ejemplo de usuario guardado en la base de datos.
 
+\begin{verbatim}
+{
+  "chats": [
+    "wfmRPtHiGvUI9vi9Fs7k"
+  ],
+  "email": "protectora@test.com",
+  "profilePic": "",
+  "rol": "company",
+  "username": "Protectora super chula",
+  "verified": true
+}
+\end{verbatim}
 
+\subsubsection{Imágenes}
+
+En cuanto al almacenamiento de imágenes, se va a utilizar el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeo o audio y viene integrado de manera nativa con varios servicios de Firebase como el servicio de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la app se propone hacer los siguientes directorios:
+
+\begin{itemize}
+	\item \textit{images}
+	\begin{itemize}
+		\item \textit{chats}
+		\item \textit{profilePics}
+	\end{itemize}
+\end{itemize}
+
+Cuando se dé un usuario o un perro de alta, las imágenes irán almacenadas al directorio de \textit{profilePics}. Cuando se mande una imagen por chat, esta se almacenará en la carpeta de chats. Cuando una imagen se guarda, se puede obtener un enlace para trabajar fácilmente con él dentro de la app a la hora de cargar las imágenes.Estas URLs generadas, irán almacenadas en las tablas que hemos mencionado anteriormente. Si una de las imágenes es borrada por el usuario, por ejemplo, cuando un usuario cambia su foto de perfil, se tiene que borrar su referencia en la base de datos y la imagen guardada. 
 
 \subsection{Diseño de interfaz de usuario}
+
+En esta fase del desarrollo, se comienza a definir como va a ser toda la interfaz de usuario. Para ello, se tienen en cuenta los colores, fuentes y distintos componentes que van a usarse en toda la app.
+
+\subsubsection{Tema}
+
+Para los colores principales de la aplicación, se opta por escoger el color morado. El color morado dentro de UX, puede evocar diferentes sensaciones al usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se añade a la paleta su color análogo, el azul. Para finalizar los colores principales, a la paleta se añade el color complementario del azul, que sería el naranja. 
+
+Estos tres colores conformaran los elementos de la aplicación, el morado se utilizará para la mayoría de elementos, indicando que son elementos importantes. El azul, se mezclará con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja, será un color que se utilice como acentos o llamar la atención del usuario, junto con el naranja se podrán utilizar algunos de sus colores análogos como el amarillo o el rojo. También, se considera añadir un blanco roto a la paleta para los fondos de la aplicación.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=7cm]{Colors.jpg}\par}
+		\caption{Colores principales}
+	\end{center}
+\end{figure}
+
+Como fuente, se opta por escoger la fuente \textit{Nunito Sans}, que proporciona Google. Se escoge porque es una fuente bastante estándar y legible para cualquier tipo de usuario.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=7cm]{NunitoFont.png}\par}
+		\caption{Fuente Nunito Sans}
+	\end{center}
+\end{figure}
+
+\subsubsection{Nombre}
+
+Como nombre de la aplicación,  se tiene en cuenta que inicialmente la aplicación está dirigida a la adopción de perros, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog} que son la traducción de las palabras adopción y perro. Se decide que el nombre de la aplicación sea: \textbf{\textit{Adogption}}.
+
+\subsubsection{Logo e iconos}
+
+La última parte relacionada con el branding en este proyecto es la de generación de logos e iconos. En esta sección se incluye tanto el logo de la aplicación como los iconos que se han hecho para incluir dentro de la aplicación. Algunos de los iconos podrían finalmente no utilizarse.
+
+La idea del logo es que se perciba claramente que la aplicación va sobre perros. Los corgis son unas de las razas más populares en el mundo, destacan por que es una raza muy amigable y muy querida dentro de la cultura pop, lo que la convierte en la cara perfecta para llamar la atención. Además del logo principal, hemos generado un logo animado con las letras de la aplicación para incluir en pantallas de carga o en otros lugares. Por último, se han hecho algunos iconos por defecto.
+
+
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Logo1.png}\par}
+			\caption{Logo}
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=7cm]{ADOGPTIONFIXED.png}\par}
+			\caption{Logo animado}
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{EMPTYUSER.png}\par}
+			\caption{Icono por defecto para usuario}
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{EMPTYDOG.png}\par}
+			\caption{Icono por defecto para perro}
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\subsubsection{Diseños}
+
+En esta sección se incluyen todos los diseños realizados en \textit{Figma} para las pantallas de la aplicación. Se incluyen todas las páginas principales y componentes relevantes para el desarrollo de la aplicación.
+
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm]{SplashScreen.jpg}\par}
+			\caption{Splashscreen}
+			\medskip
+			\small
+			Página de carga entre pantallas.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm]{Login.jpg}\par}
+			\caption{Login}
+			\medskip
+			\small
+			Página de inicio de sesión.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{User register}
+			\medskip
+			\small
+			Página de registro de usuario.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Company register}
+			\medskip
+			\small
+			Página de registro de protectora.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{User homepage}
+			\medskip
+			\small
+			Página de inicio de usuario.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Company homepage}
+			\medskip
+			\small
+			Página de inicio de protectora.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Dog list}
+			\medskip
+			\small
+			Página de lista para perros.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{User list}
+			\medskip
+			\small
+			Página de lista para usuarios.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{User profile}
+			\medskip
+			\small
+			Página de perfil de usuario. Se muestran botones de edición si es necesario.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Dog profile}
+			\medskip
+			\small
+			Página de perfil de perro. Se muestran botones de edición si es necesario.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Chats page}
+			\medskip
+			\small
+			Página de chats.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Chat room}
+			\medskip
+			\small
+			Página de mensajes.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Maps list}
+			\medskip
+			\small
+			Página de mapa con lista de usuarios.
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Recover password}
+			\medskip
+			\small
+			Página de recuperación de contraseña.
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Edit user}
+			\medskip
+			\small
+			Página de edición de usuario
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Edit dog}
+			\medskip
+			\small
+			Página de edición de perro
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Admin homepage}
+			\medskip
+			\small
+			Página de inicio de administrador
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Verify user}
+			\medskip
+			\small
+			Pop up para verificar usuario
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Side menu}
+			\medskip
+			\small
+			Menú lateral con páginas disponibles
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+
+
+
 \subsection{Arquitectura de sistema}
-\subsubsection{Diagrama de clases}
+Definicion de modulos?
+Tengo mas de 100 clases? que hago aqui
+
 
 % Implementación
 \newpage
 \section{Implementación}
+
+% Implementación
+\newpage
+\section{Conclusiones}
+\subsection{Objetivos conseguidos}
+
+En este apartado volvemos a repasar todos los requisitos funcionales que se plantearon al inicio para comprobar si se han conseguido o no.
+
+% Objetivo 1
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 1}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 2
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 2}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 3
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 3}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de caninos con filtros y búsqueda}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 4
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 4}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de usuarios con búsqueda}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 5
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 5}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sección de perros favoritos}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 6
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 6}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sistema de mensajería entre usuarios}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 7
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 7}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline 
+	\end{tabular}
+\end{table} 
+
+% Objetivo 8
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 8}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de caninos}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 9
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 9}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de usuarios}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+% Objetivo 10
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 10}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Barra de búsqueda de direcciones}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table}
+
+% Objetivo 11
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 11}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Tema oscuro en la aplicación}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & No \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table}  
+
+% Objetivo 12
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 12}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Blog}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & No \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table}  
+
+% Objetivo 13
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 13}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartir perros a través de enlace}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table}  
+
+% Objetivo 14
+\begin{table}[H]
+	\captionsetup{width=0.95\linewidth}%
+   	\captionsetup{singlelinecheck=false}%
+	\captionsetup{font=bf}
+	\caption{Objetivo 14}
+	\begin{tabular}{ | m{3cm} | m{10cm} | }
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Mandar imágenes dentro del chat}}  \\ \hline
+		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
+		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+	\end{tabular}
+\end{table} 
+
+\subsection{Próximos pasos}
+
+Tras repasar la lista de objetivos, vemos que la aplicación permite realizar todas las funcionalidades obligatorias y necesarias para un correcto uso de la aplicación. Sin embargo, algunos de los objetivos opcionales se han quedado sin realizar. Para próximas iteraciones podemos añadir como obligatorias las funcionalidades que se han quedado sin implementar en esta primera versión. 
+
+Para responder a la pregunta de porque no se han podido implementar todas las funcionalidades, es debido a que hubo un retraso en el desarrollo. Este retraso es fruto de la dificultad a la hora de implementar ciertas funcionalidades, como el chat en tiempo real o la lista dinámica en el mapa. 
+
+Para futuras iteraciones, se han planteado propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario.
+
+\begin{itemize}
+	\item Añadir la posibilidad de crear listas con filtros a las protectoras.
+	\item Permitir subir múltiples imágenes para los perros dados de alta, además de vídeos y poder generar un albúm por cada perro.
+	\item Permitir asignar a un usuario como adoptante/acogedor de un perro, además de indicar en el perfil del perro quien es su adoptante/acogedor.
+	\item Sumar las funcionalidades mandar mensajes de audios y vídeos dentro del chat
+	\item Añadir como atributos opcionales de usuario distintas redes sociales e incluso el número de teléfono.
+	\item Permitir compartir perfiles de protectoras.
+\end{itemize}
+
+ 
+
+\subsection{Valoración personal}
+
+
+% Bibliografía
+\newpage
+\section{Bibliografía}
+
+% Bibliografía
+\newpage
+\section{Anexos}
 
 \printindex
 \end{document}

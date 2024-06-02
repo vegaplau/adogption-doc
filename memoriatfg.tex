@@ -1055,6 +1055,54 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \end{tabular}
 \end{table}
 
+% RF41
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF41:} Cambiar a tema oscuro.}
+\label{tab:RF41}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Proporcionar una barra de búsqueda de direcciones para facilitar la introducción de datos. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Ninguno.\\ 
+	\hline
+	\textbf{Datos de Salida} & Interfaz con el tema oscuro.  \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF42
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF42:} Subir post al blog.}
+\label{tab:RF42}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Permitir a un usuario subir un post al blog. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Contenido que puede ser texto o imágenes. \\ 
+	\hline
+	\textbf{Datos de Salida} & Post publicado en el blog de la aplicación. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+% RF43
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{RF43:} Comentar post del blog.}
+\label{tab:RF43}
+	\begin{tabular}{|m{5cm}|m{10cm}|}
+	\hline
+	\textbf{Explicación} & Permitir a un usuario comentar un post en el blog. \\ 
+	\hline
+	\textbf{Datos de Entrada} & Texto que puede incluir emoticonos. \\ 
+	\hline
+	\textbf{Datos de Salida} & Comentario publicado en el post. \\ 
+	\hline
+\end{tabular}
+\end{table}
+
 
 \subsubsection{Requisitos no funcionales}
 
@@ -1680,13 +1728,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{USERNV.png}\par}
-			\caption{Icono para usuario no verificado}
+			\caption{Icono usuario no verificado}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{USERV.png}\par}
-			\caption{Icono para usuario verificado}
+			\caption{Icono usuario verificado}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1940,212 +1988,14 @@ Tengo mas de 50 clases, que tipo de diagramas incluyo aqui?
 
 En esta fase se lleva a cabo el desarrollo e implementación de la aplicación, que abarca diversos aspectos ya que es la más extensa de todas. Durante este proceso, se van completando los diferentes requisitos definidos anteriormente.  Posterior al desarrollo, se realizan pruebas para detectar fallos o faltas de funcionalidades requeridas y, si es necesario, se realizan correcciones.
 
-% Implementación
+% Conclusiones
 \newpage
 \section{Conclusiones}
-\subsection{Objetivos conseguidos}
+Tras completar el período de desarrollo de la aplicación, en este apartado se comprueba la completitud de todos los requisitos funcionales. 
 
-Tras completar el período del desarrollo de la aplicación, en este apartado se comprueba la completitud de todos los requisitos funcionales.
+Se implementó el registro de usuarios por rol además de proporcionar diferentes vistas para cada uno de los roles, que finalmente se definieron como \textit{Usuario},  \textit{Protectora}  y   \textit{Administrador}.  Con relación a los usuarios, también se añadieron diferentes listas a lo largo de la aplicación, que finalmente incluyeron una barra de búsqueda para filtrar resultados. Además, para los usuarios se implementó una página de perfil en la que se puede acceder a la edición de datos y credenciales. Por otra parte, también se implementó el registro y edición de perros y se incluyeron diferentes listas en la aplicación, que aparte de una barra de búsqueda también se les incluyeron los filtros de  \textit{Peso},  \textit{Raza},  \textit{Género} y  \textit{Color}. Además, en los perfiles de los perros se incluyeron botones para compartir y marcar como favoritos, este último vino de la mano de la implementación de la sección de favoritos para los usuarios. Se crearon diferentes páginas, como la página de contacto o la de información legal, además de la página de mapas, en la que se incluyó un listado de resultados e hizo falta integrar las APIs de geolocalización. Esta misma API de geolocalización también se utilizó para desarrollar una barra de búsqueda de direcciones. Por último, se implementó un chat en tiempo real al que se le añadió la opción de mandar imágenes con sus correspondientes notificaciones.
 
-% Objetivo 1
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 1}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se han creado las pantallas y formularios de registro para que un usuario se pueda dar de alta como usuario o protectora.  \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 2
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 2}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado la pantalla y formulario de registro para que se pueda dar de alta a un perro en la plataforma.  \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 3
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 3}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de caninos con filtros y búsqueda}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado una página en la que se pueden aplicar filtros de forma dinámica además de añadir una barra de búsqueda. Esa página se ha reutilizado en diferentes sitios de la aplicación.  \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 4
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 4}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de usuarios con búsqueda}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado una página en la que se pueden realizar búsquedas.  Esa página se ha reutilizado en diferentes sitios de la aplicación. \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 5
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 5}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sección de perros favoritos}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado un widget con un listado de perros que tiene marcado el usuario loggeado como favoritos. Además de añadir el botón de favoritos en el perfil de perros. \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 6
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 6}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sistema de mensajería entre usuarios}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado una página de chats. Además, se han creado los respectivos widgets para los chats y para la chatroom. \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 7
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 7}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se han integrado distintas APIs de Google dentro de la aplicación. Entre ellas, se ha utilizado el geolocalizador para generar direcciones y sus coordenadas, para poder calcular distancias entre el usuario loggeado y las protectoras. Además se ha creado una página con un mapa y los resultados de protectoras. Por último, se ha incluido un mapa en los perfiles de los perros. \\ \hline 
-	\end{tabular}
-\end{table} 
-
-% Objetivo 8
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 8}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de caninos}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado la pantalla y formulario para poder actualizar los datos de los caninos.  \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 9
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 9}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de usuarios}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado la pantalla y formulario para poder actualizar los datos de los usuarios.   \\ \hline
-	\end{tabular}
-\end{table} 
-
-% Objetivo 10
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 10}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Barra de búsqueda de direcciones}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha desarrollado una barra de búsqueda de direcciones con la funcionalidad de autorelleno.  \\ \hline
-	\end{tabular}
-\end{table}
-
-% Objetivo 11
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 11}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Tema oscuro en la aplicación}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & No \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & No se ha realizado. Se planteó como idea pero debido a que otras funcionalidades tenían más prioridad, no dio tiempo a implementarlo.  \\ \hline
-	\end{tabular}
-\end{table}  
-
-% Objetivo 12
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 12}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Blog}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & No \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & No se ha realizado. Se planteó como idea pero debido a que otras funcionalidades tenían más prioridad, no dio tiempo a implementarlo.  \\ \hline
-	\end{tabular}
-\end{table}  
-
-% Objetivo 13
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 13}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartir perros a través de enlace}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha añadido un botón de compartir dentro del perfil de los perros. El botón genera un enlace que redirecciona a los usuarios al perfil.  \\ \hline
-	\end{tabular}
-\end{table}  
-
-% Objetivo 14
-\begin{table}[H]
-	\captionsetup{width=0.95\linewidth}%
-   	\captionsetup{singlelinecheck=false}%
-	\captionsetup{font=bf}
-	\caption{Objetivo 14}
-	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Mandar imágenes dentro del chat}}  \\ \hline
-		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Se ha incluido un botón que permite seleccionar imágenes de la galería y mandarlas al chat. \\ \hline
-	\end{tabular}
-\end{table} 
-
-\subsection{Próximos pasos}
-
-Tras repasar la lista de objetivos, se concluye que la aplicación permite realizar todas las funcionalidades obligatorias, sin embargo, algunos de los requisitos opcionales no se han completado. Todos los requisitos que faltan se propondrán como requisitos obligatorios en las próximas versiones del producto. El retraso o la falta de implementación en algunas de las funcionalidades, se debe a la dificultad de desarrollar algunos de los requisitos obligatorios como el chat en tiempo real o la lista dinámica en la página del mapa.
+Al revisar la lista de objetivos, se concluye que la aplicación cumple con todas las funcionalidades obligatorias. Sin embargo, algunos requisitos opcionales no se completaron en esta versión. Específicamente, el blog y el tema oscuro no se implementaron. El blog resultó ser demasiado ambicioso y no se pudo completar en el tiempo estipulado, ni si quiera dio tiempo a definir una estructura de datos para este, mientras que el tema oscuro se pospuso debido a retrasos en la implementación de otras funcionalidades obligatorias. Estos requisitos pendientes se considerarán para futuras versiones de la aplicación.
 
 Para futuras iteraciones, se han planteado algunas propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario.
 
@@ -2157,9 +2007,10 @@ Para futuras iteraciones, se han planteado algunas propuestas para añadir valor
 	\item Añadir como atributos opcionales de las protectoras distintas redes sociales e incluso el número de teléfono.
 	\item Permitir compartir perfiles de protectoras.
 	\item Integrar los servicios de Google para iniciar sesión.
+	\item Incluir más filtros para las listas de caninos.
 \end{itemize}
 
-Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación, y algunas de ellas surgen a partir del feedback proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
+Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación, algunas de ellas surgen a partir del feedback proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
 
 \subsection{Valoración personal}
 

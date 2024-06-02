@@ -7,6 +7,7 @@
 \renewcommand{\listfigurename}{Abbildungsverzeichnis}
 
 % Paquetes
+\usepackage{subcaption}
 \usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
 \usepackage{caption}
 \usepackage{float}
@@ -55,7 +56,7 @@
 	{\scshape\Large Ingeniería Informática \par}
 	\vspace{0.5cm}
 	{\itshape\Large Trabajo fin de grado \par}
-	{\scshape\Huge Planificación y desarrollo de una app para adopción canina \par}
+	{\scshape\Huge Desarrollo de Aplicación Móvil para Adopción Canina \par}
 	\vfill
 	{\Large Autora \par}
 	{\Large Laura Vega Palacios\par}
@@ -1722,23 +1723,23 @@ Como nombre de la aplicación,  se tiene en cuenta que inicialmente la aplicaci�
 
 La última parte relacionada con el branding en este proyecto es la de generación de logos e iconos. En esta sección se incluye tanto el logo de la aplicación como los iconos que se han hecho para incluir dentro de la aplicación. Algunos de los iconos podrían finalmente no utilizarse.
 
-La idea del logo es que se perciba claramente que la aplicación va sobre perros. Los corgis son unas de las razas más populares en el mundo, destacan por que es una raza muy amigable y muy querida dentro de la cultura pop, lo que la convierte en la cara perfecta para llamar la atención. Además del logo principal, hemos generado un logo animado con las letras de la aplicación para incluir en pantallas de carga o en otros lugares. Por último, se han hecho algunos iconos por defecto.
-
+La idea del logo es que se perciba claramente que la aplicación va sobre perros. Los corgis son unas de las razas más populares en el mundo, destacan por que es una raza muy amigable y muy querida dentro de la cultura pop, lo que la convierte en la cara perfecta para llamar la atención. Además del logo principal, se ha diseñado un logo animado para incluir en pantallas de carga u otros lugar. Por último, se han hecho algunos iconos por defecto, que serán utilizados en perfiles o listas.
 
 
 \begin{figure}[H]
-   	\begin{minipage}{0.48\textwidth}
+   	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{Logo1.png}\par}
 			\caption{Logo}
 		\end{center}  
-	\end{minipage}\hfill
-   	\begin{minipage}{0.48\textwidth}
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=7cm]{ADOGPTIONFIXED.png}\par}
 			\caption{Logo animado}
 		\end{center}  
-	\end{minipage}\hfill
+	\end{subfigure}\hfill
+	\caption{Logos}
 \end{figure}
 
 
@@ -1757,6 +1758,93 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
 	\end{minipage}\hfill
 \end{figure}
 
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Adoptar.png}\par}
+			\caption{Icono para listas de adopción}
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Acoger.png}\par}
+			\caption{Icono para listas de acogida}
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{USERNV.png}\par}
+			\caption{Icono para usuario no verificado}
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{USERV.png}\par}
+			\caption{Icono para usuario verificado}
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Protectora.png}\par}
+			\caption{Icono hueso}
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Casa.png}\par}
+			\caption{Icono casa}
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+
+\begin{figure}[H]
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{ALLUSER.png}\par}
+			\caption{Icono en morado}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{USER.png}\par}
+			\caption{Icono en azul}
+		\end{center}  
+	\end{subfigure}\hfill
+	\caption{Iconos usuarios}
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Pata1.png}\par}
+			\caption{Icono en naranja}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Pata2.png}\par}
+			\caption{Icono en morado}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=6cm]{Pata3.png}\par}
+			\caption{Icono en azul}
+		\end{center}  
+	\end{subfigure}\hfill
+	\caption{Iconos patas}
+\end{figure}
+
+
+\newpage
 \subsubsection{Diseños}
 
 En esta sección se incluyen todos los diseños realizados en \textit{Figma} para las pantallas de la aplicación. Se incluyen todas las páginas principales y componentes relevantes para el desarrollo de la aplicación.
@@ -1968,22 +2056,26 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
 
 
 
-
+\newpage
 \subsection{Arquitectura de sistema}
-Definicion de modulos?
-Tengo mas de 100 clases? que hago aqui
+Definicion de modulos (Las carpetas que tengo de common, formularios, paginas...)
+
+Tengo mas de 50 clases, que tipo de diagramas incluyo aqui?
+
 
 
 % Implementación
 \newpage
 \section{Implementación}
 
+** La idea es ir hablando de todas las pantallaas que se han hecho finalmente y las clases involucradas, y hacer una subseccion de las clases de servicios (notificaciones, apis etc) y una para las que conectan con las bases de datos.
+
 % Implementación
 \newpage
 \section{Conclusiones}
 \subsection{Objetivos conseguidos}
 
-En este apartado volvemos a repasar todos los requisitos funcionales que se plantearon al inicio para comprobar si se han conseguido o no.
+Tras completar el período del desarrollo de la aplicación. En este apartado volvemos a repasar todos los requisitos funcionales que se plantearon al inicio para comprobar si se han conseguido o no.
 
 % Objetivo 1
 \begin{table}[H]
@@ -1995,7 +2087,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se han creado las pantallas y formularios de registro para que un usuario se pueda dar de alta como usuario o protectora.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2009,7 +2101,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado la pantalla y formulario de registro para que se pueda dar de alta a un perro en la plataforma.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2023,7 +2115,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de caninos con filtros y búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado una página en la que se pueden aplicar filtros de forma dinámica además de añadir una barra de búsqueda. Esa página se ha reutilizado en diferentes sitios de la aplicación.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2037,7 +2129,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de usuarios con búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado una página en la que se pueden realizar búsquedas.  Esa página se ha reutilizado en diferentes sitios de la aplicación. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2051,7 +2143,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sección de perros favoritos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado un widget con un listado de perros que tiene marcado el usuario loggeado como favoritos. Además de añadir el botón de favoritos en el perfil de perros. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2065,7 +2157,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sistema de mensajería entre usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado una página de chats. Además, se han creado los respectivos widgets para los chats y para la chatroom. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2079,7 +2171,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline 
+		\cellcolor{lightgray}\textbf{Explicación} & Se han integrado distintas APIs de Google dentro de la aplicación. Entre ellas, se ha utilizado el geolocalizador para generar direcciones y sus coordenadas, para poder calcular distancias entre el usuario loggeado y las protectoras. Además se ha creado una página con un mapa y los resultados de protectoras. Por último, se ha incluido un mapa en los perfiles de los perros. \\ \hline 
 	\end{tabular}
 \end{table} 
 
@@ -2093,7 +2185,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado la pantalla y formulario para poder actualizar los datos de los caninos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2107,7 +2199,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha creado la pantalla y formulario para poder actualizar los datos de los usuarios.   \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2121,7 +2213,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Barra de búsqueda de direcciones}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha desarrollado una barra de búsqueda de direcciones con la funcionalidad de autorelleno.  \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -2135,7 +2227,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Tema oscuro en la aplicación}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & No \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & No se ha realizado. Se planteó como idea pero debido a que otras funcionalidades tenían más prioridad, no dio tiempo a implementarlo.  \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -2149,7 +2241,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Blog}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & No \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & No se ha realizado. Se planteó como idea pero debido a que otras funcionalidades tenían más prioridad, no dio tiempo a implementarlo.  \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -2163,7 +2255,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartir perros a través de enlace}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha añadido un botón de compartir dentro del perfil de los perros. El botón genera un enlace que redirecciona a los usuarios al perfil.  \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -2177,7 +2269,7 @@ En este apartado volvemos a repasar todos los requisitos funcionales que se plan
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Mandar imágenes dentro del chat}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
 		\cellcolor{lightgray}\textbf{Conseguido} & Si \\ \hline
-		\cellcolor{lightgray}\textbf{Explicación} & Explicacion de que se ha hecho o que no se ha hecho.  \\ \hline
+		\cellcolor{lightgray}\textbf{Explicación} & Se ha incluido un botón que permite seleccionar imágenes de la galería y mandarlas al chat. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -2196,9 +2288,10 @@ Para futuras iteraciones, se han planteado propuestas para añadir valor a la ap
 	\item Sumar las funcionalidades mandar mensajes de audios y vídeos dentro del chat
 	\item Añadir como atributos opcionales de usuario distintas redes sociales e incluso el número de teléfono.
 	\item Permitir compartir perfiles de protectoras.
+	\item Integrar los servicios de Google para iniciar sesión.
 \end{itemize}
 
- 
+Todas estas propuestas plantean mejorar el uso de la aplicación, algunas provienen del feedback de los usuarios que han probado la aplicación. Por otra parte, a pesar de que la aplicación está inicialmente pensada para las adopciones de perros, se prevee que se incluyan otros tipos de animales como gatos.
 
 \subsection{Valoración personal}
 

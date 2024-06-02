@@ -35,7 +35,7 @@
     pdfpagemode=FullScreen,
 }
 \usepackage{geometry}
- 
+\usepackage{enumitem}
 
 % Setup
 \setcounter{section}{0}
@@ -76,19 +76,9 @@
 \newpage
 \pagestyle{plain}
 \section*{Resumen}
-El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones caninas. Centralizando la información de las protectoras y facilitando la comunicación entre los adoptantes y las protectoras.
+A día de hoy, comenzar un proceso de adopción puede ser algo tedioso debido a lo descentralizada que está toda la información relacionada con las diferentes protectoras y refugios, una persona que quiera adoptar algún animal normalmente necesita consultar diversas plataformas o redes para encontrar una protectora cercana o un animal que se adapte a su estilo de vida.
 
-En esta aplicación se pueden dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protecotras o refugios que estén verificadas por los administradores, tendrán la capacidad de subir a la plataforma todos los caninos que quieran, estos aparecerán en las listas de adopción u acogida dependiendo de lo que se haya marcado para cada canino. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro.  
-
-Existen los formularios correspondientes para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como puede ser la descripción, la raza, edad etc. Los usuarios también disponen de formularios para darse de alta y editar su información.
-
-La aplicación utiliza un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación según distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la aplicación. También se incluyen barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario.
-
-Se incluye dentro de la aplicación un sistema de mensajería para facilitar la comunicación dentro de la misma, tanto entre usuarios y protectoras como con los administradores. El chat permite mensajes de texto e imágenes.
-
-Se añade, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de enlace. 
-
-La aplicación incluirá una página de información legal y de contacto a disposición del usuario.
+El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones, la información de las protectoras y facilite la comunicación entre los adoptantes y las protectoras. En esta aplicación se podrán dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protectoras o refugios que estén verificadas por los administradores tendrán la capacidad de subir a la plataforma todos los caninos, que aparecerán en las listas de adopción o acogida dependiendo de lo que se haya marcado para cada canino. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro. Existirán formularios para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como la descripción, la raza, la edad, el peso, etc. Los usuarios también dispondrán de formularios para darse de alta y editar su información. La aplicación utilizará un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación y su distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la misma. También se incluirán barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario. Se incluirá dentro de la aplicación un sistema de mensajería para facilitar la comunicación, tanto entre usuarios y protectoras como con los administradores. El chat permitirá mensajes de texto e imágenes. Se añadirá, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de un enlace. La aplicación constará de una página de información legal y de contacto a disposición del usuario.
 
 
 % Pagina en blanco
@@ -101,19 +91,9 @@ La aplicación incluirá una página de información legal y de contacto a dispo
 \newpage
 \pagestyle{plain}
 \section*{Abstract}
-The development of this \textit{Final Degree Project} aims at planning and developing a mobile application for managing dog adoptions. Centralizing information from shelters and facilitating communication between adopters and shelters.
+Currently, starting an adoption process can be quite tedious due to how decentralized all the information related to different shelters and refuges is, a person who wants to adopt an animal usually needs to consult various platforms or networks to find a nearby shelter or an animal that fits their lifestyle.
 
-In this application, shelters or rescues can be registered, along with their corresponding data and location. Shelters or rescues that are verified by administrators will have the ability to upload all the dogs they want to the platform, which will appear in adoption or fostering lists depending on what is marked for each dog. Users who are looking to adopt or foster a dog can also register.
-
-There are corresponding forms for registering or editing dog information, with different sections to fill in all the required data such as description, breed, age, etc. Users also have forms to register and edit their information.
-
-The application uses a geolocation system to show users results within the application based on distance. Results can be viewed on a map embedded in the application. Quick search bars and filters are also included to narrow down results according to user requirements.
-
-A messaging system is included within the application to facilitate communication, both between users and shelters and with administrators. The chat allows text messages and images.
-
-Additionally, a favorites system is added, along with the ability to share dogs from the application externally through a link.
-
-The application will include a legal information and contact page available to the user.
+The purpose of this \textit{Final Degree Project} is the planning and development of a mobile application that allows the management of adoptions, information on shelters, and facilitates communication between adopters and shelters. In this application, shelters or refuges can register, with their corresponding data and location. Shelters or refuges verified by administrators will have the ability to upload all the canines to the platform, which will appear in the adoption or foster lists depending on what has been marked for each canine. Users looking to adopt or foster a dog can also register. There will be forms to register or edit the dog's information, with different sections to complete all the required data such as description, breed, age, weight, etc. Users will also have forms to register and edit their information. The application will use a geolocation system to show users results within the application and their distance. The application results can be viewed on a map embedded in it. Search bars and quick filters will also be included to narrow results according to user requirements. A messaging system will be included in the application to facilitate communication, both between users and shelters, as well as with administrators. The chat will allow text messages and images. Additionally, a favorites system will be added, and it will be possible to share canines from the application externally via a link. The application will consist of a legal information and contact page available to the user.
 
 % Pagina en blanco
 \newpage
@@ -154,32 +134,30 @@ A mis tíos, que me dieron la oportunidad de estudiar y seguir adelante.
 
 % Motivación
 \subsection{Motivación}
-Numerosas familias, todos los años, se animan a incluir a una mascota en su círculo, sin embargo, miles de mascotas son a su vez abandonadas por muchas estas en todo el mundo. Existen \href{https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun}{estudios} que indican que casi 300.000 perros y gatos fueron recogidos durante el 2022. Estos datos hacen saltar las alarmas de muchas de las asociaciones que luchan por el bienestar y los derechos de los animales. De todos los animales que son abandonados, muchos permanecen en las calles durante el resto de su vida. Otros, son recogidos por las autoridades pertinentes y terminan en protectoras o refugios, a la espera de encontrar otra familia. 
-
-Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de las mascotas que están en las calles. Algunas de estas organizaciones, son públicas y subvencionadas por el estado. Para garantizar el bienestar y la protección de los animales, en España, se publicó una \href{https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936}{ley} en la que se trata principalmente los siguientes puntos:
-\begin{itemize}
-\item Principios generales
-	\begin{itemize}
+Numerosas familias, todos los años, se animan a incluir a una mascota en su círculo. Sin embargo, miles de mascotas son a su vez abandonadas por muchas de estas familias en todo el mundo. Existen \href{https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun}{estudios} \cite{affinity} que indican que casi 300.000 perros y gatos fueron recogidos durante 2022. Estos datos hacen saltar las alarmas de muchas de las asociaciones que luchan por el bienestar y los derechos de los animales. De todos los animales que son abandonados, muchos permanecen en las calles durante el resto de su vida; otros son recogidos por las autoridades pertinentes y terminan en protectoras o refugios, a la espera de encontrar otra familia. Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de las mascotas que están en las calles. Algunas de estas organizaciones son públicas y subvencionadas por el estado. Para garantizar el bienestar y la protección de los animales, en España se publicó una \href{https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936}{ley} \cite{ley} en la que se tratan principalmente los siguientes puntos:
+\begin{itemize}[noitemsep]
+\item \textbf{Principios generales}
+	\begin{itemize}[noitemsep]
 	\item Reconocimiento de los animales como seres dotados de sensibilidad.
 	\item Fomento de la adopción en lugar de la compra de animales.
 	\item Prohibición de prácticas que causen sufrimiento o estrés innecesario a los animales.
 	\item Concienciar acerca del bienestar y respeto animal.
 	\end{itemize}
-\item Responsabilidad y tenencia responsable de animales de compañía
-	\begin{itemize}
+\item \textbf{Responsabilidad y tenencia responsable de animales de compañía}
+	\begin{itemize}[noitemsep]
 	\item Establecimiento de requisitos mínimos de bienestar, cuidado y alojamiento.
 	\item Obligación de identificación y registro de los animales de compañía.
 	\item Establecimiento de las obligaciones de los propietarios en cuanto a la tenencia responsable, incluyendo la alimentación, hogar y atención veterinaria.
 	\item Prohibición de mantener animales en condiciones inadecuadas o de privarles de cuidados esenciales.
-	\end{itemize}
-\item Cria y comercio de animales
-	\begin{itemize}
+	\end{itemize}[noitemsep]
+\item \textbf{Cria y comercio de animales}
+	\begin{itemize}[noitemsep]
 	\item Regulación estricta de la cría y comercio de animales de compañía para evitar la explotación y el maltrato.
 	\item Obligación de los criadores y comerciantes de cumplir con requisitos específicos de bienestar animal.
 	\item Prohibición de la cría indiscriminada y la venta de animales en tiendas físicas, salvo excepciones debidamente justificadas.
 	\end{itemize}
-\item Concienciación y medidas del estado contra abandonos y abusos
-	\begin{itemize}
+\item \textbf{Concienciación y medidas del estado contra abandonos y abusos}
+	\begin{itemize}[noitemsep]
 	\item Promoción de la educación y el respeto y protección de los animales.
 	\item Campañas de conciencación pública sobre el bienestar animal y la tenencia responsable.
 	\item Tipificación de conductas de maltrato y abandono como infracciones administrativas o penales, además del establecimiento de sanciones proporcionales a la gravedad de las infracciones.
@@ -188,57 +166,32 @@ Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de
 	\end{itemize}
 \end{itemize}
 
-Esta ley ha sido un avance muy significativo en la legislación española en materia de protección animal, ayudando a crear un entorno más respetuoso y justo para los animales. 
+Esta ley ha sido un avance muy significativo en la legislación española en materia de protección animal, ayudando a crear un entorno más respetuoso y justo para los animales.
 
-A pesar de que la compra de animales en España es legal, muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que  es habitual encontrar criaderos donde los animales no constan de las condiciones necesarias para vivir adecuadamente. Algunos carecen de cuidados veterinarios, de correcta alimentación y de higiene. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos} podemos ver más información sobre esta problemática. Si se opta finalmente por la compra, se recomienda visitar los criaderos a los que se va a comprar el animal, para poder garantizar que no se están fomentando criaderos ilegales. 
+A pesar de que la compra de animales en España es legal, muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que es habitual encontrar criaderos donde los animales no disponen de las condiciones necesarias para vivir adecuadamente. Algunos de estos criaderos carecen de cuidados veterinarios, de una alimentación adecuada y de higiene. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos}\cite{petalatino} podemos encontrar más información sobre esta problemática. Si se opta finalmente por la compra, se recomienda visitar los criaderos a los que se va a comprar el animal para poder garantizar que no se están fomentando criaderos ilegales y que cumplen con las ley de bienestar animal.
 
-Cuando se opta por la adopción, es necesario cumplir un proceso que puede variar según la organización a la que se acuda. Hay ciertos pasos que son comunes después de escoger organización:
-\begin{itemize}
-\item \textbf{Elección del perro:} en el que se deberá tener en cuenta las necesidades de la mascota para ver cual se adapta mejor al estilo de vida del hogar donde va a ir. Lo normal en este paso es interactuar con diferentes mascotas candidatas a ser adoptadas.
-\item\textbf{Solicitud de adopción:} es común que se tenga que cumplimentar un formulario y una posterior entrevista para asegurar que el animal va a ir a un hogar adecuado.
-\item \textbf{Evaluación del hogar:} lo normal es organizar una visita al hogar donde va a ir para asegurarse de que el entorno es seguro y adecuado, también verificar que se tienen ya todo lo necesario para recibir una mascota como comederos, juguetes, cama etc.
-\item \textbf{Contrato de adopción:} es indispensable para garantizar protección legal a las mascotas adoptadas. El nuevo dueño tiene que comprometerse legalmente a garantizar que el animal va a tener atención veterinaria y que no va a ser abandonado entre otros puntos. En la mayor parte de organizaciones es común llevar a vacunar y a poner el chip al animal antes de que vaya a casa del nuevo dueño.
-\item \textbf{Recogida del animal:} el día en el que se recoge la mascota, se recibe todo su hisotrial médico (si se tiene) y la organización suele dar consejos para los nuevos dueños.
-\item \textbf{Seguimiento:} posterior a la adopción es requerido un seguimiento tanto para garantizar el bienestar del animal como para dar apoyo o asesoramiento al dueño de este.
+
+Cuando se opta por la adopción, es necesario cumplir un proceso que puede variar según la organización a la que se acuda. Hay ciertos pasos que son comunes después de escoger una organización:
+
+\begin{itemize}[noitemsep]
+\item \textbf{Elección del perro:} en este paso, se deberán tener en cuenta las necesidades de la mascota para determinar cuál se adapta mejor al estilo de vida del hogar donde va a residir. Lo habitual en esta etapa es interactuar con diferentes mascotas candidatas a ser adoptadas.
+\item \textbf{Solicitud de adopción:} es común que se tenga que cumplimentar un formulario y realizar una entrevista posterior para asegurar que el animal va a ir a un hogar adecuado.
+\item \textbf{Evaluación del hogar:} se organiza una visita al hogar donde va a ir el animal para garantizar que el entorno es seguro y adecuado. También se verifica que se disponga de todo lo necesario para recibir a la mascota, como comederos, juguetes, cama, etc.
+\item \textbf{Contrato de adopción:} es indispensable para garantizar la protección legal de las mascotas adoptadas. El nuevo dueño debe comprometerse legalmente a proporcionar atención veterinaria y a no abandonar al animal, entre otros puntos. En la mayoría de las organizaciones, es habitual vacunar y colocar un chip al animal antes de que vaya al hogar del nuevo dueño.
+\item \textbf{Recogida del animal:} el día de la recogida, se entrega todo el historial médico del animal (si se dispone de él) y la organización suele proporcionar consejos para los nuevos dueños.
+\item \textbf{Seguimiento:} se requiere un seguimiento posterior a la adopción para garantizar el bienestar del animal y brindar apoyo o asesoramiento al dueño.
 \end{itemize}
 
-Todo este proceso es guiado por la correspondiente organización y es importante que se cumplimente, aunque pueda hacerse algo pesado de seguir. Para realizar este proceso de adopción, previamente la persona deberá ponerse en contacto con las distintas protectoras o refugios en su zona. Esta fase puede generar diferentes problemas a los adoptantes. En la mayoría de protectoras, trabajan voluntarios y se sostienen de donaciones, es por ello que es común que no consten de fondos para poder generar visibilidad de la organización. Muchas de las protectoras utilizan diferentes redes sociales o webs propias para promocionarse, lo que implica que una persona que quiere adoptar podría que tener utilizar diferentes plataformas para poder contactar con alguna. Debido a que muchas veces se utilizan redes sociales para contactar, a veces es difícil mantener una comunicación adecuada con diferentes protectoras, o incluso post adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades escogiendo mascota, y es que normalmente la información de las diferentes mascotas está dispersa y puede convertirse en una tarea tediosa buscar una que cumpla todos los requerimientos. 
+Todo este proceso es guiado por la organización correspondiente y es importante completarlo, aunque pueda resultar un poco tedioso. Para iniciar este proceso de adopción, la persona deberá ponerse en contacto previamente con las distintas protectoras o refugios en su área. Esta fase inicial puede presentar diferentes problemas a los adoptantes. En la mayoría de las protectoras, trabajan voluntarios y se sostienen de donaciones, por lo que es común que no cuenten con fondos para generar visibilidad. Muchas protectoras utilizan diversas redes sociales o sus propios sitios web para promocionarse, lo que implica que una persona interesada en adoptar podría tener que utilizar varias plataformas para ponerse en contacto con alguna. A veces, es difícil mantener una comunicación adecuada con diferentes protectoras incluso después de la adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades al elegir una mascota, ya que la información sobre las diferentes mascotas está dispersa y puede ser una tarea complicada buscar una que cumpla con todos los requisitos del adoptante.
 
-Después de ver cuales son los pasos y posibles inconvenientes para aplicar a un proceso de adopción, se propone un nuevo proyecto a modo de aplicación móvil. Esta aplicación se propone como una solución a la fase inicial de buscar protectoras por la zona, facilitando a los usuarios listas de protectoras cercanas y de los perros de los que consta, incluyendo filtros para acotar la búsqueda. Se propone también como una manera de facilitar a las protectoras gestionar a sus perros e interesados. Se añade a la solución un chat para establecer comunicación directa entre usuarios y facilitar la misma. La idea principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
-
-% Estructura del documento
-\newpage
-\subsection{Estructura del documento}
-La estructura del documento es la siguiente
-
-\begin{itemize}
-\item \textbf{Resumen:} Se incluye un breve resuemn de la funcionalidad del proyecto, tanto en español como en inglés.
-\item \textbf{Introducción:} Breve introducción al proyecto, donde se incluyen varios puntos
-	\begin{itemize}
-		\item Motivación del proyecto
-		\item Estructura del documento
-		\item Objetivos propuestos para la realización del proyecto
-	\end {itemize}
-\item \textbf{Planificación:} Incluye la planificación del proyecto, teniendo en cuenta las diferentes etapas del mismo y también los presupuestos.
-\item \textbf{Análisis:} Aspectos más relevantes relacionados con los requisitos del sistema, además de los casos de uso y flujos de sistema. 
-\item \textbf{Diseño:} Estructura y diseño inicial donde se proponen las clases e interfaz de usuario que posteriormente serán implementadas.
-\item \textbf{Implementación:} Se trata con profundidad todos los aspectos relacionados con el desarrollo del proyecto. Se habla de los problemas que hayan podido aparecer además de las soluciones finales, que pueden diferir de las propuestas en el diseño. 
-	\begin{itemize}
-		\item Herramientas y tecnologías utilizadas. Un breve resumen en el que se habla de la tecnología que se ha escogido para implementar el proyecto.
-		\item Desarrollo y sus fases. Se exponen todos los pasos seguidos durante el desarrollo de la aplicación.
-		\item Diseño final y funcionalidad. Incluye imágenes del resultado final de la aplicación además de su funcionalidad.
-	\end {itemize}
-\item \textbf{Conclusiones:} Se incluye una conclusión acerca de la viabilidad del proyecto y futuro del mismo. Además tambien se añade un resumen y valoración personal del proyecto y de todas las fases que ha tenido.
-\item \textbf{Bibliografía:} Fuentes de información utilizadas durante cualquier fase del proyecto, tales como vídeos, wikis, artículos, etc.
-\item \textbf{Anexos:} Cualquier otro documento relevante en el desarrollo del proyecto.
-\end{itemize}
+Después de revisar los pasos y los posibles inconvenientes para solicitar un proceso de adopción, se propone una solución en forma de aplicación móvil. Con esta aplicación se pretende solventar la problemática de la fase inicial de búsqueda de protectoras, proporcionando a los usuarios listas de protectoras cercanas y de los perros disponibles, incluyendo filtros para acotar la búsqueda. También se propone como una forma de facilitar a las protectoras la gestión de sus perros y posibles adoptantes. Para poder facilitar la comunicación entre usuarios y protectoras se añadirá un chat en tiempo real dentro de la aplicación. La idea principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
 
 
 % Objetivos
 \newpage
 \subsection{Objetivos del proyecto}
 
-Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a la propuesta de este proyecto. Para poder cubrirlas, se han de definir unos objetivos. Estos objetivos podrán ser obligatorios, que serán los requeridos para que la aplicación funcione como se espera u opcionales, para añadir funcionalidades extra o facilitar el uso de la aplicación. Una vez realizado el proyecto, se volverá a hacer una lista similar, para comprobar si se han cumplido o no los objetivos, y en caso de que no, el porqué.
+Para cubrir las necesidades del proyecto propuesto, se han definido una serie de objetivos divididos en obligatorios, que serán los requeridos para que la aplicación funcione como se espera, y opcionales, para añadir funcionalidades extra o facilitar el uso de la aplicación.
 
 
 % Objetivo 1
@@ -250,7 +203,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación deberá proporcionar la posibilidad de darse de alta como usuario o como protectora. Deberá propocionar los formularios correspondientes además de almacenar los datos en la base de datos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe ofrecer la opción de registrarse tanto como usuario o como protectora, debe proporcionar los formularios correspondientes y almacenar los datos en la base de datos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -263,7 +216,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación deberá proporcionar la posibilidad de dar de alta a distintos perros con diferentes características a los usuarios registrados como protectoras.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe ofrecer la posibilidad de registrar a varios perros con diferentes características por parte de los usuarios registrados como protectoras y almacenar los datos en la base de datos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -276,7 +229,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de caninos con filtros y búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe mostrar diferentes listas de perros y permitir aplicarle filtros rápidos y realizar búsquedas. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe mostrar diferentes listas de perros, permitiendo aplicar filtros rápidos y realizar búsquedas. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -289,7 +242,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de usuarios con búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación deberá mostrar diferentes listas de usuarios que permita realizar búsquedas en ellas  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe mostrar diversas listas de usuarios que permitan realizar búsquedas en ellas.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -302,7 +255,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sección de perros favoritos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Incluir un botón de favoritos en los perfiles de los perros que permita a los usuarios añadir a su sección de favoritos los perros que marquen como favoritos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe incluir un botón de favoritos en los perfiles de los perros que permita a los usuarios añadir a su sección de favoritos aquellos perros que marquen como favoritos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -315,7 +268,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sistema de mensajería entre usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir a los usuarios abrir un chat con otros usuarios dentro de la aplicación. Los usuarios deberán recibir una notificación cuando reciban un mensaje.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a los usuarios abrir un chat con otros usuarios dentro de la aplicación. Además, los usuarios deberán recibir una notificación cuando reciban un mensaje.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -328,7 +281,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Incluir el uso de la ubicación para ordenar los resultados de la aplicación según la distancia del usuario. Además, se incluir una página con un mapa con la ubicación de los resultados y una lista de los mismos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe incluir el uso de la ubicación para ordenar los resultados de la aplicación según la distancia del usuario. Además, se debe agregar una página con un mapa que muestre la ubicación de los resultados junto con una lista de los mismos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -341,7 +294,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir actualizar los datos de los caninos, tanto como el peso, edad, descripción etc. Además de marcar si un perro está disponible para adoptar/acoger o si este ya ha sido adoptado. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir actualizar los datos de los caninos, como el peso, edad, descripción, etc. Además, se debe proporcionar la opción de marcar si un perro está disponible para adoptar/acoger o si ya ha sido adoptado. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -354,7 +307,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir a un usuario actualizar sus datos personales así como credenciales. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a un usuario actualizar sus datos personales, así como sus credenciales. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -367,7 +320,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Barra de búsqueda de direcciones}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir a un usuario buscar su dirección y autocompletar los diferentes campos del formulario atuomáticamente. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a un usuario buscar su dirección y autocompletar automáticamente los diferentes campos del formulario. \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -380,7 +333,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Tema oscuro en la aplicación}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir al usuario cambiar a tema oscuro dentro de la aplicación \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir al usuario cambiar al tema oscuro dentro de la aplicación. \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -393,7 +346,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Blog}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir al usuario añadir posts con imágenes y textos además de añadir comentarios en los posts, para compartir ideas con otros usuarios. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir al usuario añadir publicaciones con imágenes y textos, además de añadir comentarios en las publicaciones para compartir ideas con otros usuarios. \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -406,7 +359,7 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartir perros a través de enlace}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Añadir un botón de compartir, que permita al usuario generar un enlace al perro correspondiente para poder compartirlo de forma externa a la aplicación. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe añadir un botón de compartir que permita al usuario generar un enlace al perro correspondiente para poder compartirlo de forma externa a la aplicación. \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -419,76 +372,31 @@ Hemos hablado anteriormente de unas necesidades y motivación que ha llevado a l
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Mandar imágenes dentro del chat}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Permitir mandar imágenes dentro del chat. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir enviar imágenes dentro del chat. \\ \hline
 	\end{tabular}
 \end{table} 
 
 % Planificación
 \newpage
-\section{Planificación}
 
-Consideramos la planificación una de las etapas cruciales para que el proyecto, no solo para que se realice correctamente, sino garantizar que la solución sea sostenible y escalable a largo plazo. La planificación consta de diferentes fases, cada una con objetivos específicos para garantizar que se abarcan todos los aspectos relevantes en el proyecto.
+\section{Diagrama de Gannt}
 
-\subsection{Análisis}
+En esta sección se definen todas las etapas en las que se va a dividir este proyecto, condensadas en un Diagrama de Gannt. Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
 
-En esta fase, se identicican tanto los recuros de la aplicación como todos los requisitos de la misma. Esta toma de decisiones está basada en las necesidades de la aplicación y los usuarios a los que está dirigida.
-
-\subsubsection{Definición y especificacíón de requisitos}
-
-En esta fase se estudian y se definen los diferentes requisitos que debe cumplir la aplicación a partir de los objetivos definidos anteriormente.
-
-\begin{itemize}
-	\item Los requisitos funcionales son aquellos que la aplicación debe poder hacer, como por ejemplo, mostrar listas de perros o tener un chat.
-	\item Los requisitos no funcionales son aquellas condiciones bajo las cuales debe operar la aplicación, como rendimiento, seguridad.
-\end{itemize}
-
-\subsubsection{Recursos}
-
-En esta fase se identifican y asignan los recursos encesarios para el desarrollo y ejecución del proyecto. Los recursos están divididos en diferentes tipos.
-\begin{itemize}
-	\item Los recursos humanos, que se refieren a todas las personas que se requieren y van a estar involucradas durante el desarrollo del proyecto.
-	\item Los recursos tecnológicos, que engloban tanto el hardware como el software que va a estar involucrado en el proyecto. Se pueden incluir tanto servidores, equipos de trabajo, como diferentes herramientras de diseño, bases de datos etc.
-	\item Recursos financieros, que incluyen sueldos, costes de licencias, gastos en hardware entre otros.
-	\item Recursos de tiempo, en los que se definen los plazos y la planificación de sprints o ciclos de desarrollo.
-\end{itemize}
-
-\subsection{Diseño del proyecto}
-
-Durante el diseño del proyecto se tienen que barajar diferentes soluciones, se escoge la que más se ajuste a los recursos y requisitos definididos anteriormente. En esta fase además, es en la que se garantiza la robustez y escalabilidad de la aplicación.
-
-\subsubsection{Diseño de base de datos}
-
-El diseño de la base de datos implica definir la estructura en la que se almacenarán los datos para asegurar su integridad, accesibilidad y rendimiento. Durante el diseño de la base de datos se tienen en cuenta las partes esenciales como son las entidades y sus atributos, las relaciones entre entidades y las consideraiones de integridad y seguridad.
-
-\subsubsection{Diseño de interfaz de usuario}
-
-El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de usuario (UX) intuitiva y atractiva. Se definen bocetos y prototipos interactivos que cumplen con los requisitos funcionales establecidos. Además, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos y prototipos. Es importante tener en cuenta que el diseño sea responsive para que se adapte adecuadamente a todos los dispositivos móviles.
-
-\subsubsection{Arquitectura de sistema}
-
-Se define la estructura y la organización de la aplicación, a partir de las tecnologías que se han definido anteriormente. Se tiene en cuenta también la estructura de la base de datos y la interfaz de usuario para definir los diferentes módulos que va a tener la aplicación.
-
-\subsection{Implementación}
-
-En esta fase se hace el desarrollo e implementación de la aplicación, engloba diferentes apartados ya que es la más extensa de todas. A lo largo de la fase se fueron completando los diferentes requisitos definidos anteriormente, los cuales espeficiacremos más adelante.
-También en esta fase, es necesario el estudio de las diferentes tecnologías usadas, así como de bibliotecas que han sido necesarias a lo largo del desarrollo.
-
-
-\subsection{Pruebas y correcciones}
-
-Posterior al desarrollo, se hacen diferentes pruebas y correcciones que sean necesarias a la aplicación. En esta fase se pueden detectar faltas de funcionalidad o bugs que se pueden añadir para completar en futuras iteraciones del proyecto.
-
-\subsection{Documentación y memoria}
-
-En todo el desarrollo del proyecto, se ha ido recopilando información de todas las fases que ha tenido. Posterior a la finalización del mismo, se comienza la memoria en la que se recogerá toda la información almacenada. 
-
-\newpage
-\subsection{Diagrama de Gannt}
-Para condensar toda esta información se ha generado un Diagrama de Gannt, con comienzo en el mes de Enero de 2024 y que finaliza en Junio del mismo año.
 \begin{figure}[H]
 	{\includegraphics[width=15cm]{GanntSmall2.png}\par}
 	\caption{Diagrama de Gannt}
 \end{figure}
+
+Dentro del diagrama se pueden ver las diferentes etapas:
+\begin{itemize}[noitemsep]
+	\item \textbf{Análisis:} Esta etapa consta de unas dos semanas de tiempo, en esta se definen todos los requisitos del sistema y se identifican todos los recursos humanos, de hardware y software necesarios. 
+	\item \textbf{Estudio y aprendizaje:} Se destina un breve período previo para aprender a utilizar los lenguajes y servicios que se emplean en el desarrollo de la aplicación.
+	\item \textbf{Diseño:} Se reservan casi tres semanas para definir temas, bocetos, diseño de datos y la arquitectura del sistema.
+	\item \textbf{Desarrollo:} La etapa más extensa, dividida en secciones para cada funcionalidad a desarrollar a las que se asigna un tiempo adecuado, considerando los servicios y componentes involucrados que definirán su dificultad.
+	\item \textbf{Pruebas y corrección de errores:} Una vez completado el desarrollo, es necesario realizar pruebas exhaustivas para identificar errores y faltas de funcionalidades. Se reserva tiempo suficiente para corregir bugs o implementar mejoras de rendimiento si es necesario.
+	\item \textbf{Documentación y memoria:} Se dedica un período para recopilar todos los datos y elaborar la memoria en Latex, que documentará el proceso y los resultados obtenidos en las etapas anteriores.
+\end{itemize}
 
 
 % Análisis
@@ -498,9 +406,7 @@ Para condensar toda esta información se ha generado un Diagrama de Gannt, con c
 % Definición y Especificación de Requisitos
 \subsection{Definición y especificación de Requisitos}
 
-Para garantizar buenos resultados a la hora de desarrollar la aplicación, es esencial definir y comprender los requisitos que guiarán la creación y el diseño del sistema. Estos requisitos se dividen en dos categorías principales: requisitos funcionales y requisitos no funcionales.
-
-En esta sección, se detallan tanto los requisitos funcionales como los no funcionales identificados para la aplicación en desarrollo. 
+En esta sección, se detallan los requisitos funcionales y no funcionales identificados para la aplicación que se va a desarrollar. Es esencial definir y comprender estos requisitos para garantizar buenos resultados en el desarrollo y diseño del sistema.
 
 \subsubsection{Requisitos funcionales}
 
@@ -513,9 +419,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF1}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar formularios de registro para usuarios y protectoras. \\ 
-	\hline
-	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario de registro. Incluyendo datos de contacto, correo electrónico y dirección \\ 
+	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario de registro. Incluyendo datos de contacto, correo electrónico y dirección. \\ 
 	\hline
 	\textbf{Datos de Salida} & Datos del usuario almacenados en la base de datos. \\ 
 	\hline
@@ -774,7 +678,6 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
 	\textbf{Datos de Salida} &  Página de perfil personal. \\ 
-	\hline
 	\hline
 \end{tabular}
 \end{table}
@@ -1157,9 +1060,9 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 Los requisitos no funcionales son los encargados de ofrecer al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han tenido en cuenta los siguientes puntos:
 
-\begin{itemize}
-	\item \textbf{Rendimiento:} La aplicación debe ser capaz de responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo. Aquí se listan las propuestas a tener en cuenta a la hora de desarrollar.
-		\begin{itemize}
+\begin{itemize}[noitemsep]
+	\item \textbf{Rendimiento:} La aplicación debe ser capaz de responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo. 
+		\begin{itemize}[noitemsep]
 			\item Se propone una deadline de 3 segundos como tiempo óptimo para cargar una página completa.
 			\item El tiempo de respuesta del servidor se espera que sea menor de 2 segundos.
 			\item Se espera que la aplicación sea capaz de manejar múltiples peticiones sin que se produzca una degradación perceptible del rendimiento. Se propone como deadline 10000 de solicitudes.
@@ -1168,30 +1071,30 @@ Los requisitos no funcionales son los encargados de ofrecer al usuario una exper
 			\item La aplicación denbe poder manejar alrededor de 10000 usuarios de forma concurrente sin sufrir degradación de rendimiento.
 		\end{itemize}
 	\item \textbf{Escalabilidad:} Es necesario que a la hora de implementar código, se mantenga un código en el que sea sencillo añadir o quitar funcionalidades sin comprometer el comportamiento de la aplicación.
-		\begin{itemize}
+		\begin{itemize}[noitemsep]
 			\item Los componentes de la aplicación deben estar claramente definidos y documentados.
 			\item Un componente base debe recoger todas las propiedades comunes que pueden tener ese tipo de componentes. Por ejemplo, un componente base para los botones, deberá recoger el tamaño de la fuente, la forma del botón, colores etc.
 			\item Las funcionalidades desarrolladas deben ser fácilmente deprecadas si es necesario, es decir, no deben depender unas de otras si no es estrictamente necesario.
 			\item Los nuevos componentes que se desarrollen no deben afectar el funcionamiento de la aplicación.
 			\item Se espera que si fuera necesario actualizar algún componente en la UI, actualizando el componente base se actualicen todos los componentes de ese tipo.
 		\end{itemize}
-	\item \textbf{Usabilidad:} Para esta aplicación, como tiene un rango de usuarios muy amplio, se espera que un usuario poco experimentado sea capaz de usar la aplicación de form sencilla. La aplicación debe proporcionar una interfaz intuitiva y atractiva. 
-		\begin{itemize}
+	\item \textbf{Usabilidad:} Para esta aplicación, que tiene un rango de usuarios muy amplio, se espera que un usuario poco experimentado sea capaz de usar la aplicación de forma sencilla. La aplicación debe proporcionar una interfaz intuitiva y atractiva. 
+		\begin{itemize}[noitemsep]
 			\item La interfaz debe ser limpia y organizada.
 			\item Los colores de la aplicación deben ser coherentes.
-			\item La navegación de la aplicación debe cumplir la norma de los tres clicks, "\textit{cualquier persona que visite nuestro sitio debería alcanzar la información más crítica como máximo en tres clics}".
+			\item La navegación de la aplicación debe cumplir la norma de los tres clicks, "\textit{cualquier persona que visite la aplicación debería alcanzar la información más crítica como máximo en tres clics}".
 			\item La aplicación deberá ser lo suficientemente intuitiva o proporcionar guía de uso si es necesario.
 			\item Se espera que la aplicación sea testeada por usuarios reales antes del primer despliegue para posibles correciones.
 		\end{itemize}
 	\item \textbf{Confiabilidad:} Para la aplicación, se espera que haya un correcto manejo de errores.
-		\begin{itemize}
+		\begin{itemize}[noitemsep]
 			\item Se espera que un usuario sea informado con un mensaje adecuado si ocurre un error crítico.
 			\item Durante el desarrollo es necesario testear para poder añadir mecanismos que minimicen los errores conocidos en la aplicación.
 			\item Las copias de seguridad son indispensables para garantizar que no se pierden los datos ante un error crítico.
 			\item Se propone añadir mecanismos de manejo de errores en todas las operaciones críticas (lectura y escritura)  para evitar errores críticos.
 		\end{itemize}
 	\item \textbf{Seguridad:} Para garantizar este requisito, la aplicación debe proteger los datos de los usuarios y prevenir accesos no autorizados. También, en este caso en concreto, es necesario garantizar en medida de los posible, que toda la información que se dé de alta, sea real y fehaciente.
-		\begin{itemize}
+		\begin{itemize}[noitemsep]
 			\item Las contraseñas o datos sensibles no pueden estar expuestos, se deben almacenar con cifrados.
 			\item La aplicación no va a permitir el acceso a usuarios que no tengan una cuenta.
 			\item La aplicación no va a permitir dar de alta a perros a las protectoras que no estén verificadas por administradores, para evitar casos fraudulentos.
@@ -1201,22 +1104,25 @@ Los requisitos no funcionales son los encargados de ofrecer al usuario una exper
 	\item \textbf{Documentación:} A lo largo de todas las etapas, se almacenará toda la información relevante, ya sea en el código, en documentos aparte o en la propia memoria.
 \end{itemize}
 
+\subsection{Diagramas de casos de uso}
+
 % Recursos
 \subsection{Recursos}
-Posterior a definir todos los requisitos de la aplicación, se pude concretar que va a ser necesario utilizar durante el desarrollo del proyecto, tanto mano de obra, como hardware y software.
+
+Es necesario definir e identificar todos los recursos que son necesarios a partir de la definición de requisitos.
 
 \subsubsection{Recursos humanos}
 
-En este proyecto, solo va a intervenir una persona, la autora de la memoria. Se trata de una Ingeniera de Software (semi-senior). Es encargada de cumplimentar todos los puntos del desarrollo. El horario laboral sería de Lunes a Viernes de media jornada.
+En este proyecto, solo va a intervenir una persona, la autora de la memoria. Se trata de una Ingeniera de Software (semi-senior). Esta persona es encargada de cumplimentar todos los aspectos del desarrollo. El horario laboral será de Lunes a Viernes de media jornada.
 
 
 \subsubsection{Hardware}
 
-Para este proyecto el hardware es un ordenador de sobremesa personal
+Para este proyecto, el hardware es un ordenador de sobremesa personal y una tablet android.
 
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item Ordenador de sobremesa, para el desarrollo y las pruebas, con los siguientes componentes:
-		\begin{itemize}
+		\begin{itemize}[noitemsep]
 			\item \textbf{Procesador:} AMD Ryzen 7 3700X 8-Core Processor - 3.60 GHz
 			\item \textbf{Memoria RAM:} DDR4 3000 2x16GB
 			\item \textbf{Tarjeta gráfica:} NVIDIA GeForce GTX 1660 SUPER
@@ -1236,13 +1142,13 @@ El lenguaje utilizado es \textit{Dart}, este lenguaje es muy similar a Java, se 
 
 Por último, para manejar la base de datos, entre otros, se ha optado por usar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diferentes servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real, eso lo convertia en el candidato adecuado para manejar el chat, la funcionalidad de compartir entre otras cosas que nuestra aplicación requiere.
 
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item \textbf{Sistema Operativo:} Windows 11 x64
 	\item \textbf{IDE:} Android Studio Hedgehog | 2023.1.1 Patch 2
-	\item \textbf{Framework:} Flutter 3.19.0 -  \href{https://flutter.dev/6}{Flutter DEV}
-	\item \textbf{Lenguaje:} Dart 3.3.0 - \href{https://dart.dev/}{Dart DEV}
+	\item \textbf{Framework:} Flutter 3.19.0 -  \href{https://flutter.dev/6}{Flutter DEV} \cite{flutter_dev}
+	\item \textbf{Lenguaje:} Dart 3.3.0 - \href{https://dart.dev/}{Dart DEV} \cite{dart_dev}
 	\item \textbf{Paquetes:}
-		\begin{itemize}
+		\begin{itemize}[noitemsep]
 		  \item \texttt{cupertino\_icons: \^{}1.0.2}
 		  \item \texttt{firebase\_core: \^{}2.24.2}
 		  \item \texttt{firebase\_database: \^{}10.3.8}
@@ -1285,49 +1191,46 @@ Por último, para manejar la base de datos, entre otros, se ha optado por usar \
 		  \item \texttt{linkwell: \^{}2.0.6}
 		  \item \texttt{toastification: \^{}1.0.0}
 		\end{itemize}
-	\item \textbf{Base de datos:} Firebase database - \href{https://console.firebase.google.com}{Firebase console}
+	\item \textbf{Base de datos:} Firebase database - \href{https://console.firebase.google.com}{Firebase console} \cite{firebase_console}
 \end{itemize}
 
 
 \subsection{Costes}
 
-Con la lista de recursos necesarios, ya se puede hacer un presupuesto de la aplicación adecuado según los diferentes apartados.
+Habiendo escogido todos los recursos necesarios para el desarrollo del producto, se pueden definir un presupuesto que englobe todos los apartados.
 
 \subsubsection{Recursos humanos}
 
-Para calcular el coste relacionado con el personal, se toma como referencia el sueldo medio de la persona involcurada en su trabajo actual, teniendo en cuenta que cobra entre los \textit{38.000€ } - \textit{43.000€ } anuales.
-
-Tomando como media los \textit{40.000€ } anuales, al mes corresponden unos \textit{3.330€}. Como la duración del proyecto es de 5 meses y medio, el coste total en salarios para la empleada sería de \textit{18.315€}.
+Para calcular el costo relacionado con el personal, se toma como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado será de \textit{5.500€}.
 
 \subsubsection{Hardware}
 
-Debido a que el equipo utilizado no es nuevo, consideraremos los gastos de estos teniendo en cuenta que un equipo informático se puede amortizar hasta 8 años. El precio aproximado del orenador es de unos \textit{1000€}.
-Un año tiene 12 meses, así que tenemos 96 meses en total de amortización, lo que resulta a unos \textit{11€} al mes. Como la duración del proyecto es de 5 meses y medio, el coste del ordenador sería de \textit{60,50€}.
-
-El precio de la tablet es de unos \textit{100€} así que con los mismos cálculos, el gasto de la tablet es de \textit{5,72€} en total.
+Debido a que el equipo utilizado no es nuevo, se consideran los gastos del equipo teniendo en cuenta que un equipo informático se puede amortizar hasta 8 años. El precio aproximado del ordenador es de unos \textit{1000€}. Un año tiene 12 meses, lo que resulta en 96 meses en total de amortización, lo que implica que cuesta unos \textit{11€} al mes. Dado que la duración del proyecto es de 5 meses y medio, el costo del ordenador sería de \textit{60,50€} en total. El precio de la tablet es de unos \textit{100€}, así que utilizando los mismos cálculos, el costo de la tablet es de \textit{5,72€} en total.
 
 \subsubsection{Software}
 
-Para el alcance de este proyecto y los número a los que se aspira, al menos durante la primera fase, hemos optado por utilizar las versiones gratuitas del software implicado, lo que resulta en un coste total de 0€ en software.
-\begin{itemize}
-	\item Firebase - Plan Spark - \href{https://firebase.google.com/pricing?hl=es-419}{Guía de planes}
-	\item Google APIs - Ofrecen créditos gratuitos de hasta \textit{200€} para cubir los gastos que se generen por el uso de la API. - \href{https://mapsplatform.google.com/intl/es/pricing/}{Precios}
+Para el alcance de este proyecto y los números a los que se aspira, al menos durante la primera fase, se ha optado por utilizar las versiones gratuitas del software escogido, lo que resulta en un coste total de 0€ en software.
+
+\begin{itemize}[noitemsep]
+	\item Firebase - Plan Spark - \href{https://firebase.google.com/pricing?hl=es-419}{Guía de planes} \cite{firebase_plans}
+	\item Google APIs - Ofrecen créditos gratuitos de hasta \textit{200€} para cubir los gastos que se generen por el uso de la API. - \href{https://mapsplatform.google.com/intl/es/pricing/}{Precios}\cite{google_prices}
 	\item IDE + Framework - Gratuitos
 \end{itemize}
 
 
 \subsubsection{Otros}
 
-Debido a que el desarrollo del proyecto se realiza en la casa de la persona empleada, se añaden a los costes la electricidad usada. Usando como referencia el gasto mensual de electricidad, que ronda los \textit{30€}, calculamos que van dirigidos a esta parte unos \textit{165€} extra.
+Debido a que el desarrollo del proyecto se realiza en la casa de la persona empleada, se añaden a los costes la electricidad usada. Usando como referencia el gasto mensual de electricidad, que ronda los \textit{30€}.
 
 \begin{table}[H]
     \centering
     \begin{tabular}{ | m{5cm} | m{5cm} | }
 	    \hline \textbf{Recurso} & \textbf{Coste (€)} \\ \hline
-	    	Personal & 18.315 \\ \hline
+	    	Personal & 5.500 \\ \hline
 	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet - 5,72 \\ \hline
 	    	Software & 0 \\ \hline
-	    \textbf{Total} & \textbf{18.381,22€} \\ \hline
+		Electricidad & 180 \\ \hline
+	    \textbf{Total} & \textbf{5.746,22€} \\ \hline
     \end{tabular}
     \caption{Costes del proyecto}
     \label{tab:costes}
@@ -1337,15 +1240,15 @@ Debido a que el desarrollo del proyecto se realiza en la casa de la persona empl
 \newpage
 \section{Diseño}
 
-En esta parte tenemos que definir toda la estructura de la aplicación, tanto como la interfaz de usuario, el backend y la base de datos.
+En esta partese incluye toda la estructura de la aplicación, tanto como la interfaz de usuario, el backend y la base de datos.
 
 \subsection{Diseño de base de datos}
 
-Esta sección es primordial para generar unas bases sólidas para la aplicación. Debemos almacenar distintas entidades y propiedades, consideramos las siguientes entidades y sus correspondientes tablas.
+Esta sección es primordial para generar unas bases sólidas para la aplicación. Se deben almacenar todas las entidades y todas sus propiedades, definiendo claramente el tipo de cada una.
 
 \subsubsection{Direcciones}
 
-Para las protectoras almacenamos la dirección en la que están ubicadas. Esta dirección es necesaria para mostrar al usuario el texto de donde está y también para ubicarla en los mapas que se proporcionan en la app. Por una parte almacenamos la dirección por partes, incluyendo la ciudad, la calle, el código postal etc. Por otra parte, cuando generemos una dirección, a su vez guardaremos las coordenadas. Esta decisión se toma para evitar hacer cálculos repetidos cada vez que tengamos que cargar un mapa con marcadores, ya que estos requieren de las coordenadas geográficas directamente. Cuando se actualice una dirección, se actualizaran sus coordenadas.
+Para todas las protectoras, es necesario almacenar la dirección en la que están ubicadas. Esta información es crucial para mostrar a los usuarios la ubicación de cada protectora y generar marcadores en el mapa correspondiente. Por un lado, se almacenan todas las partes de la dirección, como la ciudad, la calle, el código postal, etc. Por otro lado, cuando un usuario introduzca su dirección, se generarán automáticamente las coordenadas de esa dirección para almacenarlas también, evitando tener que calcularlas cada vez que se carguen los mapas en la interfaz. Asimismo, cuando un usuario actualice su dirección, se actualizarán también sus coordenadas correspondientes en la base de datos.
 
 Para todas las direcciónes se genera una entrada en el que su ID corresponde con el del usuario al que pertenece.
 
@@ -1394,7 +1297,7 @@ Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos
 
 \subsubsection{Chats}
 
-Para generar la tabla de chats, se decidió almacenar los ids de los usuarios implicados, aparte de para quién esta disponible el chat en ese momento. Esto es debido al requisito definido previamente en el que se define la posibilidad de eliminar un chat. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, el chat simplemente desaparece para el usuario que lo borra, así que podemos actualizar la propiedad de para quien está visible el chat en ese momento. Para esta primera iteración del proyecto, los mensajes no se borran, así que si por ejemplo una persona A, borra su chat con la persona B, si vuelve a abrir un chat con esa persona, los mensajes anteriores aparecerán, en la parte de implementación de la memoria indagaremos más en profundidad acerca del comportamiento definido. 
+Para la tabla de chats, se ha decidido almacenar los IDs de los usuarios implicados, aparte se almacena un array de IDs que indica para quien está disponible el chat en ese momento. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, éste simplemente desaparece para el usuario que lo borra esto hace que la propiedad de quién puede acceder al chat en ese momento sea modificada. En esta primera iteración del proyecto, los mensajes no se borran. Por ejemplo, si una persona A borra su chat con la persona B y luego vuelve a abrir un chat con esa misma persona, los mensajes anteriores seguirán estando disponibles. En la fase de implementación, se profundizará más en el comportamiento definido para este aspecto.
 
 Almacenar aqui los IDs de los usuarios implicados, permite que si se proponen chats de grupo, sea más sencillo escalarlo, ya que en esta forma la base de datos ya lo está soportando. Lo mismo ocurre con la propiedad que hace referencia a que usuarios pueden ver el chat. 
 
@@ -1436,21 +1339,22 @@ Aqui se muestra un ejemplo real de un chat almacenado en la base de datos.
 
 \subsubsection{Perros}
 
-Esta entidad es una de las más importantes de la aplicación, ya que es la que se principal afectada por la mayoría de funcionalidades que se proponen. Principalmente esta tabla contendrá todas las propiedades de los perros que se van a manejar dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas. 
+Esta entidad es una de las más importantes de la aplicación, ya que es la que se principal afectada por la mayoría de funcionalidades que se proponen. Principalmente esta tabla contendrá todas las propiedades de los perros que se van a manejar dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas.
 
-Para el género se han propuesto dos valores fijos que luego se transformaran en la cadena correspondiente cuando se carguen en la UI. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida añadir traducciones en la aplicación y no trabajar con palabras en Español en la base de datos.
+Para el género se han propuesto dos valores fijos que luego se transformaran en la cadena correspondiente cuando se carguen en la UI. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida añadir traducciones en la aplicación y no trabajar con palabras en español en la base de datos.
 
 Para almacenar la edad, se ha optado por almacenarla junto a las unidades, ya que así se le da la posibilidad al usuario a especificar mejor la edad del perro (el caso de uso es muy concreto, pero añade valor). Los valores de las unidades serán fijos, pudiendo ser:
-	\begin{itemize}
-		\item \textbf{Meses}
-		\item \textbf{Años}
-	\end{itemize}
+
+\begin{itemize}[noitemsep]
+	\item \textbf{Meses}
+	\item \textbf{Años}
+\end{itemize}
 
 Lo mismo ocurre con el peso, se opta por almacenar el peso junto con las unidades para facilitar al usuario especificar el peso. A pesar de que se pueda especificar las unidades del peso, el peso en la base de datos siempre será tratado como KG, para facilitar el uso de los filtros, cuando se traiga a la UI, se actualizará al valor real que corresponda. Las unidades disponibles serán
-	\begin{itemize}
-		\item \textbf{Gramos}
-		\item \textbf{KG}
-	\end{itemize}
+\begin{itemize}[noitemsep]
+	\item \textbf{Gramos}
+	\item \textbf{KG}
+\end{itemize}
 
 En una primera instancia se propuso almacenar los perros favoritos en la tabla de usuarios, pero tras hacer algunas pruebas se optó por este modelo finalmente. Almacenar los usuarios que han marcado al perro como favorito, facilita las actualizaciones en tiempo real de los resultados de perros.
 
@@ -1527,7 +1431,7 @@ Aquí se muestra un ejemplo real de un perro almacenado en la base de datos.
 
 \subsubsection{Mensajes}
 
-Aparte de almacenar toda la información de los chats, hay que almacenar los mensajes involucrados en los chats. Se propone guardar el tipo de mensaje, habiendo en esta primera iteración solo dos tipos, que serían \textbf{default} e \textbf{image}. Esta distinción es necesaria para cuando se cargue la preview del mensaje en la UI. Aparte, si el mensaje que se envía es una imagen, se generara una entrada para esa imagen.
+Aparte de almacenar toda la información de los chats, hay que almacenar los mensajes que se mandan en los chats. Aparte de guardar el contenido del mensaje, se propone hacer una diferenciación por tipos, habiendo en esta primera iteración solo dos tipos, que son: \textbf{default} e \textbf{image}, indicando que un mensaje es texto o imagen respectivamente. Esta definición de tipos ayudará a saber como cargar el contenido en la interfaz.
 
 Para todos los mensajes se genera un ID automático que se puede referenciar desde la tabla de chats.
 
@@ -1574,7 +1478,7 @@ Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos
 
 \subsubsection{Notificaciones}
 
-Cuando un usuario manda un mensaje, al usuario receptor le tiene que llegar una notificación. Lo cierto es que para generar esa notificación se pueden seguir varios caminos. Para las notificaciones de los mensajes, se decidió crear una tabla que contenga las peticiones de notificaciones para un usuario en concreto. Cuando se inicia sesión, se añade un listener que escucha todos los cambios que se produzcan en esta tabla, cuando llega una petición nueva, se lanza una notificación a través del canal correspondiente, posteriormente esta petición se marca como vista, de este modo se pueden almacenar todas las notificaciones que se lancen.
+Cuando un usuario envíe un mensaje, el usuario receptor debe recibir una notificación. Para gestionar las notificaciones de los mensajes, se ha decidido crear una tabla que contenga las solicitudes de notificación para un usuario específico. Al iniciar sesión, se agrega un listener que escucha todos los cambios en esta tabla y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista. 
 
 Para cada una de las entradas su ID corresponde con el del usuario al que pertenece.
 
@@ -1634,7 +1538,7 @@ Aqui se muestra una petición real almacenada en la base de datos.
 
 \subsubsection{Usuarios}
 
-Los usuarios son la otra entidad con gran relevancia dentro de la aplicación. A pesar de que almacenamos bastantes cosas en relación a los usuarios, como para las distintas tablas ya estamos referenciando los IDs o generando entradas según los usuarios registrados, en esta tabla no es necesario añadir demasiados campos. Además, para manejar los registros de usuarios se va a usar el servicio de \textit{Authentication} que proporciona Firebase. Este servicio se encarga de proporcionar las herramientas para registrar usuarios y permite almacenar tanto correo electrónico como contraseña, entre otras cosas.
+Los usuarios son otra entidad de gran relevancia dentro de la aplicación. Aunque un usuario tiene bastantes datos dentro de la aplicación, muchos de estos datos se almacenan en forma de referencia con su ID correspondiente en otras tablas. Además, para manejar los registros de usuarios se utilizará el servicio de Autenticación que proporciona Firebase, que se encarga de facilitar las herramientas para registrar usuarios y permite almacenar tanto el correo electrónico como la contraseña, entre otras cosas.
 
 % requests
 \begin{table}[H]
@@ -1677,32 +1581,30 @@ Aqui se muestra un ejemplo de usuario guardado en la base de datos.
 
 \subsubsection{Imágenes}
 
-En cuanto al almacenamiento de imágenes, se va a utilizar el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeo o audio y viene integrado de manera nativa con varios servicios de Firebase como el servicio de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la app se propone hacer los siguientes directorios:
+En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeos o audios y viene integrado de manera nativa con varios servicios de Firebase como el servicio de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la app se propone organizarlo en los siguientes directorios:
 
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item \textit{images}
-	\begin{itemize}
+	\begin{itemize}[noitemsep]
 		\item \textit{chats}
 		\item \textit{profilePics}
 	\end{itemize}
 \end{itemize}
 
-Cuando se dé un usuario o un perro de alta, las imágenes irán almacenadas al directorio de \textit{profilePics}. Cuando se mande una imagen por chat, esta se almacenará en la carpeta de chats. Cuando una imagen se guarda, se puede obtener un enlace para trabajar fácilmente con él dentro de la app a la hora de cargar las imágenes.Estas URLs generadas, irán almacenadas en las tablas que hemos mencionado anteriormente. Si una de las imágenes es borrada por el usuario, por ejemplo, cuando un usuario cambia su foto de perfil, se tiene que borrar su referencia en la base de datos y la imagen guardada. 
+Las imágenes de perfil de usuarios o perros, se almacenarán en el directorio de \textit{profilePics}, por otra parte, cuando se mande una imagen por chat, esta se almacenará en el directorio de \textit{chats}. Para trabajar con las imágenes dentro de la app, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}.  Estas URLs que se obtiener se irán almacenadas en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
 
 \subsection{Diseño de interfaz de usuario}
 
-En esta fase del desarrollo, se comienza a definir como va a ser toda la interfaz de usuario. Para ello, se tienen en cuenta los colores, fuentes y distintos componentes que van a usarse en toda la app.
+El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de usuario (UX) intuitiva y atractiva. Inicialmente, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos o prototipos que se vayan generando a continuación. Es importante tener en cuenta que el diseño sea responsive para que se adapte adecuadamente a todos los dispositivos móviles. 
 
 \subsubsection{Tema}
 
-Para los colores principales de la aplicación, se opta por escoger el color morado. El color morado dentro de UX, puede evocar diferentes sensaciones al usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se añade a la paleta su color análogo, el azul. Para finalizar los colores principales, a la paleta se añade el color complementario del azul, que sería el naranja. 
-
-Estos tres colores conformaran los elementos de la aplicación, el morado se utilizará para la mayoría de elementos, indicando que son elementos importantes. El azul, se mezclará con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja, será un color que se utilice como acentos o llamar la atención del usuario, junto con el naranja se podrán utilizar algunos de sus colores análogos como el amarillo o el rojo. También, se considera añadir un blanco roto a la paleta para los fondos de la aplicación.
+Para los colores principales de la aplicación, se opta por escoger el color morado. El color morado dentro de UX, puede evocar diferentes sensaciones al usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se añade a la paleta su color análogo, el azul. Para finalizar los colores principales, a la paleta se añade el color complementario del azul, que sería el naranja. Estos tres colores conformaran los elementos de la aplicación, el morado se utilizará para la mayoría de elementos, indicando que son elementos importantes. El azul, se mezclará con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja, será un color que se utilice como acentos o llamar la atención del usuario, junto con el naranja se podrán utilizar algunos de sus colores análogos como el amarillo o el rojo. Para los fondos de la aplicación se añade también un blanco roto a la paleta de colores que se propone.
 
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=7cm]{Colors.jpg}\par}
-		\caption{Colores principales}
+		\caption{Paleta}
 	\end{center}
 \end{figure}
 
@@ -1717,7 +1619,7 @@ Como fuente, se opta por escoger la fuente \textit{Nunito Sans}, que proporciona
 
 \subsubsection{Nombre}
 
-Como nombre de la aplicación,  se tiene en cuenta que inicialmente la aplicación está dirigida a la adopción de perros, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog} que son la traducción de las palabras adopción y perro. Se decide que el nombre de la aplicación sea: \textbf{\textit{Adogption}}.
+Como nombre de la aplicación,  se tiene en cuenta que inicialmente la aplicación está dirigida a la adopción de perros, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog}, que son la traducción de las palabras adopción y perro, conformando el nombre: \textbf{\textit{Adogption}}.
 
 \subsubsection{Logo e iconos}
 
@@ -1854,19 +1756,15 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm]{SplashScreen.jpg}\par}
-			\caption{Splashscreen}
+			\caption{Pantalla de carga.}
 			\medskip
-			\small
-			Página de carga entre pantallas.
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm]{Login.jpg}\par}
-			\caption{Login}
+			\caption{Inicio de sesión.}
 			\medskip
-			\small
-			Página de inicio de sesión.
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1876,19 +1774,15 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{User register}
+			\caption{Registro de usuario.}
 			\medskip
-			\small
-			Página de registro de usuario.
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Company register}
+			\caption{Registro con dirección.}
 			\medskip
-			\small
-			Página de registro de protectora.
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1897,19 +1791,17 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{User homepage}
+			\caption{Inicio usuario.}
 			\medskip
 			\small
-			Página de inicio de usuario.
+
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Company homepage}
-			\medskip
-			\small
-			Página de inicio de protectora.
+			\caption{Inicio protectora.}
+			\medskip			
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1918,19 +1810,15 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Dog list}
+			\caption{Lista de perros.}
 			\medskip
-			\small
-			Página de lista para perros.
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{User list}
+			\caption{Lista de usuarios.}
 			\medskip
-			\small
-			Página de lista para usuarios.
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1940,40 +1828,19 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{User profile}
+			\caption{Página de perfil de usuario.}
 			\medskip
 			\small
-			Página de perfil de usuario. Se muestran botones de edición si es necesario.
+			Se muestran botones de edición si es necesario.
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Dog profile}
+			\caption{Página de perfil de perro. }
 			\medskip
 			\small
-			Página de perfil de perro. Se muestran botones de edición si es necesario.
-		\end{center}  
-	\end{minipage}\hfill
-\end{figure}
-
-\begin{figure}[H]
-   	\begin{minipage}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Chats page}
-			\medskip
-			\small
-			Página de chats.
-		\end{center}  
-	\end{minipage}\hfill
-   	\begin{minipage}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Chat room}
-			\medskip
-			\small
-			Página de mensajes.
+			Se muestran botones de edición si es necesario.
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1982,19 +1849,15 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Maps list}
+			\caption{Página de chats.}
 			\medskip
-			\small
-			Página de mapa con lista de usuarios.
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Recover password}
+			\caption{Página de mensajes.}
 			\medskip
-			\small
-			Página de recuperación de contraseña.
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -2003,19 +1866,15 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Edit user}
+			\caption{Página de mapa con lista de usuarios.}
 			\medskip
-			\small
-			Página de edición de usuario
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Edit dog}
+			\caption{Página de recuperación de contraseña.}
 			\medskip
-			\small
-			Página de edición de perro
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -2024,19 +1883,32 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Admin homepage}
+			\caption{Página de edición de usuario.}
 			\medskip
-			\small
-			Página de inicio de administrador
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Verify user}
+			\caption{Página de edición de perro.}
 			\medskip
-			\small
-			Pop up para verificar usuario
+		\end{center}  
+	\end{minipage}\hfill
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Inicio administrador.}
+			\medskip
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
+			\caption{Pop-up para verificar usuario.}
+			\medskip
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -2046,10 +1918,8 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{White.png}\par}
-			\caption{Side menu}
+			\caption{Menú lateral.}
 			\medskip
-			\small
-			Menú lateral con páginas disponibles
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -2068,14 +1938,14 @@ Tengo mas de 50 clases, que tipo de diagramas incluyo aqui?
 \newpage
 \section{Implementación}
 
-** La idea es ir hablando de todas las pantallaas que se han hecho finalmente y las clases involucradas, y hacer una subseccion de las clases de servicios (notificaciones, apis etc) y una para las que conectan con las bases de datos.
+En esta fase se lleva a cabo el desarrollo e implementación de la aplicación, que abarca diversos aspectos ya que es la más extensa de todas. Durante este proceso, se van completando los diferentes requisitos definidos anteriormente.  Posterior al desarrollo, se realizan pruebas para detectar fallos o faltas de funcionalidades requeridas y, si es necesario, se realizan correcciones.
 
 % Implementación
 \newpage
 \section{Conclusiones}
 \subsection{Objetivos conseguidos}
 
-Tras completar el período del desarrollo de la aplicación. En este apartado volvemos a repasar todos los requisitos funcionales que se plantearon al inicio para comprobar si se han conseguido o no.
+Tras completar el período del desarrollo de la aplicación, en este apartado se comprueba la completitud de todos los requisitos funcionales.
 
 % Objetivo 1
 \begin{table}[H]
@@ -2275,23 +2145,21 @@ Tras completar el período del desarrollo de la aplicación. En este apartado vo
 
 \subsection{Próximos pasos}
 
-Tras repasar la lista de objetivos, vemos que la aplicación permite realizar todas las funcionalidades obligatorias y necesarias para un correcto uso de la aplicación. Sin embargo, algunos de los objetivos opcionales se han quedado sin realizar. Para próximas iteraciones podemos añadir como obligatorias las funcionalidades que se han quedado sin implementar en esta primera versión. 
+Tras repasar la lista de objetivos, se concluye que la aplicación permite realizar todas las funcionalidades obligatorias, sin embargo, algunos de los requisitos opcionales no se han completado. Todos los requisitos que faltan se propondrán como requisitos obligatorios en las próximas versiones del producto. El retraso o la falta de implementación en algunas de las funcionalidades, se debe a la dificultad de desarrollar algunos de los requisitos obligatorios como el chat en tiempo real o la lista dinámica en la página del mapa.
 
-Para responder a la pregunta de porque no se han podido implementar todas las funcionalidades, es debido a que hubo un retraso en el desarrollo. Este retraso es fruto de la dificultad a la hora de implementar ciertas funcionalidades, como el chat en tiempo real o la lista dinámica en el mapa. 
+Para futuras iteraciones, se han planteado algunas propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario.
 
-Para futuras iteraciones, se han planteado propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario.
-
-\begin{itemize}
+\begin{itemize}[noitemsep]
 	\item Añadir la posibilidad de crear listas con filtros a las protectoras.
 	\item Permitir subir múltiples imágenes para los perros dados de alta, además de vídeos y poder generar un albúm por cada perro.
 	\item Permitir asignar a un usuario como adoptante/acogedor de un perro, además de indicar en el perfil del perro quien es su adoptante/acogedor.
 	\item Sumar las funcionalidades mandar mensajes de audios y vídeos dentro del chat
-	\item Añadir como atributos opcionales de usuario distintas redes sociales e incluso el número de teléfono.
+	\item Añadir como atributos opcionales de las protectoras distintas redes sociales e incluso el número de teléfono.
 	\item Permitir compartir perfiles de protectoras.
 	\item Integrar los servicios de Google para iniciar sesión.
 \end{itemize}
 
-Todas estas propuestas plantean mejorar el uso de la aplicación, algunas provienen del feedback de los usuarios que han probado la aplicación. Por otra parte, a pesar de que la aplicación está inicialmente pensada para las adopciones de perros, se prevee que se incluyan otros tipos de animales como gatos.
+Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación, y algunas de ellas surgen a partir del feedback proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
 
 \subsection{Valoración personal}
 
@@ -2299,7 +2167,8 @@ Todas estas propuestas plantean mejorar el uso de la aplicación, algunas provie
 % Bibliografía
 \newpage
 \section{Bibliografía}
-
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
 % Bibliografía
 \newpage
 \section{Anexos}

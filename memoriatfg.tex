@@ -1154,10 +1154,94 @@ Los requisitos no funcionales son los encargados de ofrecer al usuario una exper
 
 \subsection{Diagramas de casos de uso}
 
+
+%Caso de uso: Iniciar sesión
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: iniciar sesión.}
+	\end{center}
+\end{figure}
+
+
+%Caso de uso: Registro
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: registro.}
+	\end{center}
+\end{figure}
+
+
+%Caso de uso: Recuperar contraseña
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: recuperar contraseña.}
+	\end{center}
+\end{figure}
+
+
+%Caso de uso: Gestionar perfil usuario
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: gestionar perfil de usuario.}
+	\end{center}
+\end{figure}
+
+
+
+%Caso de uso: Gestionar perfil de perro
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: gestionar perfil de perro.}
+	\end{center}
+\end{figure}
+
+
+%Caso de uso: Listas de perros
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: listas de perros.}
+	\end{center}
+\end{figure}
+
+
+%Caso de uso: Listas de usuario
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: listas de usuarios.}
+	\end{center}
+\end{figure}
+
+
+%Caso de uso: Mensajes
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: mensajería.}
+	\end{center}
+\end{figure}
+
+%Caso de uso: Notificaciones
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{White.png}\par}
+		\caption{Caso de uso: notificaciones}
+	\end{center}
+\end{figure}
+
+
+
+
 % Recursos
 \subsection{Recursos}
 
-Es necesario definir e identificar todos los recursos que son necesarios a partir de la definición de requisitos.
+En esta sección se definen todos los recursos necesarios para el desarrollo de la aplicación.
 
 \subsubsection{Recursos humanos}
 
@@ -1186,9 +1270,9 @@ El sistema operativo utilizado es el que estaba instalado previamente en el orde
 
 Para escoger el framework que se va a utilizar en el proyecto partimos de la base de que vamos a realizar una aplicación android. Existen diferentes frameworks como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform} etc. que ofrecen integración con android para facilitar el desarrollo. En este proyecto, se ha optado por desarrollar con Flutter, debido a que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento. 
 
-El lenguaje utilizado es \textit{Dart}, este lenguaje es muy similar a Java, se trata de un lenguaje orientado a objetos y se utiliza prinicpalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado, uno de los motivos de optar por este lenguaje, es el manenimiento que recibe a día de hoy y por la simple que resulta para programar. Para añadir funcionalidades extra, se han escogido varias bibiliotecas que ofrecen algunos microservicios o widgets.
+El lenguaje utilizado es \textit{Dart}, este lenguaje es muy similar a Java, se trata de un lenguaje orientado a objetos y se utiliza prinicpalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado, uno de los motivos para optar por este lenguaje es el manenimiento que recibe a día de hoy y por la simple que resulta para programar. Para añadir funcionalidades extra, se han escogido varias bibiliotecas que ofrecen algunos microservicios o widgets.
 
-Por último, para manejar la base de datos, entre otros, se ha optado por usar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diferentes servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real, eso lo convertia en el candidato adecuado para manejar el chat, la funcionalidad de compartir entre otras cosas que nuestra aplicación requiere.
+Por último, para manejar la base de datos, se ha optado por usar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diferentes servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real, eso lo convertia en el candidato adecuado para manejar el chat, la funcionalidad de compartir y otras cosas funcionalidades que nuestra aplicación requiere.
 
 \begin{itemize}[noitemsep]
 	\item \textbf{Sistema Operativo:} Windows 11 x64
@@ -1972,28 +2056,85 @@ En esta sección se incluyen todos los diseños realizados en \textit{Figma} par
 	\end{minipage}\hfill
 \end{figure}
 
-
-
-\newpage
-\subsection{Arquitectura de sistema}
-Definicion de modulos (Las carpetas que tengo de common, formularios, paginas...)
-
-Tengo mas de 50 clases, que tipo de diagramas incluyo aqui?
-
-
-
 % Implementación
 \newpage
 \section{Implementación}
 
-En esta fase se lleva a cabo el desarrollo e implementación de la aplicación, que abarca diversos aspectos ya que es la más extensa de todas. Durante este proceso, se van completando los diferentes requisitos definidos anteriormente.  Posterior al desarrollo, se realizan pruebas para detectar fallos o faltas de funcionalidades requeridas y, si es necesario, se realizan correcciones.
+En esta fase se lleva a cabo el desarrollo e implementación de la aplicació. Durante esta etapa, se van completando los diferentes requisitos definidos anteriormente.  Posterior al desarrollo, se realizan pruebas para detectar fallos o faltas de funcionalidades requeridas y, si es necesario, se realizan correcciones.
+
+Durante el desarrollo se han implementado diferentes módulos, cada uno con una finalidad específica:
+\begin{itemize}[noitemsep]
+	\item \textit{appbar}: contiene una clase encargada de proveer las diferentes app bars que se utilizan en la aplicación.
+	\item \textit{auth:} este módulo maneja todas las peticiones que van dirigidas o provieenen del servicio de autenticación de Firebase.
+	\item \textit{chats}: incluye todas las clases principales relacionadas con el sistema de mensajería, así como los modelos de los chats.
+	\item \textit{common}:
+	\item \textit{company}:
+	\item \textit{condition}:
+	\item \textit{contact}:
+	\item \textit{db}: este módulo es uno de los más importantes de la aplicación ya que contiene todas las clases encargadas de gestionar las peticiones con las bases de datos para todas las entidades.
+	\item \textit{dog}:
+	\item \textit{drawer}:
+	\item \textit{home}:
+	\item \textit{init}:
+	\item \textit{legal}:
+	\item \textit{login}:
+	\item \textit{message}:
+	\item \textit{orderby}:
+	\item \textit{register}:
+	\item \textit{section}:
+	\item \textit{services}:
+	\item \textit{splashscreen}:
+	\item \textit{update}:
+	\item \textit{user}:
+	\item \textit{welcome}:
+	\item \textit{widget}:
+\end{itemize}
+
+Para profundizar en como se ha realizado el desarrollo de la aplicación, se exponen a continuación todas las pantallas con las clases y servicios más importantes involucrados en su implementación.
+
+%Splashscreen
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=6cm]{app/Splashscreen.png}\par}
+		\caption{Página de carga}
+	\end{center}
+\end{figure}
+
+% Vista administrador
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=6cm]{app/AdminHome.png}\par}
+		\caption{Página inicio administrador}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=6cm]{app/AdminDrawer.png}\par}
+		\caption{Menú lateral}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=6cm]{app/AdminVerifyPopUp}\par}
+		\caption{Pop up verificar}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=6cm]{app/AdminUnVerifyPopUp}\par}
+		\caption{Pop up desverificar}
+	\end{center}
+\end{figure}
 
 % Conclusiones
 \newpage
 \section{Conclusiones}
 Tras completar el período de desarrollo de la aplicación, en este apartado se comprueba la completitud de todos los requisitos funcionales. 
 
-Se implementó el registro de usuarios por rol además de proporcionar diferentes vistas para cada uno de los roles, que finalmente se definieron como \textit{Usuario},  \textit{Protectora}  y   \textit{Administrador}.  Con relación a los usuarios, también se añadieron diferentes listas a lo largo de la aplicación, que finalmente incluyeron una barra de búsqueda para filtrar resultados. Además, para los usuarios se implementó una página de perfil en la que se puede acceder a la edición de datos y credenciales. Por otra parte, también se implementó el registro y edición de perros y se incluyeron diferentes listas en la aplicación, que aparte de una barra de búsqueda también se les incluyeron los filtros de  \textit{Peso},  \textit{Raza},  \textit{Género} y  \textit{Color}. Además, en los perfiles de los perros se incluyeron botones para compartir y marcar como favoritos, este último vino de la mano de la implementación de la sección de favoritos para los usuarios. Se crearon diferentes páginas, como la página de contacto o la de información legal, además de la página de mapas, en la que se incluyó un listado de resultados e hizo falta integrar las APIs de geolocalización. Esta misma API de geolocalización también se utilizó para desarrollar una barra de búsqueda de direcciones. Por último, se implementó un chat en tiempo real al que se le añadió la opción de mandar imágenes con sus correspondientes notificaciones.
+Se implementó el registro de usuarios por rol además de proporcionar diferentes vistas para cada uno de los roles, que finalmente se definieron como \textit{Usuario},  \textit{Protectora}  y   \textit{Administrador}.  Con relación a los usuarios, también se añadieron diferentes listas a lo largo de la aplicación, que finalmente incluyeron una barra de búsqueda para filtrar resultados. Además, para los usuarios se implementó una página de perfil en la que se puede acceder a la edición de datos y credenciales. Por otra parte, también se implementó el registro y edición de perros y se incluyeron diferentes listas en la aplicación, que aparte de una barra de búsqueda también incluyen los filtros de  \textit{Peso},  \textit{Raza},  \textit{Género} y  \textit{Color}. Además, en los perfiles de los perros se añadieron botones para compartir y marcar como favoritos, este último vino de la mano de la implementación de la sección de favoritos para los usuarios. Se crearon diferentes páginas adicionales, como la página de contacto o la de información legal, además de la página de mapas, en la que se incluyó un listado de resultados e hizo falta integrar las APIs de geolocalización. Esta misma API de geolocalización también se utilizó para desarrollar una barra de búsqueda de direcciones. Por último, se implementó un chat en tiempo real al que se le añadió la opción de mandar imágenes con sus correspondientes notificaciones.
 
 Al revisar la lista de objetivos, se concluye que la aplicación cumple con todas las funcionalidades obligatorias. Sin embargo, algunos requisitos opcionales no se completaron en esta versión. Específicamente, el blog y el tema oscuro no se implementaron. El blog resultó ser demasiado ambicioso y no se pudo completar en el tiempo estipulado, ni si quiera dio tiempo a definir una estructura de datos para este, mientras que el tema oscuro se pospuso debido a retrasos en la implementación de otras funcionalidades obligatorias. Estos requisitos pendientes se considerarán para futuras versiones de la aplicación.
 

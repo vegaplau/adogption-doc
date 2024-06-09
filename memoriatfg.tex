@@ -78,7 +78,7 @@
 \section*{Resumen}
 A día de hoy, comenzar un proceso de adopción puede ser algo tedioso debido a lo descentralizada que está toda la información relacionada con las protectoras y refugios, una persona que quiera adoptar algún animal normalmente va a necestar consultar diversas plataformas o redes para encontrar una protectora cercana o un animal que se adapte a su estilo de vida.
 
-El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones, la información de las protectoras y facilite la comunicación entre los adoptantes y las protectoras. En esta aplicación se podrán dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protectoras o refugios que estén verificadas por los administradores tendrán la capacidad de subir a la plataforma todos los caninos, que aparecerán en las listas de adopción o acogida dependiendo de lo que se haya marcado para cada canino. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro. Existirán formularios para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como la descripción, la raza, la edad, el peso, etc. Los usuarios también dispondrán de formularios para darse de alta y editar su información. La aplicación utilizará un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación y su distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la misma. También se incluirán barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario. Se incluirá dentro de la aplicación un sistema de mensajería para facilitar la comunicación, tanto entre usuarios y protectoras como con los administradores. El chat permitirá mensajes de texto e imágenes. Se añadirá, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de un enlace. La aplicación constará de una página de información legal y de contacto a disposición del usuario.
+El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones, la información de las protectoras y facilite la comunicación entre los adoptantes y las protectoras. En esta aplicación se podrán dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protectoras o refugios que estén verificadas por los administradores tendrán la capacidad de subir a la plataforma todos los caninos, que aparecerán en las listas de adopción o acogida dependiendo de lo que se haya marcado para cada uno. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro. Existirán formularios para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como la descripción, la raza, la edad, el peso, etc. Los usuarios también dispondrán de formularios para darse de alta y editar su información. La aplicación utilizará un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación y su distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la misma. También se incluirán barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario. Se incluirá dentro de la aplicación un sistema de mensajería para facilitar la comunicación, tanto entre usuarios y protectoras como con los administradores. El chat permitirá mensajes de texto e imágenes. Se añadirá, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de un enlace. La aplicación constará de una página de información legal y de contacto a disposición del usuario.
 
 
 % Pagina en blanco
@@ -419,6 +419,8 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF1}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
+	\textbf{Descripción} & Ofrecer un formulario de registro para usuarios y protectoras. \\ 
+	\hline
 	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario de registro. Incluyendo datos de contacto, correo electrónico y dirección. \\ 
 	\hline
 	\textbf{Datos de Salida} & Datos del usuario almacenados en la base de datos. \\ 
@@ -433,7 +435,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF2}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Ofrecer un formulario de registro para añadir perros con características específicas. \\ 
+	\textbf{Descripción} & Ofrecer un formulario de registro para añadir perros con características específicas. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Datos ingresados por la protectora, tales como raza, peso, edad, color y descripción. \\ 
 	\hline
@@ -449,7 +451,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF23}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Mostrar diferentes listas de usuarios en la aplicación, con filtros predeterminados. \\ 
+	\textbf{Descripción} & Mostrar diferentes listas de usuarios en la aplicación, con filtros predeterminados. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -465,7 +467,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF4}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Mostrar diferentes listas de perros en la aplicación, con filtros predeterminados \\ 
+	\textbf{Descripción} & Mostrar diferentes listas de perros en la aplicación, con filtros predeterminados \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -481,7 +483,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF5}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar diferentes filtros para las listas de perros, que corresponden con las diferentes propiedades que puede tener un perro en la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar diferentes filtros para las listas de perros, que corresponden con las diferentes propiedades que puede tener un perro en la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Valores de los filtros proporcionados por el usuario. \\ 
 	\hline
@@ -497,7 +499,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF6}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los perros. \\ 
+	\textbf{Descripción} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los perros. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Texto de búsqueda ingresado por el usuario. \\ 
 	\hline
@@ -513,7 +515,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF7}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 \hline
-	\textbf{Explicación} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los usuarios. \\ 
+	\textbf{Descripción} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los usuarios. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Texto de búsqueda ingresado por el usuario. \\ 
 	\hline
@@ -529,7 +531,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF8}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Botón en listas de usuarios que redirige a una página con mapa con todos los resultados con ubicación. \\ 
+	\textbf{Descripción} & Botón en listas de usuarios que redirige a una página con mapa con todos los resultados con ubicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno \\ 
 	\hline
@@ -545,7 +547,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF9}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Permitir a un usuario o protectora marcar como favorito a un perro. \\ 
+	\textbf{Descripción} & Permitir a un usuario o protectora marcar como favorito a un perro. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Click del usuario sobre el botón. \\ 
 	\hline
@@ -561,7 +563,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF10}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Muestra una sección de perros marcados como favoritos en ese momento por el usuario en su página de inicio. \\ 
+	\textbf{Descripción} & Muestra una sección de perros marcados como favoritos en ese momento por el usuario en su página de inicio. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -577,7 +579,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF11}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Muestra un swiper con imágenes de perros marcados como adoptados recientemente. \\ 
+	\textbf{Descripción} & Muestra un swiper con imágenes de perros marcados como adoptados recientemente. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -593,7 +595,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF12}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Mostrar botón de cerrar sesión en el menú de acciones en la app bar de la aplicación. \\ 
+	\textbf{Descripción} & Mostrar botón de cerrar sesión en el menú de acciones en la app bar de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -609,7 +611,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF13}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Mostrar botón de contacto en el menú de acciones en la app bar de la aplicación. \\ 
+	\textbf{Descripción} & Mostrar botón de contacto en el menú de acciones en la app bar de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -625,7 +627,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF14}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Mostrar botón que abre menú lateral. \\ 
+	\textbf{Descripción} & Mostrar botón que abre menú lateral. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -641,7 +643,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF15}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Muestra los datos del usuario iniciado en el menú lateral. \\ 
+	\textbf{Descripción} & Muestra los datos del usuario iniciado en el menú lateral. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -657,7 +659,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF16}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -673,7 +675,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF17}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -689,7 +691,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF18}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de chats de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de chats de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -705,7 +707,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF19}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la lista de protectoras de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la lista de protectoras de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -721,7 +723,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF20}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la lista de sus perros de la aplicación \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la lista de sus perros de la aplicación \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -737,7 +739,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF21}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la lista de usuarios de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la lista de usuarios de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -753,7 +755,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF22}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar botón para redirigir al usuario a la página de información legal de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de información legal de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Ninguno. \\ 
 	\hline
@@ -769,7 +771,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF23}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar formularios de edición para los datos del usuario. \\ 
+	\textbf{Descripción} & Proporcionar formularios de edición para los datos del usuario. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario. Puede haber datos sin actualizar. \\ 
 	\hline
@@ -785,7 +787,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF24}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Propocionar formularios de edición para los datos de los caninos. \\ 
+	\textbf{Descripción} & Propocionar formularios de edición para los datos de los caninos. \\ 
 	\hline
 	\textbf{Datos de Entrada} &  Datos ingresados por el usuario en el formulario. Puede haber datos sin actualizar.  \\ 
 	\hline
@@ -801,7 +803,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF25}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar formularios de recuperación de contraseña para los usuarios y protectoras. \\ 
+	\textbf{Descripción} & Proporcionar formularios de recuperación de contraseña para los usuarios y protectoras. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Correo electrónico ingresado por el usuario. \\ 
 	\hline
@@ -817,7 +819,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF26}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz que condense toda la información de un usuario en una sola página. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que condense toda la información de un usuario en una sola página. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -833,7 +835,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF27}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz que condense toda la información relacionada con un perro en una sola página. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que condense toda la información relacionada con un perro en una sola página. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -849,7 +851,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF28}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar un botón que genere un enlace para redirigir a un usuario al perfil de ese perro en concreto. \\ 
+	\textbf{Descripción} & Proporcionar un botón que genere un enlace para redirigir a un usuario al perfil de ese perro en concreto. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -865,7 +867,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF29}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz que contenga un mapa con diferentes marcadores para cada una de las protectoras y un listado de las mismas debajo del mapa. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que contenga un mapa con diferentes marcadores para cada una de las protectoras y un listado de las mismas debajo del mapa. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -882,7 +884,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF30}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz que contenga un listado de chats abiertos dentro de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que contenga un listado de chats abiertos dentro de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -899,7 +901,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF31}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Permitir mandar mensajes a otro usuario dentro de la aplicación. \\ 
+	\textbf{Descripción} & Permitir mandar mensajes a otro usuario dentro de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Texto ingresado por el usuario. \\ 
 	\hline
@@ -916,7 +918,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF32}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 \hline
-	\textbf{Explicación} & Permitir mandar mensajes a otro usuario dentro de la aplicación. \\ 
+	\textbf{Descripción} & Permitir mandar mensajes a otro usuario dentro de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Imagen adjuntada por el usuario. \\ 
 	\hline
@@ -933,7 +935,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF33}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar un botón de contacto para abrir un chat con algún usuario dentro de la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar un botón de contacto para abrir un chat con algún usuario dentro de la aplicación. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -949,7 +951,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF34}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Deslizar un chat para eliminarlo de la lista de chats disponibles \\ 
+	\textbf{Descripción} & Deslizar un chat para eliminarlo de la lista de chats disponibles \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -965,7 +967,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF35}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar un botón dentro del perfil del perro que permite a una protectora marcar/desmarcar a un perro de la aplicación como adoptado. \\ 
+	\textbf{Descripción} & Proporcionar un botón dentro del perfil del perro que permite a una protectora marcar/desmarcar a un perro de la aplicación como adoptado. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Estado nuevo según si se quiere marcar o desmarcar. \\ 
 	\hline
@@ -982,7 +984,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF36}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz que rehúna datos de contacto de administradores. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que rehúna datos de contacto de administradores. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -998,7 +1000,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF37}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz que rehúna toda la información legal y advertencias. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que rehúna toda la información legal y advertencias. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -1014,7 +1016,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF38}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una interfaz única según el rol después de iniciar sesión. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz única según el rol después de iniciar sesión. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Correo electrónico y contraseña para iniciar sesión. \\ 
 	\hline
@@ -1030,7 +1032,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF39}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una página para los administradores. \\ 
+	\textbf{Descripción} & Proporcionar una página para los administradores. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Correo electrónico y contraseña de administrador para iniciar sesión. \\ 
 	\hline
@@ -1046,7 +1048,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF40}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una barra de búsqueda de direcciones para facilitar la introducción de datos. \\ 
+	\textbf{Descripción} & Proporcionar una barra de búsqueda de direcciones para facilitar la introducción de datos. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Una cadena de caracteres que puede contener el nombre de la calle, la ciudad, el código postal... \\ 
 	\hline
@@ -1062,7 +1064,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF41}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Proporcionar una barra de búsqueda de direcciones para facilitar la introducción de datos. \\ 
+	\textbf{Descripción} & Proporcionar una barra de búsqueda de direcciones para facilitar la introducción de datos. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno.\\ 
 	\hline
@@ -1078,7 +1080,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF42}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Permitir a un usuario subir un post al blog. \\ 
+	\textbf{Descripción} & Permitir a un usuario subir un post al blog. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Contenido que puede ser texto o imágenes. \\ 
 	\hline
@@ -1094,7 +1096,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 \label{tab:RF43}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Explicación} & Permitir a un usuario comentar un post en el blog. \\ 
+	\textbf{Descripción} & Permitir a un usuario comentar un post en el blog. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Texto que puede incluir emoticonos. \\ 
 	\hline
@@ -2074,43 +2076,352 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
 \newpage
 \section{Implementación}
 
-En esta fase se lleva a cabo el desarrollo e implementación de la aplicació. Durante esta etapa, se van completando los diferentes requisitos definidos anteriormente.  Posterior al desarrollo, se realizan pruebas para detectar fallos o faltas de funcionalidades requeridas y, si es necesario, se realizan correcciones.
+En esta fase se lleva a cabo el desarrollo e implementación de la aplicación. Durante esta etapa se van completando los diferentes requisitos definidos anteriormente.  
 
-Durante el desarrollo se han implementado diferentes módulos, cada uno con una finalidad específica:
+\subsection{Módulos y clases}
+Durante el desarrollo se han implementado diferentes módulos, cada uno con una finalidad específica. A continuación se muestran todos los módulos con sus clases principales y sus dependencias.
+
+
+%Diagrama de modulos y sus dependencias
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=12cm]{diagram/MODULES.png}\par}
+		\caption{Módulos y sus dependencias.}
+	\end{center}
+\end{figure}
+
+
+\newpage
+\subsection*{appbar}
+
+
+Este módulo se utiliza para generar las diferentes \textit{AppBar} que se utilizan en las pantallas de la aplicación. Una \textit{AppBar} es el componente que se coloca en la parte superior de la pantalla y puede contener botones u otros componentes tales como barras de búsqueda o imágenes. La única clase que contiene el módulo se encarga de instanciar el componente en las diferentes pantallas según el tipo de barra que se necesite.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/AppBar.png}\par}
+		\caption{Módulo appbar.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{chats}
+
+Aquí se incluyen todas las clases que necesita un chat para funcionar correctamente.
 \begin{itemize}[noitemsep]
-	\item \textit{appbar}: contiene una clase encargada de proveer las diferentes app bars que se utilizan en la aplicación.
-	\item \textit{auth:} este módulo maneja todas las peticiones que van dirigidas o provieenen del servicio de autenticación de Firebase.
-	\item \textit{chats}: incluye todas las clases principales relacionadas con el sistema de mensajería, así como los modelos de los chats.
-	\item \textit{common}:
-	\item \textit{company}:
-	\item \textit{condition}:
-	\item \textit{contact}:
-	\item \textit{db}: este módulo es uno de los más importantes de la aplicación ya que contiene todas las clases encargadas de gestionar las peticiones con las bases de datos para todas las entidades.
-	\item \textit{dog}:
-	\item \textit{drawer}:
-	\item \textit{home}:
-	\item \textit{init}:
-	\item \textit{legal}:
-	\item \textit{login}:
-	\item \textit{message}:
-	\item \textit{orderby}:
-	\item \textit{register}:
-	\item \textit{section}:
-	\item \textit{services}:
-	\item \textit{splashscreen}:
-	\item \textit{update}:
-	\item \textit{user}:
-	\item \textit{welcome}:
-	\item \textit{widget}:
+	\item \textbf{ChatInput}: Componente que permite a los usuarios escribir mensajes y adjuntar imágenes a los chats.
+	\item \textbf{ChatRoomPage}: Interfaz del chat.
+	\item \textbf{ChatsPage}:  Es la página principal que contiene todos los chats, contiene todos los chats que un usuario tiene en ese momento, son una lista de \textit{ChatWidget}.
+	\item \textbf{ChatWidget}: Este componente muestra una previsualización del chat, que incluye la información del usuario, el último mensaje y  la fecha y hora en la que se envió. Además, incluye el número de mensajes sin leer del chat.
+	\item \textbf{ChatModel}: Clase que se encarga de generar y manejar modelos de chat que se generan a partir de toda la información de la base de datos relacionada con los chats.
 \end{itemize}
 
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.7\linewidth]{diagram/Chats.png}\par}
+		\caption{Módulo chats.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{common}
+
+En este módulo se definen todos los componentes básicos que incluyen las diferentes pantallas generadas. Además, se definen diferentes submódulos para cada uno de los componentes creados. Todos los submódulos contienen una clase base en la que se definen los estilos y funcionalidades básicas, y el resto de las clases extienden estas clases base. Es importante destacar que, aunque se hayan creado clases propias para los componentes, todas ellas instancian componentes de las bibliotecas por defecto de Flutter, como la biblioteca \textit{material}. Esta implementación favorece la escalabilidad y mantenibilidad de la aplicación, además de evitar la repetición de una gran cantidad de código.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{button}: Define todos los botones que se utilizan en diferentes componentes y pantallas. Existen botones que tienen diferentes funcionalidades, como redirigir a otras pantallas, actualizar datos o mostrar pop-ups.
+	\item \textbf{card}: Una tarjeta es un componente muy parecido a un contenedor pero con un visual más atractivo. Por ello se ha generado un componente base que se reutiliza en diferentes widgets y que contiene este módulo.
+	\item \textbf{checkbox}: Recoge los diferentes checkboxes que se han desarrollado, además de su comportamiento.
+	\item \textbf{container}: En este módulo se define un contenedor básico con un estilo concreto para poder reutilizarlo en diferentes sitios.
+	\item \textbf{dialog}: Recoge todos los pop-ups que se han desarrollado y todo su comportamiento.
+	\item \textbf{drawer}: Este módulo contiene todos los menús laterales y componentes de estos. Los componentes de los menús incluyen imágenes de perfil y botones que redirigen a otras pantallas.
+	\item \textbf{dropdown}: Incluye los diferentes dropdowns que se han utilizado en la app. Algunos de ellos incluyen la funcionalidad de búsqueda de opciones.
+	\item \textbf{form}: Incluye todos los formularios que se utilizan en la aplicación.
+	\item \textbf{icon}: Recoge iconos básicos que tienen funcionalidad. Por ahora, el único que se incluye es el icono de favoritos.
+	\item \textbf{images}: Este módulo incluye clases muy diferentes. Por una parte, incluye clases que proveen funcionalidades para seleccionar imágenes del dispositivo y, por otra parte, incluye componentes que facilitan la inserción de imágenes en la app.
+	\item \textbf{input}: Recoge todos los componentes que permiten a un usuario introducir información de algún tipo. Pueden ser de texto, numéricos o incluso componentes compuestos que contienen dropdowns o checkboxes.
+	\item \textbf{maps}: Incluye toda la funcionalidad relacionada con los mapas, tanto la página de mapas como los mapas que se pueden insertar en diferentes partes de la aplicación.
+	\item \textbf{padding}: En este submódulo se define un padding que se reutiliza a lo largo de la aplicación.
+	\item \textbf{picker}: Incluye componentes relacionados con seleccionar direcciones en mapas o similares.
+	\item \textbf{searchbar}: Define las barras de búsqueda implementadas en la app, además de su funcionalidad.
+	\item \textbf{swiper}: En este submódulo, por ahora, solo se ha definido el swiper para mostrar las adopciones recientes.
+	\item \textbf{text}: Contiene clases que definen textos que se usan a lo largo de la aplicación. Los textos pueden ser títulos, subtítulos, avisos, etc.
+	\item \textbf{widget}: Incluye componentes que son comunes pero están compuestos por otros componentes comunes.
+\end{itemize}
+
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Common.png}\par}
+		\caption{Módulo chats.}
+	\end{center}
+\end{figure}
+
+\subsection*{condition}
+
+Este módulo el encargado de manejar los filtros de las listas de una forma más dinámica. 
+
+\begin{itemize}[noitemsep]
+	\item \textbf{Basic}: Define el componente básico para añadir filtros a las listas, se encarga de abrir el pop-up con las opciones del filtro.
+	\item \textbf{Gender}: Define el filtro para el género.
+	\item \textbf{Weight}: Define el filtro para el peso.
+	\item \textbf{ConditionModel}: Clase que se encarga de generar y manejar modelos de condiciones a partir de la información proporcionada por la aplicación o el usuario. Esta clase además proporciona un método que se encarga de añadir todos los filtros que haya aplicados en ese momento a la query.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/Condition.png}\par}
+		\caption{Módulo condition.}
+	\end{center}
+\end{figure}
+
+\subsection*{contact}
+
+A pesar de que este módulo solo contiene una clase que se encarga de mostrar toda la información de contacto con administradores, se definió aparte para añadir más clases en futuras iteraciones.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/Contact.png}\par}
+		\caption{Módulo contact.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{db}
+
+Este módulo es el encargado de comunicarse directamente con la base de datos de Firebase. Éste contiene diferentes clases para las diferentes entidades que existen y para el almacenamiento.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{DBBase}: Clase abstracta que contiene los métodos básicos que deben incluir el resto de clases.
+	\item \textbf{DBAddresses}: Clase que maneja las direcciones y coordenadas.
+	\item \textbf{DBChats}: Clase que maneja toda la información relacionada con chats.
+	\item \textbf{DBDogs}: Clase que maneja toda la información relacionada con perros y su información.
+	\item \textbf{DBFavorites}: Clase que se encarga exclusivamente de actualizar la información de los favoritos dentro de la tabla de perros.
+	\item \textbf{DBMessages}: Clase que maneja toda la información relacionada con mensajes.
+	\item \textbf{DBNotifications}: Clase que maneja toda la información relacionada con notificaciones
+	\item \textbf{DBStorage}: Clase que se encarga de insertar, actualizar y eliminar toda las imágenes relacionadas con alguna de las entidades.
+	\item \textbf{DBUsers}: Clase que maneja toda la información relacionada con los usuarios.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.7\linewidth]{diagram/DB.png}\par}
+		\caption{Módulo db.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{dog}
+
+Módulo que contiene las clases principales relacionadas con los perros.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{AvailableDogsPage}: Pantalla de lista de perros que contiene los filtros y una barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
+	\item \textbf{DogFeature}: Widget que se instancia con la información de alguno de los atributos del perro para mostrarlo en el perfil.
+	\item \textbf{DogProfile}: Pantalla que contiene toda la información de un perro, incluyendo el botón de favoritos y compartir.
+	\item \textbf{DogModel}: Clase que se encarga de generar y manejar modelos de perros a partir de la información en la base de datos. 
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Dog.png}\par}
+		\caption{Módulo dog.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{home}
+
+Se incluyen todas las pantallas de inicio definidas para los diferentes roles.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{AdminHome}: Pantalla de inicio para administradores.
+	\item \textbf{MyHome}: Pantalla de inicio para usuarios.
+	\item \textbf{MyHomePageCompany}: Pantallade inicio para protectoras.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Home.png}\par}
+		\caption{Módulo home.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{init}
+
+La clase contenida en este módulo se encarga de manejar la pantalla que se debe mostrar cuando se abre la aplicación, además de inicializar todos los servicios que lo requieran. La pantalla mostrará la \textit{Splashscreen} y dependiendo si hay un usuario iniciado se redigirá a la pantalla de inicio del rol correspondiente o a la pantalla de inicio de sesión.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/Init.png}\par}
+		\caption{Módulo init.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{legal}
+
+Este módulo solo contiene una pantalla que contiene toda la información legal relacionada con las adopciones y los usos de la aplicación.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/Legal.png}\par}
+		\caption{Módulo legal.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{login}
+
+
+Contiene la página para iniciar sesión y la de recuperación de contraseña.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Login.png}\par}
+		\caption{Módulo login.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{message}
+
+En este módulo se definen los widgets relacionados con los mensajes que se utilizan dentro de las salas de chat.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{DateMessageDivider}: Este widget se inserta entre mensajes consecutivos que son de días diferentes para indicar la fecha de los mensajes posteriores.
+	\item \textbf{MessageWidget}: Widget que muestra el contenido del mensaje que puede ser texto o imagen, además contiene un icono que indica si un mensaje ha sido leído o no.
+	\item \textbf{MessageModel}: Clase que se encarga de generar y manejar modelos de mensajes a partir de la información en la base de datos.
+\end{itemize}
+
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Message.png}\par}
+		\caption{Módulo message.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{orderby}
+
+Este módulo contiene el modelo para añadir la cláusula de orden a las consultas.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/OrderBy.png}\par}
+		\caption{Módulo orderby.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{register}
+
+Contiene todas las páginas relacionadas con los registro dentro de la app. Cada una de las pantallas incluye un formulario específico que se encarga de todas las validaciones.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{RegisterAsCompanyPage}: Pantalla de registro de protectora.
+	\item \textbf{RegisterAsUserPage}: Pantalla de registro de usuario.
+	\item \textbf{RegisterDog}: Pantralla de registro de perro.
+	\item \textbf{RegisterPage}:  Pantalla que ofrece las opciones para registrarse como protectora o usuario.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Register.png}\par}
+		\caption{Módulo register.}
+	\end{center}
+\end{figure}
+
+\subsection*{section}
+
+Contiene diferentes widgets que son secciones que se usan en diferentes pantallas.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{AdminCategorySection}: Incluye la sección principal de la página de inicio de administrador.
+	\item \textbf{CompanyCategorySection}: Incluye la sección principal de la página de inicio de protectora.
+	\item \textbf{RecentAdoptionsSection}:  Define la sección de adopciones recientes que se usa en diferentes páginas de inicio.
+	\item \textbf{UserCategorySection}:  Incluye la sección principal de la página de inicio de usuario.
+	\item \textbf{UserFavoritesSection}:  Define la sección de favoritos de un usuario específico.
+	\item \textbf{UserOwnedDogsSection}:  Define la sección de perros que son de un usuario específico.
+\end{itemize}
+
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Section.png}\par}
+		\caption{Módulo section.}
+	\end{center}
+\end{figure}
+
+
+\subsection*{services}
+
+Se incluyen clases que manejan servicios que proporciona Flutter o Firebase y otros clases que son servicios creados específicamente para la aplicación.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{AddressService}: Servicio para manejar los modelos de las direcciones y las coordenadas.
+	\item \textbf{AwesomeNotificationService}: Clase que maneja el servicio de notificaciones. 
+	\item \textbf{GeocodingService}: Clase que maneja el servicio de geocoding que proporciona Google dentro de la app.
+	\item \textbf{RoutingService}:  Servicio para manejar las rutas de la aplicación.
+	\item \textbf{Auth - AuthUsers}:  Clase que maneja el servicio de autenticación que proporciona Firebase.
+\end{itemize}
+
+
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/Services.png}\par}
+		\caption{Módulo services.}
+	\end{center}
+\end{figure}
+
+\subsection*{update}
+
+Contiene las páginas que incluyen formularios para la actualización de datos de usuarios y de perros.
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[]{diagram/Update.png}\par}
+		\caption{Módulo update.}
+	\end{center}
+\end{figure}
+
+
+
+\subsection*{user}
+
+Módulo que contiene las clases principales relacionadas con los perros.
+
+\begin{itemize}[noitemsep]
+	\item \textbf{CurrentUser}: Clase singleton que se encarga de manejar todos los datos relacionados con el usuario iniciado a lo largo de la aplicación.
+	\item \textbf{LoggedUserModel}: Clase para manejar el modelo del usuario iniciado.
+	\item \textbf{UserModel}: Clase que se encarga de generar y manejar modelos de usuarios a partir de la información en la base de datos. 
+	\item \textbf{ProfilePage}:  Pantalla que contiene toda la información personal del usuario. Puede contener un listado de perros y un botón para abrir una página de mapa dependiendo del rol de usuario.
+	\item \textbf{UserMapWidget}: Elemento que se instancia en las listas usadas en los mapas con toda la información del usuario.
+	\item \textbf{UsersPage}: Pantalla de la lista de usuarios que contiene además la barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
+\end{itemize}
+
+\begin{figure}[H]
+	\begin{center}
+		{\includegraphics[width=0.8\linewidth]{diagram/User.png}\par}
+		\caption{Módulo user.}
+	\end{center}
+\end{figure}
+
+
+\subsection{Pantallas}
+
 Para profundizar en como se ha realizado el desarrollo de la aplicación, se exponen a continuación todas las pantallas con las clases y servicios más importantes involucrados en su implementación.
+
+\subsection*{Pantalla de carga}
 
 %Splashscreen
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=6cm]{app/Splashscreen.png}\par}
-		\caption{Página de carga}
+		\caption{Pantalla de carga}
 	\end{center}
 \end{figure}
 
@@ -2186,7 +2497,7 @@ Para futuras iteraciones, se han planteado algunas propuestas para añadir valor
 
 Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación, algunas de ellas surgen a partir del feedback proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
 
-\subsection{Valoración personal}
+\section{Valoración personal}
 
 
 % Bibliografía

@@ -1,29 +1,24 @@
 \documentclass[a4paper, 12pt]{article}
+
+% Título, autor y fecha
 \title{Adogption}
 \date{2024-05-10}
 \author{Laura Vega Palacios}
-\renewcommand{\contentsname}{Tabla de contenidos}
-\renewcommand{\listtablename}{Tabla de contenidos}
-\renewcommand{\listfigurename}{Abbildungsverzeichnis}
 
 % Paquetes
+\usepackage[utf8]{inputenc}
 \usepackage{subcaption}
-\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage[table]{xcolor} % Cargado una sola vez
 \usepackage{caption}
 \usepackage{float}
-\usepackage{color}
-\usepackage{graphicx}
+\usepackage{graphicx} % Cargado una sola vez
 \usepackage{epsfig}
 \usepackage{multirow}
 \usepackage{colortbl}
-\usepackage[table]{xcolor}
 \usepackage{array} 
 \usepackage[parfill]{parskip}
 \setlength{\parindent}{30pt}
-\usepackage{graphicx}
 \usepackage{imakeidx}
-\usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
 \makeindex[columns=3, title=Indice]
 \usepackage{hyperref}
 \hypersetup{
@@ -36,16 +31,21 @@
 }
 \usepackage{geometry}
 \usepackage{enumitem}
+\usepackage{tocloft}
 
 % Setup
 \setcounter{section}{0}
 \providecommand{\keywords}[1]{\textbf{\textit{Palabras clave:}} #1}
 \renewcommand{\baselinestretch}{1}
+\renewcommand{\tableofcontents}{Índice}
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\listfigurename}{Índice de figuras}
 \captionsetup[figure]{}
 \captionsetup[table]{labelformat=empty}
 
 % Empieza el documento
 \begin{document}
+
 
 % Portada
 \begin{titlepage}
@@ -198,6 +198,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 1}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -211,6 +212,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 2}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -224,6 +226,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 3}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -237,6 +240,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 4}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -250,6 +254,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 5}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -263,6 +268,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 6}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -276,6 +282,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 7}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -289,6 +296,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 8}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -302,6 +310,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 9}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -315,6 +324,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 10}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -328,6 +338,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 11}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -341,6 +352,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 12}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -354,6 +366,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 13}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -367,6 +380,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \begin{table}[H]
 	\captionsetup{width=0.95\linewidth}%
    	\captionsetup{singlelinecheck=false}%
+	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\caption{Objetivo 14}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
@@ -379,13 +393,13 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 % Planificación
 \newpage
 
-\section{Diagrama de Gannt}
+\section{Planificación temporal}
 
 En esta sección se definen todas las etapas en las que se dividirá el proyecto, resumidas en un diagrama de Gantt. Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
 
 \begin{figure}[H]
 	{\includegraphics[width=15cm]{diagram/GanntSmall2.png}\par}
-	\caption{Diagrama de Gannt}
+	\caption{Diagrama de Gantt}
 \end{figure}
 
 Dentro del diagrama se pueden observar las diferentes etapas del proyecto:
@@ -415,6 +429,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF1
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF1:} Registro de usuarios y protectoras.}
 \label{tab:RF1}
@@ -431,6 +446,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF2
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF2:} Registro de caninos.}
 \label{tab:RF2}
@@ -447,6 +463,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF3
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF3:} Mostrar listas de usuarios.}
 \label{tab:RF23}
@@ -463,6 +480,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF4
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF4:} Mostrar listas de perros.}
 \label{tab:RF4}
@@ -479,6 +497,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF5
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF5:} Capacidad de filtrado por propiedades en listas de perros.}
 \label{tab:RF5}
@@ -495,6 +514,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF6
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF6:} Capacidad de filtrado por búsqueda en listas de perros.}
 \label{tab:RF6}
@@ -511,6 +531,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF7
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF7:} Capacidad de filtrado por búsqueda en listas de usuarios..}
 \label{tab:RF7}
@@ -527,6 +548,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF8
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF8:}  Proporcionar botón de mapa de resultados en listas de usuarios.}
 \label{tab:RF8}
@@ -543,6 +565,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF9
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF9:} Proporcionar botón de favoritos en perfiles de perros.}
 \label{tab:RF9}
@@ -559,6 +582,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF10
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF10:} Mostrar sección de perros favoritos. }
 \label{tab:RF10}
@@ -575,6 +599,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF11
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF11:} Mostrar adopciones recientes.}
 \label{tab:RF11}
@@ -591,6 +616,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF12
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF12:} Proporcionar botón de cerrar sesión.}
 \label{tab:RF12}
@@ -607,6 +633,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF13
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF13:} Proporcionar botón de contacto.}
 \label{tab:RF13}
@@ -623,6 +650,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF14
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF14:} Botón de menu lateral en la app bar.}
 \label{tab:RF14}
@@ -639,6 +667,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF15
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF15:} Mostrar datos personales en el menú lateral.}
 \label{tab:RF15}
@@ -655,6 +684,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF16
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF16:} Botón de 'Inicio' en el menú lateral.}
 \label{tab:RF16}
@@ -671,6 +701,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF17
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF17:} Botón de 'Perfil personal' en el menú lateral.}
 \label{tab:RF17}
@@ -687,6 +718,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF18
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF18:} Botón de 'Mensajes' en el menú lateral.}
 \label{tab:RF18}
@@ -703,6 +735,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF19
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF19:} Botón de 'Protectoras' en el menú lateral.}
 \label{tab:RF19}
@@ -719,6 +752,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF20
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF20:} Botón de 'Mis perros' en el menú lateral.}
 \label{tab:RF20}
@@ -735,6 +769,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF21
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF21:} Botón de 'Usuarios' en el menú lateral.}
 \label{tab:RF21}
@@ -751,6 +786,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF22
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF22:} Botón de 'Información legal' en el menú lateral.}
 \label{tab:RF22}
@@ -767,6 +803,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF23
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF23:} Edición de datos personales y de contacto.}
 \label{tab:RF23}
@@ -783,6 +820,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF24
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF24:} Edición de datos de perros.}
 \label{tab:RF24}
@@ -799,6 +837,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF25
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF25:} Recuperación de contraseña.}
 \label{tab:RF25}
@@ -815,6 +854,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF26
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF26:} Mostrar página de perfil de usuario/protectora.}
 \label{tab:RF26}
@@ -831,6 +871,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF27
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF27:} Mostrar página de perfil de canino.}
 \label{tab:RF27}
@@ -847,6 +888,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF28
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF28:} Compartir perros a través de enlace.}
 \label{tab:RF28}
@@ -863,6 +905,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF29
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF29:} Página del mapa.}
 \label{tab:RF29}
@@ -880,6 +923,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF30
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF30:} Página de chats.}
 \label{tab:RF30}
@@ -897,6 +941,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF31
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF31:} Enviar mensajes al chat.}
 \label{tab:RF31}
@@ -914,6 +959,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF32
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF32:} Enviar imágenes al chat.}
 \label{tab:RF32}
@@ -931,6 +977,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF33
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF33:} Abrir un chat nuevo.}
 \label{tab:RF33}
@@ -947,6 +994,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF34
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF34:} Borrar un chat.}
 \label{tab:RF34}
@@ -963,6 +1011,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF35
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF35:} Marcar/desmarcar perro como adoptado.}
 \label{tab:RF35}
@@ -980,6 +1029,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF36
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF36:} Página de contacto.}
 \label{tab:RF36}
@@ -996,6 +1046,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF37
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF37:} Página de información legal.}
 \label{tab:RF37}
@@ -1012,6 +1063,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF38
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF38:} Proporcionar página de inició según rol.}
 \label{tab:RF38}
@@ -1028,6 +1080,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF39
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF39:} Página de administrador.}
 \label{tab:RF39}
@@ -1044,6 +1097,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF40
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF40:} Búsqueda de direcciones.}
 \label{tab:RF40}
@@ -1060,6 +1114,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF41
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF41:} Cambiar a tema oscuro.}
 \label{tab:RF41}
@@ -1076,6 +1131,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF42
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF42:} Subir post al blog.}
 \label{tab:RF42}
@@ -1092,6 +1148,7 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 % RF43
 \begin{table}[H]
+\captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \caption{\textbf{RF43:} Comentar post del blog.}
 \label{tab:RF43}
@@ -1213,16 +1270,16 @@ Para este proyecto, el hardware disponible incluye un ordenador de sobremesa per
 			\item \textbf{Placa base:} ASUS TUF GAMING B550-PLUS WIFI II
 			\item \textbf{Disipador:} Noctua NH-D15
 		\end{itemize}
-	\item Tablet android Hi9plus, para realizar pruebas en un dispositivo android físico.
+	\item Tablet Android Hi9plus, para realizar pruebas en un dispositivo Android físico.
 \end{itemize}
 
 \subsubsection{Software}
 
 El sistema operativo utilizado es el que estaba instalado previamente en el ordenador personal.
 
-A la hora de seleccionar el framework para utilizar durante el desarrollo, se parte de que se necesita crear una aplicación android. Existen diferentes frameworks disponibles, como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform}, etc., que ofrecen integración con Android para facilitar el desarrollo. En este proyecto, se ha optado por utilizar Flutter, dado que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento.
+A la hora de seleccionar el framework para utilizar durante el desarrollo, se parte de que se necesita crear una aplicación Android. Existen diferentes frameworks disponibles, como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform}, etc., que ofrecen integración con Android para facilitar el desarrollo. En este proyecto, se ha optado por utilizar Flutter, dado que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento.
 
-El lenguaje escogido es \textit{Dart}. Este lenguaje es muy similar a Java y está orientado a objetos. Se utiliza principalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado. Uno de los motivos para optar por este lenguaje es el mantenimiento que recibe a día de hoy y su simplicidad para programar. Para añadir funcionalidades extra, se han escogido varias bibliotecas que ofrecen microservicios o widgets.
+El lenguaje utilizado ha sido \textit{Dart}. Este lenguaje es muy similar a Java y está orientado a objetos. Se utiliza principalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado. Uno de los motivos para optar por este lenguaje ha sido din duda el mantenimiento que recibe a día de hoy y su simplicidad para programar. Para añadir funcionalidades extra, se han escogido varias bibliotecas que ofrecen microservicios o widgets.
 
 Por último, para la base de datos, se ha optado por utilizar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diversos servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real. Esto lo convierte en el candidato adecuado para manejar funciones como el chat, la funcionalidad de compartir y otras características que nuestra aplicación requiere.
 
@@ -1285,7 +1342,7 @@ Habiendo seleccionado todos los recursos necesarios para el desarrollo del produ
 
 \subsubsection{Recursos humanos}
 
-Para calcular el costo relacionado con el personal, tomaremos como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado será de \textit{5.500€}.
+Para calcular el costo relacionado con el personal, se ha tomado como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado es de \textit{5.500€}.
 
 \subsubsection{Hardware}
 
@@ -1302,10 +1359,6 @@ Para el alcance de este proyecto y los objetivos que se pretenden alcanzar, al m
 \end{itemize}
 
 
-\subsubsection{Otros}
-
-Debido a que el desarrollo del proyecto se realiza en la casa de la persona empleada, se añaden a los costes el gasto de electricidad. Usando como referencia el gasto mensual de electricidad, que ronda los \textit{30€}, el costo total será de \textit{165€} para la duración del proyecto.
-
 \begin{table}[H]
     \centering
     \begin{tabular}{ | m{5cm} | m{5cm} | }
@@ -1313,8 +1366,7 @@ Debido a que el desarrollo del proyecto se realiza en la casa de la persona empl
 	    	Personal & 5.500 \\ \hline
 	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet - 5,72 \\ \hline
 	    	Software & 0 \\ \hline
-		Electricidad & 165 \\ \hline
-	    \textbf{Total} & \textbf{5.731,22€} \\ \hline
+	    \textbf{Total} & \textbf{5.566,22€} \\ \hline
     \end{tabular}
     \caption{Costes del proyecto}
     \label{tab:costes}
@@ -1326,7 +1378,7 @@ Debido a que el desarrollo del proyecto se realiza en la casa de la persona empl
 
 En esta parte se incluye toda la estructura de la aplicación, tanto la interfaz de usuario como el backend y la base de datos.
 
-\subsection{Diseño de base de datos}
+\subsection{Diseño de la base de datos}
 
 Esta sección es fundamental para establecer bases sólidas para la aplicación. Se deben almacenar todas las entidades y sus propiedades, definiendo claramente el tipo de cada una.
 
@@ -1678,7 +1730,7 @@ En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporci
 
 Las imágenes de perfil de usuarios o perros se almacenarán en el directorio de \textit{profilePics}. Por otro lado, cuando se mande una imagen por chat, esta se almacenará en el directorio de \textit{chats}. Para trabajar con las imágenes dentro de la aplicación, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}. Estas URLs obtenidas se almacenarán en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
 
-\subsection{Diseño de interfaz de usuario}
+\subsection{Diseño de la interfaz de usuario}
 
 El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de usuario (UX) intuitiva y atractiva. Inicialmente, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos o prototipos que se vayan generando a continuación. Es importante tener en cuenta que el diseño sea responsive para que se adapte adecuadamente a todos los dispositivos móviles.
 
@@ -1689,7 +1741,7 @@ Para los colores principales de la aplicación, se opta por escoger el color mor
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=7cm]{design/Colors.jpg}\par}
-		\caption{Paleta}
+		\caption{Paleta de colores}
 	\end{center}
 \end{figure}
 
@@ -1717,13 +1769,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Logo1.png}\par}
-			\caption{Logo}
+			\caption{Logo.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=7cm]{logo/ADOGPTIONFIXED.png}\par}
-			\caption{Logo animado}
+			\caption{Logo animado.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Logos}
@@ -1734,13 +1786,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/EMPTYUSER.png}\par}
-			\caption{Icono por defecto para usuario}
+			\caption{Icono por defecto para usuario.}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/EMPTYDOG.png}\par}
-			\caption{Icono por defecto para perro}
+			\caption{Icono por defecto para perro.}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1750,13 +1802,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Adoptar.png}\par}
-			\caption{Icono para listas de adopción}
+			\caption{Icono para listas de adopción.}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Acoger.png}\par}
-			\caption{Icono para listas de acogida}
+			\caption{Icono para listas de acogida.}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1765,13 +1817,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/USERNV.png}\par}
-			\caption{Icono usuario no verificado}
+			\caption{Icono usuario no verificado.}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/USERV.png}\par}
-			\caption{Icono usuario verificado}
+			\caption{Icono usuario verificado.}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1780,13 +1832,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Protectora.png}\par}
-			\caption{Icono hueso}
+			\caption{Icono hueso.}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Casa.png}\par}
-			\caption{Icono casa}
+			\caption{Icono casa.}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1796,13 +1848,13 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/ALLUSER.png}\par}
-			\caption{Icono en morado}
+			\caption{Icono en morado.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/USER.png}\par}
-			\caption{Icono en azul}
+			\caption{Icono en azul.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Iconos usuarios}
@@ -1812,19 +1864,19 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Pata1.png}\par}
-			\caption{Icono en naranja}
+			\caption{Icono en naranja.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Pata2.png}\par}
-			\caption{Icono en morado}
+			\caption{Icono en morado.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{logo/Pata3.png}\par}
-			\caption{Icono en azul}
+			\caption{Icono en azul.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Iconos patas}
@@ -2251,7 +2303,7 @@ En este módulo se definen los widgets relacionados con los mensajes que se util
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=0.8\linewidth]{diagram/Message.png}\par}
-		\caption{Módulo  \textit{message}.}
+		\caption{Módulo \textit{message}.}
 	\end{center}
 \end{figure}
 

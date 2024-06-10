@@ -149,7 +149,7 @@ Numerosas familias, todos los años, se animan a incluir a una mascota en su cí
 	\item Obligación de identificación y registro de los animales de compañía.
 	\item Establecimiento de las obligaciones de los propietarios en cuanto a la tenencia responsable, incluyendo la alimentación, hogar y atención veterinaria.
 	\item Prohibición de mantener animales en condiciones inadecuadas o de privarles de cuidados esenciales.
-	\end{itemize}[noitemsep]
+	\end{itemize}
 \item \textbf{Cria y comercio de animales}
 	\begin{itemize}[noitemsep]
 	\item Regulación estricta de la cría y comercio de animales de compañía para evitar la explotación y el maltrato.
@@ -191,7 +191,7 @@ Después de revisar los pasos y los posibles inconvenientes para solicitar un pr
 \newpage
 \subsection{Objetivos del proyecto}
 
-Para cubrir las necesidades del proyecto propuesto, se han definido una serie de objetivos divididos en obligatorios, que serán los requeridos para que la aplicación funcione como se espera, y opcionales, para añadir funcionalidades extra o facilitar el uso de la aplicación.
+Para satisfacer las necesidades del proyecto propuesto, se han definido una serie de objetivos divididos en dos categorías: obligatorios, que son necesarios para garantizar el funcionamiento esperado de la aplicación, y opcionales, que tienen como propósito añadir funcionalidades adicionales o facilitar su uso.
 
 
 % Objetivo 1
@@ -381,21 +381,22 @@ Para cubrir las necesidades del proyecto propuesto, se han definido una serie de
 
 \section{Diagrama de Gannt}
 
-En esta sección se definen todas las etapas en las que se va a dividir este proyecto, condensadas en un Diagrama de Gannt. Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
+En esta sección se definen todas las etapas en las que se dividirá el proyecto, resumidas en un diagrama de Gantt. Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
 
 \begin{figure}[H]
 	{\includegraphics[width=15cm]{diagram/GanntSmall2.png}\par}
 	\caption{Diagrama de Gannt}
 \end{figure}
 
-Dentro del diagrama se pueden ver las diferentes etapas:
+Dentro del diagrama se pueden observar las diferentes etapas del proyecto:
+
 \begin{itemize}[noitemsep]
-	\item \textbf{Análisis:} Esta etapa consta de unas dos semanas de tiempo, en esta se definen todos los requisitos del sistema y se identifican todos los recursos humanos, de hardware y software necesarios. 
-	\item \textbf{Estudio y aprendizaje:} Se destina un breve período previo para aprender a utilizar los lenguajes y servicios que se emplean en el desarrollo de la aplicación.
-	\item \textbf{Diseño:} Se reservan casi tres semanas para definir temas, bocetos, diseño de datos y la arquitectura del sistema.
-	\item \textbf{Desarrollo:} La etapa más extensa, dividida en secciones para cada funcionalidad a desarrollar a las que se asigna un tiempo adecuado, considerando los servicios y componentes involucrados que definirán su dificultad.
-	\item \textbf{Pruebas y corrección de errores:} Una vez completado el desarrollo, es necesario realizar pruebas exhaustivas para identificar errores y faltas de funcionalidades. Se reserva tiempo suficiente para corregir bugs o implementar mejoras de rendimiento si es necesario.
-	\item \textbf{Documentación y memoria:} Se dedica un período para recopilar todos los datos y elaborar la memoria en Latex, que documentará el proceso y los resultados obtenidos en las etapas anteriores.
+	\item \textbf{Análisis:} Esta etapa tiene una duración aproximada de dos semanas, durante la cual se definen todos los requisitos del sistema y se identifican los recursos humanos, de hardware y de software necesarios.
+	\item \textbf{Estudio y aprendizaje:} Se asigna un breve período previo para aprender a utilizar los lenguajes y servicios que se emplearán en el desarrollo de la aplicación.
+	\item \textbf{Diseño:} Se destinan casi tres semanas para definir temas, bocetos, diseño de datos y la arquitectura del sistema.
+	\item \textbf{Desarrollo:} Esta es la etapa más extensa, dividida en secciones para cada funcionalidad a desarrollar, a las cuales se asigna un tiempo adecuado, considerando los servicios y componentes involucrados que definirán su dificultad.
+	\item \textbf{Pruebas y corrección de errores:} Una vez completado el desarrollo, se realizan pruebas exhaustivas para identificar errores y faltas de funcionalidades. Se reserva tiempo suficiente para corregir errores o implementar mejoras de rendimiento si es necesario.
+	\item \textbf{Documentación y memoria:} Se dedica un período para recopilar todos los datos y elaborar la memoria en LaTeX, documentando el proceso y los resultados obtenidos en las etapas anteriores.
 \end{itemize}
 
 
@@ -406,7 +407,7 @@ Dentro del diagrama se pueden ver las diferentes etapas:
 % Definición y Especificación de Requisitos
 \subsection{Definición y especificación de Requisitos}
 
-En esta sección, se detallan los requisitos funcionales y no funcionales identificados para la aplicación que se va a desarrollar. Es esencial definir y comprender estos requisitos para garantizar buenos resultados en el desarrollo y diseño del sistema.
+En esta sección se detallan los requisitos funcionales y no funcionales identificados para la aplicación que se desarrollará. Es fundamental definir y comprender estos requisitos para asegurar resultados óptimos en el desarrollo y diseño del sistema.
 
 \subsubsection{Requisitos funcionales}
 
@@ -1108,50 +1109,50 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 \subsubsection{Requisitos no funcionales}
 
-Los requisitos no funcionales son los encargados de ofrecer al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han tenido en cuenta los siguientes puntos:
+Los requisitos no funcionales son responsables de proporcionar al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han considerado los siguientes puntos:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{Rendimiento:} La aplicación debe ser capaz de responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo. 
-		\begin{itemize}[noitemsep]
-			\item Se propone una deadline de 3 segundos como tiempo óptimo para cargar una página completa.
-			\item El tiempo de respuesta del servidor se espera que sea menor de 2 segundos.
-			\item Se espera que la aplicación sea capaz de manejar múltiples peticiones sin que se produzca una degradación perceptible del rendimiento. Se propone como deadline 10000 de solicitudes.
-			\item Se espera que la base de datos realice consultas simples y complejas en menos de un segundo.
-			\item Se propone que en el caso de búsquedas y filtrados el tiempo de procesamiento puede ser mayor de 3 segundos, pero menor de 6.
-			\item La aplicación denbe poder manejar alrededor de 10000 usuarios de forma concurrente sin sufrir degradación de rendimiento.
-		\end{itemize}
-	\item \textbf{Escalabilidad:} Es necesario que a la hora de implementar código, se mantenga un código en el que sea sencillo añadir o quitar funcionalidades sin comprometer el comportamiento de la aplicación.
-		\begin{itemize}[noitemsep]
-			\item Los componentes de la aplicación deben estar claramente definidos y documentados.
-			\item Un componente base debe recoger todas las propiedades comunes que pueden tener ese tipo de componentes. Por ejemplo, un componente base para los botones, deberá recoger el tamaño de la fuente, la forma del botón, colores etc.
-			\item Las funcionalidades desarrolladas deben ser fácilmente deprecadas si es necesario, es decir, no deben depender unas de otras si no es estrictamente necesario.
-			\item Los nuevos componentes que se desarrollen no deben afectar el funcionamiento de la aplicación.
-			\item Se espera que si fuera necesario actualizar algún componente en la UI, actualizando el componente base se actualicen todos los componentes de ese tipo.
-		\end{itemize}
-	\item \textbf{Usabilidad:} Para esta aplicación, que tiene un rango de usuarios muy amplio, se espera que un usuario poco experimentado sea capaz de usar la aplicación de forma sencilla. La aplicación debe proporcionar una interfaz intuitiva y atractiva. 
-		\begin{itemize}[noitemsep]
-			\item La interfaz debe ser limpia y organizada.
-			\item Los colores de la aplicación deben ser coherentes.
-			\item La navegación de la aplicación debe cumplir la norma de los tres clicks, "\textit{cualquier persona que visite la aplicación debería alcanzar la información más crítica como máximo en tres clics}".
-			\item La aplicación deberá ser lo suficientemente intuitiva o proporcionar guía de uso si es necesario.
-			\item Se espera que la aplicación sea testeada por usuarios reales antes del primer despliegue para posibles correciones.
-		\end{itemize}
-	\item \textbf{Confiabilidad:} Para la aplicación, se espera que haya un correcto manejo de errores.
-		\begin{itemize}[noitemsep]
-			\item Se espera que un usuario sea informado con un mensaje adecuado si ocurre un error crítico.
-			\item Durante el desarrollo es necesario testear para poder añadir mecanismos que minimicen los errores conocidos en la aplicación.
-			\item Las copias de seguridad son indispensables para garantizar que no se pierden los datos ante un error crítico.
-			\item Se propone añadir mecanismos de manejo de errores en todas las operaciones críticas (lectura y escritura)  para evitar errores críticos.
-		\end{itemize}
-	\item \textbf{Seguridad:} Para garantizar este requisito, la aplicación debe proteger los datos de los usuarios y prevenir accesos no autorizados. También, en este caso en concreto, es necesario garantizar en medida de los posible, que toda la información que se dé de alta, sea real y fehaciente.
-		\begin{itemize}[noitemsep]
-			\item Las contraseñas o datos sensibles no pueden estar expuestos, se deben almacenar con cifrados.
-			\item La aplicación no va a permitir el acceso a usuarios que no tengan una cuenta.
-			\item La aplicación no va a permitir dar de alta a perros a las protectoras que no estén verificadas por administradores, para evitar casos fraudulentos.
-			\item Un administrador tiene acceso a diferentes listas en las que puede verificar información y tiene la libertad de eliminar lo que crea correspondiente.
-			\item Debe prevenirse con mecanismos para ataques comunes como pueden ser las inyecciones SQL, CSS, Y CSRF. 
-		\end{itemize}
-	\item \textbf{Documentación:} A lo largo de todas las etapas, se almacenará toda la información relevante, ya sea en el código, en documentos aparte o en la propia memoria.
+\item \textbf{Rendimiento:} La aplicación debe responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo.
+	\begin{itemize}[noitemsep]
+	\item Se propone un tiempo máximo de 3 segundos como tiempo óptimo para cargar una página completa.
+	\item El tiempo de respuesta del servidor debe ser menor de 2 segundos.
+	\item La aplicación debe manejar múltiples peticiones sin una degradación perceptible del rendimiento, con un límite de 10,000 solicitudes.
+	\item La base de datos debe realizar consultas simples y complejas en menos de un segundo.
+	\item En el caso de búsquedas y filtrados, el tiempo de procesamiento puede ser mayor de 3 segundos, pero menor de 6.
+	\item La aplicación debe manejar alrededor de 10,000 usuarios concurrentes sin sufrir una degradación del rendimiento.
+	\end{itemize}
+\item \textbf{Escalabilidad:} El código debe ser mantenible, permitiendo añadir o quitar funcionalidades sin comprometer el comportamiento de la aplicación.
+	\begin{itemize}[noitemsep]
+	\item Los componentes de la aplicación deben estar claramente definidos y documentados.
+	\item Un componente base debe recoger todas las propiedades comunes, por ejemplo, un componente base para los botones debe incluir el tamaño de la fuente, la forma del botón, colores, etc.
+	\item Las funcionalidades desarrolladas deben ser fácilmente deprecables si es necesario, sin dependencias innecesarias entre ellas.
+	\item Los nuevos componentes no deben afectar el funcionamiento de la aplicación.
+	\item La actualización de un componente base debe reflejarse en todos los componentes de ese tipo.
+	\end{itemize}
+\item \textbf{Usabilidad:} La aplicación debe ser intuitiva y atractiva, permitiendo su uso sencillo incluso por usuarios poco experimentados.
+	\begin{itemize}[noitemsep]
+	\item La interfaz debe ser limpia y organizada.
+	\item Los colores de la aplicación deben ser coherentes.
+	\item La navegación debe cumplir la norma de los tres clics: cualquier usuario debe alcanzar la información crítica en un máximo de tres clics.
+	\item La aplicación debe ser intuitiva o proporcionar guías de uso si es necesario.
+	\item Se debe testear la aplicación con usuarios reales antes del primer despliegue para realizar posibles correcciones.
+	\end{itemize}
+\item \textbf{Confiabilidad:} La aplicación debe manejar los errores de manera adecuada.
+	\begin{itemize}[noitemsep]
+	\item Los usuarios deben ser informados con mensajes apropiados si ocurre un error crítico.
+	\item Durante el desarrollo, se deben añadir mecanismos para minimizar los errores conocidos.
+	\item Las copias de seguridad son indispensables para garantizar que no se pierdan datos ante un error crítico.
+	\item Se deben implementar mecanismos de manejo de errores en todas las operaciones críticas (lectura y escritura) para evitar errores graves.
+	\end{itemize}
+\item \textbf{Seguridad:} La aplicación debe proteger los datos de los usuarios y prevenir accesos no autorizados, asegurando que la información sea real y fehaciente.
+	\begin{itemize}[noitemsep]
+	\item Las contraseñas y datos sensibles deben estar cifrados.
+	\item La aplicación no debe permitir acceso a usuarios sin cuenta.
+	\item No se permitirá dar de alta a perros en protectoras no verificadas por administradores, para evitar fraudes.
+	\item Un administrador debe tener acceso a listas para verificar información y eliminar datos si es necesario.
+	\item Deben implementarse mecanismos de prevención contra ataques comunes como inyecciones SQL, XSS y CSRF.
+	\end{itemize}
+\item \textbf{Documentación:} Se debe almacenar toda la información relevante a lo largo de todas las etapas, ya sea en el código, en documentos aparte o en la memoria del proyecto.
 \end{itemize}
 
 \subsection{Diagramas de casos de uso}
@@ -1196,12 +1197,12 @@ En esta sección se definen todos los recursos necesarios para el desarrollo de 
 
 \subsubsection{Recursos humanos}
 
-En este proyecto, solo va a intervenir una persona, la autora de la memoria. Se trata de una Ingeniera de Software (semi-senior). Esta persona es encargada de cumplimentar todos los aspectos del desarrollo. El horario laboral será de Lunes a Viernes de media jornada.
+En este proyecto, participará únicamente una persona, la autora de la memoria. Se trata de una ingeniera de software de nivel semi-senior, responsable de todos los aspectos del desarrollo. El horario laboral será de lunes a viernes, a media jornada.
 
 
 \subsubsection{Hardware}
 
-Para este proyecto, el hardware es un ordenador de sobremesa personal y una tablet android.
+Para este proyecto, el hardware disponible incluye un ordenador de sobremesa personal y una tablet Android.
 
 \begin{itemize}[noitemsep]
 	\item Ordenador de sobremesa, para el desarrollo y las pruebas, con los siguientes componentes:
@@ -1219,11 +1220,11 @@ Para este proyecto, el hardware es un ordenador de sobremesa personal y una tabl
 
 El sistema operativo utilizado es el que estaba instalado previamente en el ordenador personal.
 
-Para escoger el framework que se va a utilizar en el proyecto partimos de la base de que vamos a realizar una aplicación android. Existen diferentes frameworks como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform} etc. que ofrecen integración con android para facilitar el desarrollo. En este proyecto, se ha optado por desarrollar con Flutter, debido a que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento. 
+A la hora de seleccionar el framework para utilizar durante el desarrollo, se parte de que se necesita crear una aplicación android. Existen diferentes frameworks disponibles, como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform}, etc., que ofrecen integración con Android para facilitar el desarrollo. En este proyecto, se ha optado por utilizar Flutter, dado que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento.
 
-El lenguaje utilizado es \textit{Dart}, este lenguaje es muy similar a Java, se trata de un lenguaje orientado a objetos y se utiliza prinicpalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado, uno de los motivos para optar por este lenguaje es el manenimiento que recibe a día de hoy y por la simple que resulta para programar. Para añadir funcionalidades extra, se han escogido varias bibiliotecas que ofrecen algunos microservicios o widgets.
+El lenguaje escogido es \textit{Dart}. Este lenguaje es muy similar a Java y está orientado a objetos. Se utiliza principalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado. Uno de los motivos para optar por este lenguaje es el mantenimiento que recibe a día de hoy y su simplicidad para programar. Para añadir funcionalidades extra, se han escogido varias bibliotecas que ofrecen microservicios o widgets.
 
-Por último, para manejar la base de datos, se ha optado por usar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diferentes servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real, eso lo convertia en el candidato adecuado para manejar el chat, la funcionalidad de compartir y otras cosas funcionalidades que nuestra aplicación requiere.
+Por último, para la base de datos, se ha optado por utilizar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diversos servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real. Esto lo convierte en el candidato adecuado para manejar funciones como el chat, la funcionalidad de compartir y otras características que nuestra aplicación requiere.
 
 \begin{itemize}[noitemsep]
 	\item \textbf{Sistema Operativo:} Windows 11 x64
@@ -1280,11 +1281,11 @@ Por último, para manejar la base de datos, se ha optado por usar \textit{Fireba
 
 \subsection{Costes}
 
-Habiendo escogido todos los recursos necesarios para el desarrollo del producto, se pueden definir un presupuesto que englobe todos los apartados.
+Habiendo seleccionado todos los recursos necesarios para el desarrollo del producto, se puede definir un presupuesto que abarque todos los aspectos.
 
 \subsubsection{Recursos humanos}
 
-Para calcular el costo relacionado con el personal, se toma como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado será de \textit{5.500€}.
+Para calcular el costo relacionado con el personal, tomaremos como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado será de \textit{5.500€}.
 
 \subsubsection{Hardware}
 
@@ -1292,7 +1293,7 @@ Debido a que el equipo utilizado no es nuevo, se consideran los gastos del equip
 
 \subsubsection{Software}
 
-Para el alcance de este proyecto y los números a los que se aspira, al menos durante la primera fase, se ha optado por utilizar las versiones gratuitas del software escogido, lo que resulta en un coste total de 0€ en software.
+Para el alcance de este proyecto y los objetivos que se pretenden alcanzar, al menos durante la primera fase, se ha optado por utilizar las versiones gratuitas del software seleccionado, lo que resulta en un coste total de 0€ en software.
 
 \begin{itemize}[noitemsep]
 	\item Firebase - Plan Spark - \href{https://firebase.google.com/pricing?hl=es-419}{Guía de planes} \cite{firebase_plans}
@@ -1303,7 +1304,7 @@ Para el alcance de este proyecto y los números a los que se aspira, al menos du
 
 \subsubsection{Otros}
 
-Debido a que el desarrollo del proyecto se realiza en la casa de la persona empleada, se añaden a los costes la electricidad usada. Usando como referencia el gasto mensual de electricidad, que ronda los \textit{30€}.
+Debido a que el desarrollo del proyecto se realiza en la casa de la persona empleada, se añaden a los costes el gasto de electricidad. Usando como referencia el gasto mensual de electricidad, que ronda los \textit{30€}, el costo total será de \textit{165€} para la duración del proyecto.
 
 \begin{table}[H]
     \centering
@@ -1312,8 +1313,8 @@ Debido a que el desarrollo del proyecto se realiza en la casa de la persona empl
 	    	Personal & 5.500 \\ \hline
 	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet - 5,72 \\ \hline
 	    	Software & 0 \\ \hline
-		Electricidad & 180 \\ \hline
-	    \textbf{Total} & \textbf{5.746,22€} \\ \hline
+		Electricidad & 165 \\ \hline
+	    \textbf{Total} & \textbf{5.731,22€} \\ \hline
     \end{tabular}
     \caption{Costes del proyecto}
     \label{tab:costes}
@@ -1323,15 +1324,15 @@ Debido a que el desarrollo del proyecto se realiza en la casa de la persona empl
 \newpage
 \section{Diseño}
 
-En esta partese incluye toda la estructura de la aplicación, tanto como la interfaz de usuario, el backend y la base de datos.
+En esta parte se incluye toda la estructura de la aplicación, tanto la interfaz de usuario como el backend y la base de datos.
 
 \subsection{Diseño de base de datos}
 
-Esta sección es primordial para generar unas bases sólidas para la aplicación. Se deben almacenar todas las entidades y todas sus propiedades, definiendo claramente el tipo de cada una.
+Esta sección es fundamental para establecer bases sólidas para la aplicación. Se deben almacenar todas las entidades y sus propiedades, definiendo claramente el tipo de cada una.
 
 \subsubsection{Direcciones}
 
-Para todas las protectoras, es necesario almacenar la dirección en la que están ubicadas. Esta información es crucial para mostrar a los usuarios la ubicación de cada protectora y generar marcadores en el mapa correspondiente. Por un lado, se almacenan todas las partes de la dirección, como la ciudad, la calle, el código postal, etc. Por otro lado, cuando un usuario introduzca su dirección, se generarán automáticamente las coordenadas de esa dirección para almacenarlas también, evitando tener que calcularlas cada vez que se carguen los mapas en la interfaz. Asimismo, cuando un usuario actualice su dirección, se actualizarán también sus coordenadas correspondientes en la base de datos.
+Para todas las protectoras, es necesario almacenar la dirección en la que están ubicadas. Esta información es crucial para mostrar a los usuarios la ubicación de cada protectora y generar marcadores en el mapa correspondiente. Por un lado, se almacenarán todas las partes de la dirección, como la ciudad, la calle, el código postal, etc. Por otro lado, cuando un usuario introduzca su dirección, se generarán automáticamente las coordenadas de esa dirección para almacenarlas también, evitando tener que calcularlas cada vez que se carguen los mapas en la interfaz. Asimismo, cuando un usuario actualice su dirección, se actualizarán también sus coordenadas correspondientes en la base de datos.
 
 Para todas las direcciónes se genera una entrada en el que su ID corresponde con el del usuario al que pertenece.
 
@@ -1380,9 +1381,9 @@ Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos
 
 \subsubsection{Chats}
 
-Para la tabla de chats, se ha decidido almacenar los IDs de los usuarios implicados, aparte se almacena un array de IDs que indica para quien está disponible el chat en ese momento. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, éste simplemente desaparece para el usuario que lo borra esto hace que la propiedad de quién puede acceder al chat en ese momento sea modificada. En esta primera iteración del proyecto, los mensajes no se borran. Por ejemplo, si una persona A borra su chat con la persona B y luego vuelve a abrir un chat con esa misma persona, los mensajes anteriores seguirán estando disponibles. En la fase de implementación, se profundizará más en el comportamiento definido para este aspecto.
+Para la tabla de chats, se ha decidido almacenar los IDs de los usuarios implicados. Además, se guarda un array de IDs que indica para quién está disponible el chat en ese momento. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, este simplemente desaparece para el usuario que lo borra, lo que modifica la propiedad de quién puede acceder al chat en ese momento. En esta primera iteración del proyecto, los mensajes no se borran. Por ejemplo, si una persona A borra su chat con la persona B y luego vuelve a abrir un chat con esa misma persona, los mensajes anteriores seguirán estando disponibles. 
 
-Almacenar aqui los IDs de los usuarios implicados, permite que si se proponen chats de grupo, sea más sencillo escalarlo, ya que en esta forma la base de datos ya lo está soportando. Lo mismo ocurre con la propiedad que hace referencia a que usuarios pueden ver el chat. 
+Almacenar aquí los IDs de los usuarios implicados permite que, si se proponen chats de grupo, sea más sencillo escalarlo, ya que la base de datos ya lo está soportando. Lo mismo ocurre con la propiedad que hace referencia a qué usuarios pueden ver el chat.
 
 Para todos los chats se genera un ID automático, al que se hace referencia desde la tabla de usuarios.
 
@@ -1422,24 +1423,25 @@ Aqui se muestra un ejemplo real de un chat almacenado en la base de datos.
 
 \subsubsection{Perros}
 
-Esta entidad es una de las más importantes de la aplicación, ya que es la que se principal afectada por la mayoría de funcionalidades que se proponen. Principalmente esta tabla contendrá todas las propiedades de los perros que se van a manejar dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas.
+Esta entidad es una de las más importantes de la aplicación, ya que es la principal afectada por la mayoría de funcionalidades que se proponen. Principalmente, esta tabla contendrá todas las propiedades de los perros que se manejarán dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas.
 
-Para el género se han propuesto dos valores fijos que luego se transformaran en la cadena correspondiente cuando se carguen en la UI. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida añadir traducciones en la aplicación y no trabajar con palabras en español en la base de datos.
+Para el género se han propuesto dos valores fijos que luego se transformarán en la cadena correspondiente cuando se carguen en la interfaz de usuario. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida añadir traducciones en la aplicación y no trabajar con palabras en español en la base de datos.
 
-Para almacenar la edad, se ha optado por almacenarla junto a las unidades, ya que así se le da la posibilidad al usuario a especificar mejor la edad del perro (el caso de uso es muy concreto, pero añade valor). Los valores de las unidades serán fijos, pudiendo ser:
+Para almacenar la edad, se ha optado por almacenarla junto a las unidades, ya que así se le da al usuario la posibilidad de especificar mejor la edad del perro (el caso de uso es muy concreto, pero añade valor). Los valores de las unidades serán fijos, pudiendo ser:
 
 \begin{itemize}[noitemsep]
 	\item \textbf{Meses}
 	\item \textbf{Años}
 \end{itemize}
 
-Lo mismo ocurre con el peso, se opta por almacenar el peso junto con las unidades para facilitar al usuario especificar el peso. A pesar de que se pueda especificar las unidades del peso, el peso en la base de datos siempre será tratado como KG, para facilitar el uso de los filtros, cuando se traiga a la UI, se actualizará al valor real que corresponda. Las unidades disponibles serán
+Lo mismo ocurre con el peso, se opta por almacenarlo junto a las unidades. Independientemente de las unidades que marque el usuario, el peso en la base de datos siempre será tratado como Kg para facilitar el filtrado. Cuando se cargue en la interfaz de usuario, se mostrarán las unidades y el valor original.
+
 \begin{itemize}[noitemsep]
 	\item \textbf{Gramos}
-	\item \textbf{KG}
+	\item \textbf{Kg}
 \end{itemize}
 
-En una primera instancia se propuso almacenar los perros favoritos en la tabla de usuarios, pero tras hacer algunas pruebas se optó por este modelo finalmente. Almacenar los usuarios que han marcado al perro como favorito, facilita las actualizaciones en tiempo real de los resultados de perros.
+En una primera instancia se propuso almacenar los perros favoritos en la tabla de usuarios, pero tras hacer algunas pruebas se optó por este modelo finalmente. Almacenar los usuarios que han marcado al perro como favorito facilita las actualizaciones en tiempo real de los resultados de perros.
 
 Para todos los perros se genera un ID automático.
 
@@ -1514,7 +1516,7 @@ Aquí se muestra un ejemplo real de un perro almacenado en la base de datos.
 
 \subsubsection{Mensajes}
 
-Aparte de almacenar toda la información de los chats, hay que almacenar los mensajes que se mandan en los chats. Aparte de guardar el contenido del mensaje, se propone hacer una diferenciación por tipos, habiendo en esta primera iteración solo dos tipos, que son: \textbf{default} e \textbf{image}, indicando que un mensaje es texto o imagen respectivamente. Esta definición de tipos ayudará a saber como cargar el contenido en la interfaz.
+Aparte de almacenar toda la información de los chats, es necesario almacenar los mensajes que se envían en los chats. Además de guardar el contenido del mensaje, se propone hacer una diferenciación por tipos, habiendo en esta primera iteración solo dos tipos: \textbf{default} e \textbf{image}, indicando que un mensaje es texto o imagen, respectivamente. Esta definición de tipos ayudará a determinar cómo cargar el contenido en la interfaz.
 
 Para todos los mensajes se genera un ID automático que se puede referenciar desde la tabla de chats.
 
@@ -1561,7 +1563,7 @@ Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos
 
 \subsubsection{Notificaciones}
 
-Cuando un usuario envíe un mensaje, el usuario receptor debe recibir una notificación. Para gestionar las notificaciones de los mensajes, se ha decidido crear una tabla que contenga las solicitudes de notificación para un usuario específico. Al iniciar sesión, se agrega un listener que escucha todos los cambios en esta tabla y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista. 
+Cuando un usuario envíe un mensaje, el usuario receptor debe recibir una notificación. Para gestionar las notificaciones de los mensajes, se ha decidido crear una tabla que contenga las solicitudes de notificación para un usuario específico. Al iniciar sesión, se agrega un listener que escucha todos los cambios en esta tabla y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista.
 
 Para cada una de las entradas su ID corresponde con el del usuario al que pertenece.
 
@@ -1621,7 +1623,7 @@ Aqui se muestra una petición real almacenada en la base de datos.
 
 \subsubsection{Usuarios}
 
-Los usuarios son otra entidad de gran relevancia dentro de la aplicación. Aunque un usuario tiene bastantes datos dentro de la aplicación, muchos de estos datos se almacenan en forma de referencia con su ID correspondiente en otras tablas. Además, para manejar los registros de usuarios se utilizará el servicio de Autenticación que proporciona Firebase, que se encarga de facilitar las herramientas para registrar usuarios y permite almacenar tanto el correo electrónico como la contraseña, entre otras cosas.
+Los usuarios son otra entidad de gran relevancia dentro de la aplicación. Aunque un usuario tiene bastantes datos dentro de la aplicación, muchos de estos datos se almacenan en forma de referencia con su ID correspondiente en otras tablas. Además, para manejar los registros de usuarios se utilizará el servicio de Autenticación que proporciona Firebase, el cual facilita las herramientas para registrar usuarios y permite almacenar tanto el correo electrónico como la contraseña, entre otras cosas.
 
 % requests
 \begin{table}[H]
@@ -1664,7 +1666,7 @@ Aqui se muestra un ejemplo de usuario guardado en la base de datos.
 
 \subsubsection{Imágenes}
 
-En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeos o audios y viene integrado de manera nativa con varios servicios de Firebase como el servicio de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la app se propone organizarlo en los siguientes directorios:
+En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeos o audios y viene integrado de manera nativa con varios servicios de Firebase, como el servicio de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la aplicación, se propone organizarlo en los siguientes directorios:
 
 \begin{itemize}[noitemsep]
 	\item \textit{images}
@@ -1674,15 +1676,15 @@ En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporci
 	\end{itemize}
 \end{itemize}
 
-Las imágenes de perfil de usuarios o perros, se almacenarán en el directorio de \textit{profilePics}, por otra parte, cuando se mande una imagen por chat, esta se almacenará en el directorio de \textit{chats}. Para trabajar con las imágenes dentro de la app, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}.  Estas URLs que se obtiener se irán almacenadas en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
+Las imágenes de perfil de usuarios o perros se almacenarán en el directorio de \textit{profilePics}. Por otro lado, cuando se mande una imagen por chat, esta se almacenará en el directorio de \textit{chats}. Para trabajar con las imágenes dentro de la aplicación, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}. Estas URLs obtenidas se almacenarán en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
 
 \subsection{Diseño de interfaz de usuario}
 
-El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de usuario (UX) intuitiva y atractiva. Inicialmente, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos o prototipos que se vayan generando a continuación. Es importante tener en cuenta que el diseño sea responsive para que se adapte adecuadamente a todos los dispositivos móviles. 
+El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de usuario (UX) intuitiva y atractiva. Inicialmente, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos o prototipos que se vayan generando a continuación. Es importante tener en cuenta que el diseño sea responsive para que se adapte adecuadamente a todos los dispositivos móviles.
 
 \subsubsection{Tema}
 
-Para los colores principales de la aplicación, se opta por escoger el color morado. El color morado dentro de UX, puede evocar diferentes sensaciones al usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se añade a la paleta su color análogo, el azul. Para finalizar los colores principales, a la paleta se añade el color complementario del azul, que sería el naranja. Estos tres colores conformaran los elementos de la aplicación, el morado se utilizará para la mayoría de elementos, indicando que son elementos importantes. El azul, se mezclará con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja, será un color que se utilice como acentos o llamar la atención del usuario, junto con el naranja se podrán utilizar algunos de sus colores análogos como el amarillo o el rojo. Para los fondos de la aplicación se añade también un blanco roto a la paleta de colores que se propone.
+Para los colores principales de la aplicación, se opta por escoger el color morado. El color morado dentro de UX puede evocar diferentes sensaciones en el usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se añade a la paleta su color análogo, el azul. Para finalizar los colores principales, a la paleta se añade el color complementario del azul, que sería el naranja. Estos tres colores conformarán los elementos de la aplicación; el morado se utilizará para la mayoría de los elementos, indicando que son importantes. El azul se mezclará con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja será un color que se utilice como acento o para llamar la atención del usuario, junto con el naranja se podrán utilizar algunos de sus colores análogos como el amarillo o el rojo. Para los fondos de la aplicación se añade también un blanco roto a la paleta de colores propuesta.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1691,7 +1693,7 @@ Para los colores principales de la aplicación, se opta por escoger el color mor
 	\end{center}
 \end{figure}
 
-Como fuente, se opta por escoger la fuente \textit{Nunito Sans}, que proporciona Google. Se escoge porque es una fuente bastante estándar y legible para cualquier tipo de usuario.
+Como fuente, se opta por escoger la fuente \textit{Nunito Sans}, que proporciona Google. Se elige porque es una fuente bastante estándar y legible para cualquier tipo de usuario.
 
 \begin{figure}[H]
 	\begin{center}
@@ -1708,7 +1710,7 @@ Como nombre de la aplicación,  se tiene en cuenta que inicialmente la aplicaci�
 
 La última parte relacionada con el branding en este proyecto es la de generación de logos e iconos. En esta sección se incluye tanto el logo de la aplicación como los iconos que se han hecho para incluir dentro de la aplicación. Algunos de los iconos podrían finalmente no utilizarse.
 
-La idea del logo es que se perciba claramente que la aplicación va sobre perros. Los corgis son unas de las razas más populares en el mundo, destacan por que es una raza muy amigable y muy querida dentro de la cultura pop, lo que la convierte en la cara perfecta para llamar la atención. Además del logo principal, se ha diseñado un logo animado para incluir en pantallas de carga u otros lugar. Por último, se han hecho algunos iconos por defecto, que serán utilizados en perfiles o listas.
+La idea del logo es que se perciba claramente que la aplicación va sobre perros. Los corgis son una de las razas más populares en el mundo; destacan por ser una raza muy amigable y muy querida dentro de la cultura pop, lo que los convierte en la cara perfecta para llamar la atención. Además del logo principal, se ha diseñado un logo animado para incluir en pantallas de carga u otros lugares. Por último, se han hecho algunos iconos por defecto, que serán utilizados en perfiles o listas.
 
 
 \begin{figure}[H]
@@ -2028,6 +2030,7 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
 En esta sección se incluyen las clases y pantallas finales, que son resultado del desarrollo y de la posterior corrección de errores.
 
 \subsection{Módulos y clases}
+
 Durante el desarrollo se han implementado diferentes módulos, cada uno con una finalidad específica. Mantener los componentes granulados en módulos y submódulos asegura una mejor escalabilidad y mantenibilidad de la aplicación y facilita tareas como refactorizaciones y cambios de estilos, además de evitar muchas repeticiones de código.
 
 
@@ -2061,7 +2064,7 @@ Aquí se incluyen todas las clases que necesita un chat para funcionar correctam
 	\item \textbf{ChatInput}: Componente que permite a los usuarios escribir mensajes y adjuntar imágenes a los chats.
 	\item \textbf{ChatRoomPage}: Interfaz del chat.
 	\item \textbf{ChatsPage}:  Es la página principal que contiene todos los chats, contiene todos los chats que un usuario tiene en ese momento, son una lista de \textit{ChatWidget}.
-	\item \textbf{ChatWidget}: Este componente muestra una previsualización del chat, que incluye la información del usuario, el último mensaje y  la fecha y hora en la que se envió. Además, incluye el número de mensajes sin leer del chat.
+	\item \textbf{ChatWidget}: Este componente muestra una previsualización del chat, que incluye la información del usuario, el último mensaje y la fecha y hora en la que se envió. Además, incluye el número de mensajes sin leer del chat.
 	\item \textbf{ChatModel}: Clase que se encarga de generar y manejar modelos de chat que se generan a partir de toda la información de la base de datos relacionada con los chats.
 \end{itemize}
 
@@ -2078,24 +2081,24 @@ Aquí se incluyen todas las clases que necesita un chat para funcionar correctam
 En este módulo se definen todos los componentes básicos que incluyen las diferentes pantallas generadas. Además, se definen diferentes submódulos para cada uno de los componentes creados. Todos los submódulos contienen una clase base en la que se definen los estilos y funcionalidades básicas, y el resto de las clases extienden estas clases base. Es importante destacar que, aunque se hayan creado clases propias para los componentes, todas ellas instancian componentes de las bibliotecas por defecto de Flutter, como la biblioteca \textit{material}.
 
 \begin{itemize}[noitemsep]
-	\item \textbf{button}: Define todos los botones que se utilizan en diferentes componentes y pantallas. Existen botones que tienen diferentes funcionalidades, como redirigir a otras pantallas, actualizar datos o mostrar pop-ups.
-	\item \textbf{card}: Una tarjeta es un componente muy parecido a un contenedor pero con un visual más atractivo. Por ello se ha generado un componente base que se reutiliza en diferentes widgets y que contiene este módulo.
-	\item \textbf{checkbox}: Recoge los diferentes checkboxes que se han desarrollado, además de su comportamiento.
-	\item \textbf{container}: En este módulo se define un contenedor básico con un estilo concreto para poder reutilizarlo en diferentes sitios.
-	\item \textbf{dialog}: Recoge todos los pop-ups que se han desarrollado y todo su comportamiento.
-	\item \textbf{drawer}: Este módulo contiene todos los menús laterales y componentes de estos. Los componentes de los menús incluyen imágenes de perfil y botones que redirigen a otras pantallas.
-	\item \textbf{dropdown}: Incluye los diferentes dropdowns que se han utilizado en la app. Algunos de ellos incluyen la funcionalidad de búsqueda de opciones.
-	\item \textbf{form}: Incluye todos los formularios que se utilizan en la aplicación.
-	\item \textbf{icon}: Recoge iconos básicos que tienen funcionalidad. Por ahora, el único que se incluye es el icono de favoritos.
-	\item \textbf{images}: Este módulo incluye clases muy diferentes. Por una parte, incluye clases que proveen funcionalidades para seleccionar imágenes del dispositivo y, por otra parte, incluye componentes que facilitan la inserción de imágenes en la app.
-	\item \textbf{input}: Recoge todos los componentes que permiten a un usuario introducir información de algún tipo. Pueden ser de texto, numéricos o incluso componentes compuestos que contienen dropdowns o checkboxes.
+	\item \textbf{button}: En este submódulo se definen todos los botones utilizados en diversos componentes y pantallas de la aplicación. Estos botones tienen diferentes funcionalidades, como la redirección a otras pantallas, la actualización de datos o la visualización de pop-ups.
+	\item \textbf{card}: Una tarjeta es un componente similar a un contenedor pero con un aspecto más atractivo. Se ha creado un componente base que se reutiliza en diferentes widgets y que contiene este módulo.
+	\item \textbf{checkbox}: Contiene los diferentes checkboxes desarrollados, junto con su comportamiento asociado.
+	\item \textbf{container}: Define un contenedor básico con un estilo concreto para reutilizarlo en diferentes lugares.
+	\item \textbf{dialog}: Agrupa todos los pop-ups desarrollados y su comportamiento correspondiente.
+	\item \textbf{drawer}: Contiene todos los menús laterales y los componentes asociados. Estos menús incluyen imágenes de perfil y botones que redirigen a otras pantallas.
+	\item \textbf{dropdown}: Incluye los diferentes dropdowns utilizados en la aplicación, algunos de los cuales tienen la funcionalidad de búsqueda de opciones.
+	\item \textbf{form}: Contiene todos los formularios utilizados en la aplicación.
+	\item \textbf{icon}: Agrupa iconos básicos con funcionalidad. Por ahora, solo incluye el icono de favoritos.
+	\item \textbf{images}: Incluye clases que proporcionan funcionalidades para seleccionar imágenes del dispositivo y componentes para facilitar la inserción de imágenes en la aplicación.
+	\item \textbf{input}: Contiene componentes que permiten a los usuarios introducir información de diversos tipos, como texto, números o componentes compuestos que contienen dropdowns o checkboxes.
 	\item \textbf{maps}: Incluye toda la funcionalidad relacionada con los mapas, tanto la página de mapas como los mapas que se pueden insertar en diferentes partes de la aplicación.
-	\item \textbf{padding}: En este submódulo se define un padding que se reutiliza a lo largo de la aplicación.
-	\item \textbf{picker}: Incluye componentes relacionados con seleccionar direcciones en mapas o similares.
-	\item \textbf{searchbar}: Define las barras de búsqueda implementadas en la app, además de su funcionalidad.
-	\item \textbf{swiper}: En este submódulo, por ahora, solo se ha definido el swiper para mostrar las adopciones recientes.
-	\item \textbf{text}: Contiene clases que definen textos que se usan a lo largo de la aplicación. Los textos pueden ser títulos, subtítulos, avisos, etc.
-	\item \textbf{widget}: Incluye componentes que son comunes pero están compuestos por otros componentes comunes.
+	\item \textbf{padding}: Define un padding que se reutiliza en toda la aplicación.
+	\item \textbf{picker}: Incluye componentes relacionados con la selección de direcciones en mapas u opciones similares.
+	\item \textbf{searchbar}: Define las barras de búsqueda implementadas en la aplicación, junto con su funcionalidad.
+	\item \textbf{swiper}: Por ahora, solo contiene el swiper utilizado para mostrar las adopciones recientes.
+	\item \textbf{text}: Contiene clases que definen textos utilizados en la aplicación, como títulos, subtítulos y avisos.
+	\item \textbf{widget}: Incluye componentes comunes compuestos por otros componentes comunes.
 \end{itemize}
 
 
@@ -2108,13 +2111,13 @@ En este módulo se definen todos los componentes básicos que incluyen las difer
 
 \subsection*{condition}
 
-Este módulo el encargado de manejar los filtros de las listas de una forma más dinámica. 
+Este módulo se encarga de gestionar los filtros de las listas de una manera más dinámica.
 
 \begin{itemize}[noitemsep]
-	\item \textbf{Basic}: Define el componente básico para añadir filtros a las listas, se encarga de abrir el pop-up con las opciones del filtro.
+	\item \textbf{Basic}: Define el componente básico para añadir filtros a las listas, encargándose de abrir el pop-up con las opciones del filtro.
 	\item \textbf{Gender}: Define el filtro para el género.
 	\item \textbf{Weight}: Define el filtro para el peso.
-	\item \textbf{ConditionModel}: Clase que se encarga de generar y manejar modelos de condiciones a partir de la información proporcionada por la aplicación o el usuario. Esta clase además proporciona un método que se encarga de añadir todos los filtros que haya aplicados en ese momento a la query.
+	\item \textbf{ConditionModel}: Clase que se encarga de generar y manejar modelos de condiciones a partir de la información proporcionada por la aplicación o el usuario. Esta clase además proporciona un método que se encarga de añadir todos los filtros que haya aplicados en ese momento a la consulta.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2126,7 +2129,7 @@ Este módulo el encargado de manejar los filtros de las listas de una forma más
 
 \subsection*{contact}
 
-A pesar de que este módulo solo contiene una clase que se encarga de mostrar toda la información de contacto con administradores, se definió aparte para añadir más clases en futuras iteraciones.
+Aunque este módulo solo contiene una clase que se encarga de mostrar toda la información de contacto con los administradores, se definió por separado para poder añadir más clases en futuras iteraciones.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2138,7 +2141,7 @@ A pesar de que este módulo solo contiene una clase que se encarga de mostrar to
 
 \subsection*{db}
 
-Este módulo es el encargado de comunicarse directamente con la base de datos de Firebase. Este contiene diferentes clases para las diferentes entidades que existen y para el almacenamiento.
+Este módulo es el encargado de comunicarse directamente con la base de datos de Firebase. Contiene diferentes clases para las distintas entidades que existen y para el almacenamiento.
 
 \begin{itemize}[noitemsep]
 	\item \textbf{DBBase}: Clase abstracta que contiene los métodos básicos que deben incluir el resto de clases.
@@ -2147,8 +2150,8 @@ Este módulo es el encargado de comunicarse directamente con la base de datos de
 	\item \textbf{DBDogs}: Clase que maneja toda la información relacionada con perros y su información.
 	\item \textbf{DBFavorites}: Clase que se encarga exclusivamente de actualizar la información de los favoritos dentro de la tabla de perros.
 	\item \textbf{DBMessages}: Clase que maneja toda la información relacionada con mensajes.
-	\item \textbf{DBNotifications}: Clase que maneja toda la información relacionada con notificaciones
-	\item \textbf{DBStorage}: Clase que se encarga de insertar, actualizar y eliminar toda las imágenes relacionadas con alguna de las entidades.
+	\item \textbf{DBNotifications}: Clase que maneja toda la información relacionada con notificaciones.
+	\item \textbf{DBStorage}: Clase que se encarga de insertar, actualizar y eliminar todas las imágenes relacionadas con alguna de las entidades.
 	\item \textbf{DBUsers}: Clase que maneja toda la información relacionada con los usuarios.
 \end{itemize}
 
@@ -2168,7 +2171,7 @@ Módulo que contiene las clases principales relacionadas con los perros.
 	\item \textbf{AvailableDogsPage}: Pantalla de lista de perros que contiene los filtros y una barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
 	\item \textbf{DogFeature}: Widget que se instancia con la información de alguno de los atributos del perro para mostrarlo en el perfil.
 	\item \textbf{DogProfile}: Pantalla que contiene toda la información de un perro, incluyendo el botón de favoritos y compartir.
-	\item \textbf{DogModel}: Clase que se encarga de generar y manejar modelos de perros a partir de la información en la base de datos. 
+	\item \textbf{DogModel}: Clase que se encarga de generar y manejar modelos de perros a partir de la información en la base de datos.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2186,7 +2189,7 @@ Se incluyen todas las pantallas de inicio definidas para los diferentes roles.
 \begin{itemize}[noitemsep]
 	\item \textbf{AdminHome}: Pantalla de inicio para administradores.
 	\item \textbf{MyHome}: Pantalla de inicio para usuarios.
-	\item \textbf{MyHomePageCompany}: Pantallade inicio para protectoras.
+	\item \textbf{MyHomePageCompany}: Pantalla de inicio para protectoras.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2199,7 +2202,7 @@ Se incluyen todas las pantallas de inicio definidas para los diferentes roles.
 
 \subsection*{init}
 
-La clase contenida en este módulo se encarga de manejar la pantalla que se debe mostrar cuando se abre la aplicación, además de inicializar todos los servicios que lo requieran. La pantalla mostrará la \textit{Splashscreen} y dependiendo si hay un usuario iniciado se redigirá a la pantalla de inicio del rol correspondiente o a la pantalla de inicio de sesión.
+La clase contenida en este módulo se encarga de manejar la pantalla que se debe mostrar cuando se abre la aplicación, además de inicializar todos los servicios que lo requieran. La pantalla mostrará la pantallla de carga y, dependiendo de si hay un usuario iniciado, se redigirá a la pantalla de inicio del rol correspondiente o a la pantalla de inicio de sesión.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2239,8 +2242,8 @@ Contiene la página para iniciar sesión y la de recuperación de contraseña.
 En este módulo se definen los widgets relacionados con los mensajes que se utilizan dentro de las salas de chat.
 
 \begin{itemize}[noitemsep]
-	\item \textbf{DateMessageDivider}: Este widget se inserta entre mensajes consecutivos que son de días diferentes para indicar la fecha de los mensajes posteriores.
-	\item \textbf{MessageWidget}: Widget que muestra el contenido del mensaje que puede ser texto o imagen, además contiene un icono que indica si un mensaje ha sido leído o no.
+	\item \textbf{DateMessageDivider}: Este widget se coloca entre mensajes de días diferentes para indicar la fecha de los mensajes siguientes.
+	\item \textbf{MessageWidget}: Este widget muestra el contenido del mensaje, que puede ser texto o imagen, y también incluye un ícono que indica si el mensaje ha sido leído o no.
 	\item \textbf{MessageModel}: Clase que se encarga de generar y manejar modelos de mensajes a partir de la información en la base de datos.
 \end{itemize}
 
@@ -2405,7 +2408,7 @@ La pantalla de inicio de sesión muestra un formulario básico para introducir e
 \newpage
 \subsection*{Recuperación de contraseña}
 
-Esta pantalla contiene un formulario que solo incluye un campo para introducir el correo electrónico. Si el correo electrónico está registrado, el servicio de autenticación de Firebase se encargará de enviar un correo electrónico con las instrucciones para cambiar la contraseña.
+Esta pantalla contiene un formulario que solo incluye un campo para introducir el correo electrónico. Si el correo electrónico está registrado, el servicio de autenticación de Firebase se encargará de enviarle un correo electrónico con las instrucciones para cambiar la contraseña.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2684,7 +2687,7 @@ Los widgets de los filtros abren un pop-up con las diferentes opciones disponibl
 A continuación se muestra la pantalla de perfil personal que se genera para cada uno de los usuarios registrados. Dependiendo de algunas condiciones se mostrarán unos botones u otros:
 \begin{itemize}
 	\item Si el usuario es una protectora , se incluye un botón para abrir un mapa con la protectora ubicada en él.
-	\item El perfil que se visita no es el propio, se incluye un botón de contacto para abrir un chat con el usuario.
+	\item Si el perfil que se visita no es el propio, se incluye un botón de contacto para abrir un chat con el usuario.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2885,7 +2888,7 @@ La pantalla de información legal recoge los términos y condiciones de uso adem
 \newpage
 \subsection*{Contacto}
 
-En la pantalla de contacto se incluye un correo de contacto además de un botón que abre un chat con un administrador de la aplicación.
+En la pantalla de contacto se incluye un correo electrónico de contacto además de un botón que abre un chat con un administrador de la aplicación.
 
 \begin{figure}[H]
 	\begin{center}

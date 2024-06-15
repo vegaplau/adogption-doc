@@ -42,6 +42,7 @@
 \renewcommand{\listfigurename}{Índice de figuras}
 \captionsetup[figure]{}
 \captionsetup[table]{labelformat=empty}
+\def\@citex[#1]#2{\textcolor{blue}{\@cite{\@cite@ofmt}{#2\if@tempswa , #1\fi}}}
 
 % Empieza el documento
 \begin{document}
@@ -76,10 +77,9 @@
 \newpage
 \pagestyle{plain}
 \section*{Resumen}
-A día de hoy, comenzar un proceso de adopción puede ser algo tedioso debido a lo descentralizada que está toda la información relacionada con las protectoras y refugios, una persona que quiera adoptar algún animal normalmente va a necestar consultar diversas plataformas o redes para encontrar una protectora cercana o un animal que se adapte a su estilo de vida.
+A día de hoy, comenzar un proceso de adopción puede ser algo tedioso debido a lo descentralizada que está toda la información relacionada con las protectoras y refugios. Una persona que quiera adoptar algún animal normalmente va a necesitar consultar diversas plataformas o redes para encontrar una protectora cercana o un animal que se adapte a su estilo de vida.
 
-El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones, la información de las protectoras y facilite la comunicación entre los adoptantes y las protectoras. En esta aplicación se podrán dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protectoras o refugios que estén verificadas por los administradores tendrán la capacidad de subir a la plataforma todos los caninos, que aparecerán en las listas de adopción o acogida dependiendo de lo que se haya marcado para cada uno. También se podrán dar de alta usuarios que busquen adoptar o acoger algún perro. Existirán formularios para dar de alta o editar la información del perro, con distintos apartados para cumplimentar todos los datos requeridos como la descripción, la raza, la edad, el peso, etc. Los usuarios también dispondrán de formularios para darse de alta y editar su información. La aplicación utilizará un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación y su distancia. Se podrán ver los resultados de la aplicación en un mapa insertado en la misma. También se incluirán barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario. Se incluirá dentro de la aplicación un sistema de mensajería para facilitar la comunicación, tanto entre usuarios y protectoras como con los administradores. El chat permitirá mensajes de texto e imágenes. Se añadirá, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de un enlace. La aplicación constará de una página de información legal y de contacto a disposición del usuario.
-
+El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones, la información de las protectoras y facilite la comunicación entre los adoptantes y las protectoras. En esta aplicación, se podrán dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protectoras o refugios que estén verificadas por los administradores tendrán la capacidad de subir a la plataforma todos los caninos, que aparecerán en las listas de adopción o acogida dependiendo de lo que se haya marcado para cada uno. También se podrán dar de alta usuarios que busquen adoptar o acoger algún can y se incluirán formularios para dar de alta o editar la información de ellos, con distintos apartados para cumplimentar todos los datos requeridos como la descripción, la raza, la edad, el peso, etc. Los usuarios también dispondrán de formularios para darse de alta y editar su información. La aplicación utilizará un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación y su distancia. Estos resultados se podrán ver en un mapa insertado en la misma gracias a la inclusión de barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario. Por otro lado, la aplicación incluirá un sistema de mensajería para facilitar la comunicación tanto entre usuarios y protectoras como con los administradores. Este permitirá el envío de mensajes de texto e imágenes. Se añadirá, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de un enlace. Finalmente la aplicación contendrá una página de información legal y de contacto a disposición del usuario.
 
 % Pagina en blanco
 \newpage
@@ -91,9 +91,9 @@ El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la p
 \newpage
 \pagestyle{plain}
 \section*{Abstract}
-Currently, starting an adoption process can be quite tedious due to how decentralized all the information related to shelters and refuges is, a person who wants to adopt an animal usually will need to use various platforms or networks to find a nearby shelter or an animal that fits their lifestyle.
+As of today, starting an adoption process can be tedious due to the decentralized nature of all the information related to shelters and rescue organizations. A person looking to adopt an animal usually needs to consult various platforms or networks to find a nearby shelter or an animal that fits their lifestyle.
 
-The purpose of this \textit{Final Degree Project} is the planning and development of a mobile application that allows the management of adoptions, information on shelters, and facilitates communication between adopters and shelters. In this application, shelters or refuges can register, with their corresponding data and location. Shelters or refuges verified by administrators will have the ability to upload all the canines to the platform, which will appear in the adoption or foster lists depending on what has been marked for each canine. Users looking to adopt or foster a dog can also register. There will be forms to register or edit the dog's information, with different sections to complete all the required data such as description, breed, age, weight, etc. Users will also have forms to register and edit their information. The application will use a geolocation system to show users results within the application and their distance. The application results can be viewed on a map embedded in it. Search bars and quick filters will also be included to narrow results according to user requirements. A messaging system will be included in the application to facilitate communication, both between users and shelters, as well as with administrators. The chat will allow text messages and images. Additionally, a favorites system will be added, and it will be possible to share canines from the application externally via a link. The application will consist of a legal information and contact page available to the user.
+The purpose of this \textit{Final Degree Project} is to plan and develop a mobile application that facilitates adoption management, provides information about shelters, and eases communication between adopters and shelters. In this application, shelters or rescue organizations can register with their corresponding data and location. Shelters or rescues verified by administrators will have the ability to upload all the dogs to the platform, which will appear in adoption or foster lists depending on the status marked for each dog. Users looking to adopt or foster a dog can also register, and forms will be included to add or edit their information, with different sections to fill in all required data such as description, breed, age, weight, etc. Users will also have forms to register and edit their information. The application will use a geolocation system to show users results within the application and their distance. These results can be viewed on an embedded map thanks to the inclusion of search bars and quick filters to narrow down results according to the user's requirements. Additionally, the application will include a messaging system to facilitate communication between users and shelters as well as with administrators. This will allow the sending of text messages and images. Furthermore, a favorites system will be added, along with the ability to share dogs from the application externally through a link. Finally, the application will contain a legal information and contact page available to the user.
 
 % Pagina en blanco
 \newpage
@@ -134,7 +134,7 @@ A mis tíos, que me dieron la oportunidad de estudiar y seguir adelante.
 
 % Motivación
 \subsection{Motivación}
-Numerosas familias, todos los años, se animan a incluir a una mascota en su círculo. Sin embargo, miles de mascotas son a su vez abandonadas por muchas de estas familias en todo el mundo. Existen \href{https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun}{estudios} \cite{affinity} que indican que casi 300.000 perros y gatos fueron recogidos durante 2022. Estos datos hacen saltar las alarmas de muchas de las asociaciones que luchan por el bienestar y los derechos de los animales. De todos los animales que son abandonados, muchos permanecen en las calles durante el resto de su vida; otros son recogidos por las autoridades pertinentes y terminan en protectoras o refugios, a la espera de encontrar otra familia. Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de las mascotas que están en las calles. Algunas de estas organizaciones son públicas y subvencionadas por el estado. Para garantizar el bienestar y la protección de los animales, en España se publicó una \href{https://www.boe.es/buscar/doc.php?id=BOE-A-2023-7936}{ley} \cite{ley} en la que se tratan principalmente los siguientes puntos:
+Todos los años, numerosas familias se animan a incluir una mascota en su círculo. Sin embargo, miles de mascotas son a su vez abandonadas por muchas de estas familias en todo el mundo. Existen estudios \cite{affinity} que indican que casi 300.000 perros y gatos fueron recogidos sólo en 2022. Estos datos hacen saltar las alarmas de muchas de las asociaciones que luchan por el bienestar y los derechos de los animales. De todos los animales que son abandonados, muchos permanecen en las calles durante el resto de su vida. Otros son recogidos por las autoridades pertinentes y terminan en protectoras o refugios a la espera de encontrar otra familia. Existen organizaciones sin ánimo de lucro que se encargan de ayudar a muchas de las mascotas que están en las calles. Algunas de estas organizaciones son públicas y subvencionadas por el estado. Para garantizar el bienestar y la protección de los animales, en España se publicó una ley \cite{ley} en la que se tratan principalmente los siguientes puntos:
 \begin{itemize}[noitemsep]
 \item \textbf{Principios generales}
 	\begin{itemize}[noitemsep]
@@ -150,7 +150,7 @@ Numerosas familias, todos los años, se animan a incluir a una mascota en su cí
 	\item Establecimiento de las obligaciones de los propietarios en cuanto a la tenencia responsable, incluyendo la alimentación, hogar y atención veterinaria.
 	\item Prohibición de mantener animales en condiciones inadecuadas o de privarles de cuidados esenciales.
 	\end{itemize}
-\item \textbf{Cria y comercio de animales}
+\item \textbf{Cría y comercio de animales}
 	\begin{itemize}[noitemsep]
 	\item Regulación estricta de la cría y comercio de animales de compañía para evitar la explotación y el maltrato.
 	\item Obligación de los criadores y comerciantes de cumplir con requisitos específicos de bienestar animal.
@@ -158,7 +158,7 @@ Numerosas familias, todos los años, se animan a incluir a una mascota en su cí
 	\end{itemize}
 \item \textbf{Concienciación y medidas del estado contra abandonos y abusos}
 	\begin{itemize}[noitemsep]
-	\item Promoción de la educación y el respeto y protección de los animales.
+	\item Promoción de la educación, el respeto y protección de los animales.
 	\item Campañas de conciencación pública sobre el bienestar animal y la tenencia responsable.
 	\item Tipificación de conductas de maltrato y abandono como infracciones administrativas o penales, además del establecimiento de sanciones proporcionales a la gravedad de las infracciones.
 	\item Obligación de las administraciones públicas de establecer y mantener refugios y centros de acogida para animales abandonados.
@@ -168,13 +168,13 @@ Numerosas familias, todos los años, se animan a incluir a una mascota en su cí
 
 Esta ley ha sido un avance muy significativo en la legislación española en materia de protección animal, ayudando a crear un entorno más respetuoso y justo para los animales.
 
-A pesar de que la compra de animales en España es legal, muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación viene de la mano de que es habitual encontrar criaderos donde los animales no disponen de las condiciones necesarias para vivir adecuadamente. Algunos de estos criaderos carecen de cuidados veterinarios, de una alimentación adecuada y de higiene. En algunos \href{https://investigaciones.petalatino.com/animales-sufren-comercio-mascotas/}{artículos}\cite{petalatino} podemos encontrar más información sobre esta problemática. Si se opta finalmente por la compra, se recomienda visitar los criaderos a los que se va a comprar el animal para poder garantizar que no se están fomentando criaderos ilegales y que cumplen con las ley de bienestar animal.
+A pesar de que la compra de animales en España es legal, muchas organizaciones de bienestar animal y de los derechos de los animales recomiendan optar por la adopción en lugar de la compra. Esta recomendación tiene su origen en lo habitual que es encontrar criaderos donde los animales no disponen de las condiciones necesarias para vivir adecuadamente. Algunos de estos criaderos carecen de cuidados veterinarios, de una alimentación adecuada y de higiene. En algunos artículos \cite{petalatino} podemos encontrar más información sobre esta problemática. Si se opta finalmente por la compra, se recomienda visitar los criaderos a los que se va a comprar el animal para poder garantizar que no se están fomentando criaderos ilegales y que cumplen con las ley de bienestar animal.
 
 
 Cuando se opta por la adopción, es necesario cumplir un proceso que puede variar según la organización a la que se acuda. Hay ciertos pasos que son comunes después de escoger una organización:
 
 \begin{itemize}[noitemsep]
-\item \textbf{Elección del perro:} en este paso, se deberán tener en cuenta las necesidades de la mascota para determinar cuál se adapta mejor al estilo de vida del hogar donde va a residir. Lo habitual en esta etapa es interactuar con diferentes mascotas candidatas a ser adoptadas.
+\item \textbf{Elección del animal:} en este paso, se deberán tener en cuenta las necesidades de la mascota para determinar cuál se adapta mejor al estilo de vida del hogar donde va a residir. Lo habitual en esta etapa es interactuar con diferentes mascotas candidatas a ser adoptadas.
 \item \textbf{Solicitud de adopción:} es común que se tenga que cumplimentar un formulario y realizar una entrevista posterior para asegurar que el animal va a ir a un hogar adecuado.
 \item \textbf{Evaluación del hogar:} se organiza una visita al hogar donde va a ir el animal para garantizar que el entorno es seguro y adecuado. También se verifica que se disponga de todo lo necesario para recibir a la mascota, como comederos, juguetes, cama, etc.
 \item \textbf{Contrato de adopción:} es indispensable para garantizar la protección legal de las mascotas adoptadas. El nuevo dueño debe comprometerse legalmente a proporcionar atención veterinaria y a no abandonar al animal, entre otros puntos. En la mayoría de las organizaciones, es habitual vacunar y colocar un chip al animal antes de que vaya al hogar del nuevo dueño.
@@ -184,14 +184,14 @@ Cuando se opta por la adopción, es necesario cumplir un proceso que puede varia
 
 Todo este proceso es guiado por la organización correspondiente y es importante completarlo, aunque pueda resultar un poco tedioso. Para iniciar este proceso de adopción, la persona deberá ponerse en contacto previamente con las distintas protectoras o refugios en su área. Esta fase inicial puede presentar diferentes problemas a los adoptantes. En la mayoría de las protectoras, trabajan voluntarios y se sostienen de donaciones, por lo que es común que no cuenten con fondos para generar visibilidad. Muchas protectoras utilizan diversas redes sociales o sus propios sitios web para promocionarse, lo que implica que una persona interesada en adoptar podría tener que utilizar varias plataformas para ponerse en contacto con alguna. A veces, es difícil mantener una comunicación adecuada con diferentes protectoras incluso después de la adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades al elegir una mascota, ya que la información sobre las diferentes mascotas está dispersa y puede ser una tarea complicada buscar una que cumpla con todos los requisitos del adoptante.
 
-Después de revisar los pasos y los posibles inconvenientes para solicitar un proceso de adopción, se propone una solución en forma de aplicación móvil. Con esta aplicación se pretende solventar la problemática de la fase inicial de búsqueda de protectoras, proporcionando a los usuarios listas de protectoras cercanas y de los perros disponibles, incluyendo filtros para acotar la búsqueda. También se propone como una forma de facilitar a las protectoras la gestión de sus perros y posibles adoptantes. Para poder facilitar la comunicación entre usuarios y protectoras se añadirá un chat en tiempo real dentro de la aplicación. La idea principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
+Después de revisar los pasos y los posibles inconvenientes para solicitar un proceso de adopción, se propone una solución en forma de aplicación móvil. Con esta aplicación, se pretende solventar la problemática de la fase inicial de búsqueda de protectoras, proporcionando a los usuarios listas de protectoras cercanas y perros disponibles, incluyendo filtros para acotar la búsqueda. También se propone como una forma de facilitar a las protectoras la gestión de sus perros y posibles adoptantes. En definitiva, el objetivo principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
 
 
 % Objetivos
 \newpage
 \subsection{Objetivos del proyecto}
 
-Para satisfacer las necesidades del proyecto propuesto, se han definido una serie de objetivos divididos en dos categorías: obligatorios, que son necesarios para garantizar el funcionamiento esperado de la aplicación, y opcionales, que tienen como propósito añadir funcionalidades adicionales o facilitar su uso.
+Para satisfacer las necesidades del proyecto propuesto, se han definido una serie de objetivos divididos en dos categorías: los obligatorios, necesarios para garantizar el funcionamiento esperado de la aplicación, y los opcionales, que tienen como propósito añadir funcionalidades adicionales o facilitar su uso.
 
 
 % Objetivo 1
@@ -204,7 +204,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe ofrecer la opción de registrarse tanto como usuario o como protectora, debe proporcionar los formularios correspondientes y almacenar los datos en la base de datos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe ofrecer la opción de registrarse como usuario o como protectora, los formularios correspondientes y almacenando los datos en la base de datos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -218,7 +218,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe ofrecer la posibilidad de registrar a varios perros con diferentes características por parte de los usuarios registrados como protectoras y almacenar los datos en la base de datos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe ofrecer la posibilidad de registrar a varios caninos con diferentes características por de las protectoras y almacenar los datos en la base de datos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -230,9 +230,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 3}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de caninos con filtros y búsqueda}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listado de caninos con filtros y búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe mostrar diferentes listas de perros, permitiendo aplicar filtros rápidos y realizar búsquedas. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe mostrar diferentes listas de caninos, permitiendo aplicar filtros rápidos y realizar búsquedas. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -244,7 +244,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 4}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listas de usuarios con búsqueda}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listado de usuarios con búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Descripción} & La aplicación debe mostrar diversas listas de usuarios que permitan realizar búsquedas en ellas.  \\ \hline
 	\end{tabular}
@@ -258,9 +258,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 5}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sección de perros favoritos}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de sección de caninos favoritos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe incluir un botón de favoritos en los perfiles de los perros que permita a los usuarios añadir a su sección de favoritos aquellos perros que marquen como favoritos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe incluir un botón de favoritos en los perfiles de los caninos que permita a los usuarios añadir a su sección de favoritos a aquellos que les gusten.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -272,7 +272,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 6}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Sistema de mensajería entre usuarios}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de sistema de mensajería entre usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
 		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a los usuarios abrir un chat con otros usuarios dentro de la aplicación. Además, los usuarios deberán recibir una notificación cuando reciban un mensaje.  \\ \hline
 	\end{tabular}
@@ -288,7 +288,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe incluir el uso de la ubicación para ordenar los resultados de la aplicación según la distancia del usuario. Además, se debe agregar una página con un mapa que muestre la ubicación de los resultados junto con una lista de los mismos.  \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe incluir la ubicación para ordenar los resultados de la aplicación según la distancia del usuario. Además, se debe agregar una página con un mapa que muestre la ubicación de los resultados junto con una lista de los mismos.  \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -300,9 +300,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 8}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de caninos}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualización de datos de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir actualizar los datos de los caninos, como el peso, edad, descripción, etc. Además, se debe proporcionar la opción de marcar si un perro está disponible para adoptar/acoger o si ya ha sido adoptado. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir actualizar los atributos de los caninos, como el peso, edad, descripción, etc. Además, se debe proporcionar la opción de marcar si está disponible para adoptar/acoger o si ya ha sido adoptado. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -314,9 +314,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 9}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualizar datos de usuarios}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualización de datos de usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a un usuario actualizar sus datos personales, así como sus credenciales. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a un usuario actualizar sus datos personales y sus credenciales. \\ \hline
 	\end{tabular}
 \end{table} 
 
@@ -328,9 +328,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 10}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Barra de búsqueda de direcciones}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de barra de búsqueda de direcciones}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir a un usuario buscar su dirección y autocompletar automáticamente los diferentes campos del formulario. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Posibilidad de que un usuario pueda buscar su dirección y autocompletar automáticamente los diferentes campos del formulario. \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -342,9 +342,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 11}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Tema oscuro en la aplicación}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Diseño de tema oscuro}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir al usuario cambiar al tema oscuro dentro de la aplicación. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Posibilidad de que un usuario pueda cambiar al tema oscuro dentro de la aplicación. \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -356,9 +356,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 12}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Blog}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de un blog}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir al usuario añadir publicaciones con imágenes y textos, además de añadir comentarios en las publicaciones para compartir ideas con otros usuarios. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Posibilidad de que un usuario pueda añadir publicaciones con imágenes y textos, además de añadir comentarios en las publicaciones para compartir ideas con otros usuarios. \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -370,9 +370,9 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 13}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartir perros a través de enlace}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartición de caninos a través de un enlace}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe añadir un botón de compartir que permita al usuario generar un enlace al perro correspondiente para poder compartirlo de forma externa a la aplicación. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Posibilidad de incluir un botón de compartir que permita al usuario generar un enlace al can correspondiente para poder compartirlo a aplicaciones externas. \\ \hline
 	\end{tabular}
 \end{table}  
 
@@ -384,18 +384,17 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{font=bf}
 	\caption{Objetivo 14}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
-		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Mandar imágenes dentro del chat}}  \\ \hline
+		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Envío de imágenes dentro del chat}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
-		\cellcolor{lightgray}\textbf{Descripción} & Se debe permitir enviar imágenes dentro del chat. \\ \hline
+		\cellcolor{lightgray}\textbf{Descripción} & Posibilidad de enviar imágenes dentro del chat. \\ \hline
 	\end{tabular}
 \end{table} 
 
 % Planificación
 \newpage
-
-\section{Planificación temporal}
-
-En esta sección se definen todas las etapas en las que se dividirá el proyecto, resumidas en un diagrama de Gantt. Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
+\section{Gestión del proyecto}
+\subsection{Planificación temporal}
+En esta sección se definen todas las etapas en las que se dividirá el proyecto, los cuales se resumen en un diagrama de Gantt (ver Figura 1). Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
 
 \begin{figure}[H]
 	{\includegraphics[width=15cm]{diagram/GanntSmall2.png}\par}
@@ -405,27 +404,75 @@ En esta sección se definen todas las etapas en las que se dividirá el proyecto
 Dentro del diagrama se pueden observar las diferentes etapas del proyecto:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{Análisis:} Esta etapa tiene una duración aproximada de dos semanas, durante la cual se definen todos los requisitos del sistema y se identifican los recursos humanos, de hardware y de software necesarios.
-	\item \textbf{Estudio y aprendizaje:} Se asigna un breve período previo para aprender a utilizar los lenguajes y servicios que se emplearán en el desarrollo de la aplicación.
-	\item \textbf{Diseño:} Se destinan casi tres semanas para definir temas, bocetos, diseño de datos y la arquitectura del sistema.
-	\item \textbf{Desarrollo:} Esta es la etapa más extensa, dividida en secciones para cada funcionalidad a desarrollar, a las cuales se asigna un tiempo adecuado, considerando los servicios y componentes involucrados que definirán su dificultad.
-	\item \textbf{Pruebas y corrección de errores:} Una vez completado el desarrollo, se realizan pruebas exhaustivas para identificar errores y faltas de funcionalidades. Se reserva tiempo suficiente para corregir errores o implementar mejoras de rendimiento si es necesario.
-	\item \textbf{Documentación y memoria:} Se dedica un período para recopilar todos los datos y elaborar la memoria en LaTeX, documentando el proceso y los resultados obtenidos en las etapas anteriores.
+	\item \textbf{Análisis:} esta etapa tiene una duración aproximada de dos semanas, durante la cual se definen todos los requisitos del sistema y se identifican los recursos humanos, de hardware y de software necesarios.
+	\item \textbf{Estudio y aprendizaje:} se asigna un breve período previo para aprender a utilizar los lenguajes y servicios que se emplearán en el desarrollo de la aplicación.
+	\item \textbf{Diseño:} se destinan casi tres semanas para definir temas, bocetos, la estructura de la base de datos y la arquitectura del sistema.
+	\item \textbf{Desarrollo:} esta es la etapa más extensa, dividida en secciones para cada funcionalidad a desarrollar, a las cuales se les asigna un tiempo adecuado según los servicios y componentes involucrados que definirán su dificultad.
+	\item \textbf{Pruebas y corrección de errores:} una vez completado el desarrollo, se realizan pruebas exhaustivas para identificar errores y faltas de funcionalidades. Se reserva tiempo suficiente para corregir errores o implementar mejoras de rendimiento si es necesario.
+	\item \textbf{Documentación y memoria:} se dedica un período para recopilar todos los datos y elaborar la memoria en LaTeX, documentando el proceso y los resultados obtenidos en las etapas anteriores.
 \end{itemize}
+
+\newpage
+\subsection{Estimación de costes}
+
+Para el desarrollo del producto, se puede definir un presupuesto que abarque todos los recursos requeridos.
+
+En este proyecto, participará únicamente una persona: la autora de la memoria. Se trata de una ingeniera de software, responsable de todos los aspectos del desarrollo. El horario laboral será de lunes a viernes, a media jornada. Para calcular el costo relacionado con el personal, se ha tomado como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado es de \textit{5.500€}.
+
+Para este proyecto, el hardware disponible incluye un ordenador de sobremesa personal y una tablet Android.
+
+\begin{itemize}[noitemsep]
+	\item Ordenador de sobremesa, para el desarrollo y las pruebas, con los siguientes componentes:
+		\begin{itemize}[noitemsep]
+			\item \textbf{Procesador:} AMD Ryzen 7 3700X 8-Core Processor - 3.60 GHz
+			\item \textbf{Memoria RAM:} DDR4 3000 2x16GB
+			\item \textbf{Tarjeta gráfica:} NVIDIA GeForce GTX 1660 SUPER
+			\item \textbf{Placa base:} ASUS TUF GAMING B550-PLUS WIFI II
+			\item \textbf{Disipador:} Noctua NH-D15
+		\end{itemize}
+	\item Tablet Android Hi9plus, para realizar pruebas en un dispositivo Android físico.
+\end{itemize}
+
+Debido a que el equipo utilizado no es nuevo, se consideran los gastos del equipo teniendo en cuenta que un equipo informático se puede amortizar hasta 8 años. El precio aproximado del ordenador es de unos \textit{1.000€}. Un año tiene 12 meses, lo que resulta en 96 meses en total de amortización, lo que implica que cuesta unos \textit{11€} al mes. Dado que la duración del proyecto es de 5 meses y medio, el costo del ordenador sería de \textit{60,50€} en total. El precio de la tablet es de unos \textit{100€}, así que utilizando los mismos cálculos, el costo de la tablet es de \textit{5,72€} en total.
+
+Con respecto al software, para el alcance de este proyecto y los objetivos que se pretenden alcanzar, al menos durante la primera fase, se ha optado por utilizar las versiones gratuitas del software utilizado, lo que resulta en un coste total de 0€.
+
+\begin{itemize}[noitemsep]
+	\item Firebase - Plan Spark - Guía de planes \cite{firebase_plans}
+	\item Google APIs - Ofrecen créditos gratuitos de hasta \textit{200€} para cubir los gastos que se generen por el uso de la API. - Precios \cite{google_prices}
+	\item IDE + Framework - Gratuitos
+\end{itemize}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ | m{5cm} | m{5cm} | m{5cm} | }
+	    \hline \textbf{Tipo de recurso} & \textbf{Recurso} & \textbf{Coste (€)} \\ \hline
+	    	Personal & Sueldo empleada & 5.500 \\ \hline
+		Hardware & Ordenador & 60,50 \\ \hline
+		Hardware & Tablet & 5,72 \\ \hline
+	    	Software & Firebase & 0 \\ \hline
+		Software & Google APIs & 0 \\ \hline
+		Software & IDE + Framework & 0 \\ \hline
+	   	- & -  & \textbf{Total: 5.566,22€} \\ \hline
+    \end{tabular}
+    \caption{Costes del proyecto}
+    \label{tab:costes}
+\end{table}
 
 
 % Análisis
 \newpage
-\section{Análisis}
+\section{Análisis de requisitos}
 
 % Definición y Especificación de Requisitos
-\subsection{Definición y especificación de Requisitos}
+\subsection{Definición y especificación de requisitos}
 
-En esta sección se detallan los requisitos funcionales y no funcionales identificados para la aplicación que se desarrollará. Es fundamental definir y comprender estos requisitos para asegurar resultados óptimos en el desarrollo y diseño del sistema.
+En esta sección se detallan los requisitos identificados para la aplicación que se desarrollará. Es fundamental definir y comprender estos requisitos para asegurar resultados óptimos en el desarrollo y diseño del sistema.
 
 \subsubsection{Requisitos funcionales}
 
-Los requisitos funcionales describen las acciones específicas que el sistema debe realizar, los servicios que debe proporcionar y cómo debe responder a diversas entradas. Estos requisitos se centran en el "qué" del sistema, delineando las funcionalidades clave que los usuarios esperan encontrar en la aplicación.
+Los Requisitos Funcionales (RF) describen las acciones específicas que el sistema debe realizar, los servicios que debe proporcionar y cómo debe responder a diversas entradas. Estos requisitos se centran en el ``qué'' del sistema, delineando las funcionalidades clave que los usuarios esperan encontrar en la aplicación.
 
 % RF1
 \begin{table}[H]
@@ -1166,17 +1213,17 @@ Los requisitos funcionales describen las acciones específicas que el sistema de
 
 \subsubsection{Requisitos no funcionales}
 
-Los requisitos no funcionales son responsables de proporcionar al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han considerado los siguientes puntos:
+Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han considerado los siguientes puntos:
 
 \begin{itemize}[noitemsep]
 \item \textbf{Rendimiento:} La aplicación debe responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo.
 	\begin{itemize}[noitemsep]
 	\item Se propone un tiempo máximo de 3 segundos como tiempo óptimo para cargar una página completa.
 	\item El tiempo de respuesta del servidor debe ser menor de 2 segundos.
-	\item La aplicación debe manejar múltiples peticiones sin una degradación perceptible del rendimiento, con un límite de 10,000 solicitudes.
+	\item La aplicación debe manejar múltiples peticiones sin una degradación perceptible del rendimiento, con un límite de 10.000 solicitudes.
 	\item La base de datos debe realizar consultas simples y complejas en menos de un segundo.
 	\item En el caso de búsquedas y filtrados, el tiempo de procesamiento puede ser mayor de 3 segundos, pero menor de 6.
-	\item La aplicación debe manejar alrededor de 10,000 usuarios concurrentes sin sufrir una degradación del rendimiento.
+	\item La aplicación debe manejar alrededor de 10.000 usuarios concurrentes sin sufrir una degradación del rendimiento.
 	\end{itemize}
 \item \textbf{Escalabilidad:} El código debe ser mantenible, permitiendo añadir o quitar funcionalidades sin comprometer el comportamiento de la aplicación.
 	\begin{itemize}[noitemsep]
@@ -1214,13 +1261,13 @@ Los requisitos no funcionales son responsables de proporcionar al usuario una ex
 
 \subsection{Diagramas de casos de uso}
 
-A continuación se incluyen los diagramas de caso de uso definidos para cada uno de los roles.
+Un caso de uso es una descripción detallada de cómo los usuarios interactúan con un sistema para lograr un objetivo específico. Estos pueden ser representados gráficamente mediante diagramas que muestran la interacción entre el usuario y el sistema para alcanzar dicho objetivo. A continuación se incluyen los diagramas de casos de uso definidos para cada uno de los roles: usuario, protectora y administrador.
 
 %Caso de uso: Usuario
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=5cm]{diagram/UserC.png}\par}
-		\caption{Casos de uso: Usuario.}
+		\caption{Diagrama de casos de uso: usuario.}
 	\end{center}
 \end{figure}
 
@@ -1229,7 +1276,7 @@ A continuación se incluyen los diagramas de caso de uso definidos para cada uno
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=5cm]{diagram/Shelter.png}\par}
-		\caption{Casos de uso: Protectora.}
+		\caption{Diagrama de casos de uso: protectora.}
 	\end{center}
 \end{figure}
 
@@ -1238,7 +1285,7 @@ A continuación se incluyen los diagramas de caso de uso definidos para cada uno
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=5cm]{diagram/Admin.png}\par}
-		\caption{Casos de uso: Administrador.}
+		\caption{Diagrama de casos de uso: administrador.}
 	\end{center}
 \end{figure}
 
@@ -1248,32 +1295,9 @@ A continuación se incluyen los diagramas de caso de uso definidos para cada uno
 
 % Recursos
 \newpage
-\subsection{Recursos}
+\section{Herramientas y software utilizado}
 
-En esta sección se definen todos los recursos necesarios para el desarrollo de la aplicación.
-
-\subsubsection{Recursos humanos}
-
-En este proyecto, participará únicamente una persona, la autora de la memoria. Se trata de una ingeniera de software de nivel semi-senior, responsable de todos los aspectos del desarrollo. El horario laboral será de lunes a viernes, a media jornada.
-
-
-\subsubsection{Hardware}
-
-Para este proyecto, el hardware disponible incluye un ordenador de sobremesa personal y una tablet Android.
-
-\begin{itemize}[noitemsep]
-	\item Ordenador de sobremesa, para el desarrollo y las pruebas, con los siguientes componentes:
-		\begin{itemize}[noitemsep]
-			\item \textbf{Procesador:} AMD Ryzen 7 3700X 8-Core Processor - 3.60 GHz
-			\item \textbf{Memoria RAM:} DDR4 3000 2x16GB
-			\item \textbf{Tarjeta gráfica:} NVIDIA GeForce GTX 1660 SUPER
-			\item \textbf{Placa base:} ASUS TUF GAMING B550-PLUS WIFI II
-			\item \textbf{Disipador:} Noctua NH-D15
-		\end{itemize}
-	\item Tablet Android Hi9plus, para realizar pruebas en un dispositivo Android físico.
-\end{itemize}
-
-\subsubsection{Software}
+En esta sección se definen las herramientas y librerías necesarias para el desarrollo de la aplicación.
 
 El sistema operativo utilizado es el que estaba instalado previamente en el ordenador personal.
 
@@ -1332,194 +1356,105 @@ Por último, para la base de datos, se ha optado por utilizar \textit{Firebase}.
 		  \item \texttt{linkwell: \^{}2.0.6}
 		  \item \texttt{toastification: \^{}1.0.0}
 		\end{itemize}
-	\item \textbf{Base de datos:} Firebase database - \href{https://console.firebase.google.com}{Firebase console} \cite{firebase_console}
+	\item \textbf{Base de datos:} Firebase database - Firebase console \cite{firebase_console}
 \end{itemize}
-
-
-\subsection{Costes}
-
-Habiendo seleccionado todos los recursos necesarios para el desarrollo del producto, se puede definir un presupuesto que abarque todos los aspectos.
-
-\subsubsection{Recursos humanos}
-
-Para calcular el costo relacionado con el personal, se ha tomado como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado es de \textit{5.500€}.
-
-\subsubsection{Hardware}
-
-Debido a que el equipo utilizado no es nuevo, se consideran los gastos del equipo teniendo en cuenta que un equipo informático se puede amortizar hasta 8 años. El precio aproximado del ordenador es de unos \textit{1000€}. Un año tiene 12 meses, lo que resulta en 96 meses en total de amortización, lo que implica que cuesta unos \textit{11€} al mes. Dado que la duración del proyecto es de 5 meses y medio, el costo del ordenador sería de \textit{60,50€} en total. El precio de la tablet es de unos \textit{100€}, así que utilizando los mismos cálculos, el costo de la tablet es de \textit{5,72€} en total.
-
-\subsubsection{Software}
-
-Para el alcance de este proyecto y los objetivos que se pretenden alcanzar, al menos durante la primera fase, se ha optado por utilizar las versiones gratuitas del software seleccionado, lo que resulta en un coste total de 0€ en software.
-
-\begin{itemize}[noitemsep]
-	\item Firebase - Plan Spark - \href{https://firebase.google.com/pricing?hl=es-419}{Guía de planes} \cite{firebase_plans}
-	\item Google APIs - Ofrecen créditos gratuitos de hasta \textit{200€} para cubir los gastos que se generen por el uso de la API. - \href{https://mapsplatform.google.com/intl/es/pricing/}{Precios}\cite{google_prices}
-	\item IDE + Framework - Gratuitos
-\end{itemize}
-
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{ | m{5cm} | m{5cm} | }
-	    \hline \textbf{Recurso} & \textbf{Coste (€)} \\ \hline
-	    	Personal & 5.500 \\ \hline
-	    	\multirow{2}{*}{Hardware} & Ordenador - 60,50 \\& Tablet - 5,72 \\ \hline
-	    	Software & 0 \\ \hline
-	    \textbf{Total} & \textbf{5.566,22€} \\ \hline
-    \end{tabular}
-    \caption{Costes del proyecto}
-    \label{tab:costes}
-\end{table}
 
 % Diseño
 \newpage
-\section{Diseño}
+\section{Diseño de la Aplicación}
 
-En esta parte se incluye toda la estructura de la aplicación, tanto la interfaz de usuario como el backend y la base de datos.
+En esta parte se incluye toda la estructura de la aplicación, es decir, tanto la interfaz de usuario como el backend y la base de datos.
 
-\subsection{Diseño de la base de datos}
+\subsection{La base de datos}
 
-Esta sección es fundamental para establecer bases sólidas para la aplicación. Se deben almacenar todas las entidades y sus propiedades, definiendo claramente el tipo de cada una.
+Se deben almacenar todas las entidades y sus atributos, definiendo claramente el tipo de cada una.
 
-\subsubsection{Direcciones}
+\subsubsection{Guardado de usuarios}
 
-Para todas las protectoras, es necesario almacenar la dirección en la que están ubicadas. Esta información es crucial para mostrar a los usuarios la ubicación de cada protectora y generar marcadores en el mapa correspondiente. Por un lado, se almacenarán todas las partes de la dirección, como la ciudad, la calle, el código postal, etc. Por otro lado, cuando un usuario introduzca su dirección, se generarán automáticamente las coordenadas de esa dirección para almacenarlas también, evitando tener que calcularlas cada vez que se carguen los mapas en la interfaz. Asimismo, cuando un usuario actualice su dirección, se actualizarán también sus coordenadas correspondientes en la base de datos.
+Los usuarios son otra entidad de gran relevancia dentro de la aplicación. Aunque un usuario tiene bastantes datos dentro de la aplicación, muchos de ellos se almacenan en otras tablas y se accede a ellos referenciando sus IDs. Además, para manejar los registros de usuarios se utiliza el servicio de autenticación que proporciona Firebase, el cual facilita las herramientas para registrar usuarios y permite almacenar tanto el correo electrónico como la contraseña, entre otras cosas. En esta tabla se guarda toda la información de los usuarios, independientemente de su rol, que puede ser: \textbf{user}, \textbf{company} o \textbf{admin}, indicando si el usuario es un usuario estándar, una protectora o un administrador, respectivamente.
 
-Para todas las direcciónes se genera una entrada en el que su ID corresponde con el del usuario al que pertenece.
-
-% Addresses
+% usuarios
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: addresses}}
-\label{tab:Addresses}
-	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
+\caption{\textbf{Tabla: usuarios}}
+\label{tab:requests}
+	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
 	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
 	\hline
-	\textbf{city} & cadena & Ciudad de la dirección & Si \\ 
+	\textbf{chats} & array & IDs de los chats que pertenecen al usuario &  Sí \\ 
 	\hline
-	\textbf{country} & cadena & País de la dirección (España siempre) & Si\\ 
+	\textbf{email} & string &  ID del chat desde el que se manda la notificación &  Sí \\ 
 	\hline
-	\textbf{province} &  cadena & Provincia de la dirección & Si \\ 
+	\textbf{profilePic} & string & URL de la imagen de foto de perfil & Sí \\ 
 	\hline
-	\textbf{street} &  cadena & Calle de la dirección & Si \\ 
+	\textbf{rol} & string & Rol del usuario & Sí \\ 
 	\hline
-	\textbf{street\_number} &  cadena & Número de la calle & No\\ 
+	\textbf{username} & string & Nombre de usuario & Sí \\ 
 	\hline
-	\textbf{zipcode} & cadena & Código postal & Si \\ 
+	\textbf{verified} & string & Indica si ha sido verificado por un administrador & Sí, solo si su rol es protectora \\ 
 	\hline
-	\textbf{lat} & número & Latitud & Si \\ 
-	\hline
-	\textbf{lng} & número & Longitud & Si \\ 
-	\hline
-\end{tabular}
+	\end{tabular}
 \end{table}
 
-Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos.
+
+
+A continuación, se muestra un ejemplo de usuario guardado en la base de datos:
 
 \begin{verbatim}
 {
-  "city": "Murcia",
-  "country": "España",
-  "lat": 37.9879153,
-  "lng": -1.1315578,
-  "province": "Murcia",
-  "street": "Calle Maestro Alonso",
-  "street_number": "4",
-  "zipcode": "30005"
-}
-\end{verbatim}
-
-\subsubsection{Chats}
-
-Para la tabla de chats, se ha decidido almacenar los IDs de los usuarios implicados. Además, se guarda un array de IDs que indica para quién está disponible el chat en ese momento. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, este simplemente desaparece para el usuario que lo borra, lo que modifica la propiedad de quién puede acceder al chat en ese momento. En esta primera iteración del proyecto, los mensajes no se borran. Por ejemplo, si una persona A borra su chat con la persona B y luego vuelve a abrir un chat con esa misma persona, los mensajes anteriores seguirán estando disponibles. 
-
-Almacenar aquí los IDs de los usuarios implicados permite que, si se proponen chats de grupo, sea más sencillo escalarlo, ya que la base de datos ya lo está soportando. Lo mismo ocurre con la propiedad que hace referencia a qué usuarios pueden ver el chat.
-
-Para todos los chats se genera un ID automático, al que se hace referencia desde la tabla de usuarios.
-
-% Chats
-\begin{table}[H]
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: chats}}
-\label{tab:chats}
-	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
-	\hline
-	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
-	\hline
-	\textbf{availableTo} & array & IDs de Usuarios que tienen el chat visible en su página & Si \\ 
-	\hline
-	\textbf{lastMessage} & cadena & ID del último mensaje mandado en el chat & Si\\ 
-	\hline
-	\textbf{users} &  array & IDs de Usuarios que intervienen en el chat & Si \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-Aqui se muestra un ejemplo real de un chat almacenado en la base de datos. 
-
-\begin{verbatim}
-{
-  "availableTo": [
-    "kuaKjc6XoiVot1rMeGqBySA5pE13",
-    "buO4Vkazs3O2oVKetugxrvTfRw12"
+  "chats": [
+    "wfmRPtHiGvUI9vi9Fs7k"
   ],
-  "lastMessage": "BaKmuuo8debUTdSNsvw0",
-  "users": [
-    "kuaKjc6XoiVot1rMeGqBySA5pE13",
-    "buO4Vkazs3O2oVKetugxrvTfRw12"
-  ]
+  "email": "protectora@test.com",
+  "profilePic": "",
+  "rol": "company",
+  "username": "Protectora super chula",
+  "verified": true
 }
 \end{verbatim}
 
-\subsubsection{Perros}
+\subsubsection{Guardado de caninos}
 
-Esta entidad es una de las más importantes de la aplicación, ya que es la principal afectada por la mayoría de funcionalidades que se proponen. Principalmente, esta tabla contendrá todas las propiedades de los perros que se manejarán dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas.
-
-Para el género se han propuesto dos valores fijos que luego se transformarán en la cadena correspondiente cuando se carguen en la interfaz de usuario. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida añadir traducciones en la aplicación y no trabajar con palabras en español en la base de datos.
-
-Para almacenar la edad, se ha optado por almacenarla junto a las unidades, ya que así se le da al usuario la posibilidad de especificar mejor la edad del perro (el caso de uso es muy concreto, pero añade valor). Los valores de las unidades serán fijos, pudiendo ser:
+Esta entidad es una de las más importantes de la aplicación, ya que es la principal afectada por la mayoría de funcionalidades que se proponen. Principalmente, esta tabla contendrá todas las propiedades de los caninos que se manejarán dentro de la app, aunque hay algunas consideraciones importantes para algunas de ellas. Por ejemplo, para el género se han propuesto dos valores fijos que luego se transformarán en la cadena correspondiente cuando se carguen en la interfaz de usuario. Los valores son \textbf{male} y \textbf{female}. Se propone esta solución para cuando se decida a futuro añadir traducciones en la aplicación. Por otro lado, para almacenar la edad, se ha optado por hacerlo junto a las unidades, ya que así se le da al usuario la posibilidad de especificar mejor la edad del can (el caso de uso es muy concreto, pero añade valor). Los valores de las unidades son fijos, pudiendo ser:
 
 \begin{itemize}[noitemsep]
 	\item \textbf{Meses}
 	\item \textbf{Años}
 \end{itemize}
 
-Lo mismo ocurre con el peso, se opta por almacenarlo junto a las unidades. Independientemente de las unidades que marque el usuario, el peso en la base de datos siempre será tratado como Kg para facilitar el filtrado. Cuando se cargue en la interfaz de usuario, se mostrarán las unidades y el valor original.
+Lo mismo ocurre con el peso se opta por almacenarlo junto a las unidades. Independientemente de las unidades que marque el usuario, el peso en la base de datos siempre será tratado como Kg para facilitar el filtrado. Cuando se cargue en la interfaz de usuario, se mostrarán las unidades y el valor original, que pueden ser:
 
 \begin{itemize}[noitemsep]
 	\item \textbf{Gramos}
 	\item \textbf{Kg}
 \end{itemize}
 
-En una primera instancia se propuso almacenar los perros favoritos en la tabla de usuarios, pero tras hacer algunas pruebas se optó por este modelo finalmente. Almacenar los usuarios que han marcado al perro como favorito facilita las actualizaciones en tiempo real de los resultados de perros.
-
-Para todos los perros se genera un ID automático.
+Una alternativa sería almacenar los caninos favoritos en la tabla de usuarios. Sin embargo, almacenar los usuarios que han marcado al canino como favorito en esta tabla facilita las actualizaciones en tiempo real de los resultados. Se realizaron algunas pruebas con la primera alternativa que requería que para mostrar el número de veces que un canino estaba marcado como favorito, hubiera que consultar todas las entradas existentes de usuarios. Por otra parte, requería recargar constantemente los resultados de los caninos en las listas tras marcar o desmarcar un favorito, lo que reducía considerablemente el rendimiento de la aplicación. Con este modelo, se puede trabajar únicamente escuchando los cambios en las diferentes entradas de la tabla para los caninos y actualizar la información en pantalla en tiempo real sin comprometer el rendimiento. 
 
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: dogs}}
+\caption{\textbf{Tabla: caninos}}
 \label{tab:dogs}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
 	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
 	\hline
-	\textbf{adopted} & booleano & Indica si el perro ha sido adoptado. & Si \\ 
+	\textbf{adopted} & booleano & Indica si el can ha sido adoptado & Sí \\ 
 	\hline
-	\textbf{age} & número & Edad & Si \\ 
+	\textbf{age} & número & Edad &  Sí \\ 
 	\hline
-	\textbf{ageUds} & cadena & Unidades de la edad & Si \\ 
+	\textbf{ageUds} & string & Unidades de la edad & Sí \\ 
 	\hline
-	\textbf{breed} & cadena & Raza & Si \\ 
+	\textbf{breed} & string & Raza &  Sí \\ 
 	\hline
-	\textbf{castrated} & booleano & Indica si está castrado & Si \\ 
+	\textbf{castrated} & booleano & Indica si está castrado & Sí \\ 
 	\hline
-	\textbf{color} & cadena & Color & Si \\ 
+	\textbf{color} & string & Color & Sí \\ 
 	\hline
-	\textbf{created} & marca de tiempo & Fecha y hora de cuando se ha dado de alta & Si \\ 
+	\textbf{created} & marca de tiempo & Fecha y hora de cuándo se ha dado de alta &  Sí \\ 
 	\hline
-	\textbf{description} & cadena & Descripción & No \\ 
+	\textbf{description} & string & Descripción & No \\ 
 	\hline
 	\textbf{favoriteBy} & array & IDs de usuarios que lo han marcado como favorito & No \\ 
 	\hline
@@ -1527,22 +1462,22 @@ Para todos los perros se genera un ID automático.
 	\hline
 	\textbf{forFoster} & booleano & Indica si está disponible para acogida & No \\ 
 	\hline
-	\textbf{gender} & cadena & Género & Si \\ 
+	\textbf{gender} & string & Género & Sí \\ 
 	\hline
-	\textbf{name} & cadena & Nombre & Si \\ 
+	\textbf{name} & string & Nombre & Sí \\ 
 	\hline
-	\textbf{ownerId} & cadena & ID del propietario & Si \\ 
+	\textbf{ownerId} & string & ID del propietario &  Sí \\ 
 	\hline
-	\textbf{profilePic} & cadena & URL de la imagen de perfil de la mascota & No \\ 
+	\textbf{profilePic} & string & URL de la imagen de perfil de la mascota & No \\ 
 	\hline
-	\textbf{weight} & número & Peso & Si \\ 
+	\textbf{weight} & decimal & Peso & Sí \\ 
 	\hline
-	\textbf{weightUds} & cadena & Unidades de peso & Si \\ 
+	\textbf{weightUds} & string & Unidades de peso &  Sí \\ 
 	\hline
 \end{tabular}
 \end{table}
 
-Aquí se muestra un ejemplo real de un perro almacenado en la base de datos.
+A continuación, se muestra un ejemplo real de un canino almacenado en la base de datos:
 
 \begin{verbatim}
 {
@@ -1566,39 +1501,125 @@ Aquí se muestra un ejemplo real de un perro almacenado en la base de datos.
 }
 \end{verbatim}
 
-\subsubsection{Mensajes}
 
-Aparte de almacenar toda la información de los chats, es necesario almacenar los mensajes que se envían en los chats. Además de guardar el contenido del mensaje, se propone hacer una diferenciación por tipos, habiendo en esta primera iteración solo dos tipos: \textbf{default} e \textbf{image}, indicando que un mensaje es texto o imagen, respectivamente. Esta definición de tipos ayudará a determinar cómo cargar el contenido en la interfaz.
+\subsubsection{Guardado de direcciones}
 
-Para todos los mensajes se genera un ID automático que se puede referenciar desde la tabla de chats.
+Para todas las protectoras, es necesario almacenar la dirección en la que están ubicadas. Esta información es crucial para mostrar a los usuarios la ubicación de cada protectora y generar marcadores en el mapa correspondiente. Por un lado, se almacenarán todas las partes de la dirección, como la ciudad, la calle, el código postal, etc. Por otro lado, cuando un usuario introduzca su dirección, se generarán automáticamente las coordenadas de esa dirección para almacenarlas también, evitando tener que calcularlas cada vez que se carguen los mapas en la interfaz. Asimismo, cuando un usuario actualice su dirección, se actualizarán también sus coordenadas correspondientes en la base de datos.
+
+Para todas las direcciónes se genera una entrada en el que su ID corresponde con el del usuario al que pertenece.
+
+% Addresses
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{Tabla: direcciones}}
+\label{tab:Addresses}
+	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{city} & string & Ciudad & Sí \\ 
+	\hline
+	\textbf{country} & string & País (España siempre) & Sí \\ 
+	\hline
+	\textbf{province} &  string & Provincia & Sí \\ 
+	\hline
+	\textbf{street} &  string & Calle &  Sí \\ 
+	\hline
+	\textbf{street\_number} &  string & Número de la calle & No\\ 
+	\hline
+	\textbf{zipcode} & string & Código postal &  Sí \\ 
+	\hline
+	\textbf{lat} & decimal & Latitud & Sí \\ 
+	\hline
+	\textbf{lng} & decimal & Longitud &  Sí \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+A continuación, se muestra un ejemplo real de una dirección almacenada en la base de datos:
+
+\begin{verbatim}
+{
+  "city": "Murcia",
+  "country": "España",
+  "lat": 37.9879153,
+  "lng": -1.1315578,
+  "province": "Murcia",
+  "street": "Calle Maestro Alonso",
+  "street_number": "4",
+  "zipcode": "30005"
+}
+\end{verbatim}
+
+\subsubsection{Guardado de chats}
+
+Para la tabla de chats, se ha decidido almacenar los IDs de los usuarios implicados. Además, se guarda un array de IDs que indica para quién está disponible el chat en ese momento. Al igual que en otras aplicaciones de mensajería, cuando se elimina un chat, éste simplemente desaparece para el usuario que lo borra, lo que modifica la propiedad de quién puede acceder al chat en ese momento. Sin embargo, los mensajes no se borran. Por ejemplo, si una persona A borra su chat con la persona B y luego vuelve a abrir un chat con esa misma persona, los mensajes anteriores seguirán estando disponibles. Almacenar aquí los IDs de los usuarios implicados permite que, si se proponen chats de grupo, sea más sencillo escalarlo, ya que la base de datos ya lo está soportando. Lo mismo ocurre con la propiedad que hace referencia a qué usuarios pueden ver el chat. Para todos los chats se genera un ID automático, al que se hace referencia desde la tabla de usuarios.
+
+% Chats
+\begin{table}[H]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{\textbf{Tabla: chats}}
+\label{tab:chats}
+	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
+	\hline
+	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
+	\hline
+	\textbf{availableTo} & array & IDs de usuarios que tienen el chat visible en su página &  Sí \\ 
+	\hline
+	\textbf{lastMessage} & string & ID del último mensaje mandado en el chat &  Sí \\ 
+	\hline
+	\textbf{users} &  array & IDs de usuarios que intervienen en el chat &  Sí  \\ 
+	\hline
+\end{tabular}
+\end{table}
+
+A continuación se muestra un ejemplo real de un chat almacenado en la base de datos: 
+
+\begin{verbatim}
+{
+  "availableTo": [
+    "kuaKjc6XoiVot1rMeGqBySA5pE13",
+    "buO4Vkazs3O2oVKetugxrvTfRw12"
+  ],
+  "lastMessage": "BaKmuuo8debUTdSNsvw0",
+  "users": [
+    "kuaKjc6XoiVot1rMeGqBySA5pE13",
+    "buO4Vkazs3O2oVKetugxrvTfRw12"
+  ]
+}
+\end{verbatim}
+
+\subsubsection{Guardado de mensajes}
+
+Aparte de almacenar toda la información de los chats, es necesario almacenar los mensajes que se envían a través de los mismos. Además de guardar el contenido del mensaje, se propone hacer una diferenciación por tipos. Concretamente, dos: \textbf{default} e \textbf{image}, que indican si un mensaje es texto o imagen, respectivamente. Esta definición de tipos ayudará a determinar cómo cargar el contenido en la interfaz. Para todos los mensajes, se genera un ID automático que se puede referenciar desde la tabla de chats.
 
 % Mensajes
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: messages}}
+\caption{\textbf{Tabla: mensajes}}
 \label{tab:messages}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
 	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
 	\hline
-	\textbf{chatId} & cadena & ID del chat & Si \\ 
+	\textbf{chatId} & string & ID del chat &  Sí \\ 
 	\hline
-	\textbf{from} & cadena & ID del emisor del mensaje & Si \\ 
+	\textbf{from} & string & ID del emisor del mensaje &  Sí \\ 
 	\hline
-	\textbf{messageContent} & cadena & Contenido del mensaje & Si \\ 
+	\textbf{messageContent} & cadena & Contenido del mensaje &  Sí \\ 
 	\hline
-	\textbf{read} & booleano & Indica si el recpetor a leído el mensaje & Si \\ 
+	\textbf{read} & booleano & Indica si el recpetor a leído el mensaje &  Sí \\ 
 	\hline
-	\textbf{sent} & marca de tiempo & Fecha y hora en la que se mandó el mensaje & Si \\ 
+	\textbf{sent} & marca de tiempo & Fecha y hora en la que se mandó el mensaje & Sí \\ 
 	\hline
-	\textbf{to} & cadena & ID del receptor del mensaje & Si \\ 
+	\textbf{to} & string & ID del receptor del mensaje & Sí \\ 
 	\hline
-	\textbf{type} & cadena & Tipo del mensaje & Si \\ 
+	\textbf{type} & string & Tipo del mensaje & Sí \\ 
 	\hline
 	\end{tabular}
 \end{table}
 
-Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos.
+A continuación, se muestra un ejemplo real de un mensaje almacenado en la base de datos:
 
 \begin{verbatim}
 {
@@ -1613,54 +1634,51 @@ Aqui se muestra un ejemplo real de una dirección almacenada en la base de datos
 \end{verbatim}
 
 
-\subsubsection{Notificaciones}
+\subsubsection{Guardado de notificaciones}
 
-Cuando un usuario envíe un mensaje, el usuario receptor debe recibir una notificación. Para gestionar las notificaciones de los mensajes, se ha decidido crear una tabla que contenga las solicitudes de notificación para un usuario específico. Al iniciar sesión, se agrega un listener que escucha todos los cambios en esta tabla y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista.
-
-Para cada una de las entradas su ID corresponde con el del usuario al que pertenece.
+En \textit{Firebase}, a las tablas se les llama colecciones y dentro de cualquier colección se pueden incluir subcolecciones. Este modelo de datos facilita evitar la necesidad de referenciar los datos a través de IDs de entradas de otras tablas. En el caso de la tabla de notificaciones, se ha definido que para cada usuario se genera una entrada en la tabla, y dentro de cada entrada se crea una colección para las peticiones. Al iniciar sesión, se añade un \textit{listener} que escucha todos los cambios de esta tabla, y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista. El ID de cada entrada en la tabla de notificaciones corresponde al ID del usuario al que pertenece.
 
 % notifications
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: notifications}}
+\caption{\textbf{Tabla: notificaciones}}
 \label{tab:notifications}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
 	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
 	\hline
-	\textbf{requests} & collection & Colección de peticiones & Si \\ 
+	\textbf{requests} & collection & Colección de peticiones &  Sí \\ 
 	\hline
 	\end{tabular}
 \end{table}
 
-Para cada petición se genera un ID y se genera en un formato en concreto.
+A continuación, se muestra la estructura de la colección de peticiones:
 
 % requests
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: requests}}
-\label{tab:requests}
+\caption{\textbf{Tabla: peticiones}}
+\label{tab:users}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
 	\hline
 	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
 	\hline
-	\textbf{chats} & array & IDs de los chats que pertenecen al usuario & Si \\ 
+	\textbf{body} & string & Contenido de la notificación &  Sí \\ 
 	\hline
-	\textbf{email} & cadena &  ID del chat desde el que se manda la notificación & Si \\ 
+	\textbf{chatId} & string &  ID del chat desde el que se manda la notificación &  Sí \\ 
 	\hline
-	\textbf{profilePic} & cadena & URL de la imagen de foto de perfil & Si \\ 
+	\textbf{new} & booleano & Indica si la notificación se ha mostrado o no &  Sí \\ 
 	\hline
-	\textbf{rol} & cadena & Rol del usuario & Si \\ 
+	\textbf{summary} & string & Vista previa de la notificación &  Sí \\ 
 	\hline
-	\textbf{username} & cadena & Nombre de usuario & Si \\ 
+	\textbf{title} & string & Titulo de la notificacion &  Sí \\ 
 	\hline
-	\textbf{verified} & cadena & Indica si ha sido verificado por un administrador & Si, solo si el rol es company \\ 
+	\textbf{userId} & string & Usuario que manda la notifiación &  Sí \\ 
 	\hline
 	\end{tabular}
 \end{table}
 
-
-Aqui se muestra una petición real almacenada en la base de datos.
+A continuación, se muestra una petición real almacenada en la base de datos:
 
 \begin{verbatim}
 {
@@ -1673,52 +1691,9 @@ Aqui se muestra una petición real almacenada en la base de datos.
 }
 \end{verbatim}
 
-\subsubsection{Usuarios}
+\subsubsection{Almacenamiento de imágenes}
 
-Los usuarios son otra entidad de gran relevancia dentro de la aplicación. Aunque un usuario tiene bastantes datos dentro de la aplicación, muchos de estos datos se almacenan en forma de referencia con su ID correspondiente en otras tablas. Además, para manejar los registros de usuarios se utilizará el servicio de Autenticación que proporciona Firebase, el cual facilita las herramientas para registrar usuarios y permite almacenar tanto el correo electrónico como la contraseña, entre otras cosas.
-
-% requests
-\begin{table}[H]
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{Tabla: users}}
-\label{tab:users}
-	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
-	\hline
-	\textbf{Campo} & \textbf{Tipo} & \textbf{Dato} & \textbf{Obligatorio} \\ 
-	\hline
-	\textbf{body} & cadena & Contenido de la notificación & Si \\ 
-	\hline
-	\textbf{chatId} & cadena &  ID del chat desde el que se manda la notificación & Si \\ 
-	\hline
-	\textbf{new} & booleano & Indica si la notificación se ha lanzado o no & Si \\ 
-	\hline
-	\textbf{summary} & cadena & Preview de la notificación & Si \\ 
-	\hline
-	\textbf{title} & cadena & Titulo de la notificacion & Si \\ 
-	\hline
-	\textbf{userId} & cadena & Usuario que manda la notifiación & Si \\ 
-	\hline
-	\end{tabular}
-\end{table}
-
-Aqui se muestra un ejemplo de usuario guardado en la base de datos.
-
-\begin{verbatim}
-{
-  "chats": [
-    "wfmRPtHiGvUI9vi9Fs7k"
-  ],
-  "email": "protectora@test.com",
-  "profilePic": "",
-  "rol": "company",
-  "username": "Protectora super chula",
-  "verified": true
-}
-\end{verbatim}
-
-\subsubsection{Imágenes}
-
-En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeos o audios y viene integrado de manera nativa con varios servicios de Firebase, como el servicio de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la aplicación, se propone organizarlo en los siguientes directorios:
+En cuanto al almacenamiento de imágenes, se ha utilizado el servicio que proporciona Firebase llamado \textit{Storage}. Este servicio permite almacenar imágenes, vídeos y audios y viene integrado de manera nativa con otros de sus servicios, como el de \textit{Authentication} mencionado anteriormente. Dentro del almacenamiento reservado para la aplicación, se ha organizado según la siguiente jerarquía de directorios:
 
 \begin{itemize}[noitemsep]
 	\item \textit{images}
@@ -1728,11 +1703,11 @@ En cuanto al almacenamiento de imágenes, se utilizará el servicio que proporci
 	\end{itemize}
 \end{itemize}
 
-Las imágenes de perfil de usuarios o perros se almacenarán en el directorio de \textit{profilePics}. Por otro lado, cuando se mande una imagen por chat, esta se almacenará en el directorio de \textit{chats}. Para trabajar con las imágenes dentro de la aplicación, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}. Estas URLs obtenidas se almacenarán en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
+Las imágenes de perfil de usuarios y perros se almacenan en el directorio \textit{profilePics}. Por otro lado, cuando se manda una imagen por chat, ésta se almacena en el directorio \textit{chats}. Para trabajar con las imágenes dentro de la aplicación, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}. Estas URLs obtenidas se almacenan en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
 
-\subsection{Diseño de la interfaz de usuario}
+\subsection{Prototipado de la interfaz de usuario}
 
-El diseño de la interfaz de usuario (UI) se centra en crear una experiencia de usuario (UX) intuitiva y atractiva. Inicialmente, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos o prototipos que se vayan generando a continuación. Es importante tener en cuenta que el diseño sea responsive para que se adapte adecuadamente a todos los dispositivos móviles.
+El diseño de la Interfaz de Usuario (UI) se centra en crear una Experiencia de Usuario (UX) intuitiva y atractiva. Inicialmente, se define un estilo y tema que se debe mantener a lo largo de todos los bocetos o prototipos a generar. Es importante tener en cuenta que el diseño sea \textit{responsive} para que se adapte adecuadamente a todos los dispositivos móviles.
 
 \subsubsection{Tema}
 

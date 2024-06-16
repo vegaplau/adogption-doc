@@ -417,7 +417,7 @@ Dentro del diagrama se pueden observar las diferentes etapas del proyecto:
 
 Para el desarrollo del producto, se puede definir un presupuesto que abarque todos los recursos requeridos.
 
-En este proyecto, participará únicamente una persona: la autora de la memoria. Se trata de una ingeniera de software, responsable de todos los aspectos del desarrollo. El horario laboral será de lunes a viernes, a media jornada. Para calcular el costo relacionado con el personal, se ha tomado como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado es de \textit{5.500€}.
+En este proyecto participará únicamente una persona: la autora de la memoria. Se trata de una ingeniera de software, responsable de todos los aspectos del desarrollo. El horario laboral será de lunes a viernes, a media jornada. Para calcular el costo relacionado con el personal, se ha tomado como referencia el sueldo medio de un programador junior, que ronda los \textit{24.000€} anuales, lo que equivale a \textit{12.000€} a media jornada. Haciendo cálculos, al mes corresponden unos \textit{1.000€}. Dado que la duración del proyecto es de 5 meses y medio, el costo total en salarios para el empleado es de \textit{5.500€}.
 
 Para este proyecto, el hardware disponible incluye un ordenador de sobremesa personal y una tablet Android.
 
@@ -1213,7 +1213,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 
 \subsubsection{Requisitos no funcionales}
 
-Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han considerado los siguientes puntos:
+Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han identificado los siguientes requisitos no funcionales:
 
 \begin{itemize}[noitemsep]
 \item \textbf{Rendimiento:} La aplicación debe responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo.
@@ -1636,7 +1636,7 @@ A continuación, se muestra un ejemplo real de un mensaje almacenado en la base 
 
 \subsubsection{Guardado de notificaciones}
 
-En \textit{Firebase}, a las tablas se les llama colecciones y dentro de cualquier colección se pueden incluir subcolecciones. Este modelo de datos facilita evitar la necesidad de referenciar los datos a través de IDs de entradas de otras tablas. En el caso de la tabla de notificaciones, se ha definido que para cada usuario se genera una entrada en la tabla, y dentro de cada entrada se crea una colección para las peticiones. Al iniciar sesión, se añade un \textit{listener} que escucha todos los cambios de esta tabla, y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista. El ID de cada entrada en la tabla de notificaciones corresponde al ID del usuario al que pertenece.
+En \textit{Firebase}, a las tablas se les llama colecciones y dentro de cualquier colección se pueden incluir subcolecciones. Usar subcolecciones evita la necesidad de referenciar los datos a través de IDs de entradas de otras tablas. En el caso de la tabla de notificaciones, se ha definido que para cada usuario se genera una entrada en la tabla, y dentro de cada entrada se crea una colección para las peticiones. Al iniciar sesión, se añade un \textit{listener} que escucha todos los cambios de esta tabla, y cuando llega una nueva solicitud, se envía una notificación a través del canal correspondiente. Cuando el usuario receptor recibe la notificación, esta solicitud se marca como vista. El ID de cada entrada en la tabla de notificaciones corresponde al ID del usuario al que pertenece.
 
 % notifications
 \begin{table}[H]
@@ -1711,94 +1711,77 @@ El diseño de la Interfaz de Usuario (UI) se centra en crear una Experiencia de 
 
 \subsubsection{Tema}
 
-Para los colores principales de la aplicación, se opta por escoger el color morado. El color morado dentro de UX puede evocar diferentes sensaciones en el usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se añade a la paleta su color análogo, el azul. Para finalizar los colores principales, a la paleta se añade el color complementario del azul, que sería el naranja. Estos tres colores conformarán los elementos de la aplicación; el morado se utilizará para la mayoría de los elementos, indicando que son importantes. El azul se mezclará con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja será un color que se utilice como acento o para llamar la atención del usuario, junto con el naranja se podrán utilizar algunos de sus colores análogos como el amarillo o el rojo. Para los fondos de la aplicación se añade también un blanco roto a la paleta de colores propuesta.
+Para los colores principales de la aplicación, se ha optado por escoger el color morado, el cuál dentro de UX puede evocar diferentes sensaciones en el usuario. Muchas marcas de lujo utilizan este color para sus logos, aunque también puede evocar sentimientos de calma o relajación según las tonalidades que se utilicen. Teniendo el morado como color principal, se ha añdido a la paleta su color análogo: el azul. Para finalizar los colores principales, a la paleta se ha incluido el color complementario del azul, que es el naranja. Estos tres colores conforman los elementos de la aplicación: el morado se utiliza para la mayoría de los elementos, indicando que son importantes. El azul se mezcla con el morado en algunos elementos para hacer más dinámicos los fondos y utilizarlo en elementos no tan relevantes. Por último, el naranja es un color que se ha utilizado como acento o para llamar la atención del usuario. Junto a él se podrán utilizan algunos de sus colores análogos como el amarillo o el rojo. Finalmente, a la paleta de colores se ha añadido el color blanco roto pues es adecuado para los fondos de la aplicación.
 
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=7cm]{design/Colors.jpg}\par}
-		\caption{Paleta de colores}
+		\caption{Paleta de colores utilizada en la aplicación}
 	\end{center}
 \end{figure}
 
-Como fuente, se opta por escoger la fuente \textit{Nunito Sans}, que proporciona Google. Se elige porque es una fuente bastante estándar y legible para cualquier tipo de usuario.
+Como fuente, se opta por escoger la \textit{Nunito Sans}, que proporciona Google. Su elección se debe a que es una fuente bastante estándar y legible para cualquier tipo de usuario.
 
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=7cm]{design/NunitoFont.png}\par}
-		\caption{Fuente Nunito Sans}
+		\caption{Fuente utilizada en la aplicación (\textit{Nunito Sans})}
 	\end{center}
 \end{figure}
 
 \subsubsection{Nombre}
 
-Como nombre de la aplicación,  se tiene en cuenta que inicialmente la aplicación está dirigida a la adopción de perros, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog}, que son la traducción de las palabras adopción y perro, conformando el nombre: \textbf{\textit{Adogption}}.
+Como nombre de la aplicación,  se ha tenido en cuenta que inicialmente la aplicación está dirigida a la adopción de perros, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog}, que son la traducción de las palabras adopción y perro, conformando el nombre: \textbf{\textit{Adogption}}.
 
 \subsubsection{Logo e iconos}
 
-La última parte relacionada con el branding en este proyecto es la de generación de logos e iconos. En esta sección se incluye tanto el logo de la aplicación como los iconos que se han hecho para incluir dentro de la aplicación. Algunos de los iconos podrían finalmente no utilizarse.
-
-La idea del logo es que se perciba claramente que la aplicación va sobre perros. Los corgis son una de las razas más populares en el mundo; destacan por ser una raza muy amigable y muy querida dentro de la cultura pop, lo que los convierte en la cara perfecta para llamar la atención. Además del logo principal, se ha diseñado un logo animado para incluir en pantallas de carga u otros lugares. Por último, se han hecho algunos iconos por defecto, que serán utilizados en perfiles o listas.
+La última parte relacionada con el \textit{branding} en este proyecto es la de generación de logos e iconos. En esta sección, se incluye tanto el logo de la aplicación como los iconos que conforman la misma. Algunos de los iconos podrían finalmente no utilizarse. La idea del logo es que se perciba claramente que la aplicación trata sobre ellos. Los \textit{Corgis} son una de las razas más populares en el mundo. Destacan por ser muy amigables y queridos dentro de la cultura \textit{pop}, lo que los convierte en la cara perfecta para llamar la atención. Además del logo principal, se ha diseñado uno animado para incluir en pantallas de carga u otros lugares. Por último, se han hecho algunos iconos por defecto que serán utilizados en perfiles o listas.
 
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/Logo1.png}\par}
-			\caption{Logo.}
+			{\includegraphics[width=3cm]{logo/Logo1.png}\par}
+			\caption{Público.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=7cm]{logo/ADOGPTIONFIXED.png}\par}
-			\caption{Logo animado.}
+			{\includegraphics[width=4cm]{logo/ADOGPTIONFIXED.png}\par}
+			\caption{Animado.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Logos}
+	\caption{Logos principales de la aplicación}
+\end{figure}
+
+\begin{figure}[H]
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=3cm]{logo/EMPTYUSER.png}\par}
+			\caption{Usuario}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=3cm]{logo/EMPTYDOG.png}\par}
+			\caption{Canino}
+		\end{center}  
+	\end{subfigure}\hfill
+	\caption{Logo por defecto}
 \end{figure}
 
 
 \begin{figure}[H]
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/EMPTYUSER.png}\par}
-			\caption{Icono por defecto para usuario.}
+			{\includegraphics[width=3cm]{logo/Adoptar.png}\par}
+			\caption{Icono para listas de adopción}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/EMPTYDOG.png}\par}
-			\caption{Icono por defecto para perro.}
-		\end{center}  
-	\end{minipage}\hfill
-\end{figure}
-
-
-\begin{figure}[H]
-   	\begin{minipage}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{logo/Adoptar.png}\par}
-			\caption{Icono para listas de adopción.}
-		\end{center}  
-	\end{minipage}\hfill
-   	\begin{minipage}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{logo/Acoger.png}\par}
-			\caption{Icono para listas de acogida.}
-		\end{center}  
-	\end{minipage}\hfill
-\end{figure}
-
-\begin{figure}[H]
-   	\begin{minipage}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{logo/USERNV.png}\par}
-			\caption{Icono usuario no verificado.}
-		\end{center}  
-	\end{minipage}\hfill
-   	\begin{minipage}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{logo/USERV.png}\par}
-			\caption{Icono usuario verificado.}
+			{\includegraphics[width=3cm]{logo/Acoger.png}\par}
+			\caption{Icono para listas de acogida}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1806,14 +1789,14 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
 \begin{figure}[H]
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/Protectora.png}\par}
-			\caption{Icono hueso.}
+			{\includegraphics[width=3cm]{logo/Protectora.png}\par}
+			\caption{Icono de hueso}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/Casa.png}\par}
-			\caption{Icono casa.}
+			{\includegraphics[width=3cm]{logo/Casa.png}\par}
+			\caption{Icono de casa}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1822,14 +1805,26 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/ALLUSER.png}\par}
-			\caption{Icono en morado.}
+			{\includegraphics[width=3cm]{logo/USERV.png}\par}
+			\caption{Verificado}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/USER.png}\par}
-			\caption{Icono en azul.}
+			{\includegraphics[width=3cm]{logo/USERNV.png}\par}
+			\caption{No verificado}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=3cm]{logo/ALLUSER.png}\par}
+			\caption{Color morado}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=3cm]{logo/USER.png}\par}
+			\caption{Color azul}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Iconos usuarios}
@@ -1838,44 +1833,44 @@ La idea del logo es que se perciba claramente que la aplicación va sobre perros
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/Pata1.png}\par}
-			\caption{Icono en naranja.}
+			{\includegraphics[width=3cm]{logo/Pata1.png}\par}
+			\caption{Color naranja}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/Pata2.png}\par}
-			\caption{Icono en morado.}
+			{\includegraphics[width=3cm]{logo/Pata2.png}\par}
+			\caption{Color morado}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{logo/Pata3.png}\par}
-			\caption{Icono en azul.}
+			{\includegraphics[width=3cm]{logo/Pata3.png}\par}
+			\caption{Color morado}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Iconos patas}
+	\caption{Iconos de patas}
 \end{figure}
 
 
 \newpage
 \subsubsection{Diseños}
 
-En esta sección se incluyen todos los diseños realizados en \textit{Miró} para las pantallas de la aplicación. Entre los diseños se encuentran todas las páginas principales de la aplicación y componentes relevantes. En la sección de implementación se especificará la función de cada una de las pantallas.
+En esta sección, se incluyen todos los diseños realizados en \textit{Miro} para las pantallas principales de la aplicación y componentes relevantes. En la sección de implementación se especificará la función de cada una de las pantallas.
 
 
 \begin{figure}[H]
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm]{design/SplashScreen.jpg}\par}
-			\caption{Pantalla de carga.}
+			\caption{Pantalla de carga}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm]{design/Login.jpg}\par}
-			\caption{Inicio de sesión.}
+			\caption{Pantalla de inicio de sesión}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -1886,14 +1881,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/UserRegister.jpg}\par}
-			\caption{Registro/edición de usuario.}
+			\caption{Pantalla de registro/edición de usuario.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/CompanyRegister.jpg}\par}
-			\caption{Registro/edición de protectora.}
+			\caption{Pantalla de registro/edición de protectora.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -1903,7 +1898,7 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/UserPage.jpg}\par}
-			\caption{Inicio usuario.}
+			\caption{Pantalla de inicio de usuario.}
 			\medskip
 			\small
 
@@ -1912,7 +1907,7 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/CompanyPage.jpg}\par}
-			\caption{Inicio protectora.}
+			\caption{Pantalla de inicio para protectora.}
 			\medskip			
 		\end{center}  
 	\end{minipage}\hfill
@@ -1922,14 +1917,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/DogList.jpg}\par}
-			\caption{Lista de perros.}
+			\caption{Pantalla de lista de caninos.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/UserList.jpg}\par}
-			\caption{Lista de usuarios.}
+			\caption{Pantalla de lista de usuarios.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -1940,7 +1935,7 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/UserProfile.jpg}\par}
-			\caption{Perfil de usuario/administrador.}
+			\caption{Pantalla del perfil de usuario/administrador.}
 			\medskip
 
 		\end{center}  
@@ -1948,7 +1943,7 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/CompanyProfile.jpg}\par}
-			\caption{Perfil de protectora. }
+			\caption{Pnatalla del perfil de protectora. }
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -1958,14 +1953,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/DogProfile.jpg}\par}
-			\caption{Perfil de perro.}
+			\caption{Pantalla del perfil de canino.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/ShareAction.jpg}\par}
-			\caption{Compartir perro.}
+			\caption{Pantalla de compartir canino.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -1975,14 +1970,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/MapPage.jpg}\par}
-			\caption{Página de mapa y lista.}
+			\caption{Pantalla de mapa y lista.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/MapAction.jpg}\par}
-			\caption{Acción de redirigir a perfil.}
+			\caption{Pantalla de redirección a perfil.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -1992,14 +1987,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/RegisterDog.jpg}\par}
-			\caption{Registro/edición canino.}
+			\caption{Pantalla de registro/edición de canino.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/SideMenu.jpg}\par}
-			\caption{Menú lateral.}
+			\caption{Pantalla del menú.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -2009,14 +2004,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/AdminPage.jpg}\par}
-			\caption{Inicio administrador.}
+			\caption{Pantalla del inicio del administrador.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/VerifyAction.jpg}\par}
-			\caption{Pop-up verificación.}
+			\caption{Pantalla del pop-up de verificación.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -2026,14 +2021,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/Notification.jpg}\par}
-			\caption{Notificaciones.}
+			\caption{Pantalla de notificaciones.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/Messages.jpg}\par}
-			\caption{Página de mensajes.}
+			\caption{Pantalla de chats.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -2043,20 +2038,14 @@ En esta sección se incluyen todos los diseños realizados en \textit{Miró} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm, width=4cm]{design/PasswordRecovery.jpg}\par}
-			\caption{Recuperar contraseña.}
+			\caption{Pantalla de recuperación de contraseña.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
 
 
-% Implementación
-\newpage
-\section{Implementación}
-
-En esta sección se incluyen las clases y pantallas finales, que son resultado del desarrollo y de la posterior corrección de errores.
-
-\subsection{Módulos y clases}
+\subsection{Arquitectura interna}
 
 Durante el desarrollo se han implementado diferentes módulos, cada uno con una finalidad específica. Mantener los componentes granulados en módulos y submódulos asegura una mejor escalabilidad y mantenibilidad de la aplicación y facilita tareas como refactorizaciones y cambios de estilos, además de evitar muchas repeticiones de código.
 
@@ -2074,7 +2063,7 @@ Durante el desarrollo se han implementado diferentes módulos, cada uno con una 
 \subsection*{appbar}
 
 
-Este módulo se utiliza para generar las diferentes \textit{AppBar} que se utilizan en las pantallas de la aplicación. Una \textit{AppBar} es el componente que se coloca en la parte superior de la pantalla y puede contener botones u otros componentes tales como barras de búsqueda o imágenes. La única clase que contiene el módulo se encarga de instanciar el componente en las diferentes pantallas según el tipo de barra que se necesite.
+Este módulo se utiliza para generar las diferentes \textit{appbar} que se utilizan en las pantallas de la aplicación. Una \textit{appbar} es el componente que se coloca en la parte superior de la pantalla y puede contener botones u otros componentes tales como barras de búsqueda o imágenes. La única clase que contiene el módulo se encarga de instanciar el componente en las diferentes pantallas según el tipo de barra que se necesite.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2086,13 +2075,13 @@ Este módulo se utiliza para generar las diferentes \textit{AppBar} que se utili
 
 \subsection*{chats}
 
-Aquí se incluyen todas las clases que necesita un chat para funcionar correctamente.
+En este módulo se incluyen todas las clases que necesita un chat para funcionar correctamente:
 \begin{itemize}[noitemsep]
-	\item \textbf{ChatInput}: Componente que permite a los usuarios escribir mensajes y adjuntar imágenes a los chats.
-	\item \textbf{ChatRoomPage}: Interfaz del chat.
-	\item \textbf{ChatsPage}:  Es la página principal que contiene todos los chats, contiene todos los chats que un usuario tiene en ese momento, son una lista de \textit{ChatWidget}.
-	\item \textbf{ChatWidget}: Este componente muestra una previsualización del chat, que incluye la información del usuario, el último mensaje y la fecha y hora en la que se envió. Además, incluye el número de mensajes sin leer del chat.
-	\item \textbf{ChatModel}: Clase que se encarga de generar y manejar modelos de chat que se generan a partir de toda la información de la base de datos relacionada con los chats.
+	\item \textbf{ChatInput}: componente que permite a los usuarios escribir mensajes y adjuntar imágenes a los chats.
+	\item \textbf{ChatRoomPage}: interfaz del chat.
+	\item \textbf{ChatsPage}:  es la página principal que contiene todos los chats. Contiene todos los chats que un usuario tiene en ese momento, son una lista de \textit{ChatWidget}.
+	\item \textbf{ChatWidget}: este componente muestra una previsualización del chat, que incluye la información del usuario, el último mensaje y la fecha y hora en la que se envió. Además, incluye el número de mensajes sin leer del chat.
+	\item \textbf{ChatModel}: clase que se encarga de manejar modelos de chat que se generan a partir de toda la información de la base de datos relacionada con ellos.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2105,46 +2094,46 @@ Aquí se incluyen todas las clases que necesita un chat para funcionar correctam
 
 \subsection*{common}
 
-En este módulo se definen todos los componentes básicos que incluyen las diferentes pantallas generadas. Además, se definen diferentes submódulos para cada uno de los componentes creados. Todos los submódulos contienen una clase base en la que se definen los estilos y funcionalidades básicas, y el resto de las clases extienden estas clases base. Es importante destacar que, aunque se hayan creado clases propias para los componentes, todas ellas instancian componentes de las bibliotecas por defecto de Flutter, como la biblioteca \textit{material}.
+En este módulo se definen todos los componentes básicos que incluyen las diferentes pantallas generadas. Además, se definen diferentes submódulos para cada uno de los componentes creados. Los submódulos contienen una clase base en la que se definen los estilos y funcionalidades básicas, y el resto de las clases extienden de estas clases base. Es importante destacar que, aunque se hayan creado clases propias para los componentes, todas ellas instancian componentes de las bibliotecas por defecto de Flutter, como la biblioteca \textit{material}. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{button}: En este submódulo se definen todos los botones utilizados en diversos componentes y pantallas de la aplicación. Estos botones tienen diferentes funcionalidades, como la redirección a otras pantallas, la actualización de datos o la visualización de pop-ups.
-	\item \textbf{card}: Una tarjeta es un componente similar a un contenedor pero con un aspecto más atractivo. Se ha creado un componente base que se reutiliza en diferentes widgets y que contiene este módulo.
-	\item \textbf{checkbox}: Contiene los diferentes checkboxes desarrollados, junto con su comportamiento asociado.
-	\item \textbf{container}: Define un contenedor básico con un estilo concreto para reutilizarlo en diferentes lugares.
-	\item \textbf{dialog}: Agrupa todos los pop-ups desarrollados y su comportamiento correspondiente.
-	\item \textbf{drawer}: Contiene todos los menús laterales y los componentes asociados. Estos menús incluyen imágenes de perfil y botones que redirigen a otras pantallas.
-	\item \textbf{dropdown}: Incluye los diferentes dropdowns utilizados en la aplicación, algunos de los cuales tienen la funcionalidad de búsqueda de opciones.
-	\item \textbf{form}: Contiene todos los formularios utilizados en la aplicación.
-	\item \textbf{icon}: Agrupa iconos básicos con funcionalidad. Por ahora, solo incluye el icono de favoritos.
-	\item \textbf{images}: Incluye clases que proporcionan funcionalidades para seleccionar imágenes del dispositivo y componentes para facilitar la inserción de imágenes en la aplicación.
-	\item \textbf{input}: Contiene componentes que permiten a los usuarios introducir información de diversos tipos, como texto, números o componentes compuestos que contienen dropdowns o checkboxes.
-	\item \textbf{maps}: Incluye toda la funcionalidad relacionada con los mapas, tanto la página de mapas como los mapas que se pueden insertar en diferentes partes de la aplicación.
-	\item \textbf{padding}: Define un padding que se reutiliza en toda la aplicación.
-	\item \textbf{picker}: Incluye componentes relacionados con la selección de direcciones en mapas u opciones similares.
-	\item \textbf{searchbar}: Define las barras de búsqueda implementadas en la aplicación, junto con su funcionalidad.
-	\item \textbf{swiper}: Por ahora, solo contiene el swiper utilizado para mostrar las adopciones recientes.
-	\item \textbf{text}: Contiene clases que definen textos utilizados en la aplicación, como títulos, subtítulos y avisos.
-	\item \textbf{widget}: Incluye componentes comunes compuestos por otros componentes comunes.
+	\item \textbf{button}: en este submódulo se definen todos los botones utilizados en diversos componentes y pantallas de la aplicación. Estos botones tienen diferentes funcionalidades, como la redirección a otras pantallas, la actualización de datos o la visualización de pop-ups.
+	\item \textbf{card}: una tarjeta es un componente similar a un contenedor pero con un aspecto más atractivo. Se ha creado un componente base que se reutiliza en diferentes widgets y que contiene este módulo.
+	\item \textbf{checkbox}: contiene los diferentes checkboxes desarrollados, junto con su comportamiento asociado.
+	\item \textbf{container}: define un contenedor básico con un estilo concreto para reutilizarlo en diferentes lugares.
+	\item \textbf{dialog}: agrupa todos los pop-ups desarrollados y su comportamiento correspondiente.
+	\item \textbf{drawer}: contiene todos los menús laterales y los componentes asociados. Estos menús incluyen imágenes de perfil y botones que redirigen a otras pantallas.
+	\item \textbf{dropdown}: incluye los diferentes dropdowns utilizados en la aplicación. Algunos de los cuales tienen la funcionalidad de búsqueda de opciones.
+	\item \textbf{form}: contiene todos los formularios utilizados en la aplicación.
+	\item \textbf{icon}: agrupa iconos básicos con funcionalidad. Por ahora, solo incluye el icono de favoritos.
+	\item \textbf{images}: incluye clases que proporcionan funcionalidades para seleccionar imágenes del dispositivo y componentes para facilitar la inserción de imágenes en la aplicación.
+	\item \textbf{input}: contiene componentes que permiten a los usuarios introducir información de diversos tipos, como texto, números o componentes compuestos que contienen dropdowns o checkboxes.
+	\item \textbf{maps}: incluye toda la funcionalidad relacionada con los mapas, es decir, tanto la página de mapas como los mapas que se pueden insertar en diferentes partes de la aplicación.
+	\item \textbf{padding}: define un \textit{padding} que se reutiliza en toda la aplicación.
+	\item \textbf{picker}: incluye componentes relacionados con la selección de direcciones en mapas u opciones similares.
+	\item \textbf{searchbar}: define las barras de búsqueda implementadas en la aplicación junto con su funcionalidad.
+	\item \textbf{swiper}: contiene el swiper utilizado para mostrar las adopciones recientes.
+	\item \textbf{text}: contiene clases que definen textos utilizados en la aplicación, como títulos, subtítulos y avisos.
+	\item \textbf{widget}: incluye componentes comunes compuestos por otros componentes comunes.
 \end{itemize}
 
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=0.8\linewidth]{diagram/Common.png}\par}
+		{\includegraphics[width=0.9\linewidth]{diagram/Common.png}\par}
 		\caption{Módulo  \textit{common}.}
 	\end{center}
 \end{figure}
 
 \subsection*{condition}
 
-Este módulo se encarga de gestionar los filtros de las listas de una manera más dinámica.
+Este módulo se encarga de gestionar los filtros de las listas de una manera más dinámica. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{Basic}: Define el componente básico para añadir filtros a las listas, encargándose de abrir el pop-up con las opciones del filtro.
-	\item \textbf{Gender}: Define el filtro para el género.
-	\item \textbf{Weight}: Define el filtro para el peso.
-	\item \textbf{ConditionModel}: Clase que se encarga de generar y manejar modelos de condiciones a partir de la información proporcionada por la aplicación o el usuario. Esta clase además proporciona un método que se encarga de añadir todos los filtros que haya aplicados en ese momento a la consulta.
+	\item \textbf{Basic}: define el componente básico para añadir filtros a las listas, encargándose de abrir el pop-up con las opciones del filtro.
+	\item \textbf{Gender}: define el filtro para el género.
+	\item \textbf{Weight}: define el filtro para el peso.
+	\item \textbf{ConditionModel}: clase que se encarga de generar y manejar modelos de condiciones a partir de la información proporcionada por la aplicación o el usuario. Esta clase, además, proporciona un método que se encarga de añadir todos los filtros que haya aplicados en ese momento a la consulta.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2156,7 +2145,7 @@ Este módulo se encarga de gestionar los filtros de las listas de una manera má
 
 \subsection*{contact}
 
-Aunque este módulo solo contiene una clase que se encarga de mostrar toda la información de contacto con los administradores, se definió por separado para poder añadir más clases en futuras iteraciones.
+Aunque este módulo solo contiene una clase que se encarga de mostrar toda la información de contacto con los administradores, se ha definido por separado para poder añadir más clases en un futuro.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2168,18 +2157,18 @@ Aunque este módulo solo contiene una clase que se encarga de mostrar toda la in
 
 \subsection*{db}
 
-Este módulo es el encargado de comunicarse directamente con la base de datos de Firebase. Contiene diferentes clases para las distintas entidades que existen y para el almacenamiento.
+Este módulo es el encargado de comunicarse directamente con la base de datos de Firebase. Contiene diferentes clases para las distintas entidades que existen y para el almacenamiento:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{DBBase}: Clase abstracta que contiene los métodos básicos que deben incluir el resto de clases.
-	\item \textbf{DBAddresses}: Clase que maneja las direcciones y coordenadas.
-	\item \textbf{DBChats}: Clase que maneja toda la información relacionada con chats.
-	\item \textbf{DBDogs}: Clase que maneja toda la información relacionada con perros y su información.
-	\item \textbf{DBFavorites}: Clase que se encarga exclusivamente de actualizar la información de los favoritos dentro de la tabla de perros.
-	\item \textbf{DBMessages}: Clase que maneja toda la información relacionada con mensajes.
-	\item \textbf{DBNotifications}: Clase que maneja toda la información relacionada con notificaciones.
-	\item \textbf{DBStorage}: Clase que se encarga de insertar, actualizar y eliminar todas las imágenes relacionadas con alguna de las entidades.
-	\item \textbf{DBUsers}: Clase que maneja toda la información relacionada con los usuarios.
+	\item \textbf{DBBase}: contiene los métodos básicos que deben incluir el resto de clases.
+	\item \textbf{DBAddresses}: maneja las direcciones y coordenadas.
+	\item \textbf{DBChats}: maneja toda la información relacionada con chats.
+	\item \textbf{DBDogs}: maneja toda la información relacionada con perros y su información.
+	\item \textbf{DBFavorites}: se encarga exclusivamente de actualizar la información de los favoritos dentro de la tabla de perros.
+	\item \textbf{DBMessages}: maneja toda la información relacionada con mensajes.
+	\item \textbf{DBNotifications}: maneja toda la información relacionada con notificaciones.
+	\item \textbf{DBStorage}: se encarga de insertar, actualizar y eliminar todas las imágenes relacionadas con alguna de las entidades.
+	\item \textbf{DBUsers}: maneja toda la información relacionada con los usuarios.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2192,13 +2181,13 @@ Este módulo es el encargado de comunicarse directamente con la base de datos de
 
 \subsection*{dog}
 
-Módulo que contiene las clases principales relacionadas con los perros.
+Módulo que contiene las clases principales relacionadas con los caninos. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{AvailableDogsPage}: Pantalla de lista de perros que contiene los filtros y una barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
-	\item \textbf{DogFeature}: Widget que se instancia con la información de alguno de los atributos del perro para mostrarlo en el perfil.
-	\item \textbf{DogProfile}: Pantalla que contiene toda la información de un perro, incluyendo el botón de favoritos y compartir.
-	\item \textbf{DogModel}: Clase que se encarga de generar y manejar modelos de perros a partir de la información en la base de datos.
+	\item \textbf{AvailableDogsPage}: pantalla de lista de caninos que contiene los filtros y una barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
+	\item \textbf{DogFeature}: widget que se instancia con la información de alguno de los atributos del canino para mostrarlo en el perfil.
+	\item \textbf{DogProfile}: pantalla que contiene toda la información de un canino, incluyendo el botón de favoritos y compartir.
+	\item \textbf{DogModel}: clase que se encarga de generar y manejar modelos de caninos a partir de la información en la base de datos.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2211,12 +2200,12 @@ Módulo que contiene las clases principales relacionadas con los perros.
 
 \subsection*{home}
 
-Se incluyen todas las pantallas de inicio definidas para los diferentes roles.
+Incluye todas las pantallas de inicio definidas para los diferentes roles. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{AdminHome}: Pantalla de inicio para administradores.
-	\item \textbf{MyHome}: Pantalla de inicio para usuarios.
-	\item \textbf{MyHomePageCompany}: Pantalla de inicio para protectoras.
+	\item \textbf{AdminHome}: pantalla de inicio para administradores.
+	\item \textbf{MyHome}: pantalla de inicio para usuarios.
+	\item \textbf{MyHomePageCompany}: pantalla de inicio para protectoras.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2254,7 +2243,7 @@ Este módulo solo contiene una pantalla que contiene toda la información legal 
 \subsection*{login}
 
 
-Contiene la página para iniciar sesión y la de recuperación de contraseña.
+Este módulo contiene la página para iniciar sesión y la de recuperación de contraseña.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2266,12 +2255,12 @@ Contiene la página para iniciar sesión y la de recuperación de contraseña.
 
 \subsection*{message}
 
-En este módulo se definen los widgets relacionados con los mensajes que se utilizan dentro de las salas de chat.
+En este módulo se definen los widgets relacionados con los mensajes que se utilizan dentro de las salas de chat. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{DateMessageDivider}: Este widget se coloca entre mensajes de días diferentes para indicar la fecha de los mensajes siguientes.
-	\item \textbf{MessageWidget}: Este widget muestra el contenido del mensaje, que puede ser texto o imagen, y también incluye un ícono que indica si el mensaje ha sido leído o no.
-	\item \textbf{MessageModel}: Clase que se encarga de generar y manejar modelos de mensajes a partir de la información en la base de datos.
+	\item \textbf{DateMessageDivider}: este widget se coloca entre mensajes de días diferentes para indicar la fecha de los mensajes siguientes.
+	\item \textbf{MessageWidget}: este widget muestra el contenido del mensaje, que puede ser texto o imagen, y también incluye un icono que indica si el mensaje ha sido leído o no.
+	\item \textbf{MessageModel}: clase que se encarga de generar y manejar modelos de mensajes a partir de la información en la base de datos.
 \end{itemize}
 
 
@@ -2297,13 +2286,13 @@ Este módulo contiene el modelo para añadir la cláusula de orden a las consult
 
 \subsection*{register}
 
-Contiene todas las páginas relacionadas con los registros dentro de la app. Cada una de las pantallas incluye un formulario específico que se encarga de todas las validaciones.
+Este módulo todas las páginas relacionadas con los registros dentro de la app. Cada una de las pantallas incluye un formulario específico que se encarga de todas las validaciones. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{RegisterAsCompanyPage}: Pantalla de registro de protectora.
-	\item \textbf{RegisterAsUserPage}: Pantalla de registro de usuario.
-	\item \textbf{RegisterDog}: Pantralla de registro de perro.
-	\item \textbf{RegisterPage}:  Pantalla que ofrece las opciones para registrarse como protectora o usuario.
+	\item \textbf{RegisterAsCompanyPage}: pantalla de registro de protectora.
+	\item \textbf{RegisterAsUserPage}: pantalla de registro de usuario.
+	\item \textbf{RegisterDog}: pantalla de registro de canino.
+	\item \textbf{RegisterPage}:  pantalla que ofrece las opciones para registrarse como protectora o usuario.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2315,15 +2304,15 @@ Contiene todas las páginas relacionadas con los registros dentro de la app. Cad
 
 \subsection*{section}
 
-Contiene diferentes widgets que definen secciones que se reutilizan en algunas de las pantallas.
+Este módulo contiene diferentes widgets que definen secciones que se reutilizan en algunas de las pantallas. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{AdminCategorySection}: Incluye la sección principal de la página de inicio de administrador.
-	\item \textbf{CompanyCategorySection}: Incluye la sección principal de la página de inicio de protectora.
-	\item \textbf{RecentAdoptionsSection}:  Define la sección de adopciones recientes que se usa en diferentes páginas de inicio.
-	\item \textbf{UserCategorySection}:  Incluye la sección principal de la página de inicio de usuario.
-	\item \textbf{UserFavoritesSection}:  Define la sección de favoritos de un usuario específico.
-	\item \textbf{UserOwnedDogsSection}:  Define la sección de perros que son de un usuario específico.
+	\item \textbf{AdminCategorySection}: incluye la sección principal de la página de inicio de administrador.
+	\item \textbf{CompanyCategorySection}: incluye la sección principal de la página de inicio de protectora.
+	\item \textbf{RecentAdoptionsSection}:  define la sección de adopciones recientes que se usa en diferentes páginas de inicio.
+	\item \textbf{UserCategorySection}:  incluye la sección principal de la página de inicio de usuario.
+	\item \textbf{UserFavoritesSection}:  define la sección de favoritos de un usuario específico.
+	\item \textbf{UserOwnedDogsSection}:  define la sección de perros que son de un usuario específico.
 \end{itemize}
 
 
@@ -2337,14 +2326,14 @@ Contiene diferentes widgets que definen secciones que se reutilizan en algunas d
 
 \subsection*{services}
 
-Se incluyen clases que manejan los servicios que proporciona Flutter o Firebase demás de otras clases que son servicios creados específicamente para la aplicación.
+En este módulo, se incluyen clases que manejan los servicios que proporciona Flutter o Firebase además de otras clases que son servicios creados específicamente para la aplicación. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{AddressService}: Servicio para manejar los modelos de las direcciones y las coordenadas.
-	\item \textbf{AwesomeNotificationService}: Clase que maneja el servicio de notificaciones. 
-	\item \textbf{GeocodingService}: Clase que maneja el servicio de geocoding que proporciona Google dentro de la app.
-	\item \textbf{RoutingService}:  Servicio para manejar las rutas de la aplicación.
-	\item \textbf{Auth - AuthUsers}:  Clase que maneja el servicio de autenticación que proporciona Firebase.
+	\item \textbf{AddressService}: servicio para manejar los modelos de las direcciones y las coordenadas.
+	\item \textbf{AwesomeNotificationService}: clase que maneja el servicio de notificaciones. 
+	\item \textbf{GeocodingService}: clase que maneja el servicio de \textit{geocoding} que proporciona Google dentro de la app.
+	\item \textbf{RoutingService}:  servicio para manejar las rutas de la aplicación.
+	\item \textbf{Auth - AuthUsers}:  clase que maneja el servicio de autenticación que proporciona Firebase.
 \end{itemize}
 
 
@@ -2358,7 +2347,7 @@ Se incluyen clases que manejan los servicios que proporciona Flutter o Firebase 
 
 \subsection*{update}
 
-Contiene las páginas que incluyen formularios para la actualización de datos de usuarios y de perros.
+Este módulo contiene las páginas que incluyen formularios para la actualización de datos de usuarios y de caninos.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2371,15 +2360,15 @@ Contiene las páginas que incluyen formularios para la actualización de datos d
 
 \subsection*{user}
 
-Módulo que contiene todas las clases relacionadas con los usuarios y protectoras.
+Módulo que contiene todas las clases relacionadas con los usuarios y protectoras. Sus clases son las siguientes:
 
 \begin{itemize}[noitemsep]
-	\item \textbf{CurrentUser}: Clase singleton que se encarga de manejar todos los datos relacionados con el usuario iniciado a lo largo de la aplicación.
-	\item \textbf{LoggedUserModel}: Clase para manejar el modelo del usuario iniciado.
-	\item \textbf{UserModel}: Clase que se encarga de generar y manejar modelos de usuarios a partir de la información en la base de datos. 
-	\item \textbf{ProfilePage}:  Pantalla que contiene toda la información personal del usuario. Puede contener un listado de perros y un botón para abrir una página de mapa dependiendo del rol de usuario.
-	\item \textbf{UserMapWidget}: Elemento que se instancia en las listas usadas en los mapas con toda la información del usuario.
-	\item \textbf{UsersPage}: Pantalla de la lista de usuarios que contiene además la barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
+	\item \textbf{CurrentUser}: clase \textit{singleton} que se encarga de manejar todos los datos relacionados con el usuario iniciado a lo largo de la aplicación.
+	\item \textbf{LoggedUserModel}: clase para manejar el modelo del usuario iniciado.
+	\item \textbf{UserModel}: clase que se encarga de generar y manejar modelos de usuarios a partir de la información en la base de datos. 
+	\item \textbf{ProfilePage}:  pantalla que contiene toda la información personal del usuario. Puede contener un listado de caninos y un botón para abrir una página de mapa dependiendo del rol de usuario.
+	\item \textbf{UserMapWidget}: elemento que se instancia en las listas usadas en los mapas con toda la información del usuario.
+	\item \textbf{UsersPage}: pantalla de la lista de usuarios que contiene además la barra de búsqueda. Se encarga de manejar las consultas y mostrar los resultados.
 \end{itemize}
 
 \begin{figure}[H]
@@ -2389,10 +2378,11 @@ Módulo que contiene todas las clases relacionadas con los usuarios y protectora
 	\end{center}
 \end{figure}
 
+% Implementación
 \newpage
-\subsection{Pantallas}
+\section{Aspecto final de la aplicación}
 
-En esta sección se exponen todas las pantallas resultantes del desarrollo.
+En esta sección se incluyen las clases y pantallas tras finalizar el proceso de desarrollo.
 
 %Splashscreen
 \subsection*{Pantalla de carga}
@@ -2401,8 +2391,8 @@ La pantalla de carga es una pantalla de transición que se utiliza justo despué
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/Splashscreen.png}\par}
-		\caption{Pantalla de carga}
+		{\includegraphics[width=5cm]{app/Splashscreen.png}\par}
+		\caption{Pantalla de carga.}
 	\end{center}
 \end{figure}
 
@@ -2416,14 +2406,14 @@ La pantalla de inicio de sesión muestra un formulario básico para introducir e
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/Login.png}\par}
-			\caption{Inicio de sesión.}
+			{\includegraphics[width=5cm]{app/Login.png}\par}
+			\caption{Aspecto normal.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/LoginWithErrors.png}\par}
-			\caption{Inicio de sesión con errores}
+			{\includegraphics[width=5cm]{app/LoginWithErrors.png}\par}
+			\caption{Aspecto con errores.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Pantalla de inicio de sesión.}\label{fig:login}
@@ -2435,11 +2425,11 @@ La pantalla de inicio de sesión muestra un formulario básico para introducir e
 \newpage
 \subsection*{Recuperación de contraseña}
 
-Esta pantalla contiene un formulario que solo incluye un campo para introducir el correo electrónico. Si el correo electrónico está registrado, el servicio de autenticación de Firebase se encargará de enviarle un correo electrónico con las instrucciones para cambiar la contraseña.
+Esta pantalla contiene un formulario que solo incluye un campo para introducir el correo electrónico. Si el éste está registrado, el servicio de autenticación de Firebase se encargará de enviar al usuario, protectora o administrador un correo electrónico con las instrucciones para cambiar la contraseña.
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/RecoverPassword.png}\par}
+		{\includegraphics[width=5cm]{app/RecoverPassword.png}\par}
 		\caption{Pantalla de recuperación de contraseña.}
 	\end{center}
 \end{figure}
@@ -2448,25 +2438,25 @@ Esta pantalla contiene un formulario que solo incluye un campo para introducir e
 \newpage
 \subsection*{Registro}
 
-Si se pulsa el botón \textit{Regístrate}, que se incluye en la pantalla de inicio de sesión mostrada en la Figura \ref{fig:login}, se redirige a una pantalla que muestran dos botones que llevan a los formularios para registrarse como usuario normal o como protectora respectivamente. Ambos formularios de registro piden los mismos datos a excepción de la dirección, que solo se requiere en el caso de las protectoras.
+Si se pulsa el botón \textit{Regístrate} que se incluye en la pantalla de inicio de sesión mostrada en la Figura \ref{fig:login}, se redirige a una pantalla que muestran dos botones que llevan a los formularios para registrarse como usuario normal o como protectora respectivamente. Ambos formularios de registro piden los mismos datos a excepción de la dirección, que solo se requiere en el caso de las protectoras.
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/Register.png}\par}
-		\caption{Página de opciones de registro.}
+		{\includegraphics[width=5cm]{app/Register.png}\par}
+		\caption{Pantalla de opciones de registro.}
 	\end{center}  
 \end{figure}
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/RegisterUserEmpty.png}\par}
+			{\includegraphics[width=5cm]{app/RegisterUserEmpty.png}\par}
 			\caption{Registro como usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/RegisterCompanyAddress.png}\par}
+			{\includegraphics[width=5cm]{app/RegisterCompanyAddress.png}\par}
 			\caption{Registro como protectora.}
 		\end{center}  
 	\end{subfigure}\hfill
@@ -2477,36 +2467,36 @@ Si se pulsa el botón \textit{Regístrate}, que se incluye en la pantalla de ini
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/RegisterUserError.png}\par}
-			\caption{Formulario base con errores.}
+			{\includegraphics[width=5cm]{app/RegisterUserError.png}\par}
+			\caption{Formulario base.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=6cm]{app/AddressError.png}\par}
-			\caption{Formulario con dirección con errores.}
+			\caption{Formulario de dirección con errores.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Pantallas de registro con errores.}
 \end{figure}
 
 
-El componente más complejo de estos formularios es la barra de búsqueda de direcciones. Este componente se ha desarrollado en base a un componente proporcionado por el paquete \href{https://pub.dev/packages/search\_map\_location}{\textit{search\_map\_location}} \cite{search_map_location}, que proporciona la funcionalidad básica para buscar direcciones con la API de Google Maps. A este componente se le ha añadido el comportamiento de autocompletar los campos del formulario una vez se selecciona una dirección, además de ajustar todos los estilos según los de la aplicación.
+El componente más complejo de estos formularios es la barra de búsqueda de direcciones. Este componente se ha desarrollado en base a otro proporcionado por el paquete \textit{search\_map\_location} \cite{search_map_location}, que incluye la funcionalidad básica para buscar direcciones con la API de Google Maps. A este componente se le ha añadido el comportamiento de autocompletar los campos del formulario una vez seleccionada una dirección, además de ajustar todos los estilos según los de la aplicación.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/AddressSearcherOnSearch.png}\par}
-			\caption{Búsqueda de direcciones.}
+			{\includegraphics[width=5cm]{app/AddressSearcherOnSearch.png}\par}
+			\caption{Sugerencias de direcciones.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/AddressSearcherAutoComplete.png}\par}
-			\caption{Autocompletar campos de direcciones.}
+			{\includegraphics[width=5cm]{app/AddressSearcherAutoComplete.png}\par}
+			\caption{Autocompletado de campos de direcciones.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Barra de búsqueda de direcciones.}
+	\caption{Barras de búsqueda de direcciones.}
 \end{figure}
 
 
@@ -2519,17 +2509,17 @@ Para cada uno de los roles definidos, se ha creado una pantalla de inicio espec�
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserHome.png}\par}
-			\caption{Inicio de usuario.}
+			{\includegraphics[width=5cm]{app/UserHome.png}\par}
+			\caption{Usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/CompanyHome.png}\par}
-			\caption{Inicio de protectora.}
+			{\includegraphics[width=5cm]{app/CompanyHome.png}\par}
+			\caption{Protectora.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Pantallas de inicio por rol.}
+	\caption{Pantallas de inicio según el rol.}
 \end{figure}
 
 
@@ -2538,26 +2528,26 @@ Para cada uno de los roles también se han implementado menús laterales con dis
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserSideMenu.png}\par}
-			\caption{Menú lateral de usuario.}
+			{\includegraphics[width=5cm]{app/UserSideMenu.png}\par}
+			\caption{Usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/CompanySideMenu.png}\par}
-			\caption{Menú lateral de protectora.}
+			{\includegraphics[width=5cm]{app/CompanySideMenu.png}\par}
+			\caption{Protectora.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Menús laterales por rol.}
+	\caption{Menús laterales según el rol.}
 \end{figure}
 
 
-Si una protectora inicia sesión sin estar verificada por un administrador, se muesta una pantalla informándole que tiene que esperar la verificación para poder seguir usando la aplicación. Aunque la protectora no pueda subir perros o mensajear, si podrá abrir un chat con un administrador desde la página de contacto.
+Si una protectora inicia sesión sin estar verificada por un administrador, se muesta una pantalla informándole de que tiene que esperar la verificación para poder seguir usando la aplicación. Aunque la protectora no pueda subir perros o mensajear, sí podrá abrir un chat con un administrador desde la página de contacto.
 
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/UnverifiedPage.png}\par}
+		{\includegraphics[width=5cm]{app/UnverifiedPage.png}\par}
 		\caption{Pantalla de protectora no verificada.}
 	\end{center}  
 \end{figure}
@@ -2566,168 +2556,120 @@ Si una protectora inicia sesión sin estar verificada por un administrador, se m
 
 % Listas
 \newpage
-\subsection*{Listas}
+\subsection*{Listas de usuarios}
 
-A lo largo de la aplicación se ha condensando la información en forma de listas.
-
-Ahora mismo no es disponible crear listas customizadas y guardarlas, por ello, se han proporcionado una serie de listas genéricas que se construyen con unos filtros fijos a la hora de instanciarse. Por ejemplo, para construir la lista de los perros puestos en adopción, se hace de la siguiente manera:
-
-\begin{verbatim}
-AvailableDogsPage(
-	'Perros en adopción',
-         [
-		Condition('forAdoption', 'isEqualTo', true), 
-		Condition('adopted', 'isEqualTo', false)
-	], 
-	true
-)
-\end{verbatim}
-
-
-Estas clases disponen de un método que se encarga de concatenar todos los filtros fijos en la consulta base de la lista haciendo uso del método proporcionados por la clase \textit{Condition}.
-
-\begin{verbatim}
-getCollectionWithFilters()  {
-	Query<Map<String, dynamic>> collection = FirebaseFirestore.instance.collection('dogs');
-    		for (Condition condition in conditions) {
-      			collection = Condition.addClauseByCondition(collection, condition);
-   		}
-    	return collection;
-}
-\end{verbatim}
-
-Cuando se aplican filtros dinámicos, se utiliza el siguiente método que se encarga de concatenar todos los filtros rápidos aplicados a la consulta que ya contiene los filtros fijos.
-
-\begin{verbatim}
-getQuickFiltersAndSnapshot() {
-    Query<Map<String, dynamic>> collection = widget.getCollectionWithFilters();
-    for (Condition condition in quickFilters) {
-        collection = Condition.addClauseByCondition(collection, condition);
-    }
-    return collection;
-}
-\end{verbatim}
-
-Todas las listas de la aplicación ordenan los resultados según la distancia.
-
-\newpage
-\subsubsection*{Usuarios}
-
-Las listas de usuarios pueden incluir tanto como usuarios normales como protectoras, algunas de las listas construidas en la aplicación contienen filtros específicos para mostrar únicamente listas de un rol deterimnado. Este tipo de listas disponen de una barra de búsqueda que filtra resultados según el texto que se introduzca, dicho texto busca coincidir con diferentes propiedades del usuario tales como la dirección o el nombre. 
+Las listas de usuarios pueden incluir tanto usuarios normales como protectoras. Algunas de las listas construidas en la aplicación contienen filtros específicos para mostrar únicamente listas de un rol determinado. Este tipo de listas disponen de una barra de búsqueda que filtra resultados según el texto que se introduzca, el cual busca coincidir con diferentes propiedades del usuario tales como la dirección o el nombre. 
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserList.png}\par}
-			\caption{Lista de usuarios sin búsqueda.}
+			{\includegraphics[width=5cm]{app/UserList.png}\par}
+			\caption{Sin búsqueda.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserListSearch.png}\par}
-			\caption{Lista de usuarios con búsqueda.}
+			{\includegraphics[width=5cm]{app/UserListSearch.png}\par}
+			\caption{Con búsqueda.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Lista de usuarios.}
+	\caption{Pantalla de lista de usuarios.}
 \end{figure}
 
 
-Estas listas, además, incluyen un botón que permite ver los resultados de la lista colocados en un mapa en forma de marcador, la misma lista se colocará debajo del mapa de la página. Los marcadores pueden ser pulsados para abrir un pop-up que redirige al perfil de la protectora. Si la lista contiene usuarios sin dirección, no se añadirán al mapa.
+Estas listas, además, incluyen un botón que redirige a una pantalla que contiene un mapa y la lista actual (incluyendo la búsqueda y filtros aplicados) debajo del mapa, cada elemento de la lista redirige la cámara del mapa encima de su marcador correspondiente. Los marcadores pueden ser pulsados para abrir un pop-up que redirige a la pantalla del perfil de la protectora. Si la lista contiene usuarios sin dirección, no se añadirán al mapa.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/MapsPage.png}\par}
-			\caption{Mapa y lista.}
+			{\includegraphics[width=5cm]{app/MapsPage.png}\par}
+			\caption{Mapa y lista de usuarios/protectoras.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/MarkerClick.png}\par}
+			{\includegraphics[width=5cm]{app/MarkerClick.png}\par}
 			\caption{Acción del marcador.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Página de mapa.}
+	\caption{Pantalla de mapa.}
 \end{figure}
 
 \newpage
-\subsubsection*{Perros}
+\subsubsection*{Listas de caninos}
 
-Las listas de perros incluyen cualquier tipo de perro que esté dado de alta en la aplicación. Los resultados dependerán de los filtros introducidos por el usuario o los definidos a la hora de construir la lista. Estas listas también incluyen una barra de búsqueda para filtrar resultados además de una barra con varios filtros rápidos que corresponden con algunas de las propiedades de los perros.
-
-\begin{figure}[H]
-   	\begin{subfigure}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{app/DogList.png}\par}
-			\caption{Lista de perros sin búsqueda o filtros.}
-		\end{center}  
-	\end{subfigure}\hfill
-   	\begin{subfigure}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{app/DogListSearch.png}\par}
-			\caption{Lista de perros con búsqueda}
-		\end{center}  
-	\end{subfigure}\hfill
-	\caption{Lista de perros.}
-\end{figure}
+Las listas de caninos incluyen cualquier tipo de can que esté dado de alta en la aplicación. Los resultados dependerán de los filtros introducidos por el usuario o los definidos a la hora de construir la lista. Estas listas también incluyen una barra de búsqueda para filtrar resultados además de una barra con varios filtros rápidos que corresponden con algunos de los atributos de los caninos.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/DogListFilter.png}\par}
-			\caption{Lista de perros con filtros.}
+			{\includegraphics[width=5cm]{app/DogList.png}\par}
+			\caption{Sin búsqueda ni filtros.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/DogListSearchFilter.png}\par}
-			\caption{Lista de perros con búsqueda y filtros}
+			{\includegraphics[width=5cm]{app/DogListSearch.png}\par}
+			\caption{Con búsqueda}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Lista de perros con filtros.}
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=5cm]{app/DogListFilter.png}\par}
+			\caption{Con filtros.}
+		\end{center}  
+	\end{subfigure}\hfill
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=5cm]{app/DogListSearchFilter.png}\par}
+			\caption{Con búsqueda y filtros}
+		\end{center}  
+	\end{subfigure}\hfill
+	\caption{Pantalla de lista de caninos.}
 \end{figure}
 
 
-Los widgets de los filtros abren un pop-up con las diferentes opciones disponibles cuando se pulsa en ellos. Se incluye una barra de búsqueda para filtrar las opciones disponibles.
+Los widgets de los filtros abren un pop-up con las diferentes opciones disponibles cuando se pulsa en ellos. Además, se incluye una barra de búsqueda para filtrar las opciones disponibles.
 
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/FiltersDialog.png}\par}
-			\caption{Filtro con pocas opciones.}
+			{\includegraphics[width=5cm]{app/FiltersDialog.png}\par}
+			\caption{Sin búsqueda.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/FilterSearch.png}\par}
-			\caption{Búsqueda en opciones de filtros.}
+			{\includegraphics[width=5cm]{app/FilterSearch.png}\par}
+			\caption{Con búsqueda.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Filtros.}
+	\caption{Pop-up de filtros para caninos.}
 \end{figure}
 
 % Perfiles personales
 \newpage
 \subsection*{Perfil personal}
 
-A continuación se muestra la pantalla de perfil personal que se genera para cada uno de los usuarios registrados. Dependiendo de algunas condiciones se mostrarán unos botones u otros:
-\begin{itemize}
-	\item Si el usuario es una protectora , se incluye un botón para abrir un mapa con la protectora ubicada en él.
+A continuación, se muestra la pantalla de perfil personal que se genera para cada uno de los usuarios registrados. Dependiendo de algunas condiciones se mostrarán unos botones u otros:
+
+\begin{itemize}[noitemsep]
+	\item Si el usuario es una protectora, se incluye un botón para abrir un mapa con dicha protectora ubicada en él.
 	\item Si el perfil que se visita no es el propio, se incluye un botón de contacto para abrir un chat con el usuario.
 \end{itemize}
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserProfile.png}\par}
-			\caption{Perfil personal de usuario.}
+			{\includegraphics[width=5cm]{app/UserProfile.png}\par}
+			\caption{Usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/CompanyProfile.png}\par}
-			\caption{Perfil personal de protectora.}
+			{\includegraphics[width=5cm]{app/CompanyProfile.png}\par}
+			\caption{Protectora.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Pantalla de perfil personal.}
@@ -2735,36 +2677,36 @@ A continuación se muestra la pantalla de perfil personal que se genera para cad
 
 % Actualización de datos
 \newpage
-\subsection*{Actualizar datos de usuario}
+\subsection*{Actualización de datos de usuario}
 
-Los formularios para actualizar datos de usuario son casi idénticos a los proporcionados para registrarse. En primer lugar, los formularios cargan todos los datos actuales del usuario y permite que se introduzcan todos los cambios que se requieran. Posterior a confirmar los cambios, si la actualización es correcta, el usuario es redirigido a su perfil y una notifiación es mostrada indicando que la actualización se ha hecho correctamente.
+Los formularios para actualizar los datos de usuario son casi idénticos a los proporcionados para registrarse. En primer lugar, los formularios cargan todos los datos actuales del usuario y permiten que se introduzcan todos los cambios que se requieran. Tras confirmar los cambios, si la actualización es correcta, el usuario es redirigido a su perfil y una notifiación es mostrada indicando que la actualización se ha hecho correctamente.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserUpdate.png}\par}
-			\caption{Formulario de actualización.}
+			{\includegraphics[width=5cm]{app/UserUpdate.png}\par}
+			\caption{Formulario de actualización de los datos de usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UserUpdateSuccess.png}\par}
-			\caption{Notificación de correcta actualización.}
+			{\includegraphics[width=5cm]{app/UserUpdateSuccess.png}\par}
+			\caption{Notificación de correcta actualización de los datos de un usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Actualización de datos personales.}
+	\caption{Pantallas de actualización de datos personales.}
 \end{figure}
 
 
 % Registro perros
 \newpage
-\subsection*{Registro perros}
+\subsection*{Registro de caninos}
 
-Las protectoras pueden añadir perros a la aplicación desde su lista personal llamada \textit{Mis perros}. En esta pantalla se incluye una barra superior con un botón específico que redirige al formulario de registro para perros. El formulario proporcionado incluye todos los atributos que requiere un perro para ser dado de alta.
+Las protectoras pueden añadir perros a la aplicación desde su lista personal llamada \textit{Mis perros}. En esta pantalla, se incluye una barra superior con un botón específico que redirige al formulario de registro para perros. Éste incluye todos los atributos que requiere un canino para ser dado de alta.
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/MyDogs.png}\par}
+		{\includegraphics[width=5cm]{app/MyDogs.png}\par}
 		\caption{Pantalla \textit{Mis perros}.}
 	\end{center}  
 \end{figure}
@@ -2773,92 +2715,92 @@ Las protectoras pueden añadir perros a la aplicación desde su lista personal l
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/RegisterDog1.png}\par}
+			{\includegraphics[width=5cm]{app/RegisterDog1.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/RegisterDog2.png}\par}
+			{\includegraphics[width=5cm]{app/RegisterDog2.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Pantalla de registro de perro.}
+	\caption{Pantalla de registro de canino.}
 \end{figure}
 
 
 % Perfil perros
 \newpage
-\subsection*{Perfil perro}
+\subsection*{Perfil de canino}
 
-Para mostrar toda la información de un perro a un usuario, se ha condensado toda la información en una pantalla. En esta pantalla se incluye toda la información relacionada con el perro, tales como nombre, raza, peso, etc. Se incluye también un mapa que muestra la ubicación de la protectora a la que pertenece, además de un botón de contacto para abrir chat con la protectora. Si el usuario que visita el perfil es el dueño del perro, puede visualizar una sección inferior con diferentes botones para abrir la edición del perfil, eliminar el perro o marcarlo como adoptado. 
+Para mostrar toda la información de un canino a un usuario, se ha condensado toda la información en una pantalla. En ella, se incluye toda la información relacionada con el canino, tales como nombre, raza, peso, etc. Se incluye también un mapa que muestra la ubicación de la protectora a la que pertenece, además de un botón de contacto para abrir chat con la protectora. Si el usuario que visita el perfil es el dueño del canino, puede visualizar una sección inferior con diferentes botones para abrir la edición del perfil, eliminar el canino de la aplicación o marcarlo como adoptado. 
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/DogProfile1.png}\par}
+			{\includegraphics[width=5cm]{app/DogProfile1.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/DogProfile2.png}\par}
+			{\includegraphics[width=5cm]{app/DogProfile2.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Pantalla de perfil de perro.}
+	\caption{Pantallas de perfil de canino.}
 \end{figure}
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/AdoptedDialog.png}\par}
+			{\includegraphics[width=5cm]{app/AdoptedDialog.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/UnAdoptDog.png}\par}
+			{\includegraphics[width=5cm]{app/UnAdoptDog.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Pop-up de marcar/desmarcar como adoptado.}
-\end{figure}
-
-
-\begin{figure}[H]
-	\begin{center}
-		{\includegraphics[width=6cm]{app/DeleteDog.png}\par}
-		\caption{Borrar perro.}
-	\end{center}  
+	\caption{Pantalla que muestra pop-up para marcar/desmarcar como adoptado un canino.}
 \end{figure}
 
 \begin{figure}[H]
-	\begin{center}
-		{\includegraphics[width=6cm]{app/ShareAction.png}\par}
-		\caption{Compartir perro.}
-	\end{center}  
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=5cm]{app/DeleteDog.png}\par}
+			\caption{Pantalla para borrar un canino.}
+		\end{center}  
+	\end{minipage}\hfill
+   	\begin{minipage}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=5cm]{app/ShareAction.png}\par}
+			\caption{Pantalla para compartir un canino.}
+		\end{center}  
+	\end{minipage}\hfill
 \end{figure}
 
 % Actualización de datos
 \newpage
-\subsection*{Actualizar datos de perros}
+\subsection*{Actualización de datos de perros}
 
-Los formularios para actualizar datos de perros son casi idénticos a los proporcionados para darlos de alta. En primer lugar, los formularios cargan todos los datos actuales del perro y permite que se introduzcan todos los cambios que se requieran. Posterior a confirmar los cambios, si la actualización es correcta, se muestra una notificación indicándolo.
+Los formularios para actualizar los datos de los caninos son con muy similares a los proporcionados para darlos de alta. Inicialmente, los formularios cargan todos los datos actuales del canino y permiten que se introduzcan todos los cambios que se requieran, además éstos no permiten que un canino se quede sin foto de perfil. Tras confirmar los cambios, si la actualización es correcta, se muestra una notificación indicándolo.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/DogUpdate.png}\par}
+			{\includegraphics[width=5cm]{app/DogUpdate.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/DogUpdate2.png}\par}
+			{\includegraphics[width=5cm]{app/DogUpdate2.png}\par}
 
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Formulario de actualización.}
+	\caption{Pantalla de actualización de caninos.}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=6cm]{app/DogUpdateSuccesss.png}\par}
-		\caption{Notificación de actualización correcta.}
+		\caption{Pantalla con notificación de actualización de canino correcta.}
 	\end{center}  
 \end{figure}
 
@@ -2867,27 +2809,24 @@ Los formularios para actualizar datos de perros son casi idénticos a los propor
 \newpage
 \subsection*{Chats}
 
-La estructura de la pantalla de los chats es muy similar a cualquier otra aplicación de mensajería, se incluye una lista de chats que permiten ser borrados deslizando el widget. Cuando se hace click en alguno de estos widgets, se redirige a la pantalla del chat específico.
-
-\begin{figure}[H]
-	\begin{center}
-			{\includegraphics[width=6cm]{app/ChatRoom.png}\par}
-	\end{center}  
-\end{figure}
+La estructura de la pantalla de los chats es muy similar a cualquier otra aplicación de mensajería, es decir, se incluye una lista de chats que permiten ser borrados deslizando el widget. Cuando se hace click en alguno de estos widgets, se redirige a la pantalla del chat específico.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/ChatsPage.png}\par}
+			{\includegraphics[width=5cm]{app/ChatRoom.png}\par}
+			\caption{Pantalla de sala de chat.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/ChatsPageReceiver.png}\par}
+			{\includegraphics[width=5cm]{app/ChatsPageReceiver.png}\par}
+			\caption{Pantalla de chats disponibles.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Pantalla de chats disponibles.}
+	\caption{Pantallas del servicio de mensajería.}
 \end{figure}
+
 
 
 % Legal Page
@@ -2899,12 +2838,12 @@ La pantalla de información legal recoge los términos y condiciones de uso adem
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/LegalPage.png}\par}
+			{\includegraphics[width=5cm]{app/LegalPage.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/LegalPage2.png}\par}
+			{\includegraphics[width=5cm]{app/LegalPage2.png}\par}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Pantalla de información legal.}
@@ -2915,23 +2854,25 @@ La pantalla de información legal recoge los términos y condiciones de uso adem
 \newpage
 \subsection*{Contacto}
 
-En la pantalla de contacto se incluye un correo electrónico de contacto además de un botón que abre un chat con un administrador de la aplicación.
+En la pantalla de contacto se incluye un correo electrónico de contacto y botón que abre un chat con un administrador de la aplicación.
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/ContactPage.png}\par}
+		{\includegraphics[width=5cm]{app/ContactPage.png}\par}
 	\end{center}  
+	\caption{Pantalla de información de contacto.}
 \end{figure}
 
 % Legal Page
 \newpage
 \subsection*{Notificaciones}
 
-Las notificaciones se lanzan cuando un usuario recibe un mensaje de otro usuario.
+Las notificaciones se lanzan cuando un usuario recibe un mensaje de otro usuario, tal y como se muestra en la siguiente figura:
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=6cm]{app/Notifications.png}\par}
+		{\includegraphics[width=5cm]{app/Notifications.png}\par}
+		\caption{Pantalla de notificación.}
 	\end{center}  
 \end{figure}
 
@@ -2940,38 +2881,34 @@ Las notificaciones se lanzan cuando un usuario recibe un mensaje de otro usuario
 \newpage
 \subsection*{Vista de administrador}
 
-La vista de administrador es la más simple, contiene diferentes listas para manejar los usuarios y perros que están dados de alta en la aplicación. Puede editar datos de cualquier usuario o perro además de verificar y desverificar perfiles de usuario.
+La vista de administrador es la más simple ya que contiene diferentes listas para manejar los usuarios y perros que están dados de alta en la aplicación. Puede editar datos de cualquier usuario o perro además de verificar y desverificar perfiles de usuario.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/AdminHome.png}\par}
-			\caption{Pantalla inicio administrador}
+			{\includegraphics[width=5cm]{app/AdminHome.png}\par}
+			\caption{Pantalla de inicio.}
 		\end{center}
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/AdminDrawer.png}\par}
-			\caption{Menú lateral administrador.}
-		\end{center}
-	\end{subfigure}\hfill
-	\caption{Pantalla inicio de administrador.}
-\end{figure}
-
-\begin{figure}[H]
-   	\begin{subfigure}{0.48\textwidth}
-		\begin{center}
-			{\includegraphics[width=6cm]{app/AdminVerifyPopUp}\par}
-			\caption{Pop-up verificar.}
+			{\includegraphics[width=5cm]{app/AdminDrawer.png}\par}
+			\caption{Menú lateral.}
 		\end{center}
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
-			{\includegraphics[width=6cm]{app/AdminUnVerifyPopUp}\par}
-			\caption{Pop-up desverificar.}
+			{\includegraphics[width=5cm]{app/AdminVerifyPopUp}\par}
+			\caption{Pop-up confirmación.}
 		\end{center}
 	\end{subfigure}\hfill
-	\caption{Verificar/desverificar usuario.}
+   	\begin{subfigure}{0.48\textwidth}
+		\begin{center}
+			{\includegraphics[width=5cm]{app/AdminUnVerifyPopUp}\par}
+			\caption{Pop-up desconfirmación.}
+		\end{center}
+	\end{subfigure}\hfill
+	\caption{Vista de administrador.}
 \end{figure}
 
 % Conclusiones
@@ -2982,22 +2919,20 @@ Tras completar el período de desarrollo de la aplicación, en este apartado se 
 
 Se implementó el registro de usuarios por rol además de proporcionar diferentes vistas para cada uno de los roles, que finalmente se definieron como \textit{Usuario},  \textit{Protectora}  y   \textit{Administrador}.  Con relación a los usuarios, también se añadieron diferentes listas a lo largo de la aplicación, que finalmente incluyeron una barra de búsqueda para filtrar resultados. Además, para los usuarios se implementó una página de perfil en la que se puede acceder a la edición de datos y credenciales. Por otra parte, también se implementó el registro y edición de perros y se incluyeron diferentes listas en la aplicación, que aparte de una barra de búsqueda también incluyen los filtros de  \textit{Peso},  \textit{Raza},  \textit{Género} y  \textit{Color}. Además, en los perfiles de los perros se añadieron botones para compartir y marcar como favoritos, este último vino de la mano de la implementación de la sección de favoritos para los usuarios. Se crearon diferentes páginas adicionales, como la página de contacto o la de información legal, además de la página de mapas, en la que se incluyó un listado de resultados e hizo falta integrar las APIs de geolocalización. Esta misma API de geolocalización también se utilizó para desarrollar una barra de búsqueda de direcciones. Por último, se implementó un chat en tiempo real al que se le añadió la opción de mandar imágenes con sus correspondientes notificaciones.
 
-Al revisar la lista de objetivos, se concluye que la aplicación cumple con todas las funcionalidades obligatorias. Sin embargo, algunos requisitos opcionales no se completaron en esta versión. Específicamente, el blog y el tema oscuro no se implementaron. El blog resultó ser demasiado ambicioso y no se pudo completar en el tiempo estipulado, ni si quiera dio tiempo a definir una estructura de datos para este, mientras que el tema oscuro se pospuso debido a retrasos en la implementación de otras funcionalidades obligatorias. Estos requisitos pendientes se considerarán para futuras versiones de la aplicación.
-
-Para futuras iteraciones, se han planteado algunas propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario.
+Al revisar la lista de objetivos, se concluye que la aplicación cumple con todas las funcionalidades obligatorias. Sin embargo, algunos requisitos opcionales no se han completado en esta versión. Específicamente, el blog y el tema oscuro. El blog resultó ser demasiado ambicioso y no se ha podido desarrollar en el tiempo estipulado, mientras que el tema oscuro se pospuso debido a retrasos en la implementación de otras funcionalidades obligatorias. Estos requisitos pendientes se considerarán para futuras versiones de la aplicación. Por tanto se han planteado algunas propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario:
 
 \begin{itemize}[noitemsep]
 	\item Añadir la posibilidad de crear listas con filtros a las protectoras.
-	\item Permitir subir múltiples imágenes para los perros dados de alta, además de vídeos y poder generar un albúm por cada perro.
-	\item Permitir asignar a un usuario como adoptante/acogedor de un perro, además de indicar en el perfil del perro quien es su adoptante/acogedor.
-	\item Sumar las funcionalidades mandar mensajes de audios y vídeos dentro del chat
-	\item Añadir como atributos opcionales de las protectoras distintas redes sociales e incluso el número de teléfono.
+	\item Permitir subir múltiples imágenes para los caninos dados de alta, además de vídeos y poder generar un albúm para cada canino.
+	\item Permitir asignar a un usuario como adoptante/acogedor de un canino, además de indicar en el perfil del canino quién es su adoptante/acogedor.
+	\item Añadir la funcionalidad de mandar mensajes de audiosy vídeos dentro del chat.
+	\item Añadir como atributos opcionales de las protectoras sus redes sociales e incluso el número de teléfono.
 	\item Permitir compartir perfiles de protectoras.
 	\item Integrar los servicios de Google para iniciar sesión.
-	\item Incluir más filtros para las listas de caninos.
+	\item Incluir más filtros en las listas de caninos.
 \end{itemize}
 
-Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación, algunas de ellas surgen a partir del feedback proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
+Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación. Algunas de ellas surgen a partir del \textit{feedback} proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
 
 
 % Bibliografía

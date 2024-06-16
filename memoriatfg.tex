@@ -37,12 +37,11 @@
 \setcounter{section}{0}
 \providecommand{\keywords}[1]{\textbf{\textit{Palabras clave:}} #1}
 \renewcommand{\baselinestretch}{1}
-\renewcommand{\tableofcontents}{Índice}
+\renewcommand{\contentsname}{Índice}
 \renewcommand{\listtablename}{Índice de tablas}
 \renewcommand{\listfigurename}{Índice de figuras}
-\captionsetup[figure]{}
-\captionsetup[table]{labelformat=empty}
-\def\@citex[#1]#2{\textcolor{blue}{\@cite{\@cite@ofmt}{#2\if@tempswa , #1\fi}}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
 
 % Empieza el documento
 \begin{document}
@@ -91,7 +90,7 @@ El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la p
 \newpage
 \pagestyle{plain}
 \section*{Abstract}
-As of today, starting an adoption process can be tedious due to the decentralized nature of all the information related to shelters and rescue organizations. A person looking to adopt an animal usually needs to consult various platforms or networks to find a nearby shelter or an animal that fits their lifestyle.
+Nowadays, starting an adoption process can be tedious due to the decentralized that is the information related to shelters and rescue organizations. A person looking to adopt an animal usually needs to check different platforms to find a nearby shelter or an animal that fits their lifestyle.
 
 The purpose of this \textit{Final Degree Project} is to plan and develop a mobile application that facilitates adoption management, provides information about shelters, and eases communication between adopters and shelters. In this application, shelters or rescue organizations can register with their corresponding data and location. Shelters or rescues verified by administrators will have the ability to upload all the dogs to the platform, which will appear in adoption or foster lists depending on the status marked for each dog. Users looking to adopt or foster a dog can also register, and forms will be included to add or edit their information, with different sections to fill in all required data such as description, breed, age, weight, etc. Users will also have forms to register and edit their information. The application will use a geolocation system to show users results within the application and their distance. These results can be viewed on an embedded map thanks to the inclusion of search bars and quick filters to narrow down results according to the user's requirements. Additionally, the application will include a messaging system to facilitate communication between users and shelters as well as with administrators. This will allow the sending of text messages and images. Furthermore, a favorites system will be added, along with the ability to share dogs from the application externally through a link. Finally, the application will contain a legal information and contact page available to the user.
 
@@ -184,7 +183,7 @@ Cuando se opta por la adopción, es necesario cumplir un proceso que puede varia
 
 Todo este proceso es guiado por la organización correspondiente y es importante completarlo, aunque pueda resultar un poco tedioso. Para iniciar este proceso de adopción, la persona deberá ponerse en contacto previamente con las distintas protectoras o refugios en su área. Esta fase inicial puede presentar diferentes problemas a los adoptantes. En la mayoría de las protectoras, trabajan voluntarios y se sostienen de donaciones, por lo que es común que no cuenten con fondos para generar visibilidad. Muchas protectoras utilizan diversas redes sociales o sus propios sitios web para promocionarse, lo que implica que una persona interesada en adoptar podría tener que utilizar varias plataformas para ponerse en contacto con alguna. A veces, es difícil mantener una comunicación adecuada con diferentes protectoras incluso después de la adopción. Otro problema es que los futuros adoptantes pueden encontrar dificultades al elegir una mascota, ya que la información sobre las diferentes mascotas está dispersa y puede ser una tarea complicada buscar una que cumpla con todos los requisitos del adoptante.
 
-Después de revisar los pasos y los posibles inconvenientes para solicitar un proceso de adopción, se propone una solución en forma de aplicación móvil. Con esta aplicación, se pretende solventar la problemática de la fase inicial de búsqueda de protectoras, proporcionando a los usuarios listas de protectoras cercanas y perros disponibles, incluyendo filtros para acotar la búsqueda. También se propone como una forma de facilitar a las protectoras la gestión de sus perros y posibles adoptantes. En definitiva, el objetivo principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
+Después de revisar los pasos y los posibles inconvenientes para solicitar un proceso de adopción, se propone una solución en forma de aplicación móvil. Con esta aplicación, se pretende solventar la problemática de la fase inicial de búsqueda de protectoras, proporcionando a los usuarios listas de protectoras cercanas y caninos disponibles, incluyendo filtros para acotar la búsqueda. También se propone como una forma de facilitar a las protectoras la gestión de sus caninos y posibles adoptantes. En definitiva, el objetivo principal de esta aplicación es centralizar la información de las organizaciones y sus mascotas, además de concienciar e incentivar a los usuarios a adoptar.
 
 
 % Objetivos
@@ -200,6 +199,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 1}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
@@ -214,6 +214,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 2}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
@@ -228,6 +229,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 3}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listado de caninos con filtros y búsqueda}}  \\ \hline
@@ -242,6 +244,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 4}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listado de usuarios con búsqueda}}  \\ \hline
@@ -256,6 +259,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 5}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de sección de caninos favoritos}}  \\ \hline
@@ -270,6 +274,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 6}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de sistema de mensajería entre usuarios}}  \\ \hline
@@ -284,6 +289,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 7}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
@@ -298,6 +304,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 8}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualización de datos de caninos}}  \\ \hline
@@ -312,6 +319,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 9}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualización de datos de usuarios}}  \\ \hline
@@ -326,6 +334,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 10}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de barra de búsqueda de direcciones}}  \\ \hline
@@ -340,6 +349,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 11}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Diseño de tema oscuro}}  \\ \hline
@@ -354,6 +364,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 12}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de un blog}}  \\ \hline
@@ -368,6 +379,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 13}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartición de caninos a través de un enlace}}  \\ \hline
@@ -382,6 +394,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
    	\captionsetup{singlelinecheck=false}%
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
+	\captionsetup{labelformat=empty}
 	\caption{Objetivo 14}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Envío de imágenes dentro del chat}}  \\ \hline
@@ -398,7 +411,9 @@ En esta sección se definen todas las etapas en las que se dividirá el proyecto
 
 \begin{figure}[H]
 	{\includegraphics[width=15cm]{diagram/GanntSmall2.png}\par}
-	\caption{Diagrama de Gantt}
+	\captionsetup{format=plain,indention=0pt}
+	\caption{Diagrama de Gantt.}
+	\label{fig:diagramagantt}
 \end{figure}
 
 Dentro del diagrama se pueden observar las diferentes etapas del proyecto:
@@ -460,6 +475,60 @@ Con respecto al software, para el alcance de este proyecto y los objetivos que s
     \label{tab:costes}
 \end{table}
 
+% Estado del arte
+\newpage
+\section{Estado del arte}
+
+Hoy en día, la tecnología desempeña un papel fundamental para ayudar a las personas a encontrar protectoras o mascotas para adoptar. Existen diferentes aplicaciones que se centran en las adopciones de caninos u otras mascotas que se utilizan en España, algunas han servido como inspiración durante el desarrollo de \textit{Adogption}. A continuación se incluyen algunas aplicaciones gratuitas que recomienda \textit{La Vanguardia} \cite{lavanguardia}: 
+
+\subsubsection*{Miwuki Pet Shelter}
+
+\textit{Miwuki Pet Shelter} es una plataforma dedicada a la adopción de una amplia variedad de mascotas, incluyendo perros, gatos, roedores, aves, entre otros. Su principal objetivo es facilitar la conexión entre refugios de animales y potenciales adoptantes. La plataforma permite a los refugios crear perfiles detallados de los animales disponibles, proporcionando información exhaustiva sobre su salud, comportamiento y necesidades específicas. Los usuarios pueden explorar la plataforma utilizando filtros avanzados para encontrar mascotas que se adapten a sus preferencias y condiciones de vida. Además de facilitar la adopción, Miwuki promueve activamente la responsabilidad animal mediante recursos educativos sobre el cuidado de mascotas, campañas de esterilización y vacunación, así como ofreciendo seguros veterinarios opcionales para cubrir los gastos asociados al cuidado de las mascotas adoptadas \cite{miwuki}.
+
+\subsubsection*{Ventajas}
+
+Ésta destaca por su interfaz intuitiva y sus funciones de búsqueda avanzadas. Además, Miwuki incluye un blog actualizado regularmente donde se comparten noticias y consejos relacionados con el mundo animal. También cuenta con una sección de informes que presenta cifras y estadísticas sobre el abandono de animales en España, proporcionando así una visión más amplia del problema y fomentando la concienciación sobre la adopción \cite{lookerstudio}.
+
+\subsubsection*{Inconvenientes}
+
+La limitación más importante es que su alcance está principalmente centrado en España.
+
+\subsubsection*{KLYGO}
+\textit{KLYGO} es una aplicación móvil especializada en la adopción y acogida de gatos y perros. Facilita la conexión entre usuarios interesados en adoptar o acoger mascotas y diversas protectoras de animales. Una de las características destacadas de ésta es su sistema de geolocalización integrado, que permite a los usuarios visualizar en un mapa las protectoras cercanas. Además, la aplicación ofrece un chat en tiempo real que facilita la comunicación directa entre los adoptantes potenciales y las protectoras, agilizando así el proceso de adopción \cite{klygo}.
+
+
+\subsubsection*{Ventajas}
+
+La ventaja más destacable de \textit{KLYGO} es el sistema de geolocalización antes mencionado. Por otra parte, la amplia red de refugios y asociaciones colaboradoras añaden un gran valor a esta aplicación. Por último, el chat en tiempo real es de gran utilidad para facilitar el contacto instántaneo entre usuarios y protectoras.
+
+\subsubsection*{Inconvenientes}
+
+Uno de los aspectos que algunos usuarios han reportado es lo poco atractiva e intuitiva que es. Además, la información que contienen las mascotas en sus perfiles no es muy clara o específica.
+
+\subsubsection*{AdoptaMe}
+
+Se trata de una aplicación móvil diseñada específicamente para facilitar la adopción de perros y gatos. Su comunidad enfatiza la adopción responsable, promoviendo la importancia de mantener al día las vacunaciones y la esterilización de los animales. La interfaz de AdoptaMe es relativamente simple y permitie a los usuarios navegar por listas de mascotas y aplicar algunos filtros básicos para encontrar animales disponibles para adopción \cite{adoptame}.
+
+\subsubsection*{Ventajas}
+
+Entre las ventajas de \textit{AdoptaMe} se destaca su enfoque en la adopción responsable, además de la información detallada que se incluye en los perfiles de las mascotas. Los usuarios pueden recibir notificaciones cuando se suben nuevas mascotas a la aplicación, lo cual facilita estar al tanto de las oportunidades de adopción. Además, la aplicación ofrece opciones de filtrado en las listas de mascotas, permitiendo a los usuarios encontrar rápidamente animales que se ajusten a sus criterios específicos.
+
+\subsubsection*{Inconvenientes}
+
+Una posible limitación de Amazdog es su alcance geográfico, que podría estar restringido a ciertas regiones o países específicos, limitando así su accesibilidad para usuarios fuera de esas áreas. Además, aunque la aplicación ofrece perfiles detallados, algunos usuarios podrían desear más opciones de filtrado o clasificación para navegar más eficientemente por las mascotas disponibles.
+
+
+\subsubsection*{Amazdog}
+
+Una de las aplicaciones más llamativas del mercado es \textit{Amazdog} \cite{amazdog}.
+
+\subsubsection*{Ventajas}
+
+
+\subsubsection*{Inconvenientes}
+
+
+
 
 % Análisis
 \newpage
@@ -478,13 +547,14 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF1:} Registro de usuarios y protectoras.}
 \label{tab:RF1}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
 	\textbf{Descripción} & Ofrecer un formulario de registro para usuarios y protectoras. \\ 
 	\hline
-	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario de registro. Incluyendo datos de contacto, correo electrónico y dirección. \\ 
+	\textbf{Datos de Entrada} & Datos ingresados por el usuario en el formulario de registro, incluyendo datos de contacto, correo electrónico y dirección. \\ 
 	\hline
 	\textbf{Datos de Salida} & Datos del usuario almacenados en la base de datos. \\ 
 	\hline
@@ -495,15 +565,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF2:} Registro de caninos.}
 \label{tab:RF2}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Ofrecer un formulario de registro para añadir perros con características específicas. \\ 
+	\textbf{Descripción} & Ofrecer un formulario de registro para añadir caninos con características específicas. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Datos ingresados por la protectora, tales como raza, peso, edad, color y descripción. \\ 
 	\hline
-	\textbf{Datos de Salida} & Datos del perro almacenados en la base de datos, junto al id de su protectora. \\ 
+	\textbf{Datos de Salida} & Datos del canino almacenados en la base de datos, junto al ID de su protectora. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -512,7 +583,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF3:} Mostrar listas de usuarios.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF3:} Listado de usuarios.}
 \label{tab:RF23}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -529,15 +601,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF4:} Mostrar listas de perros.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF4:} Listado de caninos.}
 \label{tab:RF4}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Mostrar diferentes listas de perros en la aplicación, con filtros predeterminados \\ 
+	\textbf{Descripción} & Mostrar diferentes listas de caninos en la aplicación, con filtros predeterminados \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
-	\textbf{Datos de Salida} & Listas de perros de la aplicación que cumplen con los filtros. \\ 
+	\textbf{Datos de Salida} & Listas de caninos de la aplicación que cumplen con los filtros. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -546,15 +619,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF5:} Capacidad de filtrado por propiedades en listas de perros.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF5:} Filtrado de caninos según sus atributos.}
 \label{tab:RF5}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporcionar diferentes filtros para las listas de perros, que corresponden con las diferentes propiedades que puede tener un perro en la aplicación. \\ 
+	\textbf{Descripción} & Proporcionar diferentes filtros para las listas de los caninos para ofrecer resultados acotados según sus atributos. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Valores de los filtros proporcionados por el usuario. \\ 
 	\hline
-	\textbf{Datos de Salida} & Lista de perros de la aplicación que cumplen con los filtros. \\ 
+	\textbf{Datos de Salida} & Lista de caninos de la aplicación que cumplen con los filtros. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -563,15 +637,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF6:} Capacidad de filtrado por búsqueda en listas de perros.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF6:} Búsqueda en listas de caninos.}
 \label{tab:RF6}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes campos de los perros. \\ 
+	\textbf{Descripción} & Filtrar resultados de listas según el texto ingresado en una barra de búsqueda, la búsqueda se realiza en diferentes atributos de los caninos. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Texto de búsqueda ingresado por el usuario. \\ 
 	\hline
-	\textbf{Datos de Salida} &  Lista de perros de la aplicación que cumplen con el criterio de búsqueda en alguno de los campos. \\ 
+	\textbf{Datos de Salida} &  Lista de caninos de la aplicación que cumplen con el criterio de búsqueda en alguno de los campos. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -580,7 +655,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF7:} Capacidad de filtrado por búsqueda en listas de usuarios..}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF7:} Búsqueda en listas de usuarios.}
 \label{tab:RF7}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 \hline
@@ -593,36 +669,20 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \end{tabular}
 \end{table}
 
-% RF8
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF8:}  Proporcionar botón de mapa de resultados en listas de usuarios.}
-\label{tab:RF8}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Botón en listas de usuarios que redirige a una página con mapa con todos los resultados con ubicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} & Ninguno \\ 
-	\hline
-	\textbf{Datos de Salida} & Botón con capacidad de redirección a la página del mapa. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
 % RF9
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF9:} Proporcionar botón de favoritos en perfiles de perros.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF9:} Marcar/desmarcar canino como favorito.}
 \label{tab:RF9}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Permitir a un usuario o protectora marcar como favorito a un perro. \\ 
+	\textbf{Descripción} & Permitir a un usuario o protectora marcar como favorito a un canino. \\ 
 	\hline
-	\textbf{Datos de Entrada} & Click del usuario sobre el botón. \\ 
+	\textbf{Datos de Entrada} & Clic del usuario sobre el botón de favoritos. \\ 
 	\hline
-	\textbf{Datos de Salida} & Datos del perro con la actualización de ids de usuarios que lo han marcado/desmarcado como favorito.\\ 
+	\textbf{Datos de Salida} & Datos del canino con la actualización de IDs de usuarios que lo han marcado/desmarcado como favorito.\\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -631,15 +691,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF10:} Mostrar sección de perros favoritos. }
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF10:} Inclusión sección de caninos favoritos.}
 \label{tab:RF10}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Muestra una sección de perros marcados como favoritos en ese momento por el usuario en su página de inicio. \\ 
+	\textbf{Descripción} & Muestra una sección de caninos marcados como favoritos en ese momento por el usuario en su página de inicio. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
-	\textbf{Datos de Salida} & Lista horizontal de perros favoritos en la parte inferiro de la página de inicio de los usuarios. \\ 
+	\textbf{Datos de Salida} & Lista horizontal de caninos favoritos en la parte inferiro de la página de inicio de los usuarios. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -648,15 +709,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF11:} Mostrar adopciones recientes.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF11:} Inclusión sección de adopciones recientes.}
 \label{tab:RF11}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Muestra un swiper con imágenes de perros marcados como adoptados recientemente. \\ 
+	\textbf{Descripción} & Muestra un swiper con imágenes de caninos marcados como adoptados recientemente. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
-	\textbf{Datos de Salida} & Swiper con imágenes y nombres de perros adoptados en la aplicación. \\ 
+	\textbf{Datos de Salida} & Swiper con imágenes y nombres de caninos adoptados en la aplicación. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -665,7 +727,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF12:} Proporcionar botón de cerrar sesión.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF12:} Cerrar sesión.}
 \label{tab:RF12}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -678,172 +741,20 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \end{tabular}
 \end{table}
 
-% RF13
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF13:} Proporcionar botón de contacto.}
-\label{tab:RF13}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Mostrar botón de contacto en el menú de acciones en la app bar de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} & Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} & Mostrar página de contacto. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
 % RF14
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF14:} Botón de menu lateral en la app bar.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF14:} Inclusión de menú lateral.}
 \label{tab:RF14}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Mostrar botón que abre menú lateral. \\ 
+	\textbf{Descripción} & Mostrar un botón en la app bar que abre el menú lateral. \\ 
 	\hline
-	\textbf{Datos de Entrada} & Ninguno. \\ 
+	\textbf{Datos de Entrada} & Clic en el botón. \\ 
 	\hline
 	\textbf{Datos de Salida} & Menu lateral con las páginas disponibles para ese usuario. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF15
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF15:} Mostrar datos personales en el menú lateral.}
-\label{tab:RF15}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Muestra los datos del usuario iniciado en el menú lateral. \\ 
-	\hline
-	\textbf{Datos de Entrada} & Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} & Datos del usuario almacenados en la base de datos. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF16
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF16:} Botón de 'Inicio' en el menú lateral.}
-\label{tab:RF16}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Página de inicio de la aplicación. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF17
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF17:} Botón de 'Perfil personal' en el menú lateral.}
-\label{tab:RF17}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de inicio de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Página de perfil personal. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF18
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF18:} Botón de 'Mensajes' en el menú lateral.}
-\label{tab:RF18}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de chats de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Página de chats. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF19
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF19:} Botón de 'Protectoras' en el menú lateral.}
-\label{tab:RF19}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la lista de protectoras de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Lista de protectoras ya verificadas en la aplicación. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF20
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF20:} Botón de 'Mis perros' en el menú lateral.}
-\label{tab:RF20}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la lista de sus perros de la aplicación \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Lista de perros que ha dado de alta el usuario en la aplicación. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF21
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF21:} Botón de 'Usuarios' en el menú lateral.}
-\label{tab:RF21}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la lista de usuarios de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Lista de usuarios que no son protectoras en la aplicación. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF22
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF22:} Botón de 'Información legal' en el menú lateral.}
-\label{tab:RF22}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar botón para redirigir al usuario a la página de información legal de la aplicación. \\ 
-	\hline
-	\textbf{Datos de Entrada} &  Ninguno. \\ 
-	\hline
-	\textbf{Datos de Salida} &  Página de información legal de la aplicación. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -852,6 +763,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF23:} Edición de datos personales y de contacto.}
 \label{tab:RF23}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
@@ -869,7 +781,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF24:} Edición de datos de perros.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF24:} Edición de datos de los caninos.}
 \label{tab:RF24}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -886,11 +799,12 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF25:} Recuperación de contraseña.}
 \label{tab:RF25}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporcionar formularios de recuperación de contraseña para los usuarios y protectoras. \\ 
+	\textbf{Descripción} & Proporcionar formulario para recuperar la contraseña. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Correo electrónico ingresado por el usuario. \\ 
 	\hline
@@ -903,7 +817,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF26:} Mostrar página de perfil de usuario/protectora.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF26:} Acceder a página de perfil de usuario/protectora.}
 \label{tab:RF26}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -911,7 +826,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
-	\textbf{Datos de Salida} & Datos del usuario correspondinte, incluyendo foto de perfil, correo y los perros (si los tiene). Además incluirá el botón de contacto para abir chat. \\ 
+	\textbf{Datos de Salida} & Datos del usuario correspondiente, incluyendo foto de perfil, correo y los caninos (si los tiene). \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -920,15 +835,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF27:} Mostrar página de perfil de canino.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF27:} Acceder a página de perfil de canino.}
 \label{tab:RF27}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporcionar una interfaz que condense toda la información relacionada con un perro en una sola página. \\ 
+	\textbf{Descripción} & Proporcionar una interfaz que condense toda la información relacionada con un canino en una sola página. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
-	\textbf{Datos de Salida} & Datos del perro correspondiente, incluyendo foto de perfil, características del canino (edad, raza, peso, descripción...). Además de un mapa indicando su ubicación, el bóton de favoritos y de compartir. También incluye el botón de abrir chat. Contendrá los botones de edición si el perro es del usuario que visita el perfil. \\ 
+	\textbf{Datos de Salida} & Datos del canino correspondiente, incluyendo foto de perfil, características del canino (edad, raza, peso, descripción...). Además de un mapa indicando su ubicación, el bóton de favoritos y de compartir. También incluye el botón de abrir chat. Contendrá los botones de edición si el canino es del usuario que visita el perfil. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -937,15 +853,16 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF28:} Compartir perros a través de enlace.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF28:} Compartir caninos a través de enlace.}
 \label{tab:RF28}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporcionar un botón que genere un enlace para redirigir a un usuario al perfil de ese perro en concreto. \\ 
+	\textbf{Descripción} & Proporcionar un botón que genere un enlace para redirigir a un usuario al perfil de ese canino en concreto. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
-	\textbf{Datos de Salida} & Url a la aplicación con los parámetros correspondientes para redirigir al perfil de perro. \\ 
+	\textbf{Datos de Salida} & Url a la aplicación con los parámetros correspondientes para redirigir al perfil de canino. \\ 
 	\hline
 \end{tabular}
 \end{table}
@@ -954,7 +871,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF29:} Página del mapa.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF29:} Mostrar resultados de protectoras en un mapa.}
 \label{tab:RF29}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -972,7 +890,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF30:} Página de chats.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF30:} Listado de chats disponibles.}
 \label{tab:RF30}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -990,7 +909,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF31:} Enviar mensajes al chat.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF31:} Envío mensajes de texto al chat.}
 \label{tab:RF31}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1008,6 +928,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF32:} Enviar imágenes al chat.}
 \label{tab:RF32}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
@@ -1026,6 +947,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF33:} Abrir un chat nuevo.}
 \label{tab:RF33}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
@@ -1043,7 +965,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF34:} Borrar un chat.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF34:} Eliminar un chat.}
 \label{tab:RF34}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1060,11 +983,12 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF35:} Marcar/desmarcar perro como adoptado.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF35:} Marcar/desmarcar canino como adoptado.}
 \label{tab:RF35}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporcionar un botón dentro del perfil del perro que permite a una protectora marcar/desmarcar a un perro de la aplicación como adoptado. \\ 
+	\textbf{Descripción} & Proporcionar un botón dentro del perfil del canino que permite a una protectora marcar/desmarcar a un canino de la aplicación como adoptado. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Estado nuevo según si se quiere marcar o desmarcar. \\ 
 	\hline
@@ -1078,7 +1002,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF36:} Página de contacto.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF36:} Inclusión información de contacto.}
 \label{tab:RF36}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1095,7 +1020,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF37:} Página de información legal.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF37:} Inclusión información legal.}
 \label{tab:RF37}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1108,44 +1034,11 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \end{tabular}
 \end{table}
 
-% RF38
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF38:} Proporcionar página de inició según rol.}
-\label{tab:RF38}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar una interfaz única según el rol después de iniciar sesión. \\ 
-	\hline
-	\textbf{Datos de Entrada} & Correo electrónico y contraseña para iniciar sesión. \\ 
-	\hline
-	\textbf{Datos de Salida} & Página de inicio que varía según el rol. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
-% RF39
-\begin{table}[H]
-\captionsetup{list=no}%
-\captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF39:} Página de administrador.}
-\label{tab:RF39}
-	\begin{tabular}{|m{5cm}|m{10cm}|}
-	\hline
-	\textbf{Descripción} & Proporcionar una página para los administradores. \\ 
-	\hline
-	\textbf{Datos de Entrada} & Correo electrónico y contraseña de administrador para iniciar sesión. \\ 
-	\hline
-	\textbf{Datos de Salida} & Interfaz para los administradores, que incluye listas con diferentes filtros de usuarios y caninos para manejar usuarios y caninos. \\ 
-	\hline
-\end{tabular}
-\end{table}
-
 % RF40
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF40:} Búsqueda de direcciones.}
 \label{tab:RF40}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
@@ -1163,7 +1056,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF41:} Cambiar a tema oscuro.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF41:} Cambiar tema oscuro.}
 \label{tab:RF41}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1180,7 +1074,8 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{\textbf{RF42:} Subir post al blog.}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RF42:} Publicar post en el blog.}
 \label{tab:RF42}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1197,6 +1092,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \begin{table}[H]
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{RF43:} Comentar post del blog.}
 \label{tab:RF43}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
@@ -1215,49 +1111,267 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 
 Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario una experiencia robusta y óptima a lo largo de la aplicación. Para el desarrollo de la aplicación se han identificado los siguientes requisitos no funcionales:
 
-\begin{itemize}[noitemsep]
-\item \textbf{Rendimiento:} La aplicación debe responder rápidamente a las interacciones de los usuarios y ejecutar las operaciones en un breve período de tiempo.
-	\begin{itemize}[noitemsep]
-	\item Se propone un tiempo máximo de 3 segundos como tiempo óptimo para cargar una página completa.
-	\item El tiempo de respuesta del servidor debe ser menor de 2 segundos.
-	\item La aplicación debe manejar múltiples peticiones sin una degradación perceptible del rendimiento, con un límite de 10.000 solicitudes.
-	\item La base de datos debe realizar consultas simples y complejas en menos de un segundo.
-	\item En el caso de búsquedas y filtrados, el tiempo de procesamiento puede ser mayor de 3 segundos, pero menor de 6.
-	\item La aplicación debe manejar alrededor de 10.000 usuarios concurrentes sin sufrir una degradación del rendimiento.
-	\end{itemize}
-\item \textbf{Escalabilidad:} El código debe ser mantenible, permitiendo añadir o quitar funcionalidades sin comprometer el comportamiento de la aplicación.
-	\begin{itemize}[noitemsep]
-	\item Los componentes de la aplicación deben estar claramente definidos y documentados.
-	\item Un componente base debe recoger todas las propiedades comunes, por ejemplo, un componente base para los botones debe incluir el tamaño de la fuente, la forma del botón, colores, etc.
-	\item Las funcionalidades desarrolladas deben ser fácilmente deprecables si es necesario, sin dependencias innecesarias entre ellas.
-	\item Los nuevos componentes no deben afectar el funcionamiento de la aplicación.
-	\item La actualización de un componente base debe reflejarse en todos los componentes de ese tipo.
-	\end{itemize}
-\item \textbf{Usabilidad:} La aplicación debe ser intuitiva y atractiva, permitiendo su uso sencillo incluso por usuarios poco experimentados.
-	\begin{itemize}[noitemsep]
-	\item La interfaz debe ser limpia y organizada.
-	\item Los colores de la aplicación deben ser coherentes.
-	\item La navegación debe cumplir la norma de los tres clics: cualquier usuario debe alcanzar la información crítica en un máximo de tres clics.
-	\item La aplicación debe ser intuitiva o proporcionar guías de uso si es necesario.
-	\item Se debe testear la aplicación con usuarios reales antes del primer despliegue para realizar posibles correcciones.
-	\end{itemize}
-\item \textbf{Confiabilidad:} La aplicación debe manejar los errores de manera adecuada.
-	\begin{itemize}[noitemsep]
-	\item Los usuarios deben ser informados con mensajes apropiados si ocurre un error crítico.
-	\item Durante el desarrollo, se deben añadir mecanismos para minimizar los errores conocidos.
-	\item Las copias de seguridad son indispensables para garantizar que no se pierdan datos ante un error crítico.
-	\item Se deben implementar mecanismos de manejo de errores en todas las operaciones críticas (lectura y escritura) para evitar errores graves.
-	\end{itemize}
-\item \textbf{Seguridad:} La aplicación debe proteger los datos de los usuarios y prevenir accesos no autorizados, asegurando que la información sea real y fehaciente.
-	\begin{itemize}[noitemsep]
-	\item Las contraseñas y datos sensibles deben estar cifrados.
-	\item La aplicación no debe permitir acceso a usuarios sin cuenta.
-	\item No se permitirá dar de alta a perros en protectoras no verificadas por administradores, para evitar fraudes.
-	\item Un administrador debe tener acceso a listas para verificar información y eliminar datos si es necesario.
-	\item Deben implementarse mecanismos de prevención contra ataques comunes como inyecciones SQL, XSS y CSRF.
-	\end{itemize}
-\item \textbf{Documentación:} Se debe almacenar toda la información relevante a lo largo de todas las etapas, ya sea en el código, en documentos aparte o en la memoria del proyecto.
-\end{itemize}
+
+% RNF1
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF1:} Limitación en el tiempo de carga de una pantalla.}
+\label{tab:RNF1}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Rendimiento \\ 
+	    \hline
+	    \textbf{Descripción} & Una pantalla de la aplicación no debe tardar más de tres segundos en cargar completamente. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+
+% RNF2
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF2:} Limitación en el tiempo de respuesta del servidor.}
+\label{tab:RNF2}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Rendimiento \\ 
+	    \hline
+	    \textbf{Descripción} & El tiempo de respuesta del servidor debe ser menor de dos segundos. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF3
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF3:} Manejo de consultas sin degradación.}
+\label{tab:RNF3}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Rendimiento \\ 
+	    \hline
+	    \textbf{Descripción} & La base de datos debe realizar consultas simples y complejas en menos de un segundo. Además, debe soportar aproximadamente 10.000 usuarios y consultas concurrentes sin sufrir degradación en el rendimiento. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF4
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF4:} Manejo de búsquedas y filtrado.}
+\label{tab:RNF4}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Rendimiento \\ 
+	    \hline
+	    \textbf{Descripción} & El tiempo de procesamiento tras realizar una búsqueda y/o filtrado debe ser menor de seis segundos. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF5
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF5:} Proporcionar componentes reutilizables.}
+\label{tab:RNF5}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Escalabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & Un componente base debe recoger todas las propiedades comunes, como por ejemplo, un componente base para los botones debe incluir el tamaño de la fuente, la forma del botón, colores, etc. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF6
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF6:} Deprecar funcionalidades de forma sencilla.}
+\label{tab:RNF6}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Escalabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & Las funcionalidades desarrolladas deben poder ser deprecadas fácilmente si es necesario, sin dependencias innecesarias entre ellas. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF7
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF7:} Ofrecer una interfaz agradable e intuitiva. }
+\label{tab:RNF7}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Usabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & La interfaz debe ser limpia, organizada e intuitiva, con colores agradables a la vista. Si es necesario, proporcionar una guía de uso. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF8
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF8:} Garantizar una navegación eficaz.}
+\label{tab:RNF8}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Usabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & La navegación debe cumplir con la norma de los tres clics: cualquier usuario debe poder alcanzar la información crítica en un  máximo de tres clics. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF9
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF9:} Testear con usuarios reales.}
+\label{tab:RNF9}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Usabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & Se debe testear la aplicación con usuarios reales antes del primer despliegue para realizar posibles correcciones. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF10
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF10:} Actualización de componentes existentes.}
+\label{tab:RNF10}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Confiabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & La actualización de un componente base debe reflejarse en todos los componentes derivados de ese tipo. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF11
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF11:} Informar a los usuarios de los errores.}
+\label{tab:RNF11}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Confiabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & Los usuarios deben ser informados con mensajes apropiados si ocurre un error crítico. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF12
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF12:} Mitigar errores.}
+\label{tab:RNF12}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Confiabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & Implementar mecanismos para mitigar errores conocidos y herramientas para prevenir errores en todas las operaciones críticas, como pueden ser la lectura y escritura en la base de datos. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF13
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF13:} Asegurar la integridad y persistencia de los datos.}
+\label{tab:RNF13}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Confiabilidad \\ 
+	    \hline
+	    \textbf{Descripción} & Crear copias de seguridad para garantizar que no se pierdan datos en caso de un error crítico. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+
+% RNF14
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF14:} Protección de datos sensibles.}
+\label{tab:RNF14}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Seguridad \\ 
+	    \hline
+	    \textbf{Descripción} & Cifrar contraseñas y datos sensibles e incluir mecanismos de prevención contra ataques comunes como inyecciones SQL, XSS y CSRF.\\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+
+% RNF15
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF15:} Garantizar la veracidad de la información.}
+\label{tab:RNF15}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Seguridad \\ 
+	    \hline
+	    \textbf{Descripción} & Limitar a protectoras verificadas la posibilidad de dar de alta a caninos dentro de la aplicación. Además, proporcionar a los administradores permisos para poder verificar, modificar y eliminar información si es necesario. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+% RNF16
+\begin{table}[H]
+\captionsetup{list=no}%
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
+\caption{\textbf{RNF16:} Documentación.}
+\label{tab:RNF16}
+    \begin{tabular}{|m{5cm}|m{10cm}|}
+	    \hline
+	    \textbf{Tipo} & Documentación \\ 
+	    \hline
+	    \textbf{Descripción} & Se debe almacenar toda la información relevante a lo largo de todas las etapas, ya sea en el código, en documentos aparte o en la memoria del proyecto. \\ 
+	    \hline
+    \end{tabular}
+\end{table}
+
+
 
 \subsection{Diagramas de casos de uso}
 
@@ -1299,19 +1413,22 @@ Un caso de uso es una descripción detallada de cómo los usuarios interactúan 
 
 En esta sección se definen las herramientas y librerías necesarias para el desarrollo de la aplicación.
 
-El sistema operativo utilizado es el que estaba instalado previamente en el ordenador personal.
+El sistema operativo utilizado es el que estaba instalado previamente en el ordenador personal, concretamente \textit{Windows 10}.
+
+Para realizar el desarrollo, se ha utilizado \textit{Android Studio Hedgehog}. 
+
 
 A la hora de seleccionar el framework para utilizar durante el desarrollo, se parte de que se necesita crear una aplicación Android. Existen diferentes frameworks disponibles, como \textit{React Native}, \textit{Flutter}, \textit{Kotlin Multiplatform}, etc., que ofrecen integración con Android para facilitar el desarrollo. En este proyecto, se ha optado por utilizar Flutter, dado que se ha trabajado previamente con él. Este framework, además, permite realizar un desarrollo multiplataforma y ofrece un alto rendimiento.
 
 El lenguaje utilizado ha sido \textit{Dart}. Este lenguaje es muy similar a Java y está orientado a objetos. Se utiliza principalmente para el desarrollo de aplicaciones del lado del cliente. Es un lenguaje bastante popularizado. Uno de los motivos para optar por este lenguaje ha sido din duda el mantenimiento que recibe a día de hoy y su simplicidad para programar. Para añadir funcionalidades extra, se han escogido varias bibliotecas que ofrecen microservicios o widgets.
 
-Por último, para la base de datos, se ha optado por utilizar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diversos servicios para la autenticación, el hosting de la aplicación y bases de datos en tiempo real. Esto lo convierte en el candidato adecuado para manejar funciones como el chat, la funcionalidad de compartir y otras características que nuestra aplicación requiere.
+Por último, para la base de datos, se ha optado por utilizar \textit{Firebase}. Se trata de una plataforma de desarrollo de aplicaciones web muy popularizada, también desarrollada por Google. Ofrece diversos servicios para la autenticación, el \textit{hosting} de la aplicación y bases de datos en tiempo real. Esto lo convierte en el candidato adecuado para manejar funciones como el chat, la funcionalidad de compartir y otras características que la aplicación requiere.
 
 \begin{itemize}[noitemsep]
 	\item \textbf{Sistema Operativo:} Windows 11 x64
 	\item \textbf{IDE:} Android Studio Hedgehog | 2023.1.1 Patch 2
-	\item \textbf{Framework:} Flutter 3.19.0 -  \href{https://flutter.dev/6}{Flutter DEV} \cite{flutter_dev}
-	\item \textbf{Lenguaje:} Dart 3.3.0 - \href{https://dart.dev/}{Dart DEV} \cite{dart_dev}
+	\item \textbf{Framework:} Flutter 3.19.0 -  Flutter DEV \cite{flutter_dev}
+	\item \textbf{Lenguaje:} Dart 3.3.0 - Dart DEV \cite{dart_dev}
 	\item \textbf{Paquetes:}
 		\begin{itemize}[noitemsep]
 		  \item \texttt{cupertino\_icons: \^{}1.0.2}
@@ -1376,6 +1493,7 @@ Los usuarios son otra entidad de gran relevancia dentro de la aplicación. Aunqu
 % usuarios
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: usuarios}}
 \label{tab:requests}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1434,6 +1552,7 @@ Una alternativa sería almacenar los caninos favoritos en la tabla de usuarios. 
 
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: caninos}}
 \label{tab:dogs}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1511,6 +1630,7 @@ Para todas las direcciónes se genera una entrada en el que su ID corresponde co
 % Addresses
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: direcciones}}
 \label{tab:Addresses}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1558,6 +1678,7 @@ Para la tabla de chats, se ha decidido almacenar los IDs de los usuarios implica
 % Chats
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: chats}}
 \label{tab:chats}
 	\begin{tabular}{|m{3cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1596,6 +1717,7 @@ Aparte de almacenar toda la información de los chats, es necesario almacenar lo
 % Mensajes
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: mensajes}}
 \label{tab:messages}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1641,6 +1763,7 @@ En \textit{Firebase}, a las tablas se les llama colecciones y dentro de cualquie
 % notifications
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: notificaciones}}
 \label{tab:notifications}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1657,6 +1780,7 @@ A continuación, se muestra la estructura de la colección de peticiones:
 % requests
 \begin{table}[H]
 \captionsetup{justification=raggedright,singlelinecheck=false}
+\captionsetup{labelformat=empty}
 \caption{\textbf{Tabla: peticiones}}
 \label{tab:users}
 	\begin{tabular}{|m{3.2cm}|m{2cm}|m{5cm}|m{3cm}|}
@@ -1703,7 +1827,7 @@ En cuanto al almacenamiento de imágenes, se ha utilizado el servicio que propor
 	\end{itemize}
 \end{itemize}
 
-Las imágenes de perfil de usuarios y perros se almacenan en el directorio \textit{profilePics}. Por otro lado, cuando se manda una imagen por chat, ésta se almacena en el directorio \textit{chats}. Para trabajar con las imágenes dentro de la aplicación, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}. Estas URLs obtenidas se almacenan en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
+Las imágenes de perfil de usuarios y caninos se almacenan en el directorio \textit{profilePics}. Por otro lado, cuando se manda una imagen por chat, ésta se almacena en el directorio \textit{chats}. Para trabajar con las imágenes dentro de la aplicación, se pueden obtener los enlaces que se generan cuando se van almacenando dentro de \textit{Storage}. Estas URLs obtenidas se almacenan en las tablas definidas anteriormente. Si una de las imágenes es borrada, se tiene que borrar su referencia en la tabla de la base de datos y la imagen almacenada en \textit{Storage}.
 
 \subsection{Prototipado de la interfaz de usuario}
 
@@ -1716,7 +1840,7 @@ Para los colores principales de la aplicación, se ha optado por escoger el colo
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=7cm]{design/Colors.jpg}\par}
-		\caption{Paleta de colores utilizada en la aplicación}
+		\caption{Paleta de colores utilizada en la aplicación.}
 	\end{center}
 \end{figure}
 
@@ -1725,13 +1849,13 @@ Como fuente, se opta por escoger la \textit{Nunito Sans}, que proporciona Google
 \begin{figure}[H]
 	\begin{center}
 		{\includegraphics[width=7cm]{design/NunitoFont.png}\par}
-		\caption{Fuente utilizada en la aplicación (\textit{Nunito Sans})}
+		\caption{Fuente utilizada en la aplicación (\textit{Nunito Sans}).}
 	\end{center}
 \end{figure}
 
 \subsubsection{Nombre}
 
-Como nombre de la aplicación,  se ha tenido en cuenta que inicialmente la aplicación está dirigida a la adopción de perros, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog}, que son la traducción de las palabras adopción y perro, conformando el nombre: \textbf{\textit{Adogption}}.
+Como nombre de la aplicación,  se ha tenido en cuenta que inicialmente la aplicación está dirigida a la adopción de caninos, así que se propone un juego de palabras. Uniendo las palabras \textit{Adoption} y \textit{Dog}, que son la traducción de las palabras adopción y perro, conformando el nombre: \textbf{\textit{Adogption}}.
 
 \subsubsection{Logo e iconos}
 
@@ -1751,23 +1875,23 @@ La última parte relacionada con el \textit{branding} en este proyecto es la de 
 			\caption{Animado.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Logos principales de la aplicación}
+	\caption{Logos principales de la aplicación.}
 \end{figure}
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/EMPTYUSER.png}\par}
-			\caption{Usuario}
+			\caption{Usuario.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/EMPTYDOG.png}\par}
-			\caption{Canino}
+			\caption{Canino.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Logo por defecto}
+	\caption{Logo por defecto.}
 \end{figure}
 
 
@@ -1775,13 +1899,13 @@ La última parte relacionada con el \textit{branding} en este proyecto es la de 
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Adoptar.png}\par}
-			\caption{Icono para listas de adopción}
+			\caption{Icono para listas de adopción.}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Acoger.png}\par}
-			\caption{Icono para listas de acogida}
+			\caption{Icono para listas de acogida.}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1790,13 +1914,13 @@ La última parte relacionada con el \textit{branding} en este proyecto es la de 
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Protectora.png}\par}
-			\caption{Icono de hueso}
+			\caption{Icono de hueso.}
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Casa.png}\par}
-			\caption{Icono de casa}
+			\caption{Icono de casa.}
 		\end{center}  
 	\end{minipage}\hfill
 \end{figure}
@@ -1806,50 +1930,50 @@ La última parte relacionada con el \textit{branding} en este proyecto es la de 
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/USERV.png}\par}
-			\caption{Verificado}
+			\caption{Verificado.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/USERNV.png}\par}
-			\caption{No verificado}
+			\caption{No verificado.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/ALLUSER.png}\par}
-			\caption{Color morado}
+			\caption{Color morado.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/USER.png}\par}
-			\caption{Color azul}
+			\caption{Color azul.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Iconos usuarios}
+	\caption{Iconos usuarios.}
 \end{figure}
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Pata1.png}\par}
-			\caption{Color naranja}
+			\caption{Color naranja.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Pata2.png}\par}
-			\caption{Color morado}
+			\caption{Color morado.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=3cm]{logo/Pata3.png}\par}
-			\caption{Color morado}
+			\caption{Color morado.}
 		\end{center}  
 	\end{subfigure}\hfill
-	\caption{Iconos de patas}
+	\caption{Iconos de patas.}
 \end{figure}
 
 
@@ -1863,14 +1987,14 @@ En esta sección, se incluyen todos los diseños realizados en \textit{Miro} par
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm]{design/SplashScreen.jpg}\par}
-			\caption{Pantalla de carga}
+			\caption{Pantalla de carga.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
    	\begin{minipage}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[height=8cm]{design/Login.jpg}\par}
-			\caption{Pantalla de inicio de sesión}
+			\caption{Pantalla de inicio de sesión.}
 			\medskip
 		\end{center}  
 	\end{minipage}\hfill
@@ -2120,7 +2244,7 @@ En este módulo se definen todos los componentes básicos que incluyen las difer
 
 \begin{figure}[H]
 	\begin{center}
-		{\includegraphics[width=0.9\linewidth]{diagram/Common.png}\par}
+		{\includegraphics[width=0.8\linewidth]{diagram/Common.png}\par}
 		\caption{Módulo  \textit{common}.}
 	\end{center}
 \end{figure}
@@ -2163,8 +2287,8 @@ Este módulo es el encargado de comunicarse directamente con la base de datos de
 	\item \textbf{DBBase}: contiene los métodos básicos que deben incluir el resto de clases.
 	\item \textbf{DBAddresses}: maneja las direcciones y coordenadas.
 	\item \textbf{DBChats}: maneja toda la información relacionada con chats.
-	\item \textbf{DBDogs}: maneja toda la información relacionada con perros y su información.
-	\item \textbf{DBFavorites}: se encarga exclusivamente de actualizar la información de los favoritos dentro de la tabla de perros.
+	\item \textbf{DBDogs}: maneja toda la información relacionada con caninos y su información.
+	\item \textbf{DBFavorites}: se encarga exclusivamente de actualizar la información de los favoritos dentro de la tabla de caninos.
 	\item \textbf{DBMessages}: maneja toda la información relacionada con mensajes.
 	\item \textbf{DBNotifications}: maneja toda la información relacionada con notificaciones.
 	\item \textbf{DBStorage}: se encarga de insertar, actualizar y eliminar todas las imágenes relacionadas con alguna de las entidades.
@@ -2312,7 +2436,7 @@ Este módulo contiene diferentes widgets que definen secciones que se reutilizan
 	\item \textbf{RecentAdoptionsSection}:  define la sección de adopciones recientes que se usa en diferentes páginas de inicio.
 	\item \textbf{UserCategorySection}:  incluye la sección principal de la página de inicio de usuario.
 	\item \textbf{UserFavoritesSection}:  define la sección de favoritos de un usuario específico.
-	\item \textbf{UserOwnedDogsSection}:  define la sección de perros que son de un usuario específico.
+	\item \textbf{UserOwnedDogsSection}:  define la sección de caninos que son de un usuario específico.
 \end{itemize}
 
 
@@ -2382,7 +2506,7 @@ Módulo que contiene todas las clases relacionadas con los usuarios y protectora
 \newpage
 \section{Aspecto final de la aplicación}
 
-En esta sección se incluyen las clases y pantallas tras finalizar el proceso de desarrollo.
+En esta sección se incluyen las pantallas tras finalizar el proceso de desarrollo.
 
 %Splashscreen
 \subsection*{Pantalla de carga}
@@ -2504,7 +2628,7 @@ El componente más complejo de estos formularios es la barra de búsqueda de dir
 \newpage
 \subsection*{Pantallas de inicio}
 
-Para cada uno de los roles definidos, se ha creado una pantalla de inicio específica. Ambas pantallas incluyen bastante contenido en común, como la sección de adopciones recientes o la sección de favoritos. Se incluyen listas para mostrar los perros marcados para adoptar o acoger en ambas pantallas, con la diferencia de que una protectora solo verá sus propios perros en esas listas. 
+Para cada uno de los roles definidos, se ha creado una pantalla de inicio específica. Ambas pantallas incluyen bastante contenido en común, como la sección de adopciones recientes o la sección de favoritos. Se incluyen listas para mostrar los caninos marcados para adoptar o acoger en ambas pantallas, con la diferencia de que una protectora solo verá sus propios caninos en esas listas. 
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
@@ -2542,7 +2666,7 @@ Para cada uno de los roles también se han implementado menús laterales con dis
 \end{figure}
 
 
-Si una protectora inicia sesión sin estar verificada por un administrador, se muesta una pantalla informándole de que tiene que esperar la verificación para poder seguir usando la aplicación. Aunque la protectora no pueda subir perros o mensajear, sí podrá abrir un chat con un administrador desde la página de contacto.
+Si una protectora inicia sesión sin estar verificada por un administrador, se muesta una pantalla informándole de que tiene que esperar la verificación para poder seguir usando la aplicación. Aunque la protectora no pueda subir caninos o mensajear, sí podrá abrir un chat con un administrador desde la página de contacto.
 
 
 \begin{figure}[H]
@@ -2610,7 +2734,7 @@ Las listas de caninos incluyen cualquier tipo de can que esté dado de alta en l
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=5cm]{app/DogListSearch.png}\par}
-			\caption{Con búsqueda}
+			\caption{Con búsqueda.}
 		\end{center}  
 	\end{subfigure}\hfill
    	\begin{subfigure}{0.48\textwidth}
@@ -2622,7 +2746,7 @@ Las listas de caninos incluyen cualquier tipo de can que esté dado de alta en l
    	\begin{subfigure}{0.48\textwidth}
 		\begin{center}
 			{\includegraphics[width=5cm]{app/DogListSearchFilter.png}\par}
-			\caption{Con búsqueda y filtros}
+			\caption{Con búsqueda y filtros.}
 		\end{center}  
 	\end{subfigure}\hfill
 	\caption{Pantalla de lista de caninos.}
@@ -2698,11 +2822,11 @@ Los formularios para actualizar los datos de usuario son casi idénticos a los p
 \end{figure}
 
 
-% Registro perros
+% Registro caninos
 \newpage
 \subsection*{Registro de caninos}
 
-Las protectoras pueden añadir perros a la aplicación desde su lista personal llamada \textit{Mis perros}. En esta pantalla, se incluye una barra superior con un botón específico que redirige al formulario de registro para perros. Éste incluye todos los atributos que requiere un canino para ser dado de alta.
+Las protectoras pueden añadir caninos a la aplicación desde su lista personal llamada \textit{Mis perros}. En esta pantalla, se incluye una barra superior con un botón específico que redirige al formulario de registro para caninos. Éste incluye todos los atributos que requiere un canino para ser dado de alta.
 
 \begin{figure}[H]
 	\begin{center}
@@ -2727,7 +2851,7 @@ Las protectoras pueden añadir perros a la aplicación desde su lista personal l
 \end{figure}
 
 
-% Perfil perros
+% Perfil caninos
 \newpage
 \subsection*{Perfil de canino}
 
@@ -2778,7 +2902,7 @@ Para mostrar toda la información de un canino a un usuario, se ha condensado to
 
 % Actualización de datos
 \newpage
-\subsection*{Actualización de datos de perros}
+\subsection*{Actualización de datos de caninos}
 
 Los formularios para actualizar los datos de los caninos son con muy similares a los proporcionados para darlos de alta. Inicialmente, los formularios cargan todos los datos actuales del canino y permiten que se introduzcan todos los cambios que se requieran, además éstos no permiten que un canino se quede sin foto de perfil. Tras confirmar los cambios, si la actualización es correcta, se muestra una notificación indicándolo.
 
@@ -2881,7 +3005,7 @@ Las notificaciones se lanzan cuando un usuario recibe un mensaje de otro usuario
 \newpage
 \subsection*{Vista de administrador}
 
-La vista de administrador es la más simple ya que contiene diferentes listas para manejar los usuarios y perros que están dados de alta en la aplicación. Puede editar datos de cualquier usuario o perro además de verificar y desverificar perfiles de usuario.
+La vista de administrador es la más simple ya que contiene diferentes listas para manejar los usuarios y caninos que están dados de alta en la aplicación. Puede editar datos de cualquier usuario o canino además de verificar y desverificar perfiles de usuario.
 
 \begin{figure}[H]
    	\begin{subfigure}{0.48\textwidth}
@@ -2915,9 +3039,7 @@ La vista de administrador es la más simple ya que contiene diferentes listas pa
 \newpage
 \section{Conclusiones}
 
-Tras completar el período de desarrollo de la aplicación, en este apartado se comprueba la completitud de todos los requisitos funcionales. 
-
-Se implementó el registro de usuarios por rol además de proporcionar diferentes vistas para cada uno de los roles, que finalmente se definieron como \textit{Usuario},  \textit{Protectora}  y   \textit{Administrador}.  Con relación a los usuarios, también se añadieron diferentes listas a lo largo de la aplicación, que finalmente incluyeron una barra de búsqueda para filtrar resultados. Además, para los usuarios se implementó una página de perfil en la que se puede acceder a la edición de datos y credenciales. Por otra parte, también se implementó el registro y edición de perros y se incluyeron diferentes listas en la aplicación, que aparte de una barra de búsqueda también incluyen los filtros de  \textit{Peso},  \textit{Raza},  \textit{Género} y  \textit{Color}. Además, en los perfiles de los perros se añadieron botones para compartir y marcar como favoritos, este último vino de la mano de la implementación de la sección de favoritos para los usuarios. Se crearon diferentes páginas adicionales, como la página de contacto o la de información legal, además de la página de mapas, en la que se incluyó un listado de resultados e hizo falta integrar las APIs de geolocalización. Esta misma API de geolocalización también se utilizó para desarrollar una barra de búsqueda de direcciones. Por último, se implementó un chat en tiempo real al que se le añadió la opción de mandar imágenes con sus correspondientes notificaciones.
+En este TFG se ha desarrollado una aplicación de adopción canina que permite a personas que quieren adoptar o acoger algún canino encontrar y contactar de forma más eficaz con las protectoras disponibles en su zona. Se ha implementado el registro de usuarios por rol, además de proporcionar diferentes vistas para cada uno de los roles, que se han definido como \textit{Usuario}, \textit{Protectora} y \textit{Administrador}. A lo largo de la aplicación se han incluido diferentes listas de usuarios, protectoras y caninos con barras de búsqueda y filtros para acotar resultados. Para proporcionar una mejor visibilidad de las protectoras que hay en un área, se ha desarrollado una pantalla que contiene un mapa con todas las protectoras cercanas. Se ha implementado un chat en tiempo real para proporcionar contacto directo entre usuarios y protectoras, además de permitir a estos contactar con un administrador de la aplicación. Toda la información legal y de contacto se ha recogido en una pantalla a disposición de cualquier rol de la aplicación. Para finalizar, se han implementado las funcionalidades de compartir y marcar como favoritos los perfiles de los caninos disponibles.
 
 Al revisar la lista de objetivos, se concluye que la aplicación cumple con todas las funcionalidades obligatorias. Sin embargo, algunos requisitos opcionales no se han completado en esta versión. Específicamente, el blog y el tema oscuro. El blog resultó ser demasiado ambicioso y no se ha podido desarrollar en el tiempo estipulado, mientras que el tema oscuro se pospuso debido a retrasos en la implementación de otras funcionalidades obligatorias. Estos requisitos pendientes se considerarán para futuras versiones de la aplicación. Por tanto se han planteado algunas propuestas para añadir valor a la aplicación y mejorar la experiencia de uso del usuario:
 
@@ -2932,7 +3054,7 @@ Al revisar la lista de objetivos, se concluye que la aplicación cumple con toda
 	\item Incluir más filtros en las listas de caninos.
 \end{itemize}
 
-Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación. Algunas de ellas surgen a partir del \textit{feedback} proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de perros, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
+Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación. Algunas de ellas surgen a partir del \textit{feedback} proporcionado por los usuarios que han probado la aplicación. Además, aunque la aplicación está diseñada inicialmente para facilitar las adopciones de caninos, se contempla la posibilidad de incluir otros tipos de animales, como gatos, en futuras actualizaciones.
 
 
 % Bibliografía

@@ -17,7 +17,6 @@
 \usepackage{colortbl}
 \usepackage{array} 
 \usepackage[parfill]{parskip}
-\setlength{\parindent}{30pt}
 \usepackage{imakeidx}
 \makeindex[columns=3, title=Indice]
 \usepackage{hyperref}
@@ -25,7 +24,8 @@
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,      
-    urlcolor=cyan,
+    urlcolor=blue,
+    citecolor=blue,
     pdftitle={Adogption},
     pdfpagemode=FullScreen,
 }
@@ -48,65 +48,9 @@
 
 
 % Portada
-\begin{titlepage}
-	\pagestyle{plain}
-	\centering
-	{\includegraphics[width=1\textwidth]{logoUGR.png}\par}
-	{\bfseries\LARGE Universidad de Granada \par}
-	{\scshape\Large Ingeniería Informática \par}
-	\vspace{0.5cm}
-	{\itshape\Large Trabajo fin de grado \par}
-	{\scshape\Huge Desarrollo de Aplicación Móvil para Adopción Canina \par}
-	\vfill
-	{\Large Autora \par}
-	{\Large Laura Vega Palacios\par}
+\input{portada/portada}
+\input{prefacios/prefacioarticle}
 
-	{\Large Tutor \par}
-	{\Large Juan José Escobar Pérez\par}
-	\vfill
-	{\Large Junio de 2024 \par}
-\end{titlepage} 
-
-% Contra portada
-\newpage
-\thispagestyle{empty}
-\mbox{}
-
-% Resumen
-\newpage
-\pagestyle{plain}
-\section*{Resumen}
-A día de hoy, comenzar un proceso de adopción puede ser algo tedioso debido a lo descentralizada que está toda la información relacionada con las protectoras y refugios. Una persona que quiera adoptar algún animal normalmente va a necesitar consultar diversas plataformas o redes para encontrar una protectora cercana o un animal que se adapte a su estilo de vida.
-
-El desarrollo de este \textit{Trabajo de Fin de Grado} tiene como finalidad la planificación y desarrollo de una aplicación móvil que permita la gestión de adopciones, la información de las protectoras y facilite la comunicación entre los adoptantes y las protectoras. En esta aplicación, se podrán dar de alta protectoras o refugios, con sus correspondientes datos y ubicación. Las protectoras o refugios que estén verificadas por los administradores tendrán la capacidad de subir a la plataforma todos los caninos, que aparecerán en las listas de adopción o acogida dependiendo de lo que se haya marcado para cada uno. También se podrán dar de alta usuarios que busquen adoptar o acoger algún can y se incluirán formularios para dar de alta o editar la información de ellos, con distintos apartados para cumplimentar todos los datos requeridos como la descripción, la raza, la edad, el peso, etc. Los usuarios también dispondrán de formularios para darse de alta y editar su información. La aplicación utilizará un sistema de geolocalización para mostrar a los usuarios resultados dentro de la aplicación y su distancia. Estos resultados se podrán ver en un mapa insertado en la misma gracias a la inclusión de barras de búsqueda y filtros rápidos para acotar resultados según los requisitos del usuario. Por otro lado, la aplicación incluirá un sistema de mensajería para facilitar la comunicación tanto entre usuarios y protectoras como con los administradores. Este permitirá el envío de mensajes de texto e imágenes. Se añadirá, además, un sistema de favoritos y la posibilidad de compartir caninos de la aplicación de forma externa a través de un enlace. Finalmente la aplicación contendrá una página de información legal y de contacto a disposición del usuario.
-
-% Pagina en blanco
-\newpage
-\pagestyle{plain}
-\thispagestyle{empty}
-\mbox{}
-
-% Abstract
-\newpage
-\pagestyle{plain}
-\section*{Abstract}
-Nowadays, starting an adoption process can be tedious due to the decentralized that is the information related to shelters and rescue organizations. A person looking to adopt an animal usually needs to check different platforms to find a nearby shelter or an animal that fits their lifestyle.
-
-The purpose of this \textit{Final Degree Project} is to plan and develop a mobile application that facilitates adoption management, provides information about shelters, and eases communication between adopters and shelters. In this application, shelters or rescue organizations can register with their corresponding data and location. Shelters or rescues verified by administrators will have the ability to upload all the dogs to the platform, which will appear in adoption or foster lists depending on the status marked for each dog. Users looking to adopt or foster a dog can also register, and forms will be included to add or edit their information, with different sections to fill in all required data such as description, breed, age, weight, etc. Users will also have forms to register and edit their information. The application will use a geolocation system to show users results within the application and their distance. These results can be viewed on an embedded map thanks to the inclusion of search bars and quick filters to narrow down results according to the user's requirements. Additionally, the application will include a messaging system to facilitate communication between users and shelters as well as with administrators. This will allow the sending of text messages and images. Furthermore, a favorites system will be added, along with the ability to share dogs from the application externally through a link. Finally, the application will contain a legal information and contact page available to the user.
-
-% Pagina en blanco
-\newpage
-\thispagestyle{empty}
-\mbox{}
-
-% Agradecimientos
-\newpage
-\section*{Agradecimientos}
-\begin{center} 
-\vspace*{\fill}
-A mis tíos, que me dieron la oportunidad de estudiar y seguir adelante.
-\vspace*{\fill}
-\end{center} 
 
 % Pagina en blanco
 \newpage
@@ -202,7 +146,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 1}
+	\caption*{Objetivo 1}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de usuarios con diferentes roles}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -217,7 +161,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 2}
+	\caption*{Objetivo 2}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Registro de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -232,7 +176,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 3}
+	\caption*{Objetivo 3}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listado de caninos con filtros y búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -247,7 +191,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 4}
+	\caption*{Objetivo 4}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Listado de usuarios con búsqueda}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -262,7 +206,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 5}
+	\caption*{Objetivo 5}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de sección de caninos favoritos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -277,7 +221,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 6}
+	\caption*{Objetivo 6}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de sistema de mensajería entre usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -292,7 +236,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 7}
+	\caption*{Objetivo 7}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Geolocalización y mapas con  resultados}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -307,7 +251,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 8}
+	\caption*{Objetivo 8}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualización de datos de caninos}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -322,7 +266,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 9}
+	\caption*{Objetivo 9}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Actualización de datos de usuarios}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Obligatorio \\ \hline
@@ -337,7 +281,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 10}
+	\caption*{Objetivo 10}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de barra de búsqueda de direcciones}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
@@ -352,7 +296,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 11}
+	\caption*{Objetivo 11}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Diseño de tema oscuro}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
@@ -367,7 +311,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 12}
+	\caption*{Objetivo 12}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Inclusión de un blog}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
@@ -382,7 +326,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 13}
+	\caption*{Objetivo 13}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Compartición de caninos a través de un enlace}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
@@ -397,7 +341,7 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 	\captionsetup{list=no}%
 	\captionsetup{font=bf}
 	\captionsetup{labelformat=empty}
-	\caption{Objetivo 14}
+	\caption*{Objetivo 14}
 	\begin{tabular}{ | m{3cm} | m{10cm} | }
 		\hline \cellcolor{lightgray}\textbf{Título} & \cellcolor{gray} \textcolor{white}{\textit{Envío de imágenes dentro del chat}}  \\ \hline
 		\cellcolor{lightgray}\textbf{Tipo} & Opcional \\ \hline
@@ -409,13 +353,11 @@ Para satisfacer las necesidades del proyecto propuesto, se han definido una seri
 \newpage
 \section{Gestión del proyecto}
 \subsection{Planificación temporal}
-En esta sección se definen todas las etapas en las que se dividirá el proyecto, los cuales se resumen en un diagrama de Gantt (ver Figura 1). Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
+En esta sección se definen todas las etapas en las que se dividirá el proyecto, los cuales se resumen en un diagrama de Gantt (ver Figura  \ref{fig:diagramagantt}). Este diagrama abarca desde enero de 2024 hasta junio del mismo año, estableciendo un marco temporal para cada fase del proyecto y asignando recursos de manera eficiente para alcanzar los objetivos establecidos.
 
 \begin{figure}[H]
 	{\includegraphics[width=15cm]{diagram/GanntSmall2.png}\par}
-	\captionsetup{format=plain,indention=0pt}
-	\caption{Diagrama de Gantt.}
-	\label{fig:diagramagantt}
+	\captionof{figure}{Diagrama de Gantt.}\label{fig:diagramagantt}\ref{diagramagantt}
 \end{figure}
 
 Dentro del diagrama se pueden observar las diferentes etapas del proyecto:
@@ -481,7 +423,7 @@ Con respecto al software, para el alcance de este proyecto y los objetivos que s
 \newpage
 \section{Estado del arte}
 
-El principal desafío en el ámbito de la adopción de caninos sigue siendo la sobrepoblación y el abandono masivo que sufren. A pesar de los esfuerzos de las organizaciones y plataformas de adopción, muchas veces los refugios se ven desbordados y no pueden satisfacer la demanda, lo que resulta en una difícil situación para los animales sin hogar. El abandono de perros no solo afecta el bienestar animal, sino que también tiene repercusiones en la salud pública y el medio ambiente. Promover la adopción responsable no solo ayuda a reducir el número de animales sin hogar y mejorar sus vidas, sino que también fomenta una cultura de cuidado y respeto hacia los animales ya la sociedad.
+El principal desafío en el ámbito de la adopción de caninos sigue siendo la sobrepoblación y el abandono masivo que sufren. A pesar de los esfuerzos de las organizaciones y plataformas de adopción, muchas veces los refugios se ven desbordados y no pueden satisfacer la demanda, lo que resulta en una difícil situación para los animales sin hogar. El abandono de perros no solo afecta el bienestar animal, sino que también tiene repercusiones en la salud pública y el medio ambiente. Promover la adopción responsable no solo ayuda a reducir el número de animales sin hogar y mejorar sus vidas, sino que también fomenta una cultura de cuidado y respeto hacia los animales y a la sociedad.
 
 Hoy en día, la tecnología desempeña un papel fundamental para ayudar a las personas a encontrar protectoras o mascotas para adoptar. Existen diferentes aplicaciones que se centran en las adopciones de caninos u otras mascotas que se utilizan en España, algunas han servido como inspiración durante el desarrollo de \textit{Adogption}. A continuación se incluyen algunas aplicaciones gratuitas que recomienda \textit{La Vanguardia} \cite{lavanguardia}: 
 
@@ -491,7 +433,7 @@ Hoy en día, la tecnología desempeña un papel fundamental para ayudar a las pe
 
 \subsubsection*{Ventajas}
 
-Ésta destaca por su interfaz intuitiva y sus funciones de búsqueda avanzadas. Además, \textit{Miwuki} incluye un blog actualizado regularmente donde se comparten noticias y consejos relacionados con el mundo animal. También cuenta con una sección de informes que presenta cifras y estadísticas sobre el abandono de animales en España, proporcionando así una visión más amplia del problema y fomentando la concienciación sobre la adopción \cite{lookerstudio}.
+Ésta destaca por su interfaz intuitiva y sus funciones de búsqueda avanzadas. Además, incluye un blog actualizado regularmente donde se comparten noticias y consejos relacionados con el mundo animal. También cuenta con una sección de informes que presenta cifras y estadísticas sobre el abandono de animales en España, proporcionando así una visión más amplia del problema y fomentando la concienciación sobre la adopción \cite{lookerstudio}.
 
 \subsubsection*{Inconvenientes}
 
@@ -503,7 +445,7 @@ La limitación más importante es que su alcance está principalmente centrado e
 
 \subsubsection*{Ventajas}
 
-La ventaja más destacable de \textit{KLYGO} es el sistema de geolocalización antes mencionado y la amplia red de refugios y asociaciones colaboradoras de las que disponen. Además, el chat en tiempo real es de gran utilidad para facilitar el contacto instantáneo entre usuarios y protectoras.
+La ventaja más destacable de \textit{KLYGO} es el sistema de geolocalización antes mencionado y la amplia red de refugios y asociaciones colaboradoras de las que dispone. Además, el chat en tiempo real es de gran utilidad para facilitar el contacto instantáneo entre usuarios y protectoras.
 
 \subsubsection*{Inconvenientes}
 
@@ -544,7 +486,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF1:} Registro de usuarios y protectoras.}
+\caption*{\textbf{RF1:} Registro de usuarios y protectoras.}
 \label{tab:RF1}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -562,7 +504,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF2:} Registro de caninos.}
+\caption*{\textbf{RF2:} Registro de caninos.}
 \label{tab:RF2}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -580,7 +522,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF3:} Listado de usuarios.}
+\caption*{\textbf{RF3:} Listado de usuarios.}
 \label{tab:RF23}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -598,7 +540,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF4:} Listado de caninos.}
+\caption*{\textbf{RF4:} Listado de caninos.}
 \label{tab:RF4}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -616,7 +558,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF5:} Filtrado de caninos según sus atributos.}
+\caption*{\textbf{RF5:} Filtrado de caninos según sus atributos.}
 \label{tab:RF5}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -634,7 +576,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF6:} Búsqueda en listas de caninos.}
+\caption*{\textbf{RF6:} Búsqueda en listas de caninos.}
 \label{tab:RF6}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -652,7 +594,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF7:} Búsqueda en listas de usuarios.}
+\caption*{\textbf{RF7:} Búsqueda en listas de usuarios.}
 \label{tab:RF7}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 \hline
@@ -670,7 +612,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF8:} Marcar/desmarcar canino como favorito.}
+\caption*{\textbf{RF8:} Marcar/desmarcar canino como favorito.}
 \label{tab:RF8}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -688,7 +630,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF9:} Listado de caninos favoritos.}
+\caption*{\textbf{RF9:} Listado de caninos favoritos.}
 \label{tab:RF9}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -706,7 +648,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF10:} Listado de adopciones recientes.}
+\caption*{\textbf{RF10:} Listado de adopciones recientes.}
 \label{tab:RF10}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -724,7 +666,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF11:} Cerrar sesión.}
+\caption*{\textbf{RF11:} Cerrar sesión.}
 \label{tab:RF11}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -743,7 +685,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF12:} Edición de datos personales y de contacto.}
+\caption*{\textbf{RF12:} Edición de datos personales y de contacto.}
 \label{tab:RF12}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -761,7 +703,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF13:} Edición de datos de los caninos.}
+\caption*{\textbf{RF13:} Edición de datos de los caninos.}
 \label{tab:RF13}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -779,7 +721,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF14:} Recuperación de contraseña.}
+\caption*{\textbf{RF14:} Recuperación de contraseña.}
 \label{tab:RF14}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -797,7 +739,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF15:} Acceder a página de perfil de usuario/protectora.}
+\caption*{\textbf{RF15:} Acceder a página de perfil de usuario/protectora.}
 \label{tab:RF15}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -815,7 +757,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF16:} Acceder a página de perfil de canino.}
+\caption*{\textbf{RF16:} Acceder a página de perfil de canino.}
 \label{tab:RF16}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -833,7 +775,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF17:} Compartir caninos a través de enlace.}
+\caption*{\textbf{RF17:} Compartir caninos a través de enlace.}
 \label{tab:RF17}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -851,7 +793,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF18:} Listado de resultados de protectoras insertados en un mapa.}
+\caption*{\textbf{RF18:} Listado de resultados de protectoras insertados en un mapa.}
 \label{tab:RF18}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -870,7 +812,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF18:} Listado de chats disponibles.}
+\caption*{\textbf{RF18:} Listado de chats disponibles.}
 \label{tab:RF18}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -889,7 +831,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF19:} Envío de mensajes de texto al chat.}
+\caption*{\textbf{RF19:} Envío de mensajes de texto al chat.}
 \label{tab:RF19}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -908,7 +850,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF20:} Envío de imágenes al chat.}
+\caption*{\textbf{RF20:} Envío de imágenes al chat.}
 \label{tab:RF20}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 \hline
@@ -927,7 +869,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF21:} Abrir un chat nuevo.}
+\caption*{\textbf{RF21:} Abrir un chat nuevo.}
 \label{tab:RF21}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -945,7 +887,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF24:} Eliminar un chat.}
+\caption*{\textbf{RF24:} Eliminar un chat.}
 \label{tab:RF24}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -963,7 +905,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF25:} Marcar/desmarcar canino como adoptado.}
+\caption*{\textbf{RF25:} Marcar/desmarcar canino como adoptado.}
 \label{tab:RF25}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -982,11 +924,11 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF26:} Mostrar la información de contacto.}
+\caption*{\textbf{RF26:} Mostrar la información de contacto.}
 \label{tab:RF26}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporciona una interfaz que rehúne todos los datos de contacto con administradores. \\ 
+	\textbf{Descripción} & Proporciona una interfaz que rehúne todos los datos de contacto de administradores. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -1000,11 +942,11 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF37:} Mostrar la información legal.}
+\caption*{\textbf{RF37:} Mostrar la información legal.}
 \label{tab:RF27}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
-	\textbf{Descripción} & Proporciona una interfaz que rehúne toda la información legal y advertencias relacionadas con la aplicación. \\ 
+	\textbf{Descripción} & Proporciona una interfaz que rehúne toda la información legal y advertencias. \\ 
 	\hline
 	\textbf{Datos de Entrada} & Ninguno. \\ 
 	\hline
@@ -1018,7 +960,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF28:} Búsqueda de direcciones.}
+\caption*{\textbf{RF28:} Búsqueda de direcciones.}
 \label{tab:RF28}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1036,7 +978,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF29:} Cambiar a tema oscuro.}
+\caption*{\textbf{RF29:} Cambiar a tema oscuro.}
 \label{tab:RF29}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1054,7 +996,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF30:} Publicar post en el blog.}
+\caption*{\textbf{RF30:} Publicar post en el blog.}
 \label{tab:RF30}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1072,7 +1014,7 @@ Los Requisitos Funcionales (RF) describen las acciones específicas que el siste
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RF31:} Comentar post del blog.}
+\caption*{\textbf{RF31:} Comentar post del blog.}
 \label{tab:RF31}
 	\begin{tabular}{|m{5cm}|m{10cm}|}
 	\hline
@@ -1096,7 +1038,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF1:} Limitación en el tiempo de carga de una pantalla.}
+\caption*{\textbf{RNF1:} Limitación en el tiempo de carga de una pantalla.}
 \label{tab:RNF1}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1113,7 +1055,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF2:} Limitación en el tiempo de respuesta del servidor.}
+\caption*{\textbf{RNF2:} Limitación en el tiempo de respuesta del servidor.}
 \label{tab:RNF2}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1129,7 +1071,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF3:} Manejo de consultas sin degradación.}
+\caption*{\textbf{RNF3:} Manejo de consultas sin degradación.}
 \label{tab:RNF3}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1145,7 +1087,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF4:} Manejo de búsquedas y filtrado.}
+\caption*{\textbf{RNF4:} Manejo de búsquedas y filtrado.}
 \label{tab:RNF4}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1161,7 +1103,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF5:} Proporcionar componentes reutilizables.}
+\caption*{\textbf{RNF5:} Proporcionar componentes reutilizables.}
 \label{tab:RNF5}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1177,7 +1119,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF6:} Deprecar funcionalidades de forma sencilla.}
+\caption*{\textbf{RNF6:} Deprecar funcionalidades de forma sencilla.}
 \label{tab:RNF6}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1193,7 +1135,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF7:} Ofrecer una interfaz agradable e intuitiva. }
+\caption*{\textbf{RNF7:} Ofrecer una interfaz agradable e intuitiva. }
 \label{tab:RNF7}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1209,7 +1151,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF8:} Garantizar una navegación eficaz.}
+\caption*{\textbf{RNF8:} Garantizar una navegación eficaz.}
 \label{tab:RNF8}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1225,7 +1167,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF9:} Testear con usuarios reales.}
+\caption*{\textbf{RNF9:} Testear con usuarios reales.}
 \label{tab:RNF9}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1241,7 +1183,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF10:} Actualización de componentes existentes.}
+\caption*{\textbf{RNF10:} Actualización de componentes existentes.}
 \label{tab:RNF10}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1257,7 +1199,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF11:} Informar a los usuarios de los errores.}
+\caption*{\textbf{RNF11:} Informar a los usuarios de los errores.}
 \label{tab:RNF11}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1273,7 +1215,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF12:} Mitigar errores.}
+\caption*{\textbf{RNF12:} Mitigar errores.}
 \label{tab:RNF12}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1289,7 +1231,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF13:} Asegurar la integridad y persistencia de los datos.}
+\caption*{\textbf{RNF13:} Asegurar la integridad y persistencia de los datos.}
 \label{tab:RNF13}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1306,7 +1248,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF14:} Protección de datos sensibles.}
+\caption*{\textbf{RNF14:} Protección de datos sensibles.}
 \label{tab:RNF14}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1323,7 +1265,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF15:} Garantizar la veracidad de la información.}
+\caption*{\textbf{RNF15:} Garantizar la veracidad de la información.}
 \label{tab:RNF15}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -1339,7 +1281,7 @@ Los Requisitos No Funcionales (RNF) son responsables de proporcionar al usuario 
 \captionsetup{list=no}%
 \captionsetup{justification=raggedright,singlelinecheck=false}
 \captionsetup{labelformat=empty}
-\caption{\textbf{RNF16:} Documentación.}
+\caption*{\textbf{RNF16:} Documentación.}
 \label{tab:RNF16}
     \begin{tabular}{|m{5cm}|m{10cm}|}
 	    \hline
@@ -3027,7 +2969,7 @@ Todas estas propuestas buscan mejorar la experiencia de uso de la aplicación. A
 
 % Bibliografía
 \newpage
-\renewcommand{\refname}{Referencias}
+\renewcommand{\refname}{}
 \section{Bibliografía}
 \bibliographystyle{IEEEtran}
 \bibliography{referencias}
